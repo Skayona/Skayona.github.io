@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Lesson 2, learning Sass</title>
+	<link rel="stylesheet" href="stylesheets/styles.css" />
+	<link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+	<header class="main__header">
+		<div class="wrapper">
+
+			<div class="nav-bar">
+				<div class="nav">
+					<a href="#logo" class="header__site-logo"></a>
+					<a href="#nav" class="shows">Shows</a>
+					<a href="#nav" class="music">Music</a>
+				</div>
+
+				<div class="user-block">
+					<a href="#mail" class="header__user-mail"></a>
+					<div class="user__data">
+						<p>alex</p>
+						<div></div>
+					</div>
+				</div>
+
+				<a href="#tv" class="header__tv-schedule">
+					TV Schedule
+					<svg>
+						<path d="M6.003,3.495 L0.008,6.994 L0.008,-0.005 L6.003,3.495 Z" />
+					</svg>
+				</a>
+				<a href="#news" class="header__news">News</a>
+				<a href="#online-music" class="header__online-music">On&ndash;line&nbsp;music</a>
+			</div>
+
+			<div class="slider-heading__block">
+				<h1>finding <br />carter</h1>
+				<h2>Carter turn to Lory</h2>
+				<p>season 2, ep 19</p>
+				<a href="#play"></a>
+			</div>
+
+			<a href="#content" class="srcoll"></a>
+
+			<div class="social">
+				<a href="https://www.facebook.com/" class="fb" target="_blank"></a>
+				<a href="https://twitter.com/" class="twitter" target="_blank"></a>
+				<a href="https://tumblr.com/" class="tumblr" target="_blank"></a>
+				<a href="https://vine.co/" class="vine" target="_blank"></a>
+				<a href="https://www.instagram.com/" class="insta" target="_blank"></a>
+			</div>
+
+		</div>
+	</header>
+
+	<main id="content" class="main__content">
+		<div class="wrapper">
+			<div class="bg__text">Artists&nbsp;A-Z</div>
+		</div>
+		<div class="wrapper content">
+
+			<div class="nav-bar">
+				<div class="nav">
+					<a href="#logo" class="content__site-logo"></a>
+					<a href="#nav" class="shows">Shows</a>
+					<a href="#nav" class="music on-link">Music</a>
+				</div>
+
+				<div class="user-block">
+					<a href="#mail" class="content__user-mail"></a>
+					<div class="user__data">
+						<p>alex</p>
+						<div></div>
+					</div>
+				</div>
+
+				<a href="#tv" class="content__tv-schedule">
+					TV Schedule
+					<svg>
+						<path d="M6.003,3.495 L0.008,6.994 L0.008,-0.005 L6.003,3.495 Z" />
+					</svg>
+				</a>
+				<a href="#news" class="content__news">News</a>
+				<a href="#online-music" class="content__online-music">On&ndash;line&nbsp;music</a>
+			</div>
+
+			<ul class="music-block__nav">
+				<li><a href="music-block">Music</a></li>
+				<li><a href="music-block" class="on-link">Artists&nbsp;A-Z</a></li>
+				<li><a href="music-block">Music&nbsp;video</a></li>
+				<li><a href="music-block">Artist&nbsp;to&nbsp;watch</a></li>
+			</ul>
+
+			<section class="music-block__artist">
+				<h2>2Pac</h2>
+				<h3>gangsta rap</h3>
+				<blockquote>
+					<div class="quote-sign">“</div>
+					<p class="quote">Death is&nbsp;not the greatest loss in&nbsp;life. The greatest loss is&nbsp;what dies inside while still alive. Never surrender.</p>
+					<figure class="section-img">
+						<img src="images/artist_2pac.png" alt="2pac">
+					</figure>
+				</blockquote>
+				<input type="radio" name="artist" id="artist-music">
+				<input type="radio" name="artist" id="artist-photos">
+				<input type="radio" name="artist" id="artist-interview">
+				<input type="radio" name="artist" id="artist-biography" checked="checked">
+				<input type="radio" name="artist" id="artist-discography">
+				<div class="music-block__menu">
+					<label for="artist-music">Music</label>
+					<label for="artist-photos">Photos</label>
+					<label for="artist-interview">Interview</label>
+					<label for="artist-biography">Biography</label>
+					<label for="artist-discography">Discography</label>
+				</div>
+
+				<div class="tabs-content artist-music">
+					<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/95157572&amp;"></iframe>
+					<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115022666&amp;"></iframe>
+				</div>
+
+				<div class="tabs-content artist-photos">
+					<figure><img src="images/photo1.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo2.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo3.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo4.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo5.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo6.jpg" alt="2pac"></figure>
+					<figure><img src="images/photo7.jpeg" alt="2pac"></figure>
+					<figure><img src="images/photo8.jpg" alt="2pac"></figure>
+				</div>
+
+				<div class="tabs-content artist-interview">
+					<iframe class="iframe-video" src="https://www.youtube.com/embed/aMXzLhbWtmk" allowfullscreen></iframe>
+				</div>
+
+				<div class="tabs-content artist-biography">
+					<p>2Pac became the unlikely martyr of&nbsp;gangsta rap, and a&nbsp;tragic symbol of&nbsp;the toll its lifestyle exacted on&nbsp;urban black America. At&nbsp;the outset of&nbsp;his career, it&nbsp;didn&rsquo;t appear that he&nbsp;would emerge as&nbsp;one of&nbsp;the definitive rappers of&nbsp;the &rsquo;90s&nbsp;&mdash; he&nbsp;started out as&nbsp;a&nbsp;second-string rapper and dancer for Digital Underground, joining only after they had already landed their biggest hit. But in&nbsp;1991, he&nbsp;delivered an&nbsp;acclaimed debut album, 2Pacalypse Now, and quickly followed with a&nbsp;star-making performance in&nbsp;the urban drama Juice. Over the course of&nbsp;one year, his profile rose substantially, based as&nbsp;much on&nbsp;his run-ins with the law as&nbsp;his music. By&nbsp;1994, 2Pac rivaled Snoop Dogg as&nbsp;the most controversial figure in&nbsp;rap, spending as&nbsp;much time in&nbsp;prison as&nbsp;he&nbsp;did in&nbsp;the recording studio. His burgeoning outlaw mythology helped his 1995 album Me&nbsp;Against the World enter the charts at&nbsp;number one, and it&nbsp;also opened him up&nbsp;to&nbsp;charges of&nbsp;exploitation. Yet, as&nbsp;the single &laquo;Dear Mama&raquo; illustrated, he&nbsp;was capable of&nbsp;sensitivity as&nbsp;well as&nbsp;violence. Signing with Death Row Records in&nbsp;late 1995, 2Pac released the double-album All Eyez on&nbsp;Me in&nbsp;the spring of&nbsp;1996, and the record, as&nbsp;well as&nbsp;its hit single &laquo;California Love&raquo; confirmed his superstar status.
+					</p>
+					<a href="#see-more">see more<span class="arrow">&rsaquo;</span></a>
+				</div>
+
+				<div class="tabs-content artist-discography">
+					<h4>Studio albums</h4>
+					<ul>
+						<li>2Pacalypse Now (1991)</li>
+						<li>Strictly 4 My N.I.G.G.A.Z... (1993)</li>
+						<li>Me Against the World (1995)</li>
+						<li>All Eyez on Me (1996)</li>
+					</ul>
+
+					<h4>Posthumous studio albums</h4>
+						<ul>
+							<li>The Don Killuminati: The&nbsp;7&nbsp;Day Theory (1996) (as&nbsp;Makaveli)</li>
+							<li>R U Still Down? (Remember Me) (1997)</li>
+							<li>Until the End of Time (2001)</li>
+							<li>Better Dayz (2002)</li>
+							<li>Loyal to the Game (2004)</li>
+							<li>Pac's Life (2006)</li>
+						</ul>
+
+					<h4>Collaboration album</h4>
+						<ul>
+							<li>Thug Life: Volume 1 (with Thug Life) (1994)</li>
+						</ul>
+
+					<h4>Posthumous collaboration album</h4>
+					<ul>
+						<li>Still I Rise (with Outlawz) (1999)</li>
+					</ul>
+
+					<h4>Compilation albums</h4>
+					<ul>
+						<li>Greatest Hits (1998)</li>
+						<li>The Lost Tapes (2000)</li>
+						<li>The Rose That Grew from Concrete (2000)</li>
+						<li>Makaveli &amp;&nbsp;Dillinger Don&rsquo;t Go&nbsp;2 Sleep (2001)</li>
+						<li>The Prophet: The Best of the Works (2003)</li>
+						<li>Nu-Mixx Klazzics (2003)</li>
+						<li>Tupac: Resurrection (2003)</li>
+						<li>2Pac Live (2004)</li>
+						<li>The Rose, Vol. 2 (2005)</li>
+						<li>Live at the House of Blues (2005)</li>
+						<li>The Prophet Returns (2005)</li>
+						<li>Nu-Mixx Klazzics Vol. 2 (2007)</li>
+						<li>Best of 2Pac, Part 1: Thug (2007)</li>
+						<li>Best of 2Pac, Part 2: Life (2007)</li>
+					</ul>
+
+				</div>
+			</section>
+
+
+		</div>
+	</main>
+
+	<footer class="main__footer">
+		<div class="wrapper">
+
+			<ul class="footer_nav">
+				<li><a href="#footer">FAQ/Help</a></li>
+				<li><a href="#footer">Jobs</a></li>
+				<li><a href="#footer">Terms&nbsp;of&nbsp;Use</a></li>
+				<li><a href="#footer">Privacy&nbsp;Policy/Privacy&nbsp;Rights</a></li>
+				<li><a href="#footer">Copyright</a></li>
+				<li><a href="#footer">Closed&nbsp;Captioning</a></li>
+				<li><a href="#footer">Eventful</a></li>
+				<li><a href="#footer">Partners</a></li>
+			</ul>
+
+			<p class="footer__developer">2015 Viacom International Inc.</p>
+
+			<p class="footer__copyright">All Rights Reserved. MTV and all related titles and logos are trademarks of Viacom International Inc.</p>
+
+		</div>
+	</footer>
+
+</body>
+</html>

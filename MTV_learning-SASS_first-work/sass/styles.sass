@@ -1,0 +1,593 @@
+@import 'compass'
+@import '_resset'
+
+//variables
+$bg_main-color: #eee /*light-grey*/
+$bg_secondary-color: #dbdbdb /*dark-grey*/
+$decorative-color-1: #e8e8e8 /*grey-1*/
+$decorative-color-2: #bababa /*grey-2*/
+$decorative-color-3: #e9e9e9 /*grey-3*/
+
+$color-light: #fff /*white*/
+$color-dark: #000 /*black*/
+$txt_color-main: #595959  /*grey-1*/
+$txt_color-secondary-1: #767676 /*grey-2*/
+$txt_color-secondary-2: #333 /*grey-3*/
+
+$color-hover-1: #c6ff00 /*lime green*/
+$color-hover-2: #ffae00 /*orange*/
+$color-hover-3: #1cb6ea /*blue*/
+
+@mixin font-face($font-name, $file-name)
+	@font-face
+		font-family: quote($font-name)
+		src: url($file-name)
+
+@include font-face("DejaVuSans", "../fonts/DejaVuSans/DejaVuSans.ttf")
+@include font-face("DejaVuSans-Bold", "../fonts/DejaVuSans/DejaVuSans-Bold.ttf")
+@include font-face("DejaVuSansCondensed", "../fonts/DejaVuSans/DejaVuSansCondensed.ttf")
+@include font-face("DejaVuSansCondensed-Bold", "../fonts/DejaVuSans/DejaVuSansCondensed-Bold.ttf")
+@include font-face("DejaVuSerif", "../fonts/DejaVuSerif/DejaVuSerif.ttf")
+@include font-face("ProximaNova-Regular", "../fonts/ProximaNova/ProximaNova-Regular.ttf")
+
+
+.flex-row
+	display: flex
+	flex-direction: row
+	align-items: center
+
+.flex-column
+	display: flex
+	flex-direction: column
+
+.sprite
+	display: block
+	background:
+		image: url(../images/sprite.png)
+		repeat: no-repeat
+
+// general styles
+a
+	transition: all .3s ease-in-out
+
+.wrapper
+	margin: 0 30px
+	position: relative
+	@media (min-width: 920px)
+		margin: 0 auto
+		max-width: 860px
+
+.site-logo
+	width: 72px
+	height: 43px
+	@extend .sprite
+	grid-area: site-logo
+	&:hover, &:focus
+		opacity: 0.7
+
+.shows
+	@extend .nav__items
+	grid-area: shows
+
+.music
+	@extend .nav__items
+	grid-area: music
+
+.nav
+	display: grid
+	grid-template-areas: "site-logo shows" "site-logo music"
+	@media (orientation: landscape), (min-width: 720px)
+		display: flex
+		justify-content: flex-start
+		align-items: center
+
+.nav-bar
+	@extend .flex-row
+	justify-content: space-between
+
+.nav__items
+	font:
+		family: "DejavuSans-Bold"
+		size: 16px
+	line-height: 23px
+	margin-left: 10px
+	@media (orientation: landscape), (min-width: 720px)
+		margin-left: 30px
+	@media (min-width: 920px)
+		margin-left: 80px
+
+.user-block
+	@extend .flex-column
+	justify-content: space-between
+	align-items: flex-end
+	align-self: stretch
+	@media (orientation: landscape), (min-width: 720px)
+		flex-direction: row
+		align-items: center
+
+.user-mail
+	@extend .sprite
+	width: 19px
+	height: 14px
+	order: 1
+	&:hover, &:focus
+		opacity: 0.5
+	@media (orientation: landscape), (min-width: 720px)
+		order: 0
+
+.user__data
+	p
+		font:
+			family: "DejavuSans-Bold"
+			size: 12px
+		@extend .flex-row
+		&::after
+			content: ''
+			@extend .sprite
+			width: 17px
+			height: 17px
+			background-position: -77px -10px
+			margin-left: 12px
+	@media (orientation: landscape), (min-width: 720px)
+		margin-left: 25px
+	@media (min-width: 920px)
+		margin-left: 75px
+
+.side-links
+	font:
+		family: "DejaVuSans-Bold"
+		size: 14px
+	position: absolute
+	transform: rotate(-90deg)
+		origin: 0 0
+
+.tv-schedule
+	svg
+		width: 7px
+		height: 7px
+		transform: rotate(90deg)
+		transition: all .3s ease-in-out
+	@extend .side-links
+	left: 0
+
+.news
+	@extend .side-links
+	left: calc(100% - 14px)
+
+.online-music
+	white-space: nowrap
+	@extend .side-links
+	left: calc(100% - 14px)
+
+
+// header
+.main__header
+	color: $color-light
+	letter-spacing: 0.005em
+	background:
+		color: $bg_main-color
+		image: url(../images/bg_header.jpg)
+		repeat: no-repeat
+		size: cover
+		position: right
+	height: 70vh
+	@media (orientation: landscape)
+		height: 100vh
+		background-position: center
+	padding-top: 25px
+	padding-bottom: 25px
+	a
+		color: $color-light
+		&:hover, &:focus
+			color: $color-hover-1
+	.wrapper
+		height: 100%
+		@extend .flex-column
+		justify-content: space-between
+
+.header__site-logo
+	@extend .site-logo
+	background-position: -77px -47px
+
+.header__user-mail
+	@extend .user-mail
+	background-position: -102px -110px
+
+.header__tv-schedule
+	top: 77%
+	@extend .tv-schedule
+	svg
+		fill: $color-light
+	&:hover, &:focus
+		svg
+			fill: $color-hover-1
+
+.header__news
+	@extend .news
+	top: 31%
+
+.header__online-music
+	@extend .online-music
+	top: 77%
+
+.slider-heading__block
+	h1, h2
+		font-family: "DejaVuSans-Bold"
+	h1
+		text-transform: uppercase
+		font-size: 36px
+		line-height: 0.8333
+	h2
+		font-size: 16px
+		line-height: 1.851852
+	p
+		font:
+			family: "DejaVuSans"
+			size: 10.5px
+		line-height: 2.77778
+	a
+		@extend .sprite
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-position: -169px -10px
+		&:hover, &:focus
+			background-color: rgba(164, 204, 11, .2)
+	align-self: center
+	@media (min-width: 640px)
+		h1
+			font-size: 48px
+		h2
+			font-size: 21.5px
+		p
+			font-size: 14.25px
+	@media (min-width: 920px)
+		h1
+			font-size: 60px
+		h2
+			font-size: 27px
+		p
+			font-size: 18px
+
+.srcoll
+	width: 21px
+	height: 21px
+	@extend .sprite
+	background-position: -169px -70px
+	position: absolute
+	bottom: 20px
+	right: 17%
+	&:hover, &:focus
+		opacity: .5
+	display: none
+	@media (orientation: landscape), (min-width: 920px)
+		display: block
+
+.social
+	@extend .flex-row
+	a
+		@extend .sprite
+		width: 20px
+		height: 18px
+		margin-right: 10px
+		&:hover, &:focus
+			opacity: 0.5
+	.fb
+		background-position: -10px -10px
+	.twitter
+		background-position: -141px -111px
+	.tumblr
+		background-position: -10px -70px
+	.vine
+		background-position: -41px -70px
+	.insta
+		background-position: -39px -10px
+
+
+// content
+.main__content
+	background-color: $bg_main-color
+	padding-top: 20px
+	padding-bottom: 50px
+	@media (min-width: 920px)
+		padding-bottom: 110px
+	letter-spacing: 0.005em
+	overflow: hidden
+	.content
+		min-height: 100vh
+		.nav-bar
+			grid-area: content-nav
+		@media (min-width: 920px)
+			display: grid
+			grid-template-areas: "content-nav content-nav" "music-block__nav music-block__artist"
+			grid-template-columns: 20% 80%
+	a
+		color: $color-dark
+		&:hover, &:focus
+			color: $color-hover-2
+	.music-block__nav
+		margin-top: 40px
+		margin-bottom: 40px
+		grid-area: music-block__nav
+		@media (max-height: 380px)
+			margin-left: 30px
+		font:
+			family: "DejaVuSans-Bold"
+			size: 14px
+		line-height: 23px
+		@media (min-width: 920px)
+			margin-bottom: 0
+			margin-top: 160px
+	.on-link
+		color: $color-hover-2
+
+.bg__text
+	font:
+		family: "DejaVuSans-Bold"
+		size: 50px
+	line-height: 0.75
+	color: $decorative-color-3
+	white-space: nowrap
+	user-select: none
+	position: absolute
+	top: 50px
+	left: 0
+	@media (min-width: 400px)
+		font-size: 70px
+	@media (min-width: 500px)
+		font-size: 100px
+	@media (min-width: 920px)
+		font-size: 200px
+		top: 124px
+
+.content__site-logo
+	@extend .site-logo
+	background-position: -10px -110px
+
+.content__user-mail
+	@extend .user-mail
+	background-position: -114px -10px
+
+.content__tv-schedule
+	top: 77vh
+	@extend .tv-schedule
+	svg
+		fill: $color-dark
+
+	&:hover, &:focus
+		svg
+			fill: $color-hover-2
+
+.content__news
+	@extend .news
+	top: 31vh
+
+.content__online-music
+	@extend .online-music
+	top: 77vh
+
+.music-block__artist
+	width: 86%
+	margin: 0 auto
+	grid-area: music-block__artist
+	h2, h3
+		text-transform: uppercase
+		font-family: "DejaVuSans-Bold"
+		margin-left: 37px
+		@media (orientation: landscape), (min-width: 920px)
+			margin-left: 105px
+	h2, label, blockquote
+		color: $color-dark
+	h2
+		line-height: 1.0417
+		font-size: 26px
+		@media (orientation: landscape), (min-width: 920px)
+			font-size: 48px
+	h3
+		color: $txt_color-secondary-1
+		font-size: 10px
+		line-height: 12px
+		margin-bottom: 12px
+	blockquote
+		display: grid
+		grid-template-areas: "quote-sign quote" "img img"
+		padding: 30px 17px 0
+		background-color: $decorative-color-1
+		font-family: "DejaVuSerif"
+		font-size: 14px
+		line-height: 20px
+		margin-bottom: 40px
+		@media (orientation: landscape), (min-width: 920px)
+			grid-template-areas: "quote-sign quote img"
+			grid-template-columns: 51px 37% auto
+			height: 220px
+	.quote-sign, .quote
+		padding-top: 30px
+	.quote
+		grid-area: quote
+		margin-left: 17px
+	.quote-sign
+		grid-area: quote-sign
+		font-family: "ProximaNova-Regular"
+		font-weight: bold
+		color: $decorative-color-2
+		font-size: 50px
+		line-height: 0.2
+		@media (orientation: landscape), (min-width: 920px)
+			font-size: 100px
+	a
+		display: block
+		color: $txt_color-secondary-2
+	.section-img
+		grid-area: img
+		height: 50vh
+		overflow: hidden
+		@media (orientation: landscape), (min-width: 920px)
+			height: initial
+			position: relative
+			overflow: initial
+	@media (min-width: 920px)
+		margin-top: 174px
+		margin-right: 30px
+		margin-left: 0
+	input
+		display: none
+	label
+		cursor: pointer
+		font:
+			family: "DejaVuSansCondensed-Bold"
+			size: 12px
+		line-height: 20px
+		color: $color-dark
+		transition: color .3s ease-in-out
+		&:hover, &:focus
+			color: $color-hover-2
+
+.section-img
+	img
+		display: block
+		width: 100%
+		@media (orientation: landscape)
+			width: 55%
+			position: absolute
+			bottom: 0
+			right: 0
+		@media (min-width: 920px)
+			width: 70%
+
+[id="artist-music"]:checked ~ .music-block__menu [for="artist-music"],
+[id="artist-photos"]:checked ~ .music-block__menu [for="artist-photos"],
+[id="artist-interview"]:checked ~ .music-block__menu [for="artist-interview"],
+[id="artist-biography"]:checked ~ .music-block__menu [for="artist-biography"],
+[id="artist-discography"]:checked ~ .music-block__menu [for="artist-discography"]
+	color: $color-hover-2
+
+.music-block__menu
+	@extend .flex-row
+	justify-content: space-between
+	flex-wrap: wrap
+	[for="artist-discography"]
+		width: 100%
+		text-align: center
+		@media (min-width: 500px)
+			width: initial
+			text-align: left
+
+.tabs-content
+	font-family: "DejaVuSansCondensed"
+	line-height: 20px
+	font-size: 12px
+	color: $txt_color-main
+	display: none
+	margin-top: 30px
+	h4
+		font-size: 14px
+	a
+		font-size: 10px
+		color: $txt_color-secondary-2
+		text-align: right
+	.arrow
+		display: inline-block
+		transform: rotate(90deg)
+		margin-left: 6px
+	ul
+		list-style: disc
+		padding-left: 30px
+		margin-bottom: 20px
+	iframe
+		display: block
+		width: 100%
+		border: none
+	.iframe-video
+		height: 50vh
+		@media (orientation: landscape)
+			height: 80vh
+		@media (min-width: 728px)
+			width: 560px
+			height: 315px
+			margin: 0 auto
+
+[id="artist-photos"]:checked ~ .artist-photos
+	display: block
+	height: 50vh
+	overflow-y: auto
+	figure, img
+		width: 100%
+	figure
+		overflow: hidden
+		margin-bottom: 5px
+		@extend .flex-row
+		justify-content: center
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+	@media (orientation: landscape)
+		height: 80vh
+	@media (min-width: 640px)
+		overflow: initial
+		height: initial
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		figure
+			width: 49.5%
+			height: 25vh
+			cursor: pointer
+			&:focus, &:hover
+				overflow: initial
+				img
+					transform: scale(1.5)
+					transition: transform .3s ease-in-out
+					box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8)
+
+[id="artist-music"]:checked ~ .artist-music,
+[id="artist-interview"]:checked ~ .artist-interview,
+[id="artist-biography"]:checked ~ .artist-biography,
+[id="artist-discography"]:checked ~ .artist-discography
+	display: block
+
+
+// footer
+.main__footer
+	background-color: $bg_secondary-color
+	p
+		text-align: center
+	p, a
+		color: $color-dark
+		font:
+			family: "DejaVuSans"
+			size: 12px
+		line-height: 1
+	.wrapper
+		padding-top: 35px
+		padding-bottom: 25px
+		@media (min-width: 480px) and (max-width: 780px)
+			display: grid
+			grid-template-areas: "footer__developer footer_nav" "footer__copyright footer_nav"
+
+.footer_nav
+	grid-area: footer_nav
+	@media (min-width: 480px) and (max-width: 780px)
+		margin-left: 30px
+	@media (min-width: 780px)
+		display: flex
+		justify-content: space-between
+	a
+		&:hover, &:focus
+			color: $color-hover-3
+
+.footer__developer
+	grid-area: footer__developer
+	margin-top: 30px
+	@media (min-width: 480px) and (max-width: 780px)
+		margin-top: 0
+	margin-bottom: 25px
+	&::before
+		content: ''
+		display: block
+		width: 125px
+		height: 19px
+		margin: 0 auto
+		background:
+			image: url(../images/viacom.png)
+
+.footer__copyright
+	grid-area: footer__copyright

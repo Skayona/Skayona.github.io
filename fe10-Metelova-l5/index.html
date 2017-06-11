@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Lesson 5. Learning jQuery</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div class="display--flex">
+		<h1>Memory Game</h1>
+		<p>Try to remember all <b>RED</b> circles.</p>
+		<p class="to-do">Are you ready? Press START!</p>
+
+		<button class="start">START</button>
+
+		<button class="restart">RESTART GAME</button>
+	</div>
+	
+	<div class="display--flex">
+		<p class="level"></p>
+		
+		<div class="container">
+		</div>
+
+		<button class="restart-level">RESTART LEVEL</button>
+	</div>
+
+	<div class="level-done-wrap modal-wrap">
+		<div class="level-done modal">
+			<h1>Excellent!!!</h1>
+			<p>You are moved to the next level!!!</p>
+
+			<button class="restart">QIUTE</button>
+			<button class="continue">CONTINUE</button>
+
+		</div>
+	</div>
+	
+	<div class="end-game-wrap modal-wrap">
+		<div class="end-game modal">
+			<h1>CONGRATULATIONS!!!</h1>
+			<p>YOU WIN!!!</p>
+			<button class="restart">RESTART GAME</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 960px;
+	background-color: rgba(0,0,0,0.8);
+	position: relative;
+	overflow: hidden;
+}
+
+.menu-wrap {
+	width: 70%;
+	background-color: rgba(255,255,255,0.3);
+	position: absolute;
+	top: 0;
+	right: -70%;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.menu__item {
+	padding: 0 10px;
+	margin: 0;
+}
+
+.menu__item a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	line-height: 2;
+	display: block;
+	text-align: center;
+
+}
+
+.menu__item--on-page {
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: inset -2px -2px  2px rgba(255,255,255,0.4), 
+				inset 2px 2px  2px rgba(255,255,255,0.4);
+}
+
+.menu__item:not(.menu__item--on-page):hover, 
+.menu__item:not(.menu__item--on-page):focus {
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: inset -2px -2px  2px rgba(255,255,255,0.2), 
+				inset 2px 2px  2px rgba(255,255,255,0.2);
+}
+
+.hamburger {
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 30px;
+	top: 10px;
+	left: -45px;
+	cursor: pointer;
+}
+
+.hamburger:focus,
+.hamburger:hover {
+	opacity: 0.8;
+}
+
+.hamburger:active {
+	transform: scale(0.9);
+}
+
+.hamburger__item::before, 
+.hamburger__item::after  {
+	content: '';
+	display: block;
+}
+
+.hamburger__item div, 
+.hamburger__item::before, 
+.hamburger__item::after {
+	background-color: #fff;
+	width: 35px;
+	height: 2px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+.hamburger__item--cross div {
+	visibility: hidden;
+}
+
+.hamburger__item--cross::before {
+	transform: rotate(45deg);
+}
+
+.hamburger__item--cross::after {
+    transform: rotate(-45deg);
+}
+
+.hamburger__item--cross::before,
+.hamburger__item--cross::after {
+	transition: all 1s ease-in-out;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+@media (min-width: 960px) {
+	.hamburger {
+		display: none;
+	}
+	
+	.menu-wrap {
+		position: initial;
+		width: initial;
+		padding: 10px 20px;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

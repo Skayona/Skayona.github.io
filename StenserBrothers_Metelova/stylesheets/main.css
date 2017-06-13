@@ -1,0 +1,352 @@
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_hamburger.sass */
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  background-color: #111;
+  padding: 20px;
+}
+/* line 7, ../sass/_hamburger.sass */
+.hamburger:hover .hamburger-box, .hamburger:focus .hamburger-box {
+  opacity: 0.7;
+}
+/* line 10, ../sass/_hamburger.sass */
+.hamburger-box {
+  position: relative;
+  width: 28px;
+  height: 17px;
+}
+/* line 14, ../sass/_hamburger.sass */
+.hamburger-inner {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 75ms ease-in-out;
+}
+/* line 20, ../sass/_hamburger.sass */
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  transition: transform 0.15s ease-in-out;
+  background-color: #fff;
+}
+/* line 28, ../sass/_hamburger.sass */
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+/* line 32, ../sass/_hamburger.sass */
+.hamburger-inner::before {
+  top: -7px;
+  transition: top 75ms ease-in-out 0.12s, opacity 75ms ease-in-out;
+}
+/* line 35, ../sass/_hamburger.sass */
+.hamburger-inner::after {
+  bottom: -7px;
+  transition: bottom 75ms ease-in-out 0.12s, transform 75ms ease-in-out;
+}
+@media screen and (min-width: 980px) {
+  /* line 1, ../sass/_hamburger.sass */
+  .hamburger {
+    display: none;
+  }
+}
+
+/* line 43, ../sass/_hamburger.sass */
+.is-active .hamburger-inner {
+  background: transparent;
+  transition: background 75ms ease-in-out 0.12s;
+}
+/* line 46, ../sass/_hamburger.sass */
+.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 75ms ease-in-out, transform 75ms ease-in-out 0.12s;
+}
+/* line 50, ../sass/_hamburger.sass */
+.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: top 75ms ease-in-out, transform 75ms ease-in-out 0.12s;
+}
+
+@keyframes arrow-swing {
+  0% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-10px);
+  }
+  55% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* line 17, ../sass/main.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 19, ../sass/main.sass */
+html {
+  background-color: #000000;
+}
+
+/* line 21, ../sass/main.sass */
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 30, ../sass/main.sass */
+.g-btn, .menu-wrap__btn {
+  font-size: 0.875em;
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #ff4c7c;
+  transition: all 0.2s ease-in-out;
+}
+/* line 44, ../sass/main.sass */
+.g-btn:hover, .menu-wrap__btn:hover, .g-btn:focus, .menu-wrap__btn:focus {
+  color: #ff4c7c;
+  background-color: #ffffff;
+}
+
+/* line 48, ../sass/main.sass */
+.header-site {
+  position: relative;
+}
+
+/* line 51, ../sass/main.sass */
+.menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 52, ../sass/main.sass */
+.menu-wrap {
+  display: none;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+/* line 57, ../sass/main.sass */
+.menu-wrap__logo {
+  font-weight: 700;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  line-height: 100px;
+  letter-spacing: 1.5px;
+}
+/* line 64, ../sass/main.sass */
+.menu-wrap__logo, .menu__item {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 72, ../sass/main.sass */
+.menu__item {
+  font-weight: 900;
+  font-size: 1em;
+  line-height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+/* line 78, ../sass/main.sass */
+.menu__item:hover, .menu__item:focus {
+  opacity: 0.7;
+}
+/* line 80, ../sass/main.sass */
+.menu__item:active {
+  transform: scale(0.95);
+}
+/* line 82, ../sass/main.sass */
+.menu-wrap__btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 980px) {
+  /* line 51, ../sass/main.sass */
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+  }
+  /* line 88, ../sass/main.sass */
+  .menu-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 104, ../sass/main.sass */
+  .menu__item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 51, ../sass/main.sass */
+  .menu {
+    width: 65%;
+  }
+  /* line 108, ../sass/main.sass */
+  .menu-wrap {
+    background-color: transparent;
+  }
+  /* line 111, ../sass/main.sass */
+  .menu__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 51, ../sass/main.sass */
+  .menu {
+    width: 70%;
+  }
+  /* line 115, ../sass/main.sass */
+  .menu-wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* line 122, ../sass/main.sass */
+.about {
+  height: 100vh;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* line 136, ../sass/main.sass */
+.about__title {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 2.9;
+}
+/* line 141, ../sass/main.sass */
+.about__description {
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.429;
+}
+/* line 146, ../sass/main.sass */
+.about__arrow {
+  animation: arrow-swing 1.7s infinite ease;
+  fill: #ffffff;
+  width: 38px;
+  height: 18px;
+  position: absolute;
+  bottom: 14px;
+}
+/* line 153, ../sass/main.sass */
+.about__arrow:hover, .about__arrow:focus {
+  opacity: 0.7;
+}
+@media screen and (min-width: 640px) {
+  /* line 157, ../sass/main.sass */
+  .about__title {
+    font-size: 4.25em;
+  }
+  /* line 159, ../sass/main.sass */
+  .about__description {
+    font-size: 1.375em;
+  }
+  /* line 161, ../sass/main.sass */
+  .about__arrow {
+    bottom: 40px;
+  }
+}

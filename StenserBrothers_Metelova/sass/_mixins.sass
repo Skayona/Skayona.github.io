@@ -1,5 +1,16 @@
-@mixin responsive($width)
-	@media screen and (min-width: $width)
+@mixin font-site ($font-size, $line-height, $font-weight)
+	font-size: $font-size
+	line-height: $line-height
+	font-weight: $font-weight
 
-$responsive-screen-1: 640px
-$responsive-screen-2: 980px
+@mixin wrapper 
+	margin:
+		left: 20px
+		right: 20px
+	@media (min-width: 1000px)
+		max-width: 960px
+		margin:
+			left: auto
+			right: auto
+			
+

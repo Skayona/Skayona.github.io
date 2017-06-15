@@ -668,9 +668,8 @@ section .wrapper {
 .services img {
   display: block;
   width: 100%;
-  height: 80%;
 }
-/* line 354, ../sass/main.sass */
+/* line 351, ../sass/main.sass */
 .services .plan-price {
   background-image: linear-gradient(to right, rgba(247, 151, 30, 0.9), rgba(247, 151, 30, 0.3));
   color: #ffffff;
@@ -680,46 +679,46 @@ section .wrapper {
   cursor: pointer;
   border-bottom: 1px solid #f0f0f0;
 }
-/* line 362, ../sass/main.sass */
+/* line 359, ../sass/main.sass */
 .services .plan-price__bonus {
   display: block;
   font-size: 0.8em;
   font-weight: 300;
   font-style: italic;
 }
-/* line 367, ../sass/main.sass */
+/* line 364, ../sass/main.sass */
 .services .plan-button {
   background: linear-gradient(to right, rgba(247, 151, 30, 0.9), rgba(247, 151, 30, 0.3));
   width: 100%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 373, ../sass/main.sass */
+/* line 370, ../sass/main.sass */
 .services .plan-items {
   display: none;
   line-height: 40px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 379, ../sass/main.sass */
+/* line 376, ../sass/main.sass */
 .services .plan-items li:not(:last-child) {
   border-bottom: 1px dotted #f0f0f0;
 }
-/* line 382, ../sass/main.sass */
+/* line 379, ../sass/main.sass */
 .services .service4 label {
   display: block;
   cursor: pointer;
 }
-/* line 385, ../sass/main.sass */
+/* line 382, ../sass/main.sass */
 .services .service4 input {
   display: none;
 }
-/* line 387, ../sass/main.sass */
+/* line 384, ../sass/main.sass */
 .services .service4 [name="customized"]:checked ~ label {
   background-color: #f0f0f0;
 }
 @media screen and (min-width: 640px) {
-  /* line 390, ../sass/main.sass */
+  /* line 387, ../sass/main.sass */
   .services .wrapper {
     display: flex;
     justify-content: space-between;
@@ -727,32 +726,32 @@ section .wrapper {
     align-content: space-between;
     flex-wrap: wrap;
   }
-  /* line 396, ../sass/main.sass */
+  /* line 393, ../sass/main.sass */
   .services .title-lvl2, .services .text-large {
     width: 100%;
   }
-  /* line 398, ../sass/main.sass */
+  /* line 395, ../sass/main.sass */
   .services__item {
     width: 48%;
   }
-  /* line 400, ../sass/main.sass */
+  /* line 397, ../sass/main.sass */
   .services .service4 {
     margin-bottom: 60px;
     margin-left: auto;
   }
 }
 
-/* line 410, ../sass/main.sass */
+/* line 407, ../sass/main.sass */
 .start-now {
   background-color: #f0f0f0;
 }
-/* line 412, ../sass/main.sass */
+/* line 409, ../sass/main.sass */
 .start-now__list {
   text-align: left;
   margin-top: 64px;
   margin-bottom: 64px;
 }
-/* line 417, ../sass/main.sass */
+/* line 414, ../sass/main.sass */
 .start-now__list li {
   margin-bottom: 24px;
   padding-left: 60px;
@@ -760,24 +759,24 @@ section .wrapper {
   background-size: 40px;
 }
 @media screen and (min-width: 640px) {
-  /* line 423, ../sass/main.sass */
+  /* line 420, ../sass/main.sass */
   .start-now__list {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 428, ../sass/main.sass */
+  /* line 425, ../sass/main.sass */
   .start-now__list li {
     padding-left: 70px;
     background-size: 50px;
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 432, ../sass/main.sass */
+  /* line 429, ../sass/main.sass */
   .start-now__list {
     width: 70%;
   }
-  /* line 434, ../sass/main.sass */
+  /* line 431, ../sass/main.sass */
   .start-now__list li {
     margin-bottom: 36px;
     padding-left: 90px;
@@ -785,11 +784,11 @@ section .wrapper {
   }
 }
 
-/* line 440, ../sass/main.sass */
+/* line 437, ../sass/main.sass */
 .footer-site {
   background-color: #242424;
 }
-/* line 442, ../sass/main.sass */
+/* line 439, ../sass/main.sass */
 .footer-site .wrapper {
   margin-left: 20px;
   margin-right: 20px;
@@ -802,14 +801,14 @@ section .wrapper {
   color: #ffffff;
 }
 @media (min-width: 1000px) {
-  /* line 442, ../sass/main.sass */
+  /* line 439, ../sass/main.sass */
   .footer-site .wrapper {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 451, ../sass/main.sass */
+/* line 448, ../sass/main.sass */
 .footer-site__title {
   width: 100%;
   text-transform: uppercase;
@@ -818,7 +817,7 @@ section .wrapper {
   font-weight: 600;
   margin-bottom: 40px;
 }
-/* line 459, ../sass/main.sass */
+/* line 456, ../sass/main.sass */
 .footer-site__contacts .connection {
   color: #ffffff;
   font-size: 1em;
@@ -828,16 +827,16 @@ section .wrapper {
   display: block;
   transition: 0.3s ease-in-out;
 }
-/* line 465, ../sass/main.sass */
+/* line 462, ../sass/main.sass */
 .footer-site__contacts .connection:hover, .footer-site__contacts .connection:focus, .footer-site__contacts .connection:active {
   text-decoration: underline;
   color: #f7971e;
 }
-/* line 468, ../sass/main.sass */
+/* line 465, ../sass/main.sass */
 .footer-site__contacts .social {
   margin-top: 20px;
 }
-/* line 470, ../sass/main.sass */
+/* line 467, ../sass/main.sass */
 .footer-site__contacts .social__item {
   display: inline-block;
   border-radius: 50%;
@@ -845,18 +844,18 @@ section .wrapper {
   margin-right: 10px;
   transition: 0.3s ease-in-out;
 }
-/* line 476, ../sass/main.sass */
+/* line 473, ../sass/main.sass */
 .footer-site__contacts .social__item:hover, .footer-site__contacts .social__item:focus {
   opacity: 0.7;
 }
-/* line 478, ../sass/main.sass */
+/* line 475, ../sass/main.sass */
 .footer-site__contacts .social svg {
   width: 48px;
   height: 48px;
   fill: rgba(247, 151, 30, 0.7);
 }
 @media screen and (min-width: 760px) {
-  /* line 483, ../sass/main.sass */
+  /* line 480, ../sass/main.sass */
   .footer-site__form {
     max-width: 760px;
     margin-left: auto;
@@ -866,16 +865,16 @@ section .wrapper {
     flex-wrap: wrap;
     align-content: space-between;
   }
-  /* line 491, ../sass/main.sass */
+  /* line 488, ../sass/main.sass */
   .footer-site__form label {
     width: 30%;
   }
-  /* line 493, ../sass/main.sass */
+  /* line 490, ../sass/main.sass */
   .footer-site__form [for=client-response] {
     width: 65%;
     margin-bottom: 0;
   }
-  /* line 496, ../sass/main.sass */
+  /* line 493, ../sass/main.sass */
   .footer-site__form button {
     align-self: flex-end;
   }

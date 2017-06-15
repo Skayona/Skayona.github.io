@@ -1,7 +1,7 @@
 @import 'compass/reset'
 @import 'variables'
 @import 'mixins'
-@import 'hamburger'
+@import 'nav-elements'
 
 
 @keyframes arrow-swing
@@ -154,6 +154,7 @@ body
 	@media screen and (min-width: $responsive-screen-1)
 		font-size: $text-small--desktop
 
+
 .modal
 	display: none
 	position: fixed
@@ -164,30 +165,47 @@ body
 	left: 0
 	top: 0
 	bottom: 0
+	overflow-y: auto
+	.cross
+		position: absolute
+		top: 20px
+		right: 20px
+		&:active
+			transform: scale(0.8)
 	&__content
 		color: $main-color--light-1
-		padding: 20px 30px
-		position: fixed
+		padding: 40px 30px
+		position: relative
 		right: 0
 		left: 0
 		top: 0
-		bottom: 0
+		margin: 30px auto
+		width: 90%
 		background-color: $main-color--dark-2
 		box-shadow: 0 3px 9px rgba(0,0,0,.5)
-		border: 1px solid rgba(0,0,0,.2)		
+		border: 1px solid rgba(0,0,0,.2)
+	.title-lvl4
+		text-transform: uppercase
+		margin-bottom: 20px
+	.text-normal
+		font-weight: 300
+		margin-bottom: 10px
+	&__text-block
+		margin-top: 30px
+		margin-bottom: 30px
 	&-form
 		@extend .form-main
 		margin-bottom: 0
-	@media screen and (min-width: 760px)
+	@media screen and (min-width: $responsive-screen-2)
 		&__content
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-between
-			margin: 20px auto
-			max-width: 740px
-		h3
+			max-width: 960px
+		.title-lvl4
 			width: 100%
-		p
+			margin-bottom: 36px
+		&__text-block
 			width: 45%
 		&-form
 			width: 45%
@@ -346,7 +364,8 @@ section
 		border-bottom: 1px solid transparentize($corporate-color, 0.7)
 	img
 		display: block
-		width: 100%
+		height: 120px
+		margin: auto
 	.plan
 		&-price
 			background-image: linear-gradient(to right, transparentize($corporate-color, 0.1), transparentize($corporate-color, 0.7))
@@ -355,18 +374,23 @@ section
 			font-size: 1.15em
 			padding: 20px 0
 			cursor: pointer
+			transition: .3s ease-in-out
 			border-bottom: 1px solid $main-color--light-2
 			&__bonus
 				display: block
 				font-size: .8em
 				font-weight: 300
 				font-style: italic
+			&:hover, &:focus
+				opacity: .7
 		&-button
 			background: linear-gradient(to right, transparentize($corporate-color, 0.1), transparentize($corporate-color, 0.7))
 			width: 100%
 			border-top:
 				left-radius: 0
 				right-radius: 0
+			&:hover, &:focus
+				opacity: .7
 		&-items
 			display: none
 			line-height: 40px
@@ -397,11 +421,11 @@ section
 		.service4
 			margin-bottom: 60px
 			margin-left: auto
-
-
-
-
-	
+	@media screen and (min-width: 1240px)
+		&__item
+			width: 23%
+		.service4
+			margin-left: 0
 
 
 .start-now

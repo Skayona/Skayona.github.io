@@ -20,6 +20,14 @@ $(window).scroll(function() {
 	}
 });
 
+$('.plan-button').click(function() {
+	$('.modal').fadeToggle('slow')
+});
+
+$('.js-cross').click(function() {
+	$('.modal').fadeToggle('slow')
+});
+
 // need to optimize
 
 $('.js-hamburger').click(function() {

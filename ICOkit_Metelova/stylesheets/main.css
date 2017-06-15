@@ -213,8 +213,8 @@ body {
 .scrollto-top {
   position: fixed;
   z-index: 100;
-  bottom: 10vh;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   display: none;
   opacity: 0.2;
   background-color: #505050;
@@ -433,8 +433,8 @@ body {
 /* line 171, ../sass/main.sass */
 .modal .cross {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  right: 0;
 }
 /* line 175, ../sass/main.sass */
 .modal .cross:active {

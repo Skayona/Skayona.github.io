@@ -1,0 +1,117 @@
+.section-wrap
+	@include inner-wrapper
+	text-align: center
+	padding:
+		top: 30px
+		bottom: 40px
+	@media (min-width: $screen4)
+		padding:
+			top: 60px
+			bottom: 80px
+
+
+.g-btn
+	font-family: 'Open Sans', sans-serif
+	font-size: 1em
+	line-height: 2.5
+	text-decoration: none
+	font-weight: 300
+	color: $color-white
+	background-color: $accent-color
+	outline: none
+	border: none
+	box-shadow: 2px 2px 4px rgba($color-grey, .25)
+	text-align: center
+	padding-left: 20px
+	padding-right: 20px
+	cursor: pointer
+	display: inline-block
+	transition: .25s ease-in-out
+	&:hover, &:focus
+		background-color: rgba($accent-color, .75)
+		box-shadow: 2px 2px 8px rgba($color-grey, .25)
+
+
+
+.g-form
+	input, textarea
+		padding:
+			left: 10px
+			right: 10px
+		margin:
+			bottom: 10px
+		border-style: none
+		border: 1px solid rgba($color-grey, .25)
+		&:focus
+			outline: none
+			background-color: rgba($color-grey, .1)
+			border: 1px solid rgba($color-grey, .5)
+	input,textarea, [placeholder]
+		font-family: 'Open Sans', sans-serif
+		font-size: 1rem
+		line-height: 2.5
+
+
+
+
+// typography
+html
+	font-family: 'Open Sans', sans-serif
+	line-height: 1.2
+	font-size: 12px
+	@media (min-width: $screen2)
+		font-size: 14px
+	@media (min-width: $screen4)
+		font-size: 16px
+
+
+.title-lvl2
+	font-size: 1.375rem
+	line-height: 1.091
+	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 30px
+
+.title-lvl3
+	font-size: 1.125rem
+	line-height: 1.222
+	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	text-transform: uppercase
+	text-align: center
+
+.title-lvl4
+	font-size: 1rem
+	line-height: 1.2
+	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	text-transform: uppercase
+	text-align: center
+
+.txt-large
+	font-size: 1.5rem
+	line-height: 1.053
+
+
+.txt-normal
+	font-size: 1.125rem
+	line-height: 1.333
+
+
+.txt-small
+	font-size: 1rem
+	line-height: 1.2
+
+strong
+	font-weight: bold
+
+i
+	font-style: italic
+
+
+// materialize
+// Z-levels
+.z-depth-1 
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)

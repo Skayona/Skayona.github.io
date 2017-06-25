@@ -1,0 +1,648 @@
+@import 'components/variables'
+@import 'components/mixins'
+@import 'components/general-elements'
+@import 'components/nav-elements'
+
+@import '../libs/owlcarousel/owl.carousel.min'
+@import '../libs/owlcarousel/owl.theme.default.min'
+
+
+@import '../libs/materialize/sass/components/collapsible'
+@import '../libs/materialize/sass/components/grid'
+
+
+
+*
+	box-sizing: border-box
+
+
+body
+	min-width: 320px
+	margin: 0 auto
+	color: #000
+
+
+
+.header-site
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 100
+	&__nav
+		@include outer-wrapper
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.logo
+		display: block
+		width: 50px
+		height: auto
+		margin: 10px
+		z-index: 200
+		&__img
+			width: 100%
+			height: auto
+	.hamburger
+		position: relative
+		z-index: 200
+	.menu
+		&-wrap
+			display: flex
+			position: absolute
+			top: 0
+			width: auto
+			height: 100vh
+			background-color: $color-grey
+			overflow: auto
+		display: none
+		list-style-type: none
+		width: 100%
+		padding: 20px 0
+		margin: auto
+		&__item
+			margin:
+				left: 20px
+				right: 20px
+			&::after
+				content: ''
+				display: block
+				margin: auto
+				height: 2px
+				width: 100%
+				background-color: $accent-color
+				transform: scaleX(0)
+				transition: transform .6s ease
+			&:hover,
+			&--is-active
+				&::after
+					transform: scaleX(1)
+			a
+				text-decoration: none
+				text-transform: uppercase
+				font-family: 'Open Sans Condensed', sans-serif
+				font-size: 1.333rem
+				font-weight: 300
+				letter-spacing: .5px
+				color: $color-white
+				display: block
+				text-align: center
+				padding: 15px 0
+	@media screen and (min-width: $screen4)
+		.menu
+			&-wrap
+				display: block
+				background-color: transparent
+				position: initial
+				height: auto
+			display: flex
+			width: auto
+			position: initial
+			background-color: transparent
+			&__item
+				a
+					padding:
+						top: 2px
+						bottom: 2px
+		.logo
+			width: 70px
+		
+
+
+.scrollto-top
+	position: fixed
+	z-index: 100
+	bottom: 5px
+	right: 10px
+	display: none
+	opacity: .3
+	background-color: $color-grey
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	transition: .7s ease
+	&:hover, &:focus
+		opacity: 1
+	&__arrow
+		fill: #fff
+		transform: rotate(180deg)
+
+
+
+.slider-wrap
+	position: relative
+	&__cover
+		background-image: linear-gradient(to bottom, rgba(0,0,0, .5), rgba(0,0,0, .1))
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		z-index: 1
+	.main-slider
+		height: 100vh
+		overflow: hidden
+		z-index: auto
+		&__item
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			width: 100%
+			height: 100vh
+		.owl-dots
+			position: absolute
+			bottom: 2vh
+			left: 0
+			right: 0
+			z-index: 20
+	.slider-nested
+		&-wrap
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			z-index: 10
+			display: flex
+		margin: auto
+		text-align: center
+		&__item
+			@include inner-wrapper
+		.slider-text, .slider-link
+			font-family: 'Open Sans Condensed', sans-serif
+			font-size: 1.5rem
+			line-height: 1.5
+			letter-spacing: 1px
+			color: $color-white
+		.slider-link
+			text-decoration: none
+			border-bottom: 1px solid rgba($color-white, 0.7)
+			transition: .3s ease
+			&:hover, &:focus
+				border-color: $color-white
+			&:active
+				border-color: rgba($color-white, 0.5)
+		.owl-nav .owl-prev,
+		.owl-nav .owl-next
+			display: inline-block
+		.owl-nav .owl-prev
+			margin-right: 40px
+	.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span
+		background-color: $accent-color
+
+
+
+.subscribe
+	@extend .section-wrap
+	&__form
+		margin-top: 30px
+		text-align: right
+		input
+			display: block
+			width: 100%
+		button
+			text-align: right
+	@media (min-width: $screen1)
+		&__form
+			text-align: center
+			input
+				display: inline-block
+				width: 45%
+				margin-right: 10px
+
+
+
+.about
+	@extend .section-wrap
+	&-wrap
+		background-color: $color-grey--lighten-1
+	.team-galerry
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: stretch
+		&__member
+			position: relative
+			overflow: hidden
+			margin: 0 0 5px
+			width: 49%
+			cursor: pointer
+			img
+				width: 100%
+				height: auto
+				display: block
+		&__img-caption
+			opacity: 0
+			transition: opacity 1s ease
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			padding: 5px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			background-color: rgba($accent-color, .7)
+			color: #000
+			.member-position
+				font-size: .75rem
+			cite
+				font-style: normal
+				font-size: .875rem
+				margin-top: 8px
+			&:hover, &:focus
+				opacity: 1
+	@media (min-width: $screen2)
+		.team-galerry
+			max-width: 620px
+			margin:
+				left: auto
+				right: auto
+			&__member
+				width: calc(100%/3 - 5px)
+				margin-right: 5px
+				max-width: 200px
+	@media (min-width: $screen4)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		&__title
+			width: 100%
+		&__text
+			width: 35%
+		.team-galerry
+			width: 60%
+			margin:
+				left: 0
+				right: 0
+
+
+.services
+	@extend .section-wrap
+	&__item
+		width: 90%
+		margin: auto
+		padding: 40px 10px
+		figure
+			width: 180px
+			height: 180px
+			overflow: hidden
+			margin: auto
+			border-radius: 50%
+			img
+				width: 100%
+				height: auto
+	&-carousel
+		.owl-nav .owl-prev, 
+		.owl-nav .owl-next
+			position: absolute
+			top: 0
+			bottom: 0
+			display: flex
+			align-items: center
+		.owl-nav .owl-prev
+			left: -20px
+		.owl-nav .owl-next
+			right: -20px
+	@media (min-width: $screen5)
+		&-carousel
+		.owl-nav .owl-prev
+			left: -40px
+		.owl-nav .owl-next
+			right: -40px
+
+
+
+.destination
+	@extend .section-wrap
+	color: $color-white
+	&-wrap
+		background:
+			image: linear-gradient(rgba(#000, .6), rgba(#000, .6)),url('../img/bg-1.jpg')
+			position: center
+			size: cover
+			attachment: fixed
+	&__item
+		margin:
+			top: 40px
+			bottom: 40px
+	.destination-name
+		text-transform: uppercase
+		font-size: 1.15rem
+		font-weight: bold
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+	.percentage
+		font-weight: 200
+		font-style: italic
+	.statistic-bar
+		&-wrap
+			width: 100%
+			height: 30px
+			background-color: rgba($color-grey--lighten-1, .4)
+		background-color: rgba($accent-color, .9)
+		height: inherit
+	@media (min-width: $screen3)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		h2, p
+			width: 100%
+		&__item
+			width: 45%
+
+
+
+.tours
+	@extend .section-wrap
+	&__item
+		cursor: pointer
+		box-shadow: 4px 4px 8px $color-grey--lighten-1, -1px -1px 1px $color-grey--lighten-1
+		padding-bottom: 20px
+		margin-bottom: 20px
+		text-align: center
+		figure
+			margin: 0
+			position: relative
+		img
+			width: 100%
+			height: auto
+			display: block
+		.tour-name
+			color: $color-white
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0
+			padding: 10px
+			position: absolute
+			bottom: 0
+			top: 0
+			right: 0
+			left: 0
+			background-color: rgba(#000, .5)
+		.tour-price
+			font-size: .75rem
+			position: absolute
+			bottom: -15px
+			right: 10px
+			display: block
+			width: 60px
+			height: 60px
+			background-color: rgba($accent-color, 1)
+			color: $color-white
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+		.tour-list
+			text-align: left
+			margin-top: 0
+			margin-bottom: 24px
+			margin:
+				left: auto
+				right: auto
+		.tour-subtitle
+			margin-bottom: 8px
+			font-weight: bold
+	@media (min-width: $screen2)
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&__title, &__txt
+			width: 100%
+		&__item
+			width: 49%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			figure, .tour-subtitle, .tour-list
+				width: 100%
+				align-self: flex-start
+			.tour-btn
+				align-self: flex-end
+
+
+	@media (min-width: $screen5)
+		&__item
+			width: 24%
+
+
+
+.gallery
+	@extend .section-wrap
+	&-wrap
+		background-color: $color-grey--lighten-1
+	&-album
+		&__item
+			overflow: hidden
+			margin-bottom: 20px
+			cursor: pointer
+			img
+				display: block
+				width: 100%
+				height: auto
+			&:nth-child(n+5)
+				display: none
+	&__lightbox
+		display: none
+		position: fixed
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		margin: auto
+		padding: 25px
+		z-index: 100
+		overflow-y: auto
+		.overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			z-index: -1
+			background-color: rgba(#000, .9)
+		figure
+			width: 80%
+			max-width: 800px
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			margin: auto
+			position: absolute
+			display: flex
+			align-items: center
+			z-index: 10
+			img
+				width: 100%
+				height: auto
+				display: block
+		.prev, .next
+			position: absolute
+			top: 0
+			bottom: 0
+			z-index: 10
+			display: flex
+			align-items: center
+			cursor: pointer
+		.prev
+			left: -30px
+		.next
+			right: -30px
+	&-btn
+		display: inline-block
+		font-size: 1rem
+		padding: 8px 16px
+		margin: 16px 8px
+		border: 1px solid rgba(#000, .5)
+		cursor: pointer
+		border-radius: 2px
+		&--is-active,
+		&:hover, &:active
+			color: $color-grey--lighten-1
+			background-color: rgba(#000, .5)
+
+	@media (min-width: 993px)
+		&-album
+			&__item:nth-child(-n+8)
+				display: block
+	@media (min-width: $screen3)
+		&__lightbox
+			.prev
+				left: -70px
+			.next
+				right: -70px
+
+
+.why
+	@extend .section-wrap
+	&-wrap
+		background:
+			image: linear-gradient(rgba(#fff, .4), rgba(#fff, .4)),url('../img/bg-2.jpg')
+			position: center
+			size: cover
+			attachment: fixed
+	&__item
+		padding-bottom: 15px
+		padding-top: 15px
+	&-number
+		font-size: 4rem
+		font-weight: 700
+	&-description
+		font-size: 1rem
+	@media (min-width: $screen2)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&__title
+			width: 100%
+		&__item
+			width: 49%
+	@media (min-width: $screen3)
+		&__item
+			width: 24%
+
+
+
+.faq
+	@extend .section-wrap
+	&-wrap
+		background-color: $color-grey--lighten-1
+	.collapsible
+		margin: 0
+		padding: 0
+		list-style: none
+	.collapsible-header
+		display: flex
+		align-items: center
+		line-height: inherit
+		padding: 1rem
+
+
+
+.contacts
+	@extend .section-wrap
+	text-align: left
+	&-wrap
+		position: relative
+	&__tel, &__mail
+		a
+			text-decoration: none
+			color: inherit
+			&:hover, &:focus
+				text-decoration: underline
+			&:focus
+				opacity: .7
+	&__map-wrap
+		height: 70vh
+		// iframe
+	&__map
+		// background-color: red
+		width: 100%
+		height: inherit
+		border: 0
+		position: absolute
+		left: 0
+		right: 0
+		z-index: 1
+	&__form
+		text-align: right
+		margin:
+			top: 50px
+			bottom: 70px
+		input, textarea
+			width: 100%
+			margin-bottom: 20px
+		textarea
+			min-height: 200px
+	&__social
+		text-align: center
+		display: flex
+		justify-content: center
+
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 10px
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			background-color: $accent-color
+			box-shadow: 2px 2px 4px rgba($color-grey, .25)
+			transition: .5s ease
+			&:hover, &:focus
+				opacity: .8
+				box-shadow: 2px 2px 8px rgba($color-grey, .25)
+		svg
+			fill: $color-white
+	@media (min-width: $screen2)
+		&__form
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			input
+				width: 49%
+			button
+				margin:
+					left: auto
+					right: auto
+
+
+
+.footer-site
+	background-color: $color-grey
+	color: $color-white
+	&__copy
+		@include inner-wrapper
+		font-size: .75rem
+		font-style: normal
+		line-height: 60px
+

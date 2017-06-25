@@ -1,0 +1,85 @@
+// hanburger
+
+.hamburger
+	display: flex
+	justify-content: flex-end
+	cursor: pointer
+	padding: 20px
+	&:hover &-box,
+	&:focus &-box
+		opacity: .7
+	&-box
+		position: relative
+		width: 28px
+		height: 17px
+	&-inner 
+		top: 0
+		left: 0
+		bottom: 0
+		margin: auto
+		transition: 75ms ease-in-out
+		&,
+		&::before,
+		&::after
+			position: absolute
+			width: 28px
+			height: 3px
+			transition: transform .15s ease-in-out
+			background-color: $color-white
+		&::before,
+		&::after
+			content: ''
+			display: block
+		&::before
+			top: -7px
+			transition: top 75ms ease-in-out .12s, opacity 75ms ease-in-out
+		&::after
+			bottom: -7px
+			transition: bottom 75ms ease-in-out .12s, transform 75ms ease-in-out
+	@media screen and (min-width: $screen4)
+		display: none
+
+.is-active
+	.hamburger
+		&-inner
+			background: transparent
+			transition: background 75ms ease-in-out .12s
+			&::before
+				background-color: $accent-color
+				top: 0
+				transform: rotate(45deg)
+				transition: top 75ms ease-in-out, transform 75ms ease-in-out .12s
+			&::after
+				background-color: $accent-color
+				bottom: 0
+				transform: rotate(-45deg)
+				transition: top 75ms ease-in-out, transform 75ms ease-in-out .12s
+
+			
+//cross
+
+.cross
+	cursor: pointer
+	padding: 20px
+	transition: .3s ease-in-out
+	&:hover,
+	&:focus
+		opacity: .6
+	&-box
+		position: relative
+		width: 20px
+		height: 20px
+	&-inner
+		top: 0
+		transform: rotate(45deg)
+		&,
+		&::before
+			position: absolute
+			width: 20px
+			height: 3px
+			background-color: #fff
+		&::before
+			content: ''
+			display: block
+			bottom: 0
+			transform: rotate(-90deg)

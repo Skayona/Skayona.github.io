@@ -17,8 +17,13 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
+
 <body id="top-site">
-	
+		<div class="preloader">
+			<div class="pulse"></div>
+		</div>
+
+
 
 	<header class="header-site">
 
@@ -27,7 +32,7 @@
 			
 			<div class="menu-wrap">
 				<ul class="menu js-menu">
-					<li class="menu__item menu__item--is-active"><a href="#top" class="js-top">Головна</a></li>
+					<li class="menu__item menu__item--is-active"><a href="#top-site" class="js-top">Головна</a></li>
 					<li class="menu__item"><a href="#about" class="js-scrollto">Про нас</a></li>
 					<li class="menu__item"><a href="#services" class="js-scrollto">Послуги</a></li>
 					<li class="menu__item"><a href="#tours" class="js-scrollto">Тури</a></li>
@@ -65,13 +70,13 @@
 			<div class="slider-nested-wrap">
 				<div class="slider-nested owl-carousel">
 					<div class="slider-nested__item">
-						<p class="slider-text">Таємничі пам&rsquo;ятки Переяславщини. Затоплена церква, загадкова ротонда та&nbsp;архітектура Переяслава. <a href="#" class="slider-link">Детальніше...</a></p>
+						<p class="slider-text">Каньйони півдня та&nbsp;гранітне Побужжя. Дослідницький тур. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
 					</div>
 					<div class="slider-nested__item">
-						<p class="slider-text">Волинська мандрівка. Базальтові стовпи, тунель кохання, замки та&nbsp;храми. <a href="#" class="slider-link">Детальніше...</a></p>
+						<p class="slider-text">Волинська мандрівка. Базальтові стовпи, тунель кохання, замки та&nbsp;храми. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
 					</div>
 					<div class="slider-nested__item">
-						<p class="slider-text">Сім днів на&nbsp;півдні. Кінбурнська коса, острів Березань та&nbsp;Ольвія. <a href="#" class="slider-link">Детальніше...</a></p>
+						<p class="slider-text">Еталонний каньйон у&nbsp;Буках. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
 					</div>
 				</div>
 			</div>
@@ -86,10 +91,26 @@
 
 				<p class="txt-normal">Будьте в&nbsp;курсі останніх новин нашого сайту та дізнавайтеся першими про вигідні пропозиції та нові напрямки!</p>
 
-				<form action="#modal" method="post" id="subscribe-form" class="g-form subscribe__form">
+				<form action="#modal1" method="post" id="subscribe-form" class="g-form subscribe__form">
 					<input type="email" placeholder="Електронна пошта" id="subscribe-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
 					<button type="submit" class="g-btn">Підписатися</button>
 				</form>
+				
+				<div class="g-modal subscribe__modal">
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Розсилки</h4>
+							<p class="text-normal">
+							Електронну адресу <span class="modal-email"></span> внесено до списку розсилок.
+							</p>
+						</div>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>
+
 			</section>
 		</div>
 		
@@ -295,8 +316,46 @@
 						<li>обід</li>
 					</ul>
 					
-					<a href="#modal1" class="g-btn tour-btn">Докладніше</a>
+					<a href="#modal1" class="g-btn tour-btn tour1-btn">Докладніше</a>
 
+					<div class="g-modal tours__modal tour1__modal">
+						<div class="modal__content">
+							<div class="modal__text-block">
+								<h4 class="modal-title">Еталонний каньйон у&nbsp;Буках</h4>
+								<p class="text-normal">
+								В&nbsp;Буках єдиний каньйон в&nbsp;Україні, який повторює наші стереотипи каньйонів&nbsp;&mdash; високі прямовисні скелі з&nbsp;двох боків бурхливого водного потоку. В&nbsp;нашому випадку цим потоком буде Гірський Тікич. А&nbsp;ще&nbsp;ми&nbsp;побачимо водяні млини та&nbsp;прекрасний зоопарк у&nbsp;Вишківському.
+								</p>
+							</div>
+
+							<form id="tour-1" class="g-form tours__form">
+								<label for="tour-name">Тур</label>
+								<select id="tour-name" required>
+								<option value="1" selected>Еталонний каньйон у&nbsp;Буках</option>
+								<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+								<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+								<option value="4" >Волинська мандрівка</option>
+								</select>
+								
+								<label for="tourist-name">Контактна особа</label>
+								<input type="text" placeholder="Ім'я" id="tourist-name" required>
+								
+								<label for="tourist-amt">Кількість осіб</label>
+								<input type="number" id="tourist-amt" required/>
+								
+								<label for="tour-mail">Електронна адреса</label>
+								<input type="email" placeholder="Електронна пошта" id="tour-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+								
+								<label for="tour-text">Додатково</label>
+								<textarea id="tour-text" placeholder="(запитання, побажання, уточнення)"></textarea>
+								
+								<button type="submit" class="g-btn">Замовити</button>
+							</form>
+
+							<div class="modal__footer">
+								<a href="#!" class="modal-close">Закрити</a>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<section class="tours__item">
@@ -315,8 +374,47 @@
 						<li>вхідні квитки</li>
 					</ul>
 					
-					<a href="#modal1" class="g-btn tour-btn">Докладніше</a>
+					<a href="#modal1" class="g-btn tour-btn tour2-btn">Докладніше</a>
+					
 
+					<div class="g-modal tours__modal tour2__modal">
+						<div class="modal__content">
+							<div class="modal__text-block">
+								<h4 class="modal-title">Від Кам&rsquo;янця до&nbsp;Говерли</h4>
+								<p class="text-normal">
+								Під час цієї мандрівки ви&nbsp;побачите захоплюючий світ Західної України: Поділля, Буковину, Галичину, Волинь, Гуцульщину&nbsp;і, головне, Карпати&nbsp;&mdash; найбільш звабливий шматок країни. Замки і&nbsp;фортеці, палаци та&nbsp;садиби, костьоли та&nbsp;православні церкви, ну&nbsp;і, звичайно, гори. Найвища гора країни&nbsp;&mdash; Говерла, чисті , як&nbsp;сльоза, потоки, стрімкі провалля, колиби, вино та&nbsp;сир... Неймовірний Пінзель у&nbsp;Бучачі, святині у&nbsp;Почаєві та&nbsp;Підкамені; найефектніші замки України в&nbsp;Кам&rsquo;янці, Хотині, собор із&nbsp;мінаретом, скелі та&nbsp;річкові долини... І&nbsp;все це&nbsp;в&nbsp;одному турі. Приєднуйтесь!
+								</p>
+							</div>
+
+							<form id="tour-1" class="g-form tours__form">
+								<label for="tour-name">Тур</label>
+								<select id="tour-name" required>
+								<option value="1">Еталонний каньйон у&nbsp;Буках</option>
+								<option value="2" selected>Від Кам&rsquo;янця до&nbsp;Говерли</option>
+								<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+								<option value="4">Волинська мандрівка</option>
+								</select>
+								
+								<label for="tourist-name">Контактна особа</label>
+								<input type="text" placeholder="Ім'я" id="tourist-name" required>
+								
+								<label for="tourist-amt">Кількість осіб</label>
+								<input type="number" id="tourist-amt" required/>
+								
+								<label for="tour-mail">Електронна адреса</label>
+								<input type="email" placeholder="Електронна пошта" id="tour-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+								
+								<label for="tour-text">Додатково</label>
+								<textarea id="tour-text" placeholder="(запитання, побажання, уточнення)"></textarea>
+								
+								<button type="submit" class="g-btn">Замовити</button>
+							</form>
+
+							<div class="modal__footer">
+								<a href="#!" class="modal-close">Закрити</a>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<section class="tours__item">
@@ -335,8 +433,46 @@
 						<li>вхідні квитки</li>
 					</ul>
 					
-					<a href="#modal1" class="g-btn tour-btn">Докладніше</a>
+					<a href="#modal1" class="g-btn tour-btn tour3-btn">Докладніше</a>
+					
+					<div class="g-modal tours__modal tour3__modal">
+						<div class="modal__content">
+							<div class="modal__text-block">
+								<h4 class="modal-title">Каньйони півдня та&nbsp;гранітне Побужжя</h4>
+								<p class="text-normal">
+								Дослідити каньйони таємничої річки Мертвовод, переправитись через Південний Буг на&nbsp;паромі, бути одними із&nbsp;перших туристів, які побачать залишки невідомої фортеці, відчути силу та&nbsp;енергію каміння віком у&nbsp;кілька мільярдів років&nbsp;&mdash; це&nbsp;і&nbsp;не&nbsp;лише це&nbsp;ми&nbsp;зможемо зробити в&nbsp;даній мандрівці. Приєднуйтесь!
+								</p>
+							</div>
 
+							<form id="tour-1" class="g-form tours__form">
+								<label for="tour-name">Тур</label>
+								<select id="tour-name" required>
+								<option value="1">Еталонний каньйон у&nbsp;Буках</option>
+								<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+								<option value="3" selected>Каньйони півдня та&nbsp;гранітне Побужжя</option>
+								<option value="4" >Волинська мандрівка</option>
+								</select>
+								
+								<label for="tourist-name">Контактна особа</label>
+								<input type="text" placeholder="Ім'я" id="tourist-name" required>
+								
+								<label for="tourist-amt">Кількість осіб</label>
+								<input type="number" id="tourist-amt" required/>
+								
+								<label for="tour-mail">Електронна адреса</label>
+								<input type="email" placeholder="Електронна пошта" id="tour-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+								
+								<label for="tour-text">Додатково</label>
+								<textarea id="tour-text" placeholder="(запитання, побажання, уточнення)"></textarea>
+								
+								<button type="submit" class="g-btn">Замовити</button>
+							</form>
+
+							<div class="modal__footer">
+								<a href="#!" class="modal-close">Закрити</a>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<section class="tours__item">
@@ -354,9 +490,50 @@
 						<li>ночівля</li>
 					</ul>
 					
-					<a href="#modal1" class="g-btn tour-btn">Докладніше</a>
+					<a href="#modal1" class="g-btn tour-btn tour4-btn">Докладніше</a>
+					
+					<div class="g-modal tours__modal tour4__modal">
+						<div class="modal__content">
+							<div class="modal__text-block">
+								<h4 class="modal-title">Волинська мандрівка</h4>
+								<p class="text-normal">
+								Неймовірний синтез природи та&nbsp;архітектури: замки та&nbsp;річкові долини, костьоли та&nbsp;базальтові стовпи, річкові долини та&nbsp;палаци. А&nbsp;ще&nbsp;легендарний &laquo;тунель кохання&raquo;. Реєструйтесь!
+								</p>
+							</div>
 
-				</section>				
+							<form id="tour-1" class="g-form tours__form">
+								<label for="tour-name">Тур</label>
+								<select id="tour-name" required>
+								<option value="1">Еталонний каньйон у&nbsp;Буках</option>
+								<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+								<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+								<option value="4" selected>Волинська мандрівка</option>
+								</select>
+								
+								<label for="tourist-name">Контактна особа</label>
+								<input type="text" placeholder="Ім'я" id="tourist-name" required>
+								
+								<label for="tourist-amt">Кількість осіб</label>
+								<input type="number" id="tourist-amt" required/>
+								
+								<label for="tour-mail">Електронна адреса</label>
+								<input type="email" placeholder="Електронна пошта" id="tour-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+								
+								<label for="tour-text">Додатково</label>
+								<textarea id="tour-text" placeholder="(запитання, побажання, уточнення)"></textarea>
+								
+								<button type="submit" class="g-btn">Замовити</button>
+							</form>
+
+							<div class="modal__footer">
+								<a href="#!" class="modal-close">Закрити</a>
+							</div>
+						</div>
+					</div>
+				</section>		
+				
+
+
 			</section>
 		</div>
 
@@ -419,7 +596,6 @@
 				</div>
 
 			</section>
-
 		</div>
 
 		<div class="why-wrap">
@@ -452,7 +628,6 @@
 					<span class="why-decription">мандрівок із&nbsp;вами</span>
 				</div>
 			</section>
-
 		</div>
 
 		<div class="faq-wrap" id="faq">
@@ -483,7 +658,6 @@
 					</li>
 				</ul>
 			</section>
-
 		</div>
 
 		<div class="contacts-wrap" id="contatcs">
@@ -497,9 +671,9 @@
 				
 
 				<div class="contacts__map-wrap">
-				<div class="contacts__map" id="map"></div><!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.790837148382!2d30.496169552673585!3d50.389097557821344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c6f4c66d69%3A0x9d85de3887a80c86!2z0JPQvtC70L7RgdGW0ZfQstGB0YzQutC40Lkg0L_RgNC-0YHQv9C10LrRgiwgMTAwLzIsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1498352615028" class="contacts__map" allowfullscreen></iframe> --></div>
+				<div class="contacts__map" id="map"></div></div>
 
-				<form action="#modal3" method="post" id="contacts-form" class="g-form contacts__form">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post" id="contacts-form" class="g-form contacts__form">
 					<input type="text" placeholder="Ім&rsquo;я" id="contacts-name" required />
 					<input type="email" placeholder="Електронна адреса" id="contacts-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
 					<textarea id="contacts-text" placeholder="Повідомлення" required></textarea>

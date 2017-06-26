@@ -1,3 +1,10 @@
+// preloader
+$(window).on('load', function(){
+	$('.preloader').delay(1000).fadeOut('100');
+});
+
+
+
 // menu
 	$('.js-hamburger').click(function() {
 		if ($(this).hasClass('is-active')) {
@@ -73,6 +80,53 @@
 	});
 
 
+	// Cache selectors
+	var lastId,
+		topMenu = $(".js-menu"),
+		topMenuHeight = topMenu.outerHeight()+15,
+		// All list items
+		menuItems = topMenu.find("a"),
+		// Anchors corresponding to menu items
+		scrollItems = menuItems.map(function(){
+			var item = $($(this).attr("href"));
+			if (item.length) { return item; }
+		});
+
+	// Bind click handler to menu items
+	// so we can get a fancy scroll animation
+	menuItems.click(function(e){
+		var href = $(this).attr("href"),
+		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		$('html, body').stop().animate({ 
+		scrollTop: offsetTop
+		}, 300);
+		e.preventDefault();
+	});
+
+	// Bind to scroll
+	$(window).scroll(function(){
+		// Get container scroll position
+		var fromTop = $(this).scrollTop()+topMenuHeight;
+
+		// Get id of current scroll item
+		var cur = scrollItems.map(function(){
+			if ($(this).offset().top < fromTop)
+			return this;
+		});
+		// Get the id of the current element
+		cur = cur[cur.length-1];
+		var id = cur && cur.length ? cur[0].id : "";
+
+		if (lastId !== id) {
+			lastId = id;
+			// Set/remove active class
+			menuItems
+			.parent().removeClass("menu__item--is-active")
+			.end().filter("[href='#"+id+"']").parent().addClass("menu__item--is-active");
+		}
+	});
+
+
 
 // main slider
   $(".main-slider").owlCarousel({
@@ -104,6 +158,19 @@
 
 
 // subscribe
+	$('#subscribe-form').submit(function(event) {
+		event.preventDefault();
+
+		var subscribeMail = $('#subscribe-mail').val();
+		
+		$('.subscribe__modal').find('.modal-email').html(subscribeMail);
+
+		$('.subscribe__modal').fadeIn('200', function() {
+			$('.modal-close').click(function() {
+				$('.subscribe__modal').fadeOut('100');
+			});
+		});
+	});
 
 
 
@@ -133,6 +200,42 @@
 	$('.services-carousel .owl-nav .owl-prev').html('<svg viewBox="-15 0 50 100" width="33px" height="106px"><path fill-rule="evenodd" fill="#fbb040" d="M32.988,104.987 L31.248,106.003 L0.386,53.390 L0.137,53.244 L0.218,53.104 L0.011,52.751 L0.635,52.388 L31.136,-0.008 L32.863,1.008 L2.544,53.088 L32.988,104.987 Z"/></svg>')
 
 	$('.services-carousel .owl-nav .owl-next').html('<svg viewBox="0 0 50 100" width="33px" height="106px"><path fill-rule="evenodd"  fill="#fbb040" d="M32.988,53.003 L32.781,53.353 L32.863,53.493 L32.613,53.639 L1.751,106.003 L0.012,104.992 L30.455,53.338 L0.136,1.503 L1.863,0.492 L32.364,52.641 L32.988,53.003 Z"/></svg>')
+
+
+
+// tours
+	function openTourModal(modal, close) {
+		$(modal).fadeIn('200', function() {
+			$(close).click(function() {
+				$(modal).fadeOut('100');
+			});
+		}
+	)}
+
+	$('.tour1-btn').click(function() {
+		openTourModal($('.tour1__modal'), $('.modal-close'));
+	});
+
+	$('.tour2-btn').click(function() {
+		openTourModal($('.tour2__modal'), $('.modal-close'));
+	});
+
+	$('.tour3-btn').click(function() {
+		openTourModal($('.tour3__modal'), $('.modal-close'));
+	});
+
+	$('.tour4-btn').click(function() {
+		openTourModal($('.tour4__modal'), $('.modal-close'));
+	});
+
+	$('.tours__form').submit(function(event) {
+		event.preventDefault()
+		
+
+		$(this).after('<p class="txt-large" style="font-weight: bold; background-color: #efefef; padding: 10px 0;">Ваша заявка передана менеджеру. Найближчим часом з&nbsp;вами зв’яжуться для уточнення іноформації. Дякуємо!</p>')
+		
+		$(this).hide();
+	});
 
 
 
@@ -225,6 +328,7 @@
 				
 			}
 		})
+
 
 
 // map
@@ -339,3 +443,29 @@
 			icon: 'img/map-marker.png'
          });
 	}
+
+
+
+// footer-form
+	$('#contacts-form').submit(function(e){
+		e.preventDefault();
+
+		var name = $('#contacts-name').val();
+		var email = $('#contacts-mail').val();
+		var text = $('#contacts-text').val();
+		var url = $(this).attr('action');
+
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: {name: name, email: email, text: text},
+			success: function(data) {
+				console.log(data);
+			}
+		});
+	})
+
+
+// appearence
+
+

@@ -11,7 +11,6 @@
 @import '../libs/materialize/sass/components/grid'
 
 
-
 *
 	box-sizing: border-box
 
@@ -21,6 +20,52 @@ body
 	margin: 0 auto
 	color: #000
 
+@keyframes pulse-inner
+	0%
+		opacity: 0
+		transform: scale(0)
+	100%
+		opacity: 1
+		transform: scale(1)
+@keyframes pulse-outer
+	0%
+		opacity: 1
+	50%
+		opacity: .5
+	100%
+		opacity: 0
+		
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 200
+	background-color: $color-grey
+	.pulse
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		width: 80px
+		height: 80px
+		&::after, &::before
+			position: absolute
+			top: 0
+			content: ''
+			display: block
+			width: 50px
+			height: 50px
+			border: 3px solid rgba($accent-color, .2)
+			border-radius: 50%
+		&::after
+			animation: pulse-inner .8s linear infinite
+		&::before
+			animation: pulse-outer .8s ease-in infinite
 
 
 .header-site
@@ -203,6 +248,9 @@ body
 			width: 100%
 		button
 			text-align: right
+	.modal-email
+		font-style: italic
+		text-decoration: underline
 	@media (min-width: $screen1)
 		&__form
 			text-align: center
@@ -279,6 +327,7 @@ body
 			margin:
 				left: 0
 				right: 0
+
 
 
 .services
@@ -366,6 +415,7 @@ body
 		padding-bottom: 20px
 		margin-bottom: 20px
 		text-align: center
+		background-color: #fff
 		figure
 			margin: 0
 			position: relative
@@ -410,6 +460,20 @@ body
 		.tour-subtitle
 			margin-bottom: 8px
 			font-weight: bold
+	&__form
+		padding: 0 30px
+		margin-bottom: 30px
+		label, input, textarea, select
+			display: block
+			width: 100%
+		input, textarea, select
+			margin-bottom: 25px
+		input, select
+			height: 42px
+		label
+			font-weight: bold
+			text-align: left
+			margin-bottom: 10px
 	@media (min-width: $screen2)
 		display: flex
 		justify-content: space-between
@@ -471,11 +535,10 @@ body
 		figure
 			width: 80%
 			max-width: 800px
-			top: 0
+			top: 10%
 			right: 0
 			left: 0
-			bottom: 0
-			margin: auto
+			margin: 0 auto
 			position: absolute
 			display: flex
 			align-items: center
@@ -519,6 +582,7 @@ body
 				left: -70px
 			.next
 				right: -70px
+
 
 
 .why
@@ -580,11 +644,9 @@ body
 				text-decoration: underline
 			&:focus
 				opacity: .7
-	&__map-wrap
-		height: 70vh
-		// iframe
 	&__map
-		// background-color: red
+		&-wrap
+			height: 70vh
 		width: 100%
 		height: inherit
 		border: 0

@@ -1,9 +1,14 @@
 // preloader
-$(window).on('load', function(){
-	$('.preloader').delay(1000).fadeOut('100');
-});
+	$(window).on('load', function(){
+		$('.preloader').delay(1000).fadeOut('100');
+	});
 
 
+// appearence
+	wow = new WOW({
+		offset: 50,
+	})
+	wow.init();
 
 // menu
 	$('.js-hamburger').click(function() {
@@ -466,6 +471,7 @@ $(window).on('load', function(){
 	})
 
 
-// appearence
+
+
 
 

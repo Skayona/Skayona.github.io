@@ -1,3 +1,11 @@
+function openModal(modal) {
+	$(modal).fadeIn('200');
+	$('.modal-close').click(function() {
+		$(modal).fadeOut('100');
+	})
+};
+
+
 // preloader
 	$(window).on('load', function(){
 		$('.preloader').delay(1000).fadeOut('100');
@@ -65,10 +73,26 @@
 	});
 
 
+	// menu-item-selecting-onscroll
+	var lastId,
+		topMenu = $(".js-menu"),
+		topMenuHeight = topMenu.outerHeight()+15,
+		menuItems = topMenu.find("a"),
+		scrollItems = menuItems.map(function(){
+			var item = $($(this).attr("href"));
+			if (item.length) { return item; }
+		});
+	menuItems.click(function(e){
+		var href = $(this).attr("href"),
+		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		$('html, body').stop().animate({scrollTop: offsetTop}, 300);
+		e.preventDefault();
+	});
+
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 100) {
 			$('.header-site').css({
-				backgroundColor: 'rgba(0, 0, 0, 0.5)',
+				backgroundColor: 'rgba(0, 0, 0, 0.8)',
 				transition: '1s ease'
 			});
 			$('.header-site .logo').css({
@@ -95,53 +119,23 @@
 		} else {
 			$('.scrollto-top').fadeOut('100');
 		}
-	});
 
-
-	// Cache selectors
-	var lastId,
-		topMenu = $(".js-menu"),
-		topMenuHeight = topMenu.outerHeight()+15,
-		// All list items
-		menuItems = topMenu.find("a"),
-		// Anchors corresponding to menu items
-		scrollItems = menuItems.map(function(){
-			var item = $($(this).attr("href"));
-			if (item.length) { return item; }
-		});
-
-	// Bind click handler to menu items
-	// so we can get a fancy scroll animation
-	menuItems.click(function(e){
-		var href = $(this).attr("href"),
-		offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-		$('html, body').stop().animate({ 
-		scrollTop: offsetTop
-		}, 300);
-		e.preventDefault();
-	});
-
-	// Bind to scroll
-	$(window).scroll(function(){
-		// Get container scroll position
+		// menu-item-selecting-onscroll
 		var fromTop = $(this).scrollTop()+topMenuHeight;
-
-		// Get id of current scroll item
 		var cur = scrollItems.map(function(){
 			if ($(this).offset().top < fromTop)
 			return this;
 		});
-		// Get the id of the current element
 		cur = cur[cur.length-1];
 		var id = cur && cur.length ? cur[0].id : "";
 
 		if (lastId !== id) {
 			lastId = id;
-			// Set/remove active class
 			menuItems
 			.parent().removeClass("menu__item--is-active")
 			.end().filter("[href='#"+id+"']").parent().addClass("menu__item--is-active");
 		}
+
 	});
 
 
@@ -182,12 +176,7 @@
 		var subscribeMail = $('#subscribe-mail').val();
 		
 		$('.subscribe__modal').find('.modal-email').html(subscribeMail);
-
-		$('.subscribe__modal').fadeIn('200', function() {
-			$('.modal-close').click(function() {
-				$('.subscribe__modal').fadeOut('100');
-			});
-		});
+		openModal('.subscribe__modal')
 	});
 
 
@@ -222,20 +211,20 @@
 
 
 // tours
-	function openTourModal(modal) {
-		$(modal).fadeIn('200', function() {
-			$('.modal-close').click(function() {
-				$(modal).fadeOut('100');
-			});
-		}
-	)}
+	$('[id=tour1]').click(function() {
+		openModal('.tour1')
+	});
+	$('[id=tour2]').click(function() {
+		openModal('.tour2')
+	});
+	$('[id=tour3]').click(function() {
+		openModal('.tour3')
+	});
+	$('[id=tour4]').click(function() {
+		openModal('.tour4')
+	});
+				
 
-		$('.tour-btn').click(function() {
-			var tourName = $(this).attr('name');
-			var modalName = $('.tours__modal').attr('name', tourName);
-			openTourModal(modalName)
-			console.log (tourName + ' ' + modalName)
-		});
 
 
 	$('.tours__form').submit(function(event) {
@@ -257,7 +246,7 @@
 	})
 
 	$('.statistic-bar').each(function(i) {
-		$(this).width(percentage[i])
+		$(this).width(percentage[i]+'%')
 	})
 
 
@@ -339,38 +328,76 @@
 		})
 
 
+		$('.g-tab').click(function() {
+			$('.g-tab').removeClass('gallery-btn--is-active')
+			$('.gallery-album__item').fadeOut(0)
+			$('.show-more').fadeOut(0)
+			if ($(this).hasClass('tab-nature')){
+				$(this).addClass('gallery-btn--is-active')
+				$('.tag-nature').fadeIn(0)
+			}
+			else if ($(this).hasClass('tab-city')){
+				$(this).addClass('gallery-btn--is-active')
+				$('.tag-city').fadeIn(0)
+			}
+			else if ($(this).hasClass('tab-animal')){
+				$(this).addClass('gallery-btn--is-active')
+				$('.tag-animal').fadeIn(0)
+			}
+			else {
+				$(this).addClass('gallery-btn--is-active')
+				$('.gallery-album__item').fadeIn(0)
+				$('.show-more').fadeIn(0).addClass('.show-less').html('Сховати')
+			}
+		});
+
+
+
 // why
-	
+	var showNum = true
+	function increaseNum (numBox) {
+		if (!showNum) return false;
+		var wTop = $(window).scrollTop();
+		var elTop = $(numBox).offset().top;
 
+		var wHeight = $(window).height();
+		var dHeight = $(document).height();
 
-	var show = true;
+		var eHeight = $(numBox).outerHeight();
+
+		if (wTop + 500 >= elTop || wHeight + wTop == dHeight || eHeight + elTop < wHeight) {
+			$('.spincrement').spincrement({
+				from: 0,
+				decimalPlaces: 0,
+				thousandSeparator: "", 
+				duration: 1200 
+				});
+			showNum = false
+		}	
+	}
+
+	var showWidth = true
+	function fillWidht (fillBox) {
+		if (!showWidth) return false;
+		var wTop = $(window).scrollTop();
+		var elTop = $(fillBox).offset().top;
+
+		var wHeight = $(window).height();
+		var dHeight = $(document).height();
+
+		var eHeight = $(fillBox).outerHeight();
+
+		if (wTop + 500 >= elTop || wHeight + wTop == dHeight || eHeight + elTop < wHeight) {
+			$('.statistic-bar').css('animation', 'increseWidth 1.5s ease forwards');
+			showWidth = false
+		}	
+	}
+
 
 	$(window).on('scroll resize load', function (){
-		if (!show) return false;
-
-		var wTop = $(window).scrollTop();
-		var elTop = $('.year-numbers').offset().top;
-
-		// console.log (wTop + ' ' +elTop)
-
-		if (wTop + 500 >= elTop) {
-			// console.log('WOW')
-
-
-			var currentNumber = $('.year-numbers').text();
-
-			$({numberVa: 1}).animate({numberVa: currentNumber}, {
-				duration: 800,
-				easing: 'linear',
-				step: function() { 
-					$('.year-numbers').text(Math.ceil(this.numberVa)); 
-					console.log(this.numberValue)
-				}
-			});
-			show = false
-		}
+		increaseNum ('.why')
+		fillWidht ('.destination__item')
 	})
-
 
 
 

@@ -120,7 +120,8 @@
 html {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
-  font-size: 14px; }
+  font-size: 14px;
+  letter-spacing: .3px; }
   @media (min-width: 640px) {
     html {
       font-size: 15px; } }
@@ -3251,6 +3252,22 @@ body {
   100% {
     opacity: 0; } }
 
+@-webkit-keyframes increseWidth {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@keyframes increseWidth {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
 .preloader {
   position: fixed;
   top: 0;
@@ -3507,41 +3524,43 @@ body {
   background-color: #efefef; }
 
 .about .team-galerry {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px; }
   .about .team-galerry__member {
     position: relative;
     overflow: hidden;
-    margin: 0 0 5px;
-    width: 49%;
-    cursor: pointer; }
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: auto; }
     .about .team-galerry__member img {
-      width: 100%;
+      width: 150%;
       height: auto;
-      display: block; }
+      display: block;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      position: absolute;
+      top: -45px;
+      right: -45px; }
   .about .team-galerry__img-caption {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 200%;
+    height: 200%;
     opacity: 0;
-    -webkit-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    transition: opacity 1s ease;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    top: -112px;
+    right: -88px;
     padding: 5px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3567,45 +3586,73 @@ body {
     .about .team-galerry__img-caption cite {
       font-style: normal;
       font-size: .875rem;
-      margin-top: 8px; }
+      margin-top: 8px;
+      max-width: 200px; }
     .about .team-galerry__img-caption:hover, .about .team-galerry__img-caption:focus {
       opacity: 1; }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .about .team-galerry {
-    max-width: 620px;
+    width: 420px;
+    height: 930px;
     margin-left: auto;
     margin-right: auto; }
     .about .team-galerry__member {
-      width: calc(100%/3 - 5px);
-      margin-right: 5px;
-      max-width: 200px; } }
+      margin: 14px 40px;
+      position: absolute; }
+      .about .team-galerry__member:nth-child(even) {
+        right: -2px; }
+      .about .team-galerry__member:nth-child(odd) {
+        left: -2px; }
+      .about .team-galerry__member:nth-child(2) {
+        top: 145px; }
+      .about .team-galerry__member:nth-child(3) {
+        top: 290px; }
+      .about .team-galerry__member:nth-child(4) {
+        top: 435px; }
+      .about .team-galerry__member:nth-child(5) {
+        top: 580px; }
+      .about .team-galerry__member:nth-child(6) {
+        top: 725px; } }
+
+@media (min-width: 640px) {
+  .about .team-galerry {
+    width: 600px;
+    height: 650px; }
+    .about .team-galerry__member:nth-child(2) {
+      right: 178px; }
+    .about .team-galerry__member:nth-child(3) {
+      top: 0;
+      left: 287px; }
+    .about .team-galerry__member:nth-child(4) {
+      top: 290px;
+      left: 287px; }
+    .about .team-galerry__member:nth-child(5) {
+      top: 290px; }
+    .about .team-galerry__member:nth-child(6) {
+      top: 435px;
+      right: 178px; } }
 
 @media (min-width: 960px) {
-  .about {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .about__title {
-      width: 100%; }
-    .about__text {
-      width: 35%; }
-    .about .team-galerry {
-      width: 60%;
-      margin-left: 0;
-      margin-right: 0; } }
+  .about .team-galerry {
+    width: 700px;
+    height: 510px; }
+    .about .team-galerry__member:nth-child(2) {
+      left: 142px; }
+    .about .team-galerry__member:nth-child(6) {
+      top: 145px;
+      left: 432px; } }
+
+@media (min-width: 1200px) {
+  .about .team-galerry {
+    width: 1000px;
+    height: 360px; }
+    .about .team-galerry__member:nth-child(5) {
+      top: 0;
+      left: 576px; }
+    .about .team-galerry__member:nth-child(4) {
+      top: 145px;
+      left: 722px; } }
 
 .services__item {
   width: 90%;
@@ -3678,7 +3725,10 @@ body {
     font-style: italic; }
   .destination .statistic-bar {
     background-color: rgba(251, 176, 64, 0.9);
-    height: inherit; }
+    height: inherit;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left; }
     .destination .statistic-bar-wrap {
       width: 100%;
       height: 30px;
@@ -3701,132 +3751,140 @@ body {
       .destination__item {
         width: 45%; } }
 
-.tours__item {
-  cursor: pointer;
-  -webkit-box-shadow: 4px 4px 8px #efefef, -1px -1px 1px #efefef;
-  box-shadow: 4px 4px 8px #efefef, -1px -1px 1px #efefef;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  background-color: #fff; }
-  .tours__item figure {
-    margin: 0;
-    position: relative; }
-  .tours__item img {
-    width: 100%;
-    height: auto;
-    display: block; }
-  .tours__item .tour-name {
-    color: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .tours__item .tour-price {
-    font-size: .75rem;
-    position: absolute;
-    bottom: -15px;
-    right: 10px;
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: #fbb040;
-    color: #fff;
-    border-radius: 50%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .tours__item .tour-list {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto; }
-  .tours__item .tour-subtitle {
-    margin-bottom: 8px;
-    font-weight: bold; }
-
-.tours__form {
-  padding: 0 30px;
-  margin-bottom: 30px; }
-  .tours__form label, .tours__form input, .tours__form textarea, .tours__form select {
-    display: block;
-    width: 100%; }
-  .tours__form input, .tours__form textarea, .tours__form select {
-    margin-bottom: 25px; }
-  .tours__form input, .tours__form select {
-    height: 42px; }
-  .tours__form label {
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 10px; }
-
-@media (min-width: 640px) {
-  .tours {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .tours__title, .tours__txt {
-      width: 100%; }
-    .tours__item {
-      width: 49%;
+.tours {
+  position: relative; }
+  .tours__item {
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 8px rgba(51, 51, 51, 0.5), -1px -1px 1px #efefef;
+    box-shadow: 4px 4px 8px rgba(51, 51, 51, 0.5), -1px -1px 1px #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    -o-transition: transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease; }
+    .tours__item figure {
+      margin: 0;
+      position: relative; }
+    .tours__item img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .tours__item .tour-name {
+      color: #fff;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; }
-      .tours__item figure, .tours__item .tour-subtitle, .tours__item .tour-list {
-        width: 100%;
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start; }
-      .tours__item .tour-btn {
-        -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-        align-self: flex-end; } }
-
-@media (min-width: 1024px) {
-  .tours__item {
-    width: 24%; } }
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .tours__item .tour-price {
+      font-size: .75rem;
+      position: absolute;
+      bottom: -15px;
+      right: 10px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: #fbb040;
+      color: #fff;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .tours__item .tour-list {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 24px;
+      margin-left: auto;
+      margin-right: auto; }
+    .tours__item .tour-subtitle {
+      margin-bottom: 8px;
+      font-weight: bold; }
+  .tours__form {
+    padding: 0 30px;
+    margin-bottom: 30px; }
+    .tours__form label, .tours__form input, .tours__form textarea, .tours__form select {
+      display: block;
+      width: 100%; }
+    .tours__form input, .tours__form textarea, .tours__form select {
+      margin-bottom: 25px; }
+    .tours__form input, .tours__form select {
+      height: 42px; }
+    .tours__form label {
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 10px; }
+  @media (min-width: 640px) {
+    .tours {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .tours__title, .tours__txt {
+        width: 100%; }
+      .tours__item {
+        width: 49%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .tours__item figure, .tours__item .tour-subtitle, .tours__item .tour-list {
+          width: 100%;
+          -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+          align-self: flex-start; }
+        .tours__item .tour-btn {
+          -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+          align-self: flex-end; } }
+  @media (min-width: 1024px) {
+    .tours__item {
+      width: 24%; }
+      .tours__item:hover, .tours__item:focus {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); } }
 
 .gallery-wrap {
   background-color: #efefef; }
@@ -3901,17 +3959,42 @@ body {
   .gallery__lightbox .next {
     right: -30px; }
 
+.gallery__tabs {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .gallery-btn {
   display: inline-block;
   font-size: 1rem;
   padding: 8px 16px;
-  margin: 16px 8px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 0 8px 16px;
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.3);
+  box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.3);
+  background-color: rgba(51, 51, 51, 0.4);
   cursor: pointer;
-  border-radius: 2px; }
+  border-radius: 2px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
   .gallery-btn--is-active, .gallery-btn:hover, .gallery-btn:active {
-    color: #efefef;
-    background-color: rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.25);
+    box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.25);
+    background-color: #fbb040; }
 
 @media (min-width: 993px) {
   .gallery-album__item:nth-child(-n+8) {

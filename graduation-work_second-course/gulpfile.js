@@ -30,8 +30,9 @@ gulp.task('scripts', function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
-		'app/libs/diamonds/src/jquery.diamonds.js',
 		'app/libs/materialize/dist/js/materialize.min.js',
+		'app/libs/wow/dist/wow.min.js',
+		'app/libs/spincrement/jquery.spincrement.min.js'
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

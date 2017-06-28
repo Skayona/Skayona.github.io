@@ -4,24 +4,37 @@
 	});
 
 
-// appearence
+// appearence of blocks
 	wow = new WOW({
 		offset: 50,
 	})
 	wow.init();
 
+
 // menu
+	
 	$('.js-hamburger').click(function() {
 		if ($(this).hasClass('is-active')) {
 			$(this).removeClass('is-active')
-			$('.js-menu').fadeOut(500)
 			$('.menu-wrap').fadeOut(500)
 		}
 		else {
 			$(this).addClass('is-active')
-			$('.js-menu').fadeIn(500)
 			$('.menu-wrap').fadeIn(500).css({
-				width: '100%'})
+				width: '100%',
+				display:'flex'})
+		}
+	});
+
+
+	$(window).on('resize', function(){
+		if (window.matchMedia('(min-width: 960px)').matches) {
+			$('.js-hamburger').addClass('is-active')
+			$('.menu-wrap').fadeIn(0).css('width', 'auto');
+		}
+		else {
+			$('.menu-wrap').fadeOut(0).css('width', '100%');
+			$('.js-hamburger').removeClass('is-active')
 		}
 	});
 
@@ -140,7 +153,7 @@
 		autoplay: true,
 		autoplayTimeout: 8000,
 		autoplaySpeed: 2000,
-		dotsSpeed: 2000,
+		dotsSpeed: 1000,
 		touchDrag: false
 	})
 
@@ -153,7 +166,7 @@
 			autoplaySpeed: 2000,
 			touchDrag: false,
 			nav: true,
-			navSpeed: 2000,
+			navSpeed: 1000,
 			dots: false
 		})
 		$('.slider-nested .owl-nav .owl-prev').html('<svg width="10px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M3.860,7.016 L8.643,2.415 C9.123,1.957 9.123,1.216 8.643,0.757 L8.207,0.342 C7.726,-0.115 6.947,-0.115 6.466,0.342 L0.838,5.749 C0.828,5.759 0.818,5.760 0.809,5.769 L0.374,6.183 C0.132,6.411 0.013,6.715 0.015,7.016 C0.013,7.318 0.132,7.621 0.374,7.850 L0.809,8.264 C0.818,8.273 0.830,8.274 0.838,8.283 L6.466,13.646 C6.947,14.104 7.726,14.104 8.207,13.646 L8.643,13.232 C9.123,12.773 9.123,12.031 8.643,11.572 L3.860,7.016 Z"/></svg>')
@@ -209,34 +222,25 @@
 
 
 // tours
-	function openTourModal(modal, close) {
+	function openTourModal(modal) {
 		$(modal).fadeIn('200', function() {
-			$(close).click(function() {
+			$('.modal-close').click(function() {
 				$(modal).fadeOut('100');
 			});
 		}
 	)}
 
-	$('.tour1-btn').click(function() {
-		openTourModal($('.tour1__modal'), $('.modal-close'));
-	});
+		$('.tour-btn').click(function() {
+			var tourName = $(this).attr('name');
+			var modalName = $('.tours__modal').attr('name', tourName);
+			openTourModal(modalName)
+			console.log (tourName + ' ' + modalName)
+		});
 
-	$('.tour2-btn').click(function() {
-		openTourModal($('.tour2__modal'), $('.modal-close'));
-	});
-
-	$('.tour3-btn').click(function() {
-		openTourModal($('.tour3__modal'), $('.modal-close'));
-	});
-
-	$('.tour4-btn').click(function() {
-		openTourModal($('.tour4__modal'), $('.modal-close'));
-	});
 
 	$('.tours__form').submit(function(event) {
 		event.preventDefault()
 		
-
 		$(this).after('<p class="txt-large" style="font-weight: bold; background-color: #efefef; padding: 10px 0;">Ваша заявка передана менеджеру. Найближчим часом з&nbsp;вами зв’яжуться для уточнення іноформації. Дякуємо!</p>')
 		
 		$(this).hide();
@@ -333,6 +337,40 @@
 				
 			}
 		})
+
+
+// why
+	
+
+
+	var show = true;
+
+	$(window).on('scroll resize load', function (){
+		if (!show) return false;
+
+		var wTop = $(window).scrollTop();
+		var elTop = $('.year-numbers').offset().top;
+
+		// console.log (wTop + ' ' +elTop)
+
+		if (wTop + 500 >= elTop) {
+			// console.log('WOW')
+
+
+			var currentNumber = $('.year-numbers').text();
+
+			$({numberVa: 1}).animate({numberVa: currentNumber}, {
+				duration: 800,
+				easing: 'linear',
+				step: function() { 
+					$('.year-numbers').text(Math.ceil(this.numberVa)); 
+					console.log(this.numberValue)
+				}
+			});
+			show = false
+		}
+	})
+
 
 
 

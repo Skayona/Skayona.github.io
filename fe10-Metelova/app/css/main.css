@@ -64,7 +64,6 @@
   left: 0;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
   min-width: 320px; }
   .g-modal .modal-title {
     font-size: 2rem;
@@ -76,6 +75,8 @@
     top: 10%;
     margin: auto;
     width: 90%;
+    max-height: 70vh;
+    overflow-y: auto;
     background-color: #fafafa;
     -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
@@ -83,6 +84,9 @@
   .g-modal .modal__text-block {
     margin: 40px 30px; }
   .g-modal .modal__footer {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 4px 6px;
@@ -3317,16 +3321,12 @@ body {
     position: relative;
     z-index: 200; }
   .header-site .menu {
-    display: none;
     list-style-type: none;
     width: 100%;
     padding: 20px 0;
     margin: auto; }
     .header-site .menu-wrap {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       position: absolute;
       top: 0;
       width: auto;
@@ -3358,8 +3358,7 @@ body {
       .header-site .menu__item a {
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 1.333rem;
+        font-size: .9375rem;
         font-weight: 300;
         letter-spacing: .5px;
         color: #fff;
@@ -3998,6 +3997,9 @@ body {
     .contacts__tel a:focus, .contacts__mail a:focus {
       opacity: .7; }
   .contacts__map {
+    background-image: url("../img/bg-3.jpg");
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: inherit;
     border: 0;

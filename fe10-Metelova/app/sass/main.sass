@@ -94,14 +94,13 @@ body
 		z-index: 200
 	.menu
 		&-wrap
-			display: flex
+			display: none
 			position: absolute
 			top: 0
 			width: auto
 			height: 100vh
 			background-color: $color-grey
 			overflow: auto
-		display: none
 		list-style-type: none
 		width: 100%
 		padding: 20px 0
@@ -126,8 +125,7 @@ body
 			a
 				text-decoration: none
 				text-transform: uppercase
-				font-family: 'Open Sans Condensed', sans-serif
-				font-size: 1.333rem
+				font-size: .9375rem
 				font-weight: 300
 				letter-spacing: .5px
 				color: $color-white
@@ -645,6 +643,10 @@ body
 			&:focus
 				opacity: .7
 	&__map
+		background:
+			image: url('../img/bg-3.jpg')
+			position: center
+			size: cover
 		&-wrap
 			height: 70vh
 		width: 100%

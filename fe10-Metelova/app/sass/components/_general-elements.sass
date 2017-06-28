@@ -61,7 +61,6 @@
 	left: 0
 	top: 0
 	bottom: 0
-	overflow-y: auto
 	min-width: 320px
 	.modal
 		&-title
@@ -74,12 +73,16 @@
 			top: 10%
 			margin: auto
 			width: 90%
+			max-height: 70vh
+			overflow-y: auto
 			background-color: #fafafa
 			box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3)
 			border: 1px solid rgba(0,0,0,.2)
 		&__text-block
 			margin: 40px 30px
 		&__footer
+			position: sticky
+			bottom: 0
 			width: 100%
 			border-top: 1px solid rgba(0,0,0,0.1)
 			padding: 4px 6px

@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Sebastian",
+      "email": "sebastian@codingthesmartway.com",
+      "text": "some text"
+    },
+    {
+      "name": "Katya",
+      "email": "skaya@meta.ua",
+      "text": "kjb",
+      "id": 2
+    },
+    {
+      "name": "dfsdgsdg",
+      "email": "dsdgs@sdngsr.ya",
+      "text": "dfslmg;ofjbapibg",
+      "id": 3
+    }
+  ]
+}

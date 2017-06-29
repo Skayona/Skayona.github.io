@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Chrome Firefox Opera -->
+	<meta name="theme-color" content="#fbb040">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#fbb040">
+	<!-- Apple -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fbb040">
+	<title>Надзвичайна Україна</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700%7COpen+Sans:400,600%7CRoboto:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="shortcut icon" href="img/favicon.png" />
+</head>
+
+<body id="top-site">
+		<div class="preloader">
+			<div class="pulse"></div>
+		</div>
+
+
+
+	<header class="header-site">
+
+		<nav class="header-site__nav">
+			<a href="#top" class="logo js-top"><img src="img/logo.png" alt="Надзвичайна Україна" class="logo__img" title="Надзвичайна Україна" /></a>
+			
+			<div class="menu-wrap">
+				<ul class="menu js-menu">
+					<li class="menu__item menu__item--is-active"><a href="#top-site" class="js-top">Головна</a></li>
+					<li class="menu__item"><a href="#about" class="js-scrollto">Про нас</a></li>
+					<li class="menu__item"><a href="#services" class="js-scrollto">Послуги</a></li>
+					<li class="menu__item"><a href="#tours" class="js-scrollto">Тури</a></li>
+					<li class="menu__item"><a href="#gallery" class="js-scrollto">Фотогалерея</a></li>
+					<li class="menu__item"><a href="#faq">Питання</a></li>
+					<li class="menu__item"><a href="#contatcs" class="js-scrollto">Контакти</a></li>
+				</ul>
+			</div>
+
+			<div class="hamburger js-hamburger">
+			<div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			</div>
+		</div>
+		</nav>
+	</header>
+
+
+	<main>
+		
+		<a href="#top-site" class="js-top scrollto-top"></a>
+
+		<div class="slider-wrap">
+			<div class="main-slider	owl-carousel owl-theme">
+				<div class="main-slider__item" style="background-image: url(img/slider/slider1.jpg)"></div>
+				<div class="main-slider__item" style="background-image: url(img/slider/slider2.jpg)"></div>
+				<div class="main-slider__item" style="background-image: url(img/slider/slider3.jpg)"></div>
+				<div class="main-slider__item" style="background-image: url(img/slider/slider4.jpg)"></div>
+				<div class="main-slider__item" style="background-image: url(img/slider/slider5.jpg)"></div>
+				<div class="main-slider__item" style="background-image: url(img/slider/slider6.JPG)"></div>
+			</div>
+			
+			<div class="slider-nested-wrap">
+				<div class="slider-nested owl-carousel">
+					<div class="slider-nested__item">
+						<p class="slider-text">Каньйони півдня та&nbsp;гранітне Побужжя. Дослідницький тур. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
+					</div>
+					<div class="slider-nested__item">
+						<p class="slider-text">Волинська мандрівка. Базальтові стовпи, тунель кохання, замки та&nbsp;храми. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
+					</div>
+					<div class="slider-nested__item">
+						<p class="slider-text">Еталонний каньйон у&nbsp;Буках. <a href="#tours" class="js-scrollto slider-link">Детальніше...</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-wrap__cover"></div>
+		</div>
+
+
+		<div class="subscribe-wrap">
+			<section class="subscribe ">
+				<h2 class="title-lvl2">Розсилка</h2>
+
+				<p class="txt-normal">Будьте в&nbsp;курсі останніх новин нашого сайту та дізнавайтеся першими про вигідні пропозиції та нові напрямки!</p>
+
+				<form action="#modal1" method="post" id="subscribe-form" class="g-form subscribe__form  wow fadeInDown">
+					<input type="email" placeholder="Електронна пошта" id="subscribe-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+					<button type="submit" class="g-btn">Підписатися</button>
+				</form>
+				
+				<div class="g-modal subscribe__modal">
+					<div class="overlay"></div>
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Розсилки</h4>
+							<p class="text-normal">
+							Електронну адресу <span class="modal-email"></span> внесено до списку розсилок.
+							</p>
+						</div>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+		
+
+		<div class="about-wrap" id="about">
+			<section class="about">
+					<h2 class="title-lvl2 about__title">Про нас</h2>
+					<p class="txt-normal about__text wow fadeIn"><strong>&laquo;Надзвичайна Україна&raquo;</strong>&nbsp;&mdash; це&nbsp;краєзнавчий портал і&nbsp;туристична фірма. Ми&nbsp;постійно мандрумо Україною та&nbsp;ділимось інформацією про неї, а&nbsp;також заапрошуємо всіх бажаючих приєднуватись до&nbsp;нас!</p>
+					
+
+					<div class="team-galerry wow fadeInDown">
+						<figure class="team-galerry__member">
+							<img src="img/team/member-1.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+								<p class="txt-small txt-bold"><strong>Віталій</strong></p>
+								<i class="member-position">Директор</i>
+								<cite>&laquo;Мандри&nbsp;&mdash; це&nbsp;неймовірні відчуття!&raquo;</cite>
+							</figcaption>
+						</figure>
+						<figure class="team-galerry__member">
+							<img src="img/team/member-2.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+								<p class="txt-small txt-bold"><strong>Олександр</strong></p>
+								<i class="member-position">Редактор</i>
+								<cite>&laquo;Кожен похід для мене є&nbsp;джерелом натхнення.&raquo;</cite>
+							</figcaption>
+						</figure>
+						<figure class="team-galerry__member">
+							<img src="img/team/member-3.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+								<p class="txt-small txt-bold"><strong>Ольга</strong></p>
+								<i class="member-position">Консультант</i>
+								<cite>&laquo;Завдяки мандрам я&nbsp;відчуваю себе по-справжньому живою!&raquo;</cite>
+							</figcaption>
+						</figure>
+						<figure class="team-galerry__member">
+							<img src="img/team/member-4.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+								<p class="txt-small txt-bold"><strong>Марина</strong></p>
+								<i class="member-position">Консультант</i>
+								<cite>&laquo;Подорож&nbsp;&mdash; це&nbsp;найкращий відпочинок!&raquo;</cite>
+							</figcaption>
+						</figure>
+						<figure class="team-galerry__member">
+							<img src="img/team/member-5.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+							<p class="txt-small txt-bold"><strong>Олег</strong></p>
+								<i class="member-position">Екскурсовод</i>
+								<cite>&laquo;Мандри&nbsp;&mdash; це&nbsp;стиль життя!&raquo;</cite>
+							</figcaption>
+						</figure>
+						<figure class="team-galerry__member">
+							<img src="img/team/member-6.jpg" alt="Працівник" />
+							<figcaption class="team-galerry__img-caption">
+							<p class="txt-small txt-bold"><strong>Павло</strong></p>
+								<i class="member-position">Екскурсовод</i>
+								<cite>&laquo;Після кожної подорожі ми&nbsp;повертаємося іншими людьми.&raquo;</cite>
+							</figcaption>
+						</figure>
+					</div>
+
+			</section>
+		</div>
+
+
+		<div class="services-wrap" id="services">
+
+			<section class="services">
+				<h2 class="title-lvl2">Наші послуги</h2>
+
+				<p class="txt-normal">Ми&nbsp;пропонуємо безліч видів туристичних послуг. Обирайте відпочинок на&nbsp;свій смак!</p>
+
+				<div class="services-carousel owl-carousel wow fadeInDown">
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-1.jpg" alt="Тури по Україні" />
+						</figure>
+
+						<h3 class="title-lvl3">Тури по Україні</h3>
+
+						<p class="member-position">Подорожі нашою незвіданою країною</p>
+					</section>
+					
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-2.jpg" alt="Відпочинок в Україні" />
+						</figure>
+
+						<h3 class="title-lvl3">Відпочинок в&nbsp;Україні</h3>
+
+						<p class="member-position">Найпопулярніші місця для відпочинку в&nbsp;Україні</p>
+					</section>
+					
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-3.jpg" alt="Корпоративні тури" />
+						</figure>
+
+						<h3 class="title-lvl3">Корпоративні тури</h3>
+
+						<p class="member-position">Корпоративний активний відпочинок&nbsp;&mdash; згуртування трудового колективу</p>
+					</section>
+
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-4.jpg" alt="Літній відпочинок" />
+						</figure>
+
+						<h3 class="title-lvl3">Літній відпочинок</h3>
+
+						<p class="member-position">Літнє сонце і&nbsp;довгоочікувана відпустка у&nbsp;найдивовижніших місцях</p>
+					</section>
+
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-5.jpg" alt="Зимовий відпочинок" />
+						</figure>
+
+						<h3 class="title-lvl3">Зимовий відпочинок</h3>
+
+						<p class="member-position">Казкові дивовижні  пригоди напередодні зимових свят</p>
+					</section>
+
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-6.jpg" alt="Відпочинок за кордоном" />
+						</figure>
+
+						<h3 class="title-lvl3">Відпочинок за&nbsp;кордоном</h3>
+
+						<p class="member-position">Спокійний і&nbsp;сімейний відпочинок&nbsp;&mdash; курорти, санаторії, пансіонати</p>
+					</section>
+
+					<section class="services__item">
+						<figure>
+							<img src="img/services/service-7.jpg" alt="Інші послуги" />
+						</figure>
+
+						<h3 class="title-lvl3">Інші послуги</h3>
+
+						<p class="member-position">А також багато чого іншого! Приєдетнуйтесь до нас!</p>
+					</section>
+				</div>
+
+			</section>
+		</div>
+
+
+		<div class="destination-wrap" id="destination">
+			<section class="destination">
+				<h2 class="title-lvl2">Найпопулярніші напрямки</h2>
+
+				<p class="txt-normal">Найпопулярніші міста, куди найбільше та&nbsp;найчастіше їздять відпочивати туристи України</p>
+			
+				<div class="destination__item">
+					<div class="destination-name">Київ <span><span class="percentage spincrement">41</span>%</span></div>
+					<div class="statistic-bar-wrap">
+						<div class="statistic-bar"></div>
+					</div>
+				</div>
+
+				<div class="destination__item">
+					<div class="destination-name">Львів <span><span class="percentage spincrement">27</span>%</span></div>
+					<div class="statistic-bar-wrap">
+						<div class="statistic-bar"></div>
+					</div>
+				</div>
+
+				<div class="destination__item">
+					<div class="destination-name">Одеса <span><span class="percentage spincrement">18</span>%</span></div>
+					<div class="statistic-bar-wrap">
+						<div class="statistic-bar"></div>
+					</div>
+				</div>
+
+				<div class="destination__item">
+					<div class="destination-name">Харків <span><span class="percentage spincrement">14</span>%</span></div>
+					<div class="statistic-bar-wrap">
+						<div class="statistic-bar"></div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+
+		<div class="tours-wrap" id="tours">
+			<section class="tours">
+				<h2 class="title-lvl2 tours__title">Найкращі пропозиції</h2>
+
+				<p class="txt-normal tours__txt">Найближчі тури, які ми&nbsp;підготували спеціально для вас</p>
+
+				<section class="tours__item wow fadeInDown">
+					<figure>
+						<img src="img/tours/tour-1.jpg" alt="Каньйон у Буках" />
+						<h4 class="title-lvl4 tour-name">Еталонний каньйон у&nbsp;Буках</h4>
+						<i class="tour-price">530&nbsp;грн.</i>
+					</figure>
+					
+					<p class="txt-small tour-subtitle">До вартості включено:</p>
+					<ul class="tour-list">
+						<li>транспорт</li>
+						<li>екскурсійні послуги</li>
+						<li>обід</li>
+					</ul>
+					
+					<a href="#modal1" class="g-btn tour-btn" id="tour1">Докладніше</a>
+				</section>
+
+				<section class="tours__item wow fadeInDown">
+					<figure>
+						<img src="img/tours/tour-2.jpg" alt="Карпатський національний природний парк" />
+						<h4 class="title-lvl4 tour-name">Від Кам&rsquo;янця до&nbsp;Говерли</h4>
+						<i class="tour-price">3800&nbsp;грн.</i>
+					</figure>
+					
+					<p class="txt-small tour-subtitle">До вартості включено:</p>
+					<ul class="tour-list">
+						<li>транспорт</li>
+						<li>екскурсійні послуги</li>
+						<li>харчування</li>
+						<li>ночівля</li>
+						<li>вхідні квитки</li>
+					</ul>
+					
+					<a href="#modal1" class="g-btn tour-btn" id="tour2">Докладніше</a>
+				</section>
+
+				<section class="tours__item wow fadeInDown">
+					<figure>
+						<img src="img/tours/tour-3.jpg" alt="Каньйон у Буках" />
+						<h4 class="title-lvl4 tour-name">Каньйони півдня та&nbsp;гранітне Побужжя</h4>
+						<i class="tour-price">1850&nbsp;грн.</i>
+					</figure>
+					
+					<p class="txt-small tour-subtitle">До вартості включено:</p>
+					<ul class="tour-list">
+						<li>транспорт</li>
+						<li>екскурсійні послуги</li>
+						<li>харчування</li>
+						<li>ночівля</li>
+						<li>вхідні квитки</li>
+					</ul>
+					
+					<a href="#modal1" class="g-btn tour-btn" id="tour3">Докладніше</a>
+				</section>
+
+				<section class="tours__item wow fadeInDown">
+					<figure>
+						<img src="img/tours/tour-4.jpg" alt="Каньйон у Буках" />
+						<h4 class="title-lvl4 tour-name">Волинська мандрівка</h4>
+						<i class="tour-price">1650&nbsp;грн.</i>
+					</figure>
+					
+					<p class="txt-small tour-subtitle">До вартості включено:</p>
+					<ul class="tour-list">
+						<li>транспорт</li>
+						<li>екскурсійні послуги</li>
+						<li>харчування</li>
+						<li>ночівля</li>
+					</ul>
+					
+					<a href="#modal1" class="g-btn tour-btn" id="tour4">Докладніше</a>
+				</section>	
+				<div class="g-modal tours__modal tour1">
+					<div class="overlay"></div>
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Еталонний каньйон у&nbsp;Буках</h4>
+							<p class="text-normal">
+							В&nbsp;Буках єдиний каньйон в&nbsp;Україні, який повторює наші стереотипи каньйонів&nbsp;&mdash; високі прямовисні скелі з&nbsp;двох боків бурхливого водного потоку. В&nbsp;нашому випадку цим потоком буде Гірський Тікич. А&nbsp;ще&nbsp;ми&nbsp;побачимо водяні млини та&nbsp;прекрасний зоопарк у&nbsp;Вишківському.
+							</p>
+						</div>
+
+						<form id="tour-1" class="g-form tours__form">
+							<label for="tour-name">Тур</label>
+							<select id="tour-name" required>
+							<option value="" selected>Еталонний каньйон у&nbsp;Буках</option>
+							<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+							<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+							<option value="4" >Волинська мандрівка</option>
+							</select>
+							
+							<label for="tourist-name">Контактна особа</label>
+							<input type="text" placeholder="Ім'я" id="tourist-name" required>
+							
+							<label for="tourist-amt">Кількість осіб</label>
+							<input type="number" id="tourist-amt" required/>
+							
+							<label for="tour-mail">Електронна адреса</label>
+							<input type="email" placeholder="Електронна пошта" id="tour-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+							
+							<label for="tour-text">Додатково</label>
+							<textarea id="tour-text" placeholder="(запитання, побажання, уточнення)"></textarea>
+							
+							<button type="submit" class="g-btn">Замовити</button>
+						</form>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>
+				<div class="g-modal tours__modal tour2">
+					<div class="overlay"></div>
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Від Кам&rsquo;янця до&nbsp;Говерли</h4>
+							<p class="text-normal">
+							Під час цієї мандрівки ви&nbsp;побачите захоплюючий світ Західної України: Поділля, Буковину, Галичину, Волинь, Гуцульщину&nbsp;і, головне, Карпати&nbsp;&mdash; найбільш звабливий шматок країни. Замки і&nbsp;фортеці, палаци та&nbsp;садиби, костьоли та&nbsp;православні церкви, ну&nbsp;і, звичайно, гори. Найвища гора країни&nbsp;&mdash; Говерла, чисті , як&nbsp;сльоза, потоки, стрімкі провалля, колиби, вино та&nbsp;сир... Неймовірний Пінзель у&nbsp;Бучачі, святині у&nbsp;Почаєві та&nbsp;Підкамені; найефектніші замки України в&nbsp;Кам&rsquo;янці, Хотині, собор із&nbsp;мінаретом, скелі та&nbsp;річкові долини... І&nbsp;все це&nbsp;в&nbsp;одному турі. Приєднуйтесь!
+							</p>
+						</div>
+
+						<form id="tour-2" class="g-form tours__form">
+							<label for="tour-name2">Тур</label>
+							<select id="tour-name2" required>
+							<option value="">Еталонний каньйон у&nbsp;Буках</option>
+							<option value="2" selected>Від Кам&rsquo;янця до&nbsp;Говерли</option>
+							<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+							<option value="4">Волинська мандрівка</option>
+							</select>
+							
+							<label for="tourist-name2">Контактна особа</label>
+							<input type="text" placeholder="Ім'я" id="tourist-name2" required>
+							
+							<label for="tourist-amt2">Кількість осіб</label>
+							<input type="number" id="tourist-amt2" required/>
+							
+							<label for="tour-mail2">Електронна адреса</label>
+							<input type="email" placeholder="Електронна пошта" id="tour-mail2" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+							
+							<label for="tour-text2">Додатково</label>
+							<textarea id="tour-text2" placeholder="(запитання, побажання, уточнення)"></textarea>
+							
+							<button type="submit" class="g-btn">Замовити</button>
+						</form>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>
+				<div class="g-modal tours__modal tour3">
+					<div class="overlay"></div>
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Каньйони півдня та&nbsp;гранітне Побужжя</h4>
+							<p class="text-normal">
+							Дослідити каньйони таємничої річки Мертвовод, переправитись через Південний Буг на&nbsp;паромі, бути одними із&nbsp;перших туристів, які побачать залишки невідомої фортеці, відчути силу та&nbsp;енергію каміння віком у&nbsp;кілька мільярдів років&nbsp;&mdash; це&nbsp;і&nbsp;не&nbsp;лише це&nbsp;ми&nbsp;зможемо зробити в&nbsp;даній мандрівці. Приєднуйтесь!
+							</p>
+						</div>
+
+						<form id="tour-3" class="g-form tours__form">
+							<label for="tour-name3">Тур</label>
+							<select id="tour-name3" required>
+							<option value="">Еталонний каньйон у&nbsp;Буках</option>
+							<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+							<option value="3" selected>Каньйони півдня та&nbsp;гранітне Побужжя</option>
+							<option value="4" >Волинська мандрівка</option>
+							</select>
+							
+							<label for="tourist-name3">Контактна особа</label>
+							<input type="text" placeholder="Ім'я" id="tourist-name3" required>
+							
+							<label for="tourist-amt3">Кількість осіб</label>
+							<input type="number" id="tourist-amt3" required/>
+							
+							<label for="tour-mail3">Електронна адреса</label>
+							<input type="email" placeholder="Електронна пошта" id="tour-mail3" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+							
+							<label for="tour-text3">Додатково</label>
+							<textarea id="tour-text3" placeholder="(запитання, побажання, уточнення)"></textarea>
+							
+							<button type="submit" class="g-btn">Замовити</button>
+						</form>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>
+				<div class="g-modal tours__modal tour4">
+					<div class="overlay"></div>
+					<div class="modal__content">
+						<div class="modal__text-block">
+							<h4 class="modal-title">Волинська мандрівка</h4>
+							<p class="text-normal">
+							Неймовірний синтез природи та&nbsp;архітектури: замки та&nbsp;річкові долини, костьоли та&nbsp;базальтові стовпи, річкові долини та&nbsp;палаци. А&nbsp;ще&nbsp;легендарний &laquo;тунель кохання&raquo;. Реєструйтесь!
+							</p>
+						</div>
+
+						<form id="tour-4" class="g-form tours__form">
+							<label for="tour-name4">Тур</label>
+							<select id="tour-name4" required>
+							<option value="">Еталонний каньйон у&nbsp;Буках</option>
+							<option value="2">Від Кам&rsquo;янця до&nbsp;Говерли</option>
+							<option value="3">Каньйони півдня та&nbsp;гранітне Побужжя</option>
+							<option value="4" selected>Волинська мандрівка</option>
+							</select>
+							
+							<label for="tourist-name4">Контактна особа</label>
+							<input type="text" placeholder="Ім'я" id="tourist-name4" required>
+							
+							<label for="tourist-amt4">Кількість осіб</label>
+							<input type="number" id="tourist-amt4" required/>
+							
+							<label for="tour-mail4">Електронна адреса</label>
+							<input type="email" placeholder="Електронна пошта" id="tour-mail4" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+							
+							<label for="tour-text4">Додатково</label>
+							<textarea id="tour-text4" placeholder="(запитання, побажання, уточнення)"></textarea>
+							
+							<button type="submit" class="g-btn">Замовити</button>
+						</form>
+
+						<div class="modal__footer">
+							<a href="#!" class="modal-close">Закрити</a>
+						</div>
+					</div>
+				</div>	
+			
+
+			</section>
+		</div>
+
+
+		<div class="gallery-wrap" id="gallery">
+			<section class="gallery">
+				<h2 class="title-lvl2">Фотогалерея</h2>
+
+				<p class="txt-normal">Найяскравіші фотографії з ваших подорожей</p>
+				
+				<div class="gallery__tabs">
+					<span class="tab-all g-tab gallery-btn gallery-btn--is-active" id="all">Усі зображення</span>
+					<span class="tab-nature g-tab gallery-btn" id="nature">Природа</span>
+					<span class="tab-city g-tab gallery-btn" id="city">Міста</span>
+					<span class="tab-animal g-tab gallery-btn" id="animal">Тварини</span>
+				</div>
+
+				<div class="row gallery-album wow fadeIn">
+					<a href="img/gallery/gallery-1.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-1.jpg" alt="gallery-image-1" /></a>
+					<a href="img/gallery/gallery-2.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-2.jpg" alt="gallery-image-2" /></a>
+					<a href="img/gallery/gallery-3.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-3.jpg" alt="gallery-image-3" /></a>
+					<a href="img/gallery/gallery-4.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-4.jpg" alt="gallery-image-4" /></a>
+					<a href="img/gallery/gallery-5.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-5.jpg" alt="gallery-image-5" /></a>
+					<a href="img/gallery/gallery-6.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-6.jpg" alt="gallery-image-6" /></a>
+					<a href="img/gallery/gallery-7.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-7.jpg" alt="gallery-image-7" /></a>
+					<a href="img/gallery/gallery-8.jpg" class="col s12 m6 l3 gallery-album__item tag-animal "><img src="img/gallery/thumb/gallery-8.jpg" alt="gallery-image-8" /></a>
+					<a href="img/gallery/gallery-9.jpg" class="col s12 m6 l3 gallery-album__item tag-animal "><img src="img/gallery/thumb/gallery-9.jpg" alt="gallery-image-9" /></a>
+					<a href="img/gallery/gallery-10.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-10.jpg" alt="gallery-image-10" /></a>
+					<a href="img/gallery/gallery-11.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-11.jpg" alt="gallery-image-11" /></a>
+					<a href="img/gallery/gallery-12.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-12.jpg" alt="gallery-image-12" /></a>
+					<a href="img/gallery/gallery-13.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-13.jpg" alt="gallery-image-13" /></a>
+					<a href="img/gallery/gallery-14.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-14.jpg" alt="gallery-image-14" /></a>
+					<a href="img/gallery/gallery-15.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-15.jpg" alt="gallery-image-15" /></a>
+					<a href="img/gallery/gallery-16.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-16.jpg" alt="gallery-image-16" /></a>
+					<a href="img/gallery/gallery-17.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-17.jpg" alt="gallery-image-17" /></a>
+					<a href="img/gallery/gallery-18.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-18.jpg" alt="gallery-image-18" /></a>
+					<a href="img/gallery/gallery-19.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-19.jpg" alt="gallery-image-19" /></a>
+					<a href="img/gallery/gallery-20.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-20.jpg" alt="gallery-image-20" /></a>
+					<a href="img/gallery/gallery-21.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-21.jpg" alt="gallery-image-21" /></a>
+					<a href="img/gallery/gallery-22.jpg" class="col s12 m6 l3 gallery-album__item tag-city "><img src="img/gallery/thumb/gallery-22.jpg" alt="gallery-image-22" /></a>
+					<a href="img/gallery/gallery-23.jpg" class="col s12 m6 l3 gallery-album__item tag-animal "><img src="img/gallery/thumb/gallery-23.jpg" alt="gallery-image-23" /></a>
+					<a href="img/gallery/gallery-24.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-24.jpg" alt="gallery-image-24" /></a>
+					<a href="img/gallery/gallery-25.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-25.jpg" alt="gallery-image-25" /></a>
+					<a href="img/gallery/gallery-26.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-26.jpg" alt="gallery-image-26" /></a>
+					<a href="img/gallery/gallery-27.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-27.jpg" alt="gallery-image-27" /></a>
+					<a href="img/gallery/gallery-28.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-28.jpg" alt="gallery-image-28" /></a>
+					<a href="img/gallery/gallery-29.jpg" class="col s12 m6 l3 gallery-album__item tag-nature "><img src="img/gallery/thumb/gallery-29.jpg" alt="gallery-image-29" /></a>
+					<a href="img/gallery/gallery-30.jpg" class="col s12 m6 l3 gallery-album__item tag-animal "><img src="img/gallery/thumb/gallery-30.jpg" alt="gallery-image-30" /></a>
+				</div>
+				
+
+				<span class="show-more gallery-btn">Більше</span>
+
+				<div class="gallery__lightbox">
+					<div class="overlay"></div>
+					<figure>
+						<div class="prev"></div>
+						<div class="next"></div>
+						<img src="#" alt="Big Photo">
+					</figure>
+				</div>
+
+			</section>
+		</div>
+
+
+		<div class="why-wrap">
+			
+			<section class="why">
+				<h2 class="title-lvl2 why__title">Чому саме ми</h2>
+
+				<div class="why__item">
+					<span class="why-number spincrement">
+						10
+					</span>
+					<div class="why-decription">років на&nbsp;ринку</div>
+				</div>
+				<div class="why__item">
+					<span class="why-number spincrement">
+						95
+					</span><span class="why-number">%</span>
+					<div class="why-decription">позитивних відгуків</div>
+				</div>
+				<div class="why__item">
+					<span class="why-number spincrement">
+						40
+					</span>
+					<div class="why-decription">неймовірних напрямків</div>
+				</div>
+				<div class="why__item">
+					<span class="why-number spincrement">
+						1405
+					</span>
+					<div class="why-decription">мандрівок із&nbsp;вами</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div class="faq-wrap" id="faq">
+			
+			<section class="faq">
+				<h2 class="title-lvl2">Поширені питання</h2>
+
+				<ul class="collapsible popout" data-collapsible="accordion">
+					<li class="wow fadeIn">
+						<div class="collapsible-header">Чи&nbsp;можу я&nbsp;здійснити оплату за&nbsp;допомогою банківського переказу?</div>
+						<div class="collapsible-body"><span>Ні, в&nbsp;наразі ми&nbsp;приймаємо оплату тільки за&nbsp;використання наступних карток: American Express, Mastercard, Visa Electron, Visa Credit Card та&nbsp;дебетні картки Великої Британії.</span></div>
+					</li>
+					<li class="wow fadeIn">
+						<div class="collapsible-header">Чи&nbsp;включена страховка у&nbsp;вартість подорожі?</div>
+						<div class="collapsible-body"><span>Так, страховка включена в&nbsp;кожну із&nbsp;подорожей і&nbsp;складає&nbsp;10% її&nbsp;вартості.</span></div>
+					</li>
+					<li class="wow fadeIn">
+						<div class="collapsible-header">Чи&nbsp;можу я&nbsp;подорожувати з&nbsp;дітьми?</div>
+						<div class="collapsible-body"><span>Подорожувати можна із&nbsp;дітьми віком від 3-х років. Додатково сплачується вартість подорожі для дитини як&nbsp;для дорослої особи.</span></div>
+					</li>
+					<li class="wow fadeIn">
+						<div class="collapsible-header">Чи&nbsp;можу я&nbsp;змінити дату подорожі?</div>
+						<div class="collapsible-body"><span>Дату подорожі можна змінити за&nbsp;3&nbsp;дні до&nbsp;її&nbsp;початку.</span></div>
+					</li>
+					<li class="wow fadeIn">
+						<div class="collapsible-header">Я&nbsp;передумав і&nbsp;хочу повернути кошти. Що&nbsp;робити?</div>
+						<div class="collapsible-body"><span>Не&nbsp;менше ніж за&nbsp;3&nbsp;дні до&nbsp;початку подорожі, необхідно звернутися до&nbsp;нашого офісу з&nbsp;письмовою заявою про відмову. Повертається&nbsp;90% вартості подорожі.</span></div>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+
+		<div class="contacts-wrap" id="contatcs">
+			
+			<section class="contacts">
+				<h2 class="title-lvl2">Контакти</h2>
+				
+				<p class="text-normal contacts__tel wow fadeIn"><strong>Телефон: </strong><a href="tel:+380680915097">+38 (068) 091-50-97</a></p>
+				<p class="text-normal contacts__mail wow fadeIn"><strong>E-mail: </strong><a href="mailto:info@incognita.com.ua">info@incognita.com.ua</a></p>
+				<p class="text-normal wow fadeIn"><strong>Адреса:</strong> 03127, Київ, Голосіївський проспект, 100/2</p>
+				
+
+				<div class="contacts__map-wrap">
+				<div class="contacts__map" id="map"></div></div>
+
+				<form action="http://localhost:3000/contacts" method="post" id="contacts-form" class="g-form contacts__form">
+					<input type="text" placeholder="Ім&rsquo;я" id="contacts-name" required />
+					<input type="email" placeholder="Електронна адреса" id="contacts-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required />
+					<textarea id="contacts-text" placeholder="Повідомлення" required ></textarea>
+					<button type="submit" class="g-btn">Відправити</button>
+				</form>
+
+				<div class="contacts__social">
+					<a href="https://twitter.com/UIncognita" class="wow bounce twitter" target="_blank"></a>
+					<a href="https://www.facebook.com/ukrainaincognita" class="wow bounce fb" data-wow-delay=".1s" target="_blank"></a>
+					<a href="https://www.youtube.com/user/UkrainaIncognita" class="wow bounce youtube" data-wow-delay=".2s" target="_blank"></a>
+				</div>
+
+			</section>
+		</div>
+	</main>
+	
+		
+	<footer class="footer-site">
+		<address class="footer-site__copy">
+			&copy;&nbsp;Copyright 2017 by&nbsp;Надзвичайна Україна. All Rights Reserved.
+		</address>
+	</footer>
+
+	
+
+	<script src="js/libs.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&callback=initMap" async defer></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

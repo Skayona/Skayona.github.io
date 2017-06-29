@@ -222,7 +222,7 @@ function openModal(modal) {
 	$('.tours__form').submit(function(event) {
 		event.preventDefault()
 		
-		$(this).after('<p class="txt-large" style="font-weight: bold; background-color: #efefef; padding: 10px 0;">Ваша заявка передана менеджеру. Найближчим часом з&nbsp;вами зв’яжуться для уточнення іноформації. Дякуємо!</p>')
+		$(this).after('<p class="txt-large" style="font-weight: bold; background-color: #efefef; padding: 10px; margin: 20px;">Ваша заявка передана менеджеру. Найближчим часом з&nbsp;вами зв’яжуться для уточнення іноформації. Дякуємо!</p>')
 		
 		$(this).hide();
 	});

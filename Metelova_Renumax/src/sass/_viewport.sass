@@ -1,0 +1,190 @@
+// device width
+$screen-1: 480px
+$screen-2: 640px
+$screen-3: 768px
+$screen-4: 960px
+$screen-5: 1024px
+$screen-6: 1200px
+
+
+// @media styles
+
+@media screen and (min-width: $screen-1)
+	.g-order
+		&__sale
+			left: -30px
+		@media (min-width: 560px)
+			padding: 15px 0 30px
+			&__sale
+				left: -50px
+	.review
+		&__block:nth-child(2n)
+			.review-name
+				justify-content: flex-end
+				align-items: center
+				flex-direction: row
+		&__block:nth-child(2n+1)
+			.review-name
+				justify-content: flex-start
+				align-items: center
+				flex-direction: row
+
+@media screen and (min-width: $screen-2)
+	.about
+		&__text, &__img-wrap--outer
+			margin-bottom: 80px
+	.applying
+		&__example, &__result
+			margin-bottom: 80px
+		&__expert
+			display: flex
+			flex-direction: row-reverse
+		.expert-opinion
+			width: 70%
+		.expert-photo
+			width: 30%
+			position: relative
+			img
+				position: absolute
+				bottom: 0
+				height: 110%
+				width: auto
+	.review
+		&__block-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&__block
+			width: 48%
+
+		&__block:nth-child(2n)
+			.review-name
+				justify-content: flex-start
+				align-items: flex-end
+				flex-direction: column
+				text-align: right
+		&__block:nth-child(2n+1)
+			.review-name
+				justify-content: flex-start
+				align-items: flex-start
+				flex-direction: column-reverse
+		
+
+@media screen and (min-width: $screen-3)
+	.applying
+		&__example
+			display: flex
+			flex-wrap: wrap
+			width: 650px
+			margin:
+				left: auto
+				right: auto
+		.expert-opinion
+			width: 60%
+			padding:
+				top: 20px
+				bottom: 20px
+		.expert-photo
+			width: 40%
+			position: relative
+			img
+				height: 150%
+	.review
+		&__block:nth-child(2n)
+			.review-name
+				justify-content: flex-end
+				align-items: center
+				flex-direction: row
+		&__block:nth-child(2n+1)
+			.review-name
+				justify-content: flex-start
+				align-items: center
+				flex-direction: row
+
+@media screen and (min-width: $screen-4)
+	html
+		font-size: 16px
+	.g-order
+		&__sale
+			width: 130px
+			height: 130px
+		&__header
+			padding:
+				left: 70px
+				right: 70px
+	.renumax, .order
+		display: flex
+		flex-wrap: wrap
+		&__title, &__subtitle, &__description
+			width: 100%
+		&__advantages, &__order
+			width: 45%
+		&__advantages,
+			align-self: center
+		&__subtitle
+			margin-bottom: 80px
+	.applying
+		&__result
+			display: flex
+
+
+@media screen and (min-width: $screen-5)	
+	.applying
+		&__example
+			width: 100%
+
+
+@media screen and (min-width: $screen-6)
+	html
+		font-size: 18px
+
+	.h-site
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__description
+			margin-bottom: 0
+
+	.menu
+		display: flex
+		justify-content: center
+		flex-direction: column
+		position: fixed
+		z-index: 10
+		top: 0
+		bottom: 0
+		right: 1%
+		&__item
+			display: none
+			background-color: transparent
+			box-shadow: none
+			font-size: 14px
+			line-height: 1
+			font-weight: 700
+			color: #536979
+			padding-right: 0
+			&:hover, &:focus, &--active
+				background-color: transparent
+				// opacity: .7
+		&__dots
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			transition: transform .3s ease-in-out
+			&::after
+				content: ''
+				display: block
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				background-color: transparent
+				border: 2px solid #536979
+				margin: 10px
+				cursor: pointer
+			&:hover, &:active
+				&::after
+					transform: scale(1.2)
+				> .menu__item
+					display: block
+			&--active::after
+				background-color: #536979

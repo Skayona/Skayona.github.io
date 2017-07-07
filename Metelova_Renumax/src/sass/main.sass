@@ -1,0 +1,710 @@
+@import 'variables'
+@import 'typography'
+@import 'mixins'
+
+
+//libs
+
+
+
+@keyframes arrow-swing
+	0%
+		transform: translateY(0)
+	45%
+		transform: translateY(10px)
+	55%
+		transform: translateY(10px)
+	100%
+		transform: translateY(0)
+
+
+@keyframes rotating
+	0%
+		transform: rotate(0)
+	14%
+		transform: rotate(0)
+	15%
+		transform: rotate(20deg)
+	20% 
+		transform: rotate(0)
+	25%
+		transform: rotate(15deg)
+	50%
+		transform: rotate(0)
+	75%
+		transform: rotate(0)
+	100%
+		transform: rotate(0)
+
+
+@keyframes scaling
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.5)
+	100%
+		transform: scale(1)
+
+
+.callback
+	display: block
+	background-color: $accent-color-2
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	position: fixed
+	bottom: 25px
+	right: 25px
+	z-index: 100
+	animation: rotating 3s ease 8s infinite
+	&::before, &::after
+		content: ''
+		display: block
+		width: inherit
+		height: inherit
+		border-radius: 50%
+		position: absolute
+		top: 0
+		left: 0
+	&::before
+		background-color: rgba($accent-color-2, .15)
+		animation: scaling 3s ease 8s infinite
+	&::after
+		background:
+			image: url(../images/sprite.png)
+			position: -769px -5px
+
+
+.g-advantages
+	&-wrap
+		position: relative
+		padding:
+			top: 20px
+			bottom: 20px
+		max-width: 400px
+		margin: 0 auto
+	list-style: none
+	margin: 0
+	padding: 0 20px
+	text-align: left
+	font-weight: 400
+	background-color: rgba($color-white, .4)
+	border-radius: 4px
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+	&__item
+		line-height: 60px
+		border-bottom: 1px dashed $accent-color-3
+		&:last-child
+			border: none
+	&__image
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		width: auto
+		filter:  drop-shadow(1px 5px rgba(0,0,0,0.12)) drop-shadow(2px 4px 1px rgba(0,0,0,0.3))
+
+
+.g-order
+	background-color: rgba($color-white, .9)
+	border-radius: 4px
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+	padding: 30px 0
+	position: relative
+	max-width: 400px
+	margin: 0 auto
+	text-align: center
+	&__sale
+		position: absolute
+		color: $color-white
+		width: 100px
+		height: 100px
+		@extend .txt-large
+		text-transform: uppercase
+		font-weight: 500
+		top: -50px
+		left: -8px
+		margin: 0
+		img
+			width: 100%
+			height: auto
+		figcaption
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	&__header, &__price, &__counter
+		padding:
+			left: 20px
+			right: 20px
+		margin: 20px 0
+	&__header
+		@extend .txt-large
+	&__price
+		background-color: rgba($accent-color-2, .8)
+		padding:
+			top: 20px
+			bottom: 20px
+		box-shadow: inset 0 3px 4px $accent-color-2, inset 0 -3px 4px $accent-color-2
+		color: $color-white
+		text-shadow: 1px 1px $accent-color-3
+		font-weight: 700
+		display: flex
+		align-items: baseline
+		justify-content: center
+		.currency
+			font-size: .675em
+		.old-price
+			position: relative
+			display: block
+			margin-right: 15px
+			&::after
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto
+				content: ''
+				display: block
+				height: 1px
+				width: 100%
+				background-color: $color-white
+				box-shadow: 0 1px $accent-color-3
+		.new-price
+			font-size: 2rem
+	&__counter
+		font-weight: 500
+		p
+			@extent .txt-large
+			text-transform: uppercase
+		.counter
+			margin:
+				top: 10px
+				bottom: 10px
+			&__number, &__colon
+				display: inline-block
+				line-height: 40px
+				font-size: 3rem
+	&__btn
+		line-height: 40px
+		cursor: pointer
+		display: inline-block
+		background-color: rgba($accent-color-2, 1)
+		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+		border-radius: 2px
+		border-style: none
+		text-decoration: none
+		color: $color-white
+		@extend .txt-large
+		padding: 0 30px
+		transition: .3s ease-out
+		&:hover, &:focus
+			background-color: #57b3ff
+			box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+		&:active
+			opacity: .7
+	&__add
+		padding-left: 20px
+		padding-right: 20px
+
+
+.g-form
+	padding:
+		left: 20px
+		right: 20px
+	input
+		display: block
+		width: 100%
+		margin-bottom: 10px
+		border-radius: 2px
+		border: 1px solid rgba($color-black, .15)
+		padding:
+			left: 20px
+			right: 20px
+		&:focus
+			outline: none
+			border-color: $accent-color-2
+	[readonly]
+		background-color: rgba($color-black, .05)
+		&:focus
+			border-color: rgba($color-black, .15)
+	input, [placeholder], [value]
+		@extend .txt-normal
+		line-height: 40px
+		color: rgba($color-black, .7)
+
+
+.g-modal
+	display: none
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 200
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba($color-black, .7)
+	&__content
+		position: absolute
+		top: 10%
+		left: 0
+		right: 0
+		width: 80%
+		margin: auto
+		overflow-y: auto
+		border-radius: 4px
+		max-width: 600px
+		max-height: 70vh
+		background-color: $color-white
+	.m-header
+		background-color: $accent-color-3
+		padding: 20px
+		text-align: center
+		color: $color-white
+		&__title
+			margin-bottom: 0
+		&__cross
+			cursor: pointer
+			height: 20px
+			width: 20px
+			position: absolute
+			right: 5px
+			top: 5px
+			opacity: .5
+			transition: opacity .3s ease
+			&:hover, &:focus
+				opacity: 1
+			&::after, &::before
+				content: ''
+				display: block
+				height: 2px
+				width: 20px
+				background-color: $color-white
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				margin: auto
+			&::before
+				transform: rotate(45deg)
+			&::after
+				transform: rotate(-45deg)
+	.m-main
+		padding: 20px 30px
+		&__form
+			margin-top: 30px
+			margin-bottom: 50px
+			text-align: right
+		&__footer
+			text-align: center
+			&::before
+				content: ''
+				display: inline-block
+				width: 30px
+				height: 30px
+				margin-right: 10px
+				background:
+					image: url(../images/sprite.png)
+					position: -714px -20px
+					repeat: no-repeat
+
+
+*
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	margin: 0 auto
+
+main
+	display: block
+
+
+.h-site
+	background-color: rgba($accent-color-3, .8)
+	text-align: center
+	&__nav
+		overflow-x: auto
+.menu
+	margin: 0 auto
+	padding: 0
+	list-style: none
+	display: inline-flex
+	&__item
+		text-decoration: none
+		text-transform: uppercase
+		display: block
+		@extend .txt-normal
+		line-height: 50px
+		padding:
+			left: 20px
+			right: 20px
+		color: $color-white
+		transition: all .3s ease-in-out
+
+		&--active, &:hover, &:focus
+			background-color: rgba($accent-color-2, .1)
+			
+
+
+.renumax
+	&-wrap
+		background:
+			image: linear-gradient(to top, rgba($accent-color-3, .5), rgba($accent-color-3, .5)), url(../images/bg-1.jpg)
+			repeat: no-repeat
+			position: center
+			size: cover
+			attachment: fixed
+	@include inner-wrapper
+	
+	text-align: center
+	&__title
+		color: $color-white
+		text-shadow: 2px 2px $accent-color-3
+	&__subtitle
+		@extend .txt-large
+		font-weight: 400
+		text-transform: uppercase
+		color: $color-white
+		text-shadow: 1px 1px $accent-color-3
+		margin-bottom: 40px
+	&__order, &__advantages
+		margin-bottom: 60px
+	&__advantages
+		color: $color-white
+		text-shadow: 1px 1px $accent-color-3
+	&__description
+		color: rgba($color-white, .9)
+
+
+.about
+	&-wrap
+		
+		background:
+			image: linear-gradient(to top, rgba($color-white, .8), rgba($color-white, .8)), url(../images/bg-2.jpg)
+			repeat: no-repeat
+			position: center
+			size: cover
+			attachment: fixed
+	@include inner-wrapper
+	&__title, &__subtitle
+		text-align: center
+		color: $accent-color-3
+	&__text
+		margin-bottom: 40px
+	&__img
+		margin: 10px 10px 10px 0
+		padding: 0
+		width: 30%
+		min-width: 280px
+		max-width: 320px
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+		&:last-child
+			margin-right: 0
+		img
+			width: 100%
+			height: auto
+			display: block
+		&-wrap--outer
+			overflow-x: auto
+			margin-bottom: 40px
+		&-wrap--inner
+			display: inline-flex
+			justify-content: space-between
+	&__arrow-down
+		display: block
+		margin: 0 auto
+		width: 20px
+		height: 28px
+		background:
+			image: url(../images/sprite.png)
+			repeat: no-repeat
+			position: -20px -20px
+		animation: arrow-swing 1.2s infinite ease-in-out
+
+
+.applying
+	&-wrap
+		
+		background:
+			image: url(../images/bg-3-1.jpg)
+			repeat: no-repeat
+			position: center
+			size: cover
+			attachment: fixed
+		position: relative
+		z-index: 2
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			opacity: .95
+			z-index: -1
+			background:
+				image: url(../images/bg-3-2.jpg)
+				repeat: repeat
+				position: center
+				attachment: fixed
+	@include inner-wrapper
+	&__title, &__subtitle, 
+		text-align: center
+		color: $color-white
+	&__result
+		overflow-x: auto
+		text-align: center
+	&__example, &__result
+		margin-bottom: 40px
+	&__expert
+		box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3)
+		color: $color-white
+		@extend .txt-normal
+		font-weight: 300
+		background-color: rgba($accent-color-2, .7)
+		border-radius: 4px
+		position: relative
+		.expert-opinion
+			padding: 10px 20px
+		blockquote
+			margin-right: 0
+		img
+			display: block
+			border-bottom-left-radius: 4px
+		.expert-photo
+			margin: 0	
+.steps
+	&__item
+		margin: 0 auto
+		padding: 0
+		overflow: hidden
+		width: 300px
+		color: $color-white
+		position: relative
+		margin-bottom: 20px
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+		img
+			width: 100%
+			height: auto
+			display: block
+		figcaption
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			text-shadow: 1px 1px $accent-color-3
+			padding:
+				left: 20px
+				right: 20px
+			background-color: rgba($accent-color-3, .3)
+			transition: opacity .3s ease-in-out
+			&:hover
+				opacity: 0
+	&__counter
+		position: absolute
+		top: 5px
+		left: 5px
+		z-index: 1
+		width: 50px
+		height: 50px
+		display: flex
+		align-items: center
+		justify-content: center
+		@extend .txt-large
+		font-weight: 700
+		border-radius: 50%
+		border: 2px dotted $color-white
+		background-color: rgba($color-white, .3)
+.result
+	display: inline-flex
+	margin: auto
+	&__item
+		color: $accent-color-3
+		@extend .txt-large
+		text-transform: uppercase
+		font-weight: 500
+		margin: 0 auto
+		position: relative
+		width: 199px
+		height: 199px
+		border: 2px solid rgba($color-white, .9)
+		margin-bottom: 20px
+		margin-right: 10px
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+	figcaption
+		width: 40%
+		line-height: 40px
+		position: absolute
+		text-align: center
+		background-color: rgba($color-white, .9)
+		right: 0
+		top: 0
+	img
+		width: 100%
+		height: auto
+		display: block
+
+
+.review
+	&-wrap
+		
+		background-color: rgba(158, 158, 158, 0.1)
+	@include inner-wrapper
+	&__title
+		text-align: center
+	&__block
+		&-wrap
+		box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3)
+		padding: 20px 30px
+		border-radius: 4px
+		background-color: $color-white
+		margin-bottom: 30px
+		.review-name
+			display: flex
+			&::after, &::before
+				content: ''
+				display: block
+				background:
+					repeat: no-repeat
+					image: url(../images/sprite.png)
+	&-img
+		border-radius: 4px
+		width: 100px
+		height: 100px
+		margin-bottom: 10px
+	&__block:nth-child(2n)
+		.review-name
+			justify-content: flex-start
+			align-items: flex-end
+			flex-direction: column
+			text-align: right
+			&::after
+				width: 29px
+				height: 25px
+				margin-left: 10px
+				background-position: -645px -20px
+		.review-img
+			float: right
+			margin-left: 20px
+	&__block:nth-child(2n+1)
+		.review-name
+			justify-content: flex-start
+			align-items: flex-start
+			flex-direction: column-reverse
+			&::before
+				width: 29px
+				height: 25px
+				margin-right: 10px
+				background-position: -576px -20px
+		.review-img
+			float: left
+			margin-right: 20px
+
+
+.delivery
+	&-wrap
+		
+		background:
+			image: linear-gradient(0deg,rgba(40,68,88,.8),rgba(40,68,88,.8)), url(../images/bg-4.jpg)
+			repeat: no-repeat
+			position: center
+			size: cover
+			attachment: fixed
+	@include inner-wrapper
+	color: $color-white
+	&__title
+		text-align: center
+		justify-content: space-around
+	&__scheme
+		margin: 0 auto 40px
+		padding: 0
+		list-style: none
+		max-width: 400px
+		@extend .txt-large
+	&-point
+		display: flex
+		align-items: center
+		justify-content: space-between
+		span
+			width: calc(100% - 100px)
+		&::before
+			content: ''
+			width: 84px
+			height: 84px
+			display: block
+			background:
+				image: url(../images/sprite.png)
+				repeat: no-repeat
+		&:first-child::before
+			background-position: -80px -20px
+		&:nth-child(3)::before
+			background-position: -204px -20px
+		&:nth-child(5)::before
+			background-position: -328px -20px
+		&:last-child::before
+			background-position: -452px -20px
+	&-arrow
+		&::before
+			margin: auto
+			content: ''
+			width: 20px
+			height: 28px
+			display: block
+			background:
+				image: url(../images/sprite.png)
+				repeat: no-repeat
+				position: -20px -20px
+	&__txt
+		margin-bottom: 20px
+
+
+.order
+	&-wrap
+		
+		background:
+			image: linear-gradient(to top, rgba($color-white, .6), rgba($color-white, .6)), url(../images/bg-5.jpg)
+			repeat: no-repeat
+			position: center
+			size: cover
+			attachment: fixed
+	@include inner-wrapper
+	&__title, &__subtitle
+		text-align: center
+		color: $accent-color-3
+	&__subtitle
+		margin-bottom: 40px
+	&__advantages
+		color: $color-black
+		margin-bottom: 60px
+	&__form
+		margin-bottom: 20px
+
+
+.f-site
+	background-color: $accent-color-3
+	color: $color-white
+	font-size: .625rem
+	font-weight: 300
+	line-height: 80px
+	padding-left: 10%
+
+
+
+@import 'viewport'

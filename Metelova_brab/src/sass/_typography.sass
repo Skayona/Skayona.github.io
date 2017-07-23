@@ -1,0 +1,51 @@
+@mixin font-face($font-name, $file-name, $font-weight, $font-style)
+	@font-face
+		font-family: quote($font-name)
+		src: url($file-name)
+		font-weight: $font-weight
+		font-style: $font-style
+
+@include font-face("Fregat", "../fonts/Fregat_bold.otf", 700, normal)
+@include font-face("Fregat", "../fonts/Fregat_bold_italic.otf", 700, italic)
+@include font-face("Fregat", "../fonts/Fregat_italic.otf", 400, italic)
+@include font-face("Fregat", "../fonts/Fregat_regular.otf", 400, normal)
+
+
+html
+	font-size: 12px
+	line-height: 1.2
+	letter-spacing: .4px
+	font-family: 'PT Sans', sans-serif
+
+.title-h1, .title-h2, .title-h3, .title-h5
+	font-family: 'Fregat', sans-serif
+	text-transform: uppercase
+	font-weight: 700
+
+
+.title-h1
+	font-size: 1.75rem
+	
+.title-h2
+	font-size: 2rem
+	letter-spacing: -0.1px
+
+.title-h3
+	font-size: 1.875rem
+	letter-spacing: -0.1px
+
+.title-h4
+	font-size: 1.875rem
+
+.title-h5
+	font-size: 1.25rem
+	line-height: 1.5
+
+.title-h6
+	font-family: 'Fregat', sans-serif
+	font-weight: 700
+	font-size: 1.25rem
+	line-height: 1.2
+	
+b
+	font-weight: 700

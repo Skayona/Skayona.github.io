@@ -1,8 +1,8 @@
 // google maps styles
 var map;
-function initMap() 
+function initMap()
 {
-      map = new google.maps.Map(document.getElementById('map'), 
+      map = new google.maps.Map(document.getElementById('map'),
       {
             center: {lat: 50.451943, lng: 30.525894},
             zoom: 18,
@@ -10,7 +10,7 @@ function initMap()
             [{
                 	"featureType": "all",
                   "elementType": "all",
-                  "stylers": 
+                  "stylers":
                         [{"saturation": "-61"},
                         {"hue": "#00d5ff"},
                         {"gamma": "1.00"},
@@ -19,49 +19,49 @@ function initMap()
             {
                   "featureType": "road",
                    "elementType": "geometry.fill",
-                   "stylers": 
+                   "stylers":
                         [{"hue": "#00cbff"}]
             },
             {
                   "featureType": "road",
                    "elementType": "geometry.stroke",
-                   "stylers": 
+                   "stylers":
                         [{"hue": "#00cbff" }]
             },
             {
                   "featureType": "road",
                    "elementType": "labels.text.fill",
-                   "stylers": 
+                   "stylers":
                         [{"hue": "#00cbff"}]
             },
             {
                   "featureType": "road",
                    "elementType": "labels.text.stroke",
-                   "stylers": 
+                   "stylers":
                         [{"hue": "#00cbff"}]
             },
             {
                   "featureType": "road.highway",
                    "elementType": "geometry.fill",
-                   "stylers": 
+                   "stylers":
                         [{"color": "#00bff0"}]
             },
             {
                    "featureType": "road.highway.controlled_access",
                    "elementType": "geometry.fill",
-                   "stylers": 
+                   "stylers":
                         [{"color": "#00a6d0"}]
             },
             {
                   "featureType": "road.arterial",
                    "elementType": "geometry.fill",
-                   "stylers": 
+                   "stylers":
                         [{"color": "#00bff0"}]
             },
             {
                   "featureType": "road.local",
                    "elementType": "geometry.fill",
-                   "stylers": 
+                   "stylers":
                         [{"color": "#00bff0"},
                         {"weight": "0.8"}]
             }]
@@ -80,24 +80,24 @@ function initMap()
 var submitted=false;
 
 // big image in gallery
-$(document).ready(function() { 
-  
-  $(".gallery-img").click(function(){ 
-      var img = $(this); 
-    var src = img.attr('src'); 
-    $("body").append("<div class='gallery-popup'>"+ 
-             "<div class='gallery-popup_bg'></div>"+ 
-             "<img src='"+src+"' class='gallery-popup_img' />"+ 
-             "</div>"); 
-    $(".gallery-popup").fadeIn(800); 
-    $(".gallery-popup_bg").click(function(){     
+$(document).ready(function() {
+
+  $(".gallery-img").click(function(){
+      var img = $(this);
+    var src = img.attr('src');
+    $("body").append("<div class='gallery-popup'>"+
+             "<div class='gallery-popup_bg'></div>"+
+             "<img src='"+src+"' class='gallery-popup_img' />"+
+             "</div>");
+    $(".gallery-popup").fadeIn(800);
+    $(".gallery-popup_bg").click(function(){
       $(".gallery-popup").fadeOut(800);
-      setTimeout(function() { 
-        $(".gallery-popup").remove(); 
+      setTimeout(function() {
+        $(".gallery-popup").remove();
       }, 800);
     });
   });
-  
+
 });
 
 // slider
@@ -128,3 +128,27 @@ function nextSlide() {
     slideNow++;
     }
 }
+
+function imgCentering() {
+
+  $('.glr-img__wrapper').each(function() {
+    var imgWrapH = $(this).height(),
+      imgWrapW = $(this).width(),
+      imgCent = $(this).children('img'),
+      imgH = imgCent.height(),
+      imgW = imgCent.width(),
+      wrap = imgWrapH / imgWrapW,
+      img = imgH / imgW;
+
+    if (wrap > img) {
+      imgCent.addClass('js-element-horizont').removeClass('js-element-vertical');
+    } else {
+      imgCent.addClass('js-element-vertical').removeClass('js-element-horizont');
+    };
+  });
+};
+
+$(document).ready(function() {
+  imgCentering();
+  $(window).on('resize', imgCentering);
+});

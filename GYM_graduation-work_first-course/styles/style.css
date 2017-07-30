@@ -25,7 +25,15 @@ p, h1, h2, h3, h4, h5, h6 {
 main {
 	display: block;
 }
+.js-element-vertical {
+  width: 100%;
+  height: auto;
+}
 
+.js-element-horizont {
+  height: 100%;
+  width: auto;
+}
 /*STYLES & COLORS*/
 
 	.txt__italic {
@@ -35,7 +43,7 @@ main {
 	.txt__uppercase {
 		text-transform: uppercase;
 	}
-	
+
 	.txt__semibold {
 		font-weight: 600;
 	}
@@ -44,46 +52,46 @@ main {
 	.bg__blue-1 {
 		background: #00bff0;
 	}
-	  
+
 	.bg__blue-2 {
 	 	background: #72d0f4;
 	}
-	 
+
 	.bg__blue-3 {
 		background: #80dff8;
 	}
-	 
+
 	.bg__blue-4 {
 		background: #00afec;
 	}
-	 
+
 	.bg__blue-5 {
 		background: #b9e8fa;
 	}
-	 
+
 	.bg__blue-6 {
 		background: #a1eef7;
 	}
 
 	.bg__blue-7 {
 		background: #a5e5fe;
-	}  
+	}
 
 	.bg__blue-8 {
 		background: #89ddf7;
-	}  
+	}
 
 	.bg__blue-9 {
 		background: #c7ecfb;
-	}  
-	 
+	}
+
 	.bg__blue-10 {
 		background: #bfeafa;
-	}  
+	}
 
 	.bg__blue-11 {
 		background: #99e5f9;
-	}  
+	}
 
 	.bg__blue-12 {
 		background: #f2fcfe;
@@ -100,31 +108,31 @@ main {
 	.bg__grey-1 {
 		background: #f3f3f3;
 	}
-	 
+
 	.bg__grey-2 {
 		background: #b7b7b7;
 	}
-	 
+
 	.bg__grey-3 {
 		background: #d4d6d6;
 	}
-	 
+
 	.bg__grey-4 {
 		background: #e6e6e6;
 	}
-	 
+
 	.bg__grey-5 {
 		background: #d4d4d4;
 	}
-	 
+
 	.bg__red-1 {
 		background: #e25050;
 	}
-	 
+
 	.bg__red-2 {
 		background: #ff0000;
 	}
-	 
+
 	/*text colors*/
 	.txt-color__white {
 		color: #fff;
@@ -133,19 +141,19 @@ main {
 	.txt-color__blue-1 {
 		color: #00afec;
 	}
-	 
+
 	.txt-color__blue-2 {
 		color: #00bff0;
 	}
-	 
+
 	.txt-color__blue-3 {
 		color: #0056a4;
 	}
-	 
+
 	.txt-color__blue-4 {
 		color: #57cbf4;
 	}
-	 
+
 	.txt-color__blue-5 {
 		color: #72d0f4;
 	}
@@ -161,7 +169,7 @@ main {
 	.txt-color__green-1 {
 		color: #116800;
 	}
-	 
+
 	.txt-color__green-2 {
 		color: #00b398;
 	}
@@ -169,34 +177,34 @@ main {
 	.txt-color__black-1 {
 		color: #000;
 	}
-	 
+
 	.txt-color__black-2 {
 		color: #292929;
 	}
-	 
+
 	.txt-color__black-3 {
 		color: #252525;
 	}
-	 
+
 	.txt-color__black-4 {
 		color: #222;
 	}
-	 
+
 	.txt-color__grey-1 {
 		color: #8b9297;
 	}
-	 
+
 	.txt-color__grey-2 {
 		color: #505961;
 	}
-	 
+
 	.txt-color__grey-3 {
 		color: #656565;
 	}
-	 
+
 	.txt-color__grey-4 {
 		color: #c3c2c2;
-	} 
+	}
 
 	.txt-color__grey-5 {
 		color: #606060
@@ -209,11 +217,11 @@ main {
 	.txt-color__red-1 {
 		color: #fe0000;
 	}
-	 
+
 	.txt-color__red-2 {
 		color: #ff0000;
 	}
-	 
+
 	/*borders*/
 	.no-border {
 		border: none;
@@ -231,14 +239,14 @@ main {
 	.send-message-input__border {
 		border: 1px solid #72d0f4;
 	}
-	 
+
 	.separetor-bottom__solid {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	}
 
 	.separetor-right__solid {
 		border-right: 1px solid #fff;
-	} 
+	}
 
 	.separetor-bottom__dotted {
 		border-bottom: 1px dotted #fff;
@@ -279,7 +287,7 @@ main {
 		margin-bottom: 8px;
 	}
 
-	.video-title { 
+	.video-title {
 		font-size: 1.125rem;
 		line-height: 1.2;
 	}
@@ -353,7 +361,7 @@ main {
 		line-height: 1;
 		display: flex;
 	}
-	
+
 	.logo::before,
 	.logo::after {
 		content: "";
@@ -367,7 +375,7 @@ main {
 		background-position: 0 0;
 		margin-right: 8px;
 	}
-	
+
 	.logo::after {
 		background-position: -80px 0;
 		margin-left: 8px;
@@ -412,8 +420,8 @@ main {
 	.contacts_main {
 		margin-bottom: 40px;
 	}
-	
-/*HEADER*/ 
+
+/*HEADER*/
 	/*HEADER__UPSIDE*/
 		.header__upside {
 			font-size: 14px;
@@ -437,12 +445,12 @@ main {
 		}
 
 	/*HEADER__DOWN*/
-		.header__down { 
+		.header__down {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding-top: 30px; 
-			padding-bottom: 30px; 
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 
 		/*HEADER MENU*/
@@ -548,7 +556,7 @@ main {
 		.footer__newsletter ::-webkit-input-placeholder,
 		.footer__newsletter [placeholder],
 		.send-message ::-webkit-input-placeholder,
-		.send-message [placeholder] { 
+		.send-message [placeholder] {
 			color: #00afec;
 		}
 
@@ -560,7 +568,7 @@ main {
 		.send-message textarea {
 			height: 60px;
 		}
-		.footer__down {	
+		.footer__down {
 			font-size: 0.75rem;
 			line-height: 1.8;
 			display: flex;
@@ -628,7 +636,7 @@ main {
 	}
 	.title__positioned {
 		position: absolute;
-		bottom: 0.5rem; 
+		bottom: 0.5rem;
 	}
 	.uc__main {
 		text-align: center;
@@ -822,7 +830,7 @@ main {
 			}
 			.discount-content ul {
 				padding-left: 20px;
-			}	
+			}
 
 			.discount-content a {
 				display: block;
@@ -851,7 +859,7 @@ main {
 				background: url(../images/map_ie.jpg) 0 0 no-repeat;
 				background-size: cover;
 				overflow: hidden;
-				width: 100%; 
+				width: 100%;
 			}
 			.map__index {
 				height: 70vh;
@@ -994,7 +1002,7 @@ main {
 			.trainers_arrow-left,
 			.trainers_arrow-right {
 				font-size: 2rem;
-				position: absolute;	
+				position: absolute;
 				top: 0;
 				bottom: 0;
 				display: flex;
@@ -1103,7 +1111,7 @@ main {
 			[id="trainers-block-3"]:checked ~ .trainers-block-3 {
 				display: block;
 			}
-	
+
 		/*NEXT-EVENTS*/
 			.event-container {
 				padding: 20px 30px;
@@ -1210,7 +1218,7 @@ main {
 	/*JOIN-MEMBER*/
 		/*WHY-JOIN*/
 		.join-member {
-			padding: 32px 0 48px; 
+			padding: 32px 0 48px;
 			margin-top: 80px;
 			margin-bottom: 80px;
 		}
@@ -1333,7 +1341,7 @@ main {
 				margin-bottom: 2px;
 			}
 			.glr-img__wrapper img {
-				height: 100%;
+				/*height: 100%;*/
 				cursor: pointer;
 			}
 
@@ -1352,7 +1360,7 @@ main {
 			    justify-content: center;
 			    align-items: center;
 			}
-	
+
 	/*TWITTER*/
 		.twitter__block {
 			padding-top: 10%;
@@ -1381,7 +1389,7 @@ main {
 			width: 100%;
 			height: 60vh;
 		}
-	
+
 	/*CONTACTS_MAIN*/
 		.contacts_main {
 			padding-top: 20px;
@@ -1406,7 +1414,7 @@ main {
 		.contact-info .fa {
 			width: 30px;
 		}
-	
+
 	/*CONTACTS-CONTENT*/
 		/*WHY-JOIN*/
 		.events-blog-join .why-join {
@@ -1475,13 +1483,13 @@ main {
 				display: block;
 			}
 
-		
+
 		/*GALLERY-PARTNER*/
 			.glr-img__wrapper img {
-				height: auto;
-				width: 100%;
+				/*height: auto;
+				width: 100%;*/
 			}
-	
+
 	/*INDEX.HTML*/
 		/*SLIDER*/
 			.slider-text {
@@ -1621,8 +1629,8 @@ main {
 				position: absolute;
 				left: 8px;
 				top: -11px;
-			}			
-	
+			}
+
 	/*FOOTER*/
 		/*FOOTER__UPSIDE*/
 			.footer__upside {
@@ -1647,7 +1655,7 @@ main {
 				margin-top: 6px;
 				margin-bottom: 24px;
 			}
-		
+
 		/*FOOTER__DOWN*/
 			.footer__down {
 				font-size: 14px;
@@ -1671,14 +1679,14 @@ main {
 			.timetable-title {
 				width: auto;
 				font-size: 1.875rem;
-			}	
+			}
 
 
 		/*PARTNER*/
 		.partner-img {
 			width: calc(100%/3);
 		}
-	
+
 	/*CONTACTS.HTML*/
 		/*CONTACTS_MAIN*/
 		.contacts_main {
@@ -1688,7 +1696,7 @@ main {
 		.contact-info p {
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
-		}	
+		}
 }
 
 @media (min-width: 768px) {
@@ -1705,14 +1713,14 @@ main {
 		.header__menu-primary {
 			justify-content: flex-end;
 		}
-	
+
 	/*INDEX.HTML*/
 		/*MAIN-SLOGAN*/
 			.main-slogan {
 				padding-top: 110px;
 				padding-bottom: 70px;
 			}
-		
+
 		/*VIDEO-BLOCK*/
 			.video-content iframe {
 				height: 400px;
@@ -1816,7 +1824,7 @@ main {
 					justify-content: space-between;
 					height: 100%;
 				}
-		
+
 		/*TWITTER*/
 			.twitter__block {
 				width: 70%;
@@ -1997,7 +2005,7 @@ main {
 			.map-opening_hours .wrap-only-desktop {
 				position: relative;
 			}
-		
+
 			.map-opening_hours .opening-hours {
 				background: rgba(114, 208, 244, 0.8);
 				position: absolute;
@@ -2072,10 +2080,10 @@ main {
 					animation-fill-mode:forwards;
 				}
 				.glr-img__wrapper img {
-					width: auto;
-					height: 100%;
+					/*width: auto;
+					height: 100%;*/
 				}
-	
+
 
 			/*PARTNER*/
 				.partner__block {
@@ -2084,7 +2092,7 @@ main {
 				.partner-img {
 					flex-basis: 50%;
 				}
-	
+
 	/*CONTACTS.HTML*/
 		.send-message {
 			width: 56%;
@@ -2153,7 +2161,7 @@ main {
 					border-right: 1px solid #a9ddf1;
 					margin-top: 30px;
 					margin-bottom: 20px;
-					order: 2;		
+					order: 2;
 				}
 				.classes-content_left {
 					padding-bottom: 20px;
@@ -2174,7 +2182,7 @@ main {
 				.discount-block {
 					width: calc(100%/3 - 20px);
 				}
-				
+
 	/*TIMETABLE.HTML*/
 		/*TRAINERS-EVENTS-BLOG*/
 			.trainers-events-blog .our-trainers,
@@ -2200,7 +2208,7 @@ main {
 			.trainer-block {
 				/*justify-content: space-between;*/
 			}
-	
+
 	/*CONTACTS.HTML*/
 		/*OPENING HOURS-EVENTS-BLOG-JOIN*/
 			.contacts-content {
@@ -2233,8 +2241,8 @@ main {
 			}
 		/*GALLERY-PARTNER*/
 			.glr-img__wrapper img {
-				width: 100%;
-				height: auto;
+				/*width: 100%;
+				height: auto;*/
 			}
 
 
@@ -2244,11 +2252,3 @@ main {
 			padding-bottom: 100px;
 		}
 }
-
-
-
-
-
-
-
-

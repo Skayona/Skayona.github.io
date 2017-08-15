@@ -46,30 +46,11 @@ $(window).on('resize', function(){
 });
 
 
-// $(document).ready(function() {
-// 	$('#pagepiling').pagepiling({
-//         direction: 'horizontal',
-//         verticalCentered: true,
-//         scrollingSpeed: 1500,
-//         easing: 'swing',
-//         loopBottom: false,
-//         loopTop: false,
-//         css3: true,
-//         navigation: false,
-//        	normalScrollElements: null,
-//         normalScrollElementTouchThreshold: 1,
-//         touchSensitivity: 1,
-//         keyboardScrolling: true,
-//         sectionSelector: '.pp-scrollable__item',
-//         animateAnchor: false,
-// 	});
-// });
-
 // $('#scroll').mousewheel(function(e, delta) {
-// 	//  this.scrollLeft -= (delta * 1000	);
+// 	 this.scrollLeft -= (delta * 30	);
 // 	 e.preventDefault();
-// 	 $('#scroll .project-banking').css('transform', 'translateX(0)');
-// 	 $(this).unbind(e)
+// 	//  $('#scroll .project-banking').css('transform', 'translateX(0)');
+// 	//  $(this).unbind(e)
 // });
 
 

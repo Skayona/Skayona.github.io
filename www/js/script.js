@@ -45,11 +45,6 @@ $(window).on('resize', function(){
 	};
 });
 
-$(window).on('resize', function(){
-if (window.matchMedia('(min-width: 960px)').matches) {
-
-}
-})
 
 // $('#scroll').mousewheel(function(e, delta) {
 // 	 this.scrollLeft -= (delta * 30	);

@@ -47,8 +47,21 @@ $(window).on('resize', function(){
 	};
 });
 
-
-
+// 
+//  $(".scroll").owlCarousel({
+//     loop:false,
+//     nav:false,
+//     margin: 10,
+//     items: 1
+// });
+//  $(".scroll").on('mousewheel', '.owl-stage', function (e) {
+//     if (e.deltaY>0) {
+//          $(".scroll").trigger('next.owl');
+//     } else {
+//          $(".scroll").trigger('prev.owl');
+//     }
+//     e.preventDefault();
+// });
 
 // $.jInvertScroll(['.scroll']);
 
@@ -79,7 +92,7 @@ $(window).on('resize', function(){
 // 	 e.preventDefault();
 	//  $('#scroll .project-banking').css('transform', 'translateX(0)');
 	//  $(this).unbind(e)
-});
+// });
 
 
 // function scrollDown() {

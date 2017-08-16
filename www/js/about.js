@@ -643,7 +643,7 @@ $(window).on('resize load', function(){
 
 
 $(window).on('resize load', function(){
-	if (window.matchMedia('min-width: 1200px').matches) {
+	if (window.matchMedia('(min-width: 1200px)').matches) {
 		{
 			// Helper vars and functions.
 			const extend = function(a, b) {

@@ -7,6 +7,8 @@ jQuery.fn.clickToggle = function(a,b) {
 // preloader
 $(window).on('load', function(){
 	$('.js-preloader').delay(1000).fadeOut('100');
+	setTimeout(function() {$('body').css('overflow', 'initial');}, 1000);
+
 })
 
 //menu

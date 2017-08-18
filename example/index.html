@@ -8,6 +8,7 @@
   <title>Example</title>
 </head>
 <body>
+
   <div class="block block-1">SCROLL ME DOWN</div>
   <div class="block block-2">SCROLL ME DOWN</div>
   <div class="block block-3">SCROLL ME DOWN</div>
@@ -15,13 +16,22 @@
   <div class="block block-5">SCROLL ME DOWN</div>
   <div class="block block-6">SCROLL ME DOWN</div>
   <div class="block block-7">SCROLL ME DOWN</div>
-  <div class="block block-8">
-    <div class="block block--scroll-1">SCROLL LEFT-RIGHT</div>
-    <div class="block block--scroll-2">SCROLL LEFT-RIGHT</div>
-  </div>
-  <div class="block block-9">SCROLL ME DOWN</div>
-  <div class="block block-10">SCROLL ME DOWN</div>
 
+
+  <div class="block" id="pinContainer">
+    <div class="block block--scroll-1 panel">SCROLL LEFT-RIGHT</div>
+    <div class="block block--scroll-2 panel">SCROLL LEFT-RIGHT</div>
+  </div>
+
+  <div class="block block--scroll-4">SCROLL ME DOWN</div>
+  <div class="block block--scroll-3">SCROLL ME DOWN</div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="TweenMax.min.js"></script>
+  <script src="ScrollMagic.js"></script>
+  <script src="animation.gsap.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

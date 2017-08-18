@@ -4,7 +4,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .block {
@@ -52,31 +52,30 @@ body {
   color: #fff;
 }
 
-.block-8 {
-  color: #fff;
-  position: relative;
+
+.block--scroll-1 {
+  background: pink;
 }
 
-.block-9 {
+.block--scroll-2 {
+  background: green;
+}
+
+.block--scroll-3 {
   background-color: #ee1;
   color: #000;
 }
 
-.block-10 {
+.block--scroll-4 {
   background-color: #889;
   color: #fff;
 }
 
-.block--scroll-1 {
-  background-image: linear-gradient(to right, blue, transparent);
-  position: absolute;
-  top: 0;
-  left: 0;
+
+#pinContainer {
+  overflow: hidden;
 }
 
-.block--scroll-2 {
-  background-image: linear-gradient(to left, blue, transparent);
+.panel {
   position: absolute;
-  top: 0;
-  left: 100%;
 }

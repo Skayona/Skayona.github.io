@@ -1,14 +1,13 @@
-jQuery.fn.clickToggle = function(a,b) {
-	var ab = [b,a];
-	return this.on("click", function(){ ab[this._tog^=1].call(this);
-  });
-};
+// jQuery.fn.clickToggle = function(a,b) {
+// 	var ab = [b,a];
+// 	return this.on("click", function(){ ab[this._tog^=1].call(this);
+//   });
+// };
 
 // preloader
 $(window).on('load', function(){
 	$('.js-preloader').delay(1000).fadeOut('100');
 	setTimeout(function() {$('body').css('overflow', 'initial');}, 1000);
-
 })
 
 //menu
@@ -35,7 +34,6 @@ $('.js-hamburger').click(function() {
 	}
 });
 
-
 $(window).on('resize', function(){
 	if (window.matchMedia('(min-width: 768px)').matches) {
 		$('.js-hamburger').addClass('hamburger--active');
@@ -46,69 +44,3 @@ $(window).on('resize', function(){
 		$('.js-hamburger').removeClass('hamburger--active');
 	};
 });
-
-
-
-
-// $.jInvertScroll(['.scroll']);
-
-
-// (function($) {
-// 	var win = $(this).scrollTop();
-// 	var cont = $('#scroll').offset();
-// 	console.log(win+ ' & ' +cont.top)
-// 	if (win >= cont.top) {
-// 		$.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
-// 				{
-// 				// height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-// 				onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-// 						console.log(percent);
-// 				}
-// 		});
-// 		// scrollDown();
-// 	} else if (win < cont.top) {
-// 		// scrollUp();
-// 	}
-// }(jQuery));
-
-
-
-
-// $('.scroll').mousewheel(function(e, delta) {
-// 	 this.scrollLeft -= (delta * 30	);
-// 	 e.preventDefault();
-	//  $('#scroll .project-banking').css('transform', 'translateX(0)');
-	//  $(this).unbind(e)
-// });
-
-
-// function scrollDown() {
-// 	$('#scroll .project-banking').css('transform', 'translateX(0)')
-// };
-//
-// function scrollUp() {
-// 	$('#scroll .project-banking').css('transform', 'translateX(100%)')
-// };
-//
-// function scrollStop() {
-// 	$(this).bind('mousewheel DOMMouseScroll scroll', function() {
-// 		 return false;
-// 	});
-// }
-//
-// function scrollOn() {
-// 	$(this).bind('mousewheel DOMMouseScroll scroll', function() {
-// 		 return true;
-// 	});
-// }
-//
-// $(window).on('scroll', function(e){
-//   var win = $(this).scrollTop();
-//   var cont = $('#scroll').offset();
-// 	console.log(win+ ' & ' +cont.top)
-//   if (win+100 >= cont.top) {
-// 		scrollDown();
-// 	} else if (win+100 < cont.top) {
-// 		scrollUp();
-// 	}
-// })

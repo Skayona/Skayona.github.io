@@ -16,7 +16,7 @@
 			<div class="preload-dot preload-dot-3"></div>
 		</div>
 	</div>
-	
+
 	<header class="header-site">
 		<h1 class="title-h1 header-site__title"><a href="index.html">F<span class="title-dot"></span>cused</a></h1>
 		<nav class="header-site_nav">
@@ -56,34 +56,62 @@
 		</nav>
 	</header>
 
-	<main class="contacts wrapper">
+	<main class="contacts">
 
-		<section class="g-section contact">
+		<section class="g-section contact  wrapper">
 			<h2 class="title-h2 contact__title">Contact&nbsp;Us</h2>
 			<p class="txt txt--center contact__txt">Don&rsquo;t hesitate to&nbsp;get in&nbsp;touch. We&nbsp;are open to&nbsp;new connections, interesting people, and inspiring ideas. Let&rsquo;s talk business!</p>
 		</section>
 
 
-		<div class="drop-us">
+		<div class="drop-us  wrapper">
 			<span class="drop-us__txt">Just drop&nbsp;us a&nbsp;line</span>
 			<span class="drop-us__mail"><a href="mailto:contact@fcsd.agency">contact@fcsd.agency</a></span>
 		</div>
 
-		<div class="contact-box-wrap">
+		<div class="map">
 
-			<div class="contact-box">
-				<h4 class="contact-box__title">Call</h4>
-				<a href="tel:+380684110195" class="txt contact-box__txt">+380 68 411 0195</a>
-				<a href="+380993398557" class="txt contact-box__txt">+380 99 339 8557</a>
+			<svg width="0" height="0">
+				<defs>
+					<clipPath id="clipMask" transform="scale(2)">
+						<path d="M236,369 C296.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 0,205 C0,326.180502 110.59428,393.209972 236,369 Z">
+						  <animate id="path" attributeName="d" from="M236,369 C296.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 0,205 C0,326.180502 110.59428,393.209972 236,369 Z"
+						    to="M236,369 C396.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 100,205 C0,326.180502 110.59428,393.209972 236,369 Z" dur="10s"
+						    fill="freeze" />
+						</path>
+					</clipPath>
+				</defs>
+				<defs>
+					<clipPath id="clipMask2" transform="scale(2)">
+						<path fill="url(#dots2)" d="M236,369 C296.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 0,205 C0,326.180502 110.59428,393.209972 236,369 Z">
+							<animate id="dots" attributeName="d" from="M236,369 C296.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 0,205 C0,326.180502 110.59428,393.209972 236,369 Z"
+								to="M236,369 C396.248471,357.435748 303.417083,314.100639 379,254 C453.639108,194.697077 527,176.164677 527,114 C527,-6.84909496 368.064343,-5.57062008 270,4 C172.527959,13.1610944 0,84.5700355 100,205 C0,326.180502 110.59428,393.209972 236,369 Z" dur="10s"
+								fill="freeze" />
+						</path>
+					</clipPath>
+				</defs>
+			</svg>
+
+			<div class="map-dots"></div>
+			<div id="map"></div>
+
+			<div class="contact-box-wrap">
+
+				<div class="contact-box">
+					<h4 class="contact-box__title">Call</h4>
+					<a href="tel:+380684110195" class="txt contact-box__txt">+380 68 411 0195</a>
+					<a href="+380993398557" class="txt contact-box__txt">+380 99 339 8557</a>
+				</div>
+
+				<div class="contact-box">
+					<h4 class="contact-box__title">Visit</h4>
+					<span class="txt contact-box__txt">Antonovycha St.,&nbsp;66</span>
+					<span class="txt contact-box__txt">Kyiv 03150, Ukraine</span>
+				</div>
+
 			</div>
-
-			<div class="contact-box">
-				<h4 class="contact-box__title">Visit</h4>
-				<span class="txt contact-box__txt">Antonovycha St.&nbsp;66</span>
-				<span class="txt contact-box__txt">Kyiv 03150, Ukraine</span>
-			</div>
-
 		</div>
+
 	</main>
 
 	<footer class="footer-site">
@@ -100,6 +128,8 @@
 	</footer>
 
 	<script src="js/libs.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&callback=initMap" async defer></script>
+	<script src="js/bubbles/bubbles-contact.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

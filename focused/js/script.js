@@ -44,3 +44,34 @@ $(window).on('resize', function(){
 		$('.js-hamburger').removeClass('hamburger--active');
 	};
 });
+
+//map
+var map;
+function initMap() {
+	var coordinates = {lat: 50.4276228, lng: 30.5133156}
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: coordinates,
+		scrollwheel: false,
+		disableDefaultUI: false,
+		zoom: 17
+	});
+
+	var marker = new google.maps.Marker({
+		position: coordinates,
+		map: map,
+		animation: google.maps.Animation.DROP,
+		label: {
+	    color: '#c04e47',
+	    fontWeight: 'bold',
+	    text: 'Antonovycha Street, 66',
+  	},
+		icon: {
+		 labelOrigin: new google.maps.Point(100, 35),
+		 url: '/images/marker_red.png',
+		 size: new google.maps.Size(22, 40),
+		 origin: new google.maps.Point(0, 0),
+		 anchor: new google.maps.Point(11, 40),
+	 }
+  });
+	marker.setMap(map);
+};

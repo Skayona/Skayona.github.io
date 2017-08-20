@@ -68,7 +68,7 @@ function initMap() {
   	},
 		icon: {
 		 labelOrigin: new google.maps.Point(100, 35),
-		 url: '/images/marker_red.png',
+		 url: '../images/marker_red.png',
 		 size: new google.maps.Size(22, 40),
 		 origin: new google.maps.Point(0, 0),
 		 anchor: new google.maps.Point(11, 40),

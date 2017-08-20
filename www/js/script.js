@@ -1,3 +1,4 @@
+
 // jQuery.fn.clickToggle = function(a,b) {
 // 	var ab = [b,a];
 // 	return this.on("click", function(){ ab[this._tog^=1].call(this);
@@ -50,10 +51,10 @@ var map;
 function initMap() {
 	var coordinates = {lat: 50.4276228, lng: 30.5133156}
 	map = new google.maps.Map(document.getElementById('map'), {
-		center: coordinates,
-		scrollwheel: false,
+		center: {lat: 50.4176228, lng: 30.5533156},
+		// scrollwheel: false,
 		disableDefaultUI: false,
-		zoom: 17
+		zoom: 13
 	});
 
 	var marker = new google.maps.Marker({

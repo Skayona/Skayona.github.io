@@ -281,7 +281,7 @@ $(window).on('resize load', function(){
 					tx: 17,
 					ty: 0,
 					fill: {
-						color: 'url(#main-img-2)',
+						color: 'url(#main-img-4)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -492,7 +492,7 @@ $(window).on('resize load', function(){
 					tx: 5,
 					ty: 10,
 					fill: {
-						color: 'url(#main-img-2)',
+						color: 'url(#main-img-4)',
 						duration: 1,
 						easing: 'linear'
 					},

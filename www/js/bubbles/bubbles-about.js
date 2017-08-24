@@ -39,8 +39,6 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					//
-					// pathAlt: 'M152,250 C63.3559964,260 -10,200.622429 1,115 C0,37.2620369 84.545977,32.6669284 171,17 C228.047893,-16.9176816 323,27.6640054 325,104 C333,189.024397 229.663161,247 152,250 Z',
 					scaleX: 2,
 					scaleY: 2,
 					rotate: 0,
@@ -55,7 +53,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -80,7 +78,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,
@@ -266,7 +264,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -291,7 +289,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,
@@ -477,7 +475,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -502,7 +500,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,
@@ -641,7 +639,6 @@ $(window).on('resize load', function(){
 
 
 //dots
-
 $(window).on('resize load', function(){
 	if (window.matchMedia('(min-width: 1440px)').matches) {
 		{
@@ -688,7 +685,7 @@ $(window).on('resize load', function(){
 					tx: 61,
 					ty: 19,
 					fill: {
-						color: 'url(#dots)',
+						color: 'url(#dots-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -696,7 +693,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -713,7 +710,7 @@ $(window).on('resize load', function(){
 					tx: 8,
 					ty: 22,
 					fill: {
-						color: 'url(#dots2)',
+						color: 'url(#dots-3)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -721,7 +718,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,
@@ -899,7 +896,7 @@ $(window).on('resize load', function(){
 					tx: 56,
 					ty: 11.7,
 					fill: {
-						color: 'url(#dots)',
+						color: 'url(#dots-5)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -907,7 +904,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -924,7 +921,7 @@ $(window).on('resize load', function(){
 					tx: 6,
 					ty: 8,
 					fill: {
-						color: 'url(#dots1)',
+						color: 'url(#dots-6)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -932,7 +929,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,
@@ -1110,7 +1107,7 @@ $(window).on('resize load', function(){
 					tx: 53,
 					ty: 38,
 					fill: {
-						color: 'url(#dots2)',
+						color: 'url(#dots-3)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -1118,7 +1115,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 3000,
@@ -1135,7 +1132,7 @@ $(window).on('resize load', function(){
 					tx: 9,
 					ty: 27,
 					fill: {
-						color: 'url(#dots1)',
+						color: 'url(#dots-4)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -1143,7 +1140,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 2000,
 							easing: 'easeOutElastic',
-							elasticity: 600
+							elasticity: 200
 						},
 						svg: {
 							duration: 2000,

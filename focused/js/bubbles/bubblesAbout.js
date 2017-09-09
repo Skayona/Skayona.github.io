@@ -1,6 +1,6 @@
 //img
 $(window).on('resize load', function(){
-	if (window.matchMedia('(min-width: 1440px)').matches) {
+	if (window.matchMedia('(min-width: 960px)').matches) {
 		{
 			// Helper vars and functions.
 			const extend = function(a, b) {
@@ -39,13 +39,13 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 2,
-					scaleY: 2,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
 					tx: 63,
-					ty: 20,
+					ty: 27,
 					fill: {
-						color: 'url(#about1)',
+						color: 'url(#img-about-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -53,7 +53,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -64,24 +64,24 @@ $(window).on('resize load', function(){
 				{
 					path: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
 					pathAlt: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
-					scaleX: 1.5,
-					scaleY: 1.5,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
 					tx: 10,
-					ty: 24,
+					ty: 14,
 					fill: {
-						color: 'url(#about2)',
+						color: 'url(#img-about-2)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}
@@ -250,13 +250,13 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 5,
-					scaleY: 5,
+					scaleX: 3.71,
+					scaleY: 3.71,
 					rotate: 0,
 					tx: 57,
-					ty: 12,
+					ty: 8,
 					fill: {
-						color: 'url(#about4)',
+						color: 'url(#img-about-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -264,7 +264,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -281,18 +281,18 @@ $(window).on('resize load', function(){
 					tx: 8,
 					ty: 10,
 					fill: {
-						color: 'url(#about3)',
+						color: 'url(#img-about-2)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}
@@ -422,7 +422,7 @@ $(window).on('resize load', function(){
 
 			init();
 		};
-	}  else if (window.matchMedia('(orientation: landscape)').matches){
+	} else if (window.matchMedia('(orientation: landscape)').matches){
 		{
 			// Helper vars and functions.
 			const extend = function(a, b) {
@@ -461,13 +461,13 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 3,
-					scaleY: 3,
+					scaleX: 2.48,
+					scaleY: 2.48,
 					rotate: 0,
 					tx: 54,
-					ty: 40,
+					ty: 45,
 					fill: {
-						color: 'url(#about4)',
+						color: 'url(#img-about-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -475,7 +475,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -486,24 +486,24 @@ $(window).on('resize load', function(){
 				{
 					path: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
 					pathAlt: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
-					scaleX: 2,
-					scaleY: 2,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
 					tx: 10,
-					ty: 30,
+					ty: 14,
 					fill: {
-						color: 'url(#about3)',
+						color: 'url(#img-about-2)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}
@@ -640,7 +640,7 @@ $(window).on('resize load', function(){
 
 //dots
 $(window).on('resize load', function(){
-	if (window.matchMedia('(min-width: 1440px)').matches) {
+	if (window.matchMedia('(min-width: 960px)').matches) {
 		{
 			// Helper vars and functions.
 			const extend = function(a, b) {
@@ -679,11 +679,11 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 2,
-					scaleY: 2,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
-					tx: 61,
-					ty: 19,
+					tx: 61.5,
+					ty: 25,
 					fill: {
 						color: 'url(#dots-1)',
 						duration: 1,
@@ -693,7 +693,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -704,24 +704,24 @@ $(window).on('resize load', function(){
 				{
 					path: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
 					pathAlt: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
-					scaleX: 1.5,
-					scaleY: 1.5,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
 					tx: 8,
-					ty: 22,
+					ty: 11,
 					fill: {
-						color: 'url(#dots-3)',
+						color: 'url(#dots-1)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}
@@ -890,13 +890,13 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 5,
-					scaleY: 5,
+					scaleX: 3.71,
+					scaleY: 3.71,
 					rotate: 0,
-					tx: 56,
-					ty: 11.7,
+					tx: 55,
+					ty: 7,
 					fill: {
-						color: 'url(#dots-5)',
+						color: 'url(#dots-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -904,7 +904,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -921,18 +921,18 @@ $(window).on('resize load', function(){
 					tx: 6,
 					ty: 8,
 					fill: {
-						color: 'url(#dots-6)',
+						color: 'url(#dots-3)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}
@@ -1101,13 +1101,13 @@ $(window).on('resize load', function(){
 				{
 					path: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
 					pathAlt: 'M142,257 C63.3559964,257 0,193.622429 0,115 C0,37.2620369 84.545977,32.6669284 161,7 C238.047893,-18.9176816 313,30.6640054 313,109 C313,187.024397 219.663161,257 142,257 Z',
-					scaleX: 3,
-					scaleY: 3,
+					scaleX: 2.48,
+					scaleY: 2.48,
 					rotate: 0,
-					tx: 53,
-					ty: 38,
+					tx: 52,
+					ty: 44,
 					fill: {
-						color: 'url(#dots-3)',
+						color: 'url(#dots-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -1115,7 +1115,7 @@ $(window).on('resize load', function(){
 						path: {
 							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
 							duration: 3000,
@@ -1126,24 +1126,24 @@ $(window).on('resize load', function(){
 				{
 					path: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
 					pathAlt: 'M620,774 C333.227134,738.068088 81.4220915,813.963643 12,595 C-99.0025797,296.299077 585.086178,-1.49370605 962,0 C1339.56349,1.51634375 1730,121.041514 1730,595 C1730,1069.92159 907.333777,809.274143 620,774 Z',
-					scaleX: 2,
-					scaleY: 2,
+					scaleX: 1.7,
+					scaleY: 1.7,
 					rotate: 0,
-					tx: 9,
-					ty: 27,
+					tx: 8,
+					ty: 11,
 					fill: {
-						color: 'url(#dots-4)',
+						color: 'url(#dots-2)',
 						duration: 1,
 						easing: 'linear'
 					},
 					animation: {
 						path: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic',
-							elasticity: 200
+							elasticity: 100
 						},
 						svg: {
-							duration: 2000,
+							duration: 3000,
 							easing: 'easeOutElastic'
 						}
 					}

@@ -126,7 +126,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch,300);
+					const watcher = scrollMonitor.create(scrollElemToWatch,0);
 
 					watcher.enterViewport(function() {
 						step = pos;
@@ -337,7 +337,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch,-150);
+					const watcher = scrollMonitor.create(scrollElemToWatch, -150);
 
 					watcher.enterViewport(function() {
 						step = pos;
@@ -548,7 +548,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch,-150);
+					const watcher = scrollMonitor.create(scrollElemToWatch,0);
 
 					watcher.enterViewport(function() {
 						step = pos;
@@ -766,7 +766,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch, 300);
+					const watcher = scrollMonitor.create(scrollElemToWatch, 0);
 
 					watcher.enterViewport(function() {
 						step = pos;
@@ -977,7 +977,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch,-150);
+					const watcher = scrollMonitor.create(scrollElemToWatch, -150);
 
 					watcher.enterViewport(function() {
 						step = pos;
@@ -1188,7 +1188,7 @@ $(window).on('resize load', function(){
 				DOM.contentElems.forEach((el,pos) => {
 					const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
 					pos = pos ? pos : contentElemsTotal;
-					const watcher = scrollMonitor.create(scrollElemToWatch,-150);
+					const watcher = scrollMonitor.create(scrollElemToWatch,0);
 
 					watcher.enterViewport(function() {
 						step = pos;

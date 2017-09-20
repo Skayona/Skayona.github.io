@@ -45,7 +45,7 @@ $(window).on('resize load', function(){
 					tx: 0,
 					ty: 8,
 					fill: {
-						color: 'url(#main-img-1)',
+						// color: 'url(#main-img-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -70,7 +70,7 @@ $(window).on('resize load', function(){
 					tx: 5,
 					ty: 4,
 					fill: {
-						color: 'url(#main-img-1)',
+						color: 'url(#main-img-2)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -684,7 +684,7 @@ $(window).on('resize load', function(){
 					tx: -4,
 					ty: 3,
 					fill: {
-						color: 'url(#dots-1)',
+						// color: 'url(#dots-1)',
 						duration: 1,
 						easing: 'linear'
 					},
@@ -709,7 +709,7 @@ $(window).on('resize load', function(){
 					tx: 1,
 					ty: 0,
 					fill: {
-						color: 'url(#dots-1)',
+						color: 'url(#dots-2)',
 						duration: 1,
 						easing: 'linear'
 					},

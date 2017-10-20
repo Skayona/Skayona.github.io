@@ -15,18 +15,18 @@
   </head>
   <body>
     <div class="promo">
-      <header class="header">
+      <header class="header js-menu">
         <div class="header__inner">
           <div class="header__logo"><img src="img/logo.svg" width="120" height="35" alt="MPS Development"></div>
           <nav class="menu">
             <button class="menu__toggle js-btn-menu" type="button">show/hide menu<span class="menu__toggle-line"></span></button>
             <div class="menu__dropdown">
               <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link menu__link--active" href="#about">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-                <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                <li class="menu__item"><a class="menu__link js-scrollto" href="#about">About</a></li>
+                <li class="menu__item"><a class="menu__link js-scrollto" href="#123">Team</a></li>
+                <li class="menu__item"><a class="menu__link js-scrollto" href="#services">Services</a></li>
+                <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
+                <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -86,7 +86,7 @@
           </div>
         </div>
       </article>
-      <article class="works">
+      <article class="works" id="portfolio">
         <div class="wrapper content--underlined">
           <h2 class="works__title">our latest works</h2>
           <p class="works__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero quidem a recusandae. Culpa, error dicta, in mollitia odio nemo soluta, suscipit iste esse quae quas iure laboriosam accusamus, illum.</p>
@@ -179,7 +179,7 @@
           <h3 class="slogan__subtitle">Lets Get Started!</h3>
         </div>
       </article>
-      <article class="contact">
+      <article class="contact" id="contact">
         <div class="contact-wrap">
           <div class="contact__content">
             <h2 class="contact__title">Contact us</h2>

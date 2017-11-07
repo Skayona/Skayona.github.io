@@ -10,40 +10,42 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#4C8CF5">
     <title>MPS Development | Full stack development service</title>
     <link rel="shortcut icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="promo">
-      <header class="header js-menu">
-        <div class="header__inner">
-          <div class="header__logo"><img src="img/logo.svg" width="120" height="35" alt="MPS Development"></div>
-          <nav class="menu">
-            <button class="menu__toggle js-btn-menu" type="button">show/hide menu<span class="menu__toggle-line"></span></button>
-            <div class="menu__dropdown">
-              <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link js-scrollto" href="#about">About</a></li>
-                <li class="menu__item"><a class="menu__link js-scrollto" href="#123">Team</a></li>
-                <li class="menu__item"><a class="menu__link js-scrollto" href="#services">Services</a></li>
-                <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
-                <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <section class="promo__text">
-        <p class="promo__subtitle">Professional software engineering services</p>
-        <h1 class="promo__title">Welcome to<span>MPS development</span></h1>
-        <div class="promo__bottom-text">
-          <h2 class="promo__desc">Software development for companies and startups</h2>
-          <p class="promo__sub-desc">Java / Angular Teams</p>
-        </div>
-      </section>
-      <div class="promo__bottom-circle"></div>
-      <div class="promo__bg"></div>
-    </div>
+  <body class="is-home">
+    <header class="header js-menu">
+      <div class="header__inner"><a class="header__logo-home header__logo logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="MPS logo" width="46" height="34">
+          <div class="logo__text"><div>MPS</div>DEVELOPMENT</div></a>
+        <nav class="menu">
+          <button class="menu__toggle js-btn-menu" type="button">show/hide menu<span class="menu__toggle-line"></span></button>
+          <div class="menu__dropdown">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link js-scrollto" href="#about">About</a></li>
+              <li class="menu__item"><a class="menu__link js-scrollto" href="#services">Services</a></li>
+              <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link js-scrollto" href="#team">Team</a></li>
+              <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
+              <li class="menu__item"><a class="menu__link menu__blog" href="blog.html">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank">Software for aviation</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
+      <div class="welcome">
+        <section class="welcome__text">
+          <p class="welcome__subtitle">Professional software engineering services</p>
+          <h1 class="welcome__title">Welcome to<span>MPS development</span></h1>
+          <div class="welcome__bottom-text">
+            <h2 class="welcome__desc">Software development for companies and startups</h2>
+            <p class="welcome__sub-desc">Java / Angular Teams</p>
+          </div>
+        </section>
+        <div class="welcome__bottom-circle"></div>
+        <div class="welcome__bg"></div>
+      </div>
       <article class="about" id="about">
         <div class="about-wrap">
           <div class="about__img-wrap"><img class="about__img" src="img/about.png" alt="Abou Us"></div>
@@ -86,69 +88,258 @@
           </div>
         </div>
       </article>
+      <article class="expertise">
+        <div class="expertise-wrap">
+          <div class="expertise__content">
+            <h2 class="expertise__title">Technical exertise</h2>
+            <p class="expertise__txt">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p>
+          </div>
+          <div class="expertise__issues js-issues">
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Restful Applications</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-1.jpg" alt="Restful Applications"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Desktop Applications (Windows, Linux)</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-2.jpg" alt="Desktop Applications (Windows, Linux)"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Browser Games</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-3.jpg" alt="Browser Games"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Complex Web Apps (with desktop apps functionality)</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-4.jpg" alt="Complex Web Apps (with desktop apps functionality)"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">High load applications</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-1.jpg" alt="High load applications"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Performance optimizations</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-2.jpg" alt="Performance optimizations"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Video / audio processing</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-3.jpg" alt="Video / audio processing"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Test automation: Selenium, HtmlUnit</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-4.jpg" alt="Test automation: Selenium, HtmlUnit"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Geospatial: Openstreetmap, MapsForge, OpenweatherMap, geodesical calculations, path finding</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-1.jpg" alt="Geospatial: Openstreetmap, MapsForge, OpenweatherMap, geodesical calculations, path finding"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title"> Apps with complex math inside</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-2.jpg" alt=" Apps with complex math inside"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="issue-wrap">
+                            <section class="issue">
+                              <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
+                              <h3 class="issue__title">Data scraping</h3>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                            </section>
+                            <div class="issue__img-wrap"><img class="issue__img" src="../img/expertise/expertise-3.jpg" alt="Data scraping"></div>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </article>
       <article class="works" id="portfolio">
         <div class="wrapper content--underlined">
           <h2 class="works__title">our latest works</h2>
           <p class="works__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero quidem a recusandae. Culpa, error dicta, in mollitia odio nemo soluta, suscipit iste esse quae quas iure laboriosam accusamus, illum.</p>
         </div>
-        <ul class="works__list js-works">
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/1.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk"></p>
-                </div><img src="img/2.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap works__desc-wrap--bottom">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/3.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap works__desc-wrap--bottom">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/4.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/5.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/6.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap works__desc-wrap--bottom">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/7.png">
-              </div></a></li>
-          <li><a class="works__item" href="#">
-              <div class="works__content">
-                <div class="works__desc-wrap works__desc-wrap--bottom">
-                  <h3 class="works__name">Cloud-based push notification platform</h3>
-                  <p class="works__desk">lorem</p>
-                </div><img src="img/8.png">
-              </div></a></li>
-        </ul>
+        <div class="works__list"><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/1.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/2.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/3.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/4.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/5.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/6.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/7.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      <div class="works__content">
+                        <h3 class="works__name">Cloud-based push notification platform</h3>
+                        <p class="works__desk">lorem</p>
+                      </div><img class="works__img" src="img/works/8.png" alt="Cloud-based push notification platform"></a>
+        </div>
+      </article>
+      <section class="team" id="team">
+        <div class="team__inner">
+          <div class="wrapper content--underlined">
+            <h2 class="team__title">meet our team</h2>
+            <p class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus, commodi ad quasi quaerat quis officiis maxime facere magni aliquid quas animi nulla minus beatae laudantium adipisci perspiciatis, ut fugit.</p>
+          </div>
+          <ul class="team__main js-team-main">
+            <li>
+              <div class="team__item-main"><img src="img/team/our-team.png"></div>
+            </li>
+            <li>
+              <div class="team__item-main"><img src="img/team/OurTeam.jpg"></div>
+            </li>
+            <li>
+              <div class="team__item-main"><img src="img/team/OurTeam-strat-1.png"></div>
+            </li>
+            <li>
+              <div class="team__item-main"><img src="img/team/our-team.png"></div>
+            </li>
+            <li>
+              <div class="team__item-main"><img src="img/team/OurTeam.jpg"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="team__wrapper-preview">
+          <ul class="team__preview-list js-team-preview">
+            <li>
+              <div class="team__item-prewiev"><img src="img/team/our-team.png"></div>
+            </li>
+            <li>
+              <div class="team__item-prewiev"><img src="img/team/OurTeam.jpg"></div>
+            </li>
+            <li>
+              <div class="team__item-prewiev"><img src="img/team/OurTeam-strat-1.png"></div>
+            </li>
+            <li>
+              <div class="team__item-prewiev"><img src="img/team/our-team.png"></div>
+            </li>
+            <li>
+              <div class="team__item-prewiev"><img src="img/team/OurTeam.jpg"></div>
+            </li>
+          </ul>
+          <button class="team__arrow team__arrow--prev" type="button">prev</button>
+          <button class="team__arrow team__arrow--next" type="button">next</button>
+        </div>
+      </section>
+      <section class="technology">
+        <div class="technology-wrap">
+          <div class="content--underlined technology--underlined">
+            <h2 class="technology__title txt--bold">Our technology stack</h2>
+            <p class="technology__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, libero possimus pariatur, ut magni sunt, quam quis illo enim ad eaque eveniet minus totam excepturi culpa. Doloremque, voluptatibus, nisi.</p>
+          </div>
+        </div>
+        <div class="technology__box">
+          <svg class="box" id="svgC" width="100%" height="100%" viewBox="0 0 560 170" preserveAspectRatio="xMinYMid meet"></svg>
+        </div>
+      </section>
+      <article class="home-blog">
+        <div class="wrapper content--underlined">
+          <h2 class="home-blog__title">our blog</h2>
+          <p class="home-blog__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero quidem a recusandae. Culpa, error dicta, in mollitia odio nemo soluta, suscipit iste esse quae quas iure laboriosam accusamus, illum.</p>
+        </div>
+        <div class="home-blog__list">
+                    <section class="home-blog__item">
+                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/01.jpg" alt="Meeting clutch"></div>
+                      <div class="home-blog__content js-blog-item">
+                        <h3 class="home-blog__name js-blog-title">Meeting clutch</h3>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                      </div>
+                    </section>
+                    <section class="home-blog__item">
+                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/02.jpg" alt="Visiting Forum AirLife"></div>
+                      <div class="home-blog__content js-blog-item">
+                        <h3 class="home-blog__name js-blog-title">Visiting Forum AirLife</h3>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                      </div>
+                    </section>
+                    <section class="home-blog__item">
+                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/03.jpg" alt="Aviation day"></div>
+                      <div class="home-blog__content js-blog-item">
+                        <h3 class="home-blog__name js-blog-title">Aviation day</h3>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                      </div>
+                    </section>
+                    <section class="home-blog__item">
+                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/04.jpg" alt="Visiting Forum AirLife"></div>
+                      <div class="home-blog__content js-blog-item">
+                        <h3 class="home-blog__name js-blog-title">Visiting Forum AirLife</h3>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                      </div>
+                    </section>
+        </div>
       </article>
       <section class="partners">
         <div class="partners__inner">
@@ -157,16 +348,16 @@
             <p class="partners__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus, commodi ad quasi quaerat quis officiis maxime facere magni aliquid quas animi nulla minus beatae laudantium adipisci perspiciatis, ut fugit.</p>
           </div>
           <ul class="partners__list js-partners-slider">
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-            <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partner-solarwinds.svg" width="155" height="33" alt="partner-solarwinds"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-clutch.svg" width="155" height="62" alt="partners-clutch"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-sdt.png" width="146" height="36" alt="partners-sdt"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-etsa.jpg" width="160" height="57" alt="partners-etsa"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-skilled.png" width="96" height="80" alt="partners-skilled"></a></li>
+                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-accelerance.png" width="155" height="33" alt="partners-accelerance"></a></li>
+                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
+                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
+                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
+                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
           </ul>
         </div>
       </section>
@@ -189,11 +380,11 @@
             <section class="address__item">
               <h3 class="address__title">Our address</h3>
               <p class="txt-contact"><span class="d-b txt--bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">03150&nbsp;Kiev, Tvesrkaya str&nbsp;6</span></p>
-              <p class="txt-contact"><span class="d-b txt--bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">03150&nbsp;Kiev, Tvesrkaya str&nbsp;6</span></p>
+              <p class="txt-contact"><span class="d-b txt--bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">02000 Kiev, Bilomorska str 1</span></p>
             </section>
             <section class="address__item">
               <h3 class="address__title">Call us</h3>
-              <p class="txt-contact"><a class="d-b txt-contact" href="tel:+380953430467"><span class="txt--bold">UA:</span><span>&nbsp;+38 095 343 04 67</span></a><a class="d-b txt-contact" href="tel:+13233750718"><span class="txt--bold">USA:</span><span>&nbsp;+1 323 375 07 18</span></a></p>
+              <p class="txt-contact"><a class="d-b txt-contact address__tel" href="tel:+380953430467"><span class="txt--bold">UA:</span><span>&nbsp;+38 095 343 04 67</span></a><a class="d-b txt-contact address__tel" href="tel:+13233750718"><span class="txt--bold">USA:</span><span>&nbsp;+1 323 375 07 18</span></a></p>
             </section>
           </div>
           <div class="contact__form form-wrap">
@@ -228,7 +419,6 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" async defer></script>
     <script src="js/script.min.js"></script>
   </body>

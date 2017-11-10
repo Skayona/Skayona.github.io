@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="is-home">
+  <body class="is-home" id="top">
     <header class="header js-menu">
       <div class="header__inner"><a class="header__logo-home header__logo logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="MPS logo" width="46" height="34">
           <div class="logo__text"><div>MPS</div>DEVELOPMENT</div></a>
@@ -32,7 +32,7 @@
           </div>
         </nav>
       </div>
-    </header>
+    </header><a class="scroll-top js-scroll-top" href=""><i class="scroll-top__arrow"></i></a>
     <main>
       <div class="welcome">
         <section class="welcome__text">
@@ -388,23 +388,26 @@
             </section>
           </div>
           <div class="contact__form form-wrap">
+            <div class="form--success js-from-success">
+              <p class="form--success-text">Your message is sent to us!</p>
+            </div>
             <form class="form" id="contactform">
                             <label class="form__label"><span class="form__input-title">Name</span>
-                              <input class="form__input" type="text" name="name" autocomplete="off" required>
+                              <input class="form__input" type="text" name="name" autocomplete="off" required id="contactname">
                             </label>
                             <label class="form__label"><span class="form__input-title">Email</span>
-                              <input class="form__input" type="email" name="email" autocomplete="off" required>
+                              <input class="form__input" type="email" name="email" autocomplete="off" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" id="contactmail">
                             </label>
                             <label class="form__label"><span class="form__input-title">Phone</span>
-                              <input class="form__input" type="tel" name="phone" autocomplete="off" required>
+                              <input class="form__input" type="tel" name="phone" autocomplete="off" required pattern="^[0-9+-]+$" id="contacttel">
                             </label>
                             <label class="form__label"><span class="form__input-title">Subject</span>
-                              <input class="form__input" type="text" name="subject" autocomplete="off" required>
+                              <input class="form__input" type="text" name="subject" autocomplete="off" id="contactssubject">
                             </label>
               <label class="form__label"><span class="form__input-title">Message</span>
-                <textarea class="form__message form__input" name="message" autocomplete="off" required></textarea>
+                <textarea class="form__message form__input" name="message" autocomplete="off" id="contactmessage"></textarea>
               </label>
-              <button class="form__btn">Send message</button>
+              <button class="form__btn" id="submitForm">Send message</button>
             </form>
           </div>
         </div>
@@ -419,7 +422,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" defer></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -9,11 +9,12 @@
     <meta name="msapplication-navbutton-color" content="#4C8CF5">
     <meta name="apple-mobile-web-app-status-bar-style" content="#4C8CF5">
     <title>MPS Development | Full stack development service</title>
+    <link rel="manifest" href="assets/manifest.json">
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="is-home">
+  <body class="is-home" id="top">
     <header class="header js-menu">
       <div class="header__inner"><a class="header__logo-home header__logo logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="MPS logo" width="46" height="34">
           <div class="logo__text"><div>MPS</div>DEVELOPMENT</div></a>
@@ -26,13 +27,13 @@
               <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#team">Team</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
-              <li class="menu__item"><a class="menu__link menu__blog" href="blog.html">Blog</a></li>
-              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank">Software for aviation</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--blog" href="blog.html">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank" rel="noopener">Software for aviation</a></li>
             </ul>
           </div>
         </nav>
       </div>
-    </header>
+    </header><a class="scroll-top js-scroll-top" href=""><i class="scroll-top__arrow"></i></a>
     <main>
       <div class="welcome">
         <section class="welcome__text">
@@ -48,7 +49,7 @@
       </div>
       <article class="about" id="about">
         <div class="about-wrap">
-          <div class="about__img-wrap"><img class="about__img" src="img/about.png" alt="Abou Us"></div>
+          <figure class="about__img-wrap"><img class="about__img" src="img/about.png" alt="Abou Us" width="505" height="406"></figure>
           <div class="about__content">
             <h2 class="about__title">About&nbsp;us</h2>
             <p class="about__txt">We&nbsp;follow modern approaches to&nbsp;minimize solution cost and improve overall quality:</p>
@@ -61,7 +62,7 @@
               <li class="about__item">Postproduction support</li>
               <li class="about__item">Employee training</li>
               <li class="about__item">User and administrator documentation</li>
-            </ul><a class="about__btn" href="assets/MPSCompanyPresentationWEB.pdf" target="_blank">Presentation</a>
+            </ul><a class="about__btn" href="assets/MPSCompanyPresentationWEB.pdf" target="_blank" rel="noopener">Presentation</a>
           </div>
         </div>
       </article>
@@ -100,9 +101,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Restful Applications</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-1.jpg" alt="Restful Applications"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-1.jpg" alt="Restful Applications" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -110,9 +111,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Desktop Applications (Windows, Linux)</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-2.jpg" alt="Desktop Applications (Windows, Linux)"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-2.jpg" alt="Desktop Applications (Windows, Linux)" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -120,9 +121,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Browser Games</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-3.jpg" alt="Browser Games"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-3.jpg" alt="Browser Games" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -130,9 +131,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Complex Web Apps (with desktop apps functionality)</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-4.jpg" alt="Complex Web Apps (with desktop apps functionality)"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-4.jpg" alt="Complex Web Apps (with desktop apps functionality)" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -140,9 +141,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">High load applications</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-1.jpg" alt="High load applications"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-1.jpg" alt="High load applications" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -150,9 +151,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Performance optimizations</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-2.jpg" alt="Performance optimizations"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-2.jpg" alt="Performance optimizations" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -160,9 +161,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Video / audio processing</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-3.jpg" alt="Video / audio processing"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-3.jpg" alt="Video / audio processing" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -170,9 +171,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Test automation: Selenium, HtmlUnit</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner. </p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-4.jpg" alt="Test automation: Selenium, HtmlUnit"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-4.jpg" alt="Test automation: Selenium, HtmlUnit" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -180,9 +181,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Geospatial: Openstreetmap, MapsForge, OpenweatherMap, geodesical calculations, path finding</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-1.jpg" alt="Geospatial: Openstreetmap, MapsForge, OpenweatherMap, geodesical calculations, path finding"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-1.jpg" alt="Geospatial: Openstreetmap, MapsForge, OpenweatherMap, geodesical calculations, path finding" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -190,9 +191,9 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title"> Apps with complex math inside</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form. We&nbsp;are ready to&nbsp;provide you with free consultation, help you with your IT-related questions and become your reliable software partner.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-2.jpg" alt=" Apps with complex math inside"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-2.jpg" alt=" Apps with complex math inside" width="585" height="722"></figure>
                           </div>
                         </div>
                         <div>
@@ -200,171 +201,157 @@
                             <section class="issue">
                               <div class="issue__box"><span class="issue__icon icon-bulb"></span></div>
                               <h3 class="issue__title">Data scraping</h3>
-                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank">Read more</a>
+                              <p class="issue__text">If&nbsp;you have an&nbsp;idea, questions or&nbsp;are ready to&nbsp;build a&nbsp;software solution, please, don&rsquo;t hesitate to&nbsp;fill in&nbsp;this form.</p><a class="issue__btn" href="single-blog.html" target="_blank" rel="noopener">Read more</a>
                             </section>
-                            <div class="issue__img-wrap"><img class="issue__img" src="img/expertise/expertise-3.jpg" alt="Data scraping"></div>
+                            <figure class="issue-img-wrap"><img class="issue-img" src="img/expertise/expertise-3.jpg" alt="Data scraping" width="585" height="722"></figure>
                           </div>
                         </div>
           </div>
         </div>
       </article>
       <article class="works" id="portfolio">
-        <div class="wrapper content--underlined">
+        <div class="works__main">
           <h2 class="works__title">our latest works</h2>
           <p class="works__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero quidem a recusandae. Culpa, error dicta, in mollitia odio nemo soluta, suscipit iste esse quae quas iure laboriosam accusamus, illum.</p>
         </div>
-        <div class="works__list"><a class="works__item" href="single-project.html">
+        <div class="works__list"><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/1.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/1.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/2.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/2.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/3.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/3.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/4.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/4.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/5.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/5.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/6.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/6.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/7.png" alt="Cloud-based push notification platform"></a><a class="works__item" href="single-project.html">
+                      </div><img class="works__img" src="img/works/7.png" alt="Cloud-based push notification platform" width="391" height="391"></a><a class="works__item" href="single-project.html" target="_blank" rel="noopener">
                       <div class="works__content">
                         <h3 class="works__name">Cloud-based push notification platform</h3>
                         <p class="works__desk">lorem</p>
-                      </div><img class="works__img" src="img/works/8.png" alt="Cloud-based push notification platform"></a>
+                      </div><img class="works__img" src="img/works/8.png" alt="Cloud-based push notification platform" width="391" height="391"></a>
         </div>
       </article>
       <section class="team" id="team">
         <div class="team__inner">
-          <div class="wrapper content--underlined">
-            <h2 class="team__title">meet our team</h2>
-            <p class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus, commodi ad quasi quaerat quis officiis maxime facere magni aliquid quas animi nulla minus beatae laudantium adipisci perspiciatis, ut fugit.</p>
-          </div>
-          <ul class="team__main js-team-main">
-            <li>
-              <div class="team__item-main"><img src="img/team/our-team.png"></div>
-            </li>
-            <li>
-              <div class="team__item-main"><img src="img/team/OurTeam.jpg"></div>
-            </li>
-            <li>
-              <div class="team__item-main"><img src="img/team/OurTeam-strat-1.png"></div>
-            </li>
-            <li>
-              <div class="team__item-main"><img src="img/team/our-team.png"></div>
-            </li>
-            <li>
-              <div class="team__item-main"><img src="img/team/OurTeam.jpg"></div>
-            </li>
-          </ul>
+          <h2 class="team__title">meet our team</h2>
+          <p class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus, commodi ad quasi quaerat quis officiis maxime facere magni aliquid quas animi nulla minus beatae laudantium adipisci perspiciatis, ut fugit.</p>
+        </div>
+        <div class="team__main js-team-main">
+          <figure class="team__item-main"><img src="img/team/our-team.png" alt="our team"></figure>
+          <figure class="team__item-main"><img src="img/team/OurTeam.jpg" alt="our team"></figure>
+          <figure class="team__item-main"><img src="img/team/OurTeam-strat-1.png" alt="our team"></figure>
+          <figure class="team__item-main"><img src="img/team/our-team.png" alt="our team"></figure>
+          <figure class="team__item-main"><img src="img/team/OurTeam.jpg" alt="our team"></figure>
         </div>
         <div class="team__wrapper-preview">
-          <ul class="team__preview-list js-team-preview">
-            <li>
-              <div class="team__item-prewiev"><img src="img/team/our-team.png"></div>
-            </li>
-            <li>
-              <div class="team__item-prewiev"><img src="img/team/OurTeam.jpg"></div>
-            </li>
-            <li>
-              <div class="team__item-prewiev"><img src="img/team/OurTeam-strat-1.png"></div>
-            </li>
-            <li>
-              <div class="team__item-prewiev"><img src="img/team/our-team.png"></div>
-            </li>
-            <li>
-              <div class="team__item-prewiev"><img src="img/team/OurTeam.jpg"></div>
-            </li>
-          </ul>
+          <div class="team__preview-list js-team-preview">
+            <div>
+              <figure class="team__item-prewiev"><img src="img/team/our-team.png" width="150" height="150" alt="our team preview"></figure>
+            </div>
+            <div>
+              <figure class="team__item-prewiev"><img src="img/team/OurTeam.jpg" width="150" height="150" alt="our team preview"></figure>
+            </div>
+            <div>
+              <figure class="team__item-prewiev"><img src="img/team/OurTeam-strat-1.png" width="150" height="150" alt="our team preview"></figure>
+            </div>
+            <div>
+              <figure class="team__item-prewiev"><img src="img/team/our-team.png" width="150" height="150" alt="our team preview"></figure>
+            </div>
+            <div>
+              <figure class="team__item-prewiev"><img src="img/team/OurTeam.jpg" width="150" height="150" alt="our team preview"></figure>
+            </div>
+          </div>
           <button class="team__arrow team__arrow--prev" type="button">prev</button>
           <button class="team__arrow team__arrow--next" type="button">next</button>
         </div>
       </section>
       <section class="technology">
         <div class="technology-wrap">
-          <div class="content--underlined technology--underlined">
-            <h2 class="technology__title txt--bold">Our technology stack</h2>
-            <p class="technology__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, libero possimus pariatur, ut magni sunt, quam quis illo enim ad eaque eveniet minus totam excepturi culpa. Doloremque, voluptatibus, nisi.</p>
-          </div>
+          <h2 class="technology__title">Our technology stack</h2>
+          <p class="technology__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit consequatur, libero possimus pariatur, ut magni sunt, quam quis illo enim ad eaque eveniet minus totam excepturi culpa. Doloremque, voluptatibus, nisi.</p>
         </div>
         <div class="technology__box">
           <svg class="box" id="svgC" width="100%" height="100%" viewBox="0 0 560 170" preserveAspectRatio="xMinYMid meet"></svg>
         </div>
       </section>
       <article class="home-blog">
-        <div class="wrapper content--underlined">
+        <div class="home-blog-wrap">
           <h2 class="home-blog__title">our blog</h2>
           <p class="home-blog__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum libero quidem a recusandae. Culpa, error dicta, in mollitia odio nemo soluta, suscipit iste esse quae quas iure laboriosam accusamus, illum.</p>
         </div>
         <div class="home-blog__list">
                     <section class="home-blog__item">
-                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/01.jpg" alt="Meeting clutch"></div>
+                      <figure class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/01.jpg" alt="Meeting clutch"></figure>
                       <div class="home-blog__content js-blog-item">
                         <h3 class="home-blog__name js-blog-title">Meeting clutch</h3>
-                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank" rel="noopener">Read More</a>
                       </div>
                     </section>
                     <section class="home-blog__item">
-                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/02.jpg" alt="Visiting Forum AirLife"></div>
+                      <figure class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/02.jpg" alt="Visiting Forum AirLife"></figure>
                       <div class="home-blog__content js-blog-item">
                         <h3 class="home-blog__name js-blog-title">Visiting Forum AirLife</h3>
-                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank" rel="noopener">Read More</a>
                       </div>
                     </section>
                     <section class="home-blog__item">
-                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/03.JPG" alt="Aviation day"></div>
+                      <figure class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/03.JPG" alt="Aviation day"></figure>
                       <div class="home-blog__content js-blog-item">
                         <h3 class="home-blog__name js-blog-title">Aviation day</h3>
-                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank" rel="noopener">Read More</a>
                       </div>
                     </section>
                     <section class="home-blog__item">
-                      <div class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/04.jpg" alt="Visiting Forum AirLife"></div>
+                      <figure class="home-blog__img-wrap js-blog-img"><img class="home-blog__img" src="img/blog/04.jpg" alt="Visiting Forum AirLife"></figure>
                       <div class="home-blog__content js-blog-item">
                         <h3 class="home-blog__name js-blog-title">Visiting Forum AirLife</h3>
-                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank">Read More</a>
+                        <p class="home-blog__desc js-blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a class="home-blog__more js-blog-link" href="single-blog.html" target="_blank" rel="noopener">Read More</a>
                       </div>
                     </section>
         </div>
       </article>
       <section class="partners">
         <div class="partners__inner">
-          <div class="wrapper content--underlined">
+          <div class="partners__content">
             <h2 class="partners__title">Our partners</h2>
             <p class="partners__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus, commodi ad quasi quaerat quis officiis maxime facere magni aliquid quas animi nulla minus beatae laudantium adipisci perspiciatis, ut fugit.</p>
           </div>
-          <ul class="partners__list js-partners-slider">
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partner-solarwinds.svg" width="155" height="33" alt="partner-solarwinds"></a></li>
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-clutch.svg" width="155" height="62" alt="partners-clutch"></a></li>
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-sdt.png" width="146" height="36" alt="partners-sdt"></a></li>
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-etsa.jpg" width="160" height="57" alt="partners-etsa"></a></li>
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-skilled.png" width="96" height="80" alt="partners-skilled"></a></li>
-                      <li><a class="partners__link" href="#"><img src="./img/partners/partners-accelerance.png" width="155" height="33" alt="partners-accelerance"></a></li>
-                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-                      <li><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150"></a></li>
-          </ul>
+          <div class="partners__list js-partners-slider">
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partner-solarwinds.svg" width="155" height="33" alt="partner-solarwinds"></a></div>
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partners-clutch.svg" width="155" height="62" alt="partners-clutch"></a></div>
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partners-sdt.png" width="146" height="36" alt="partners-sdt"></a></div>
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partners-etsa.jpg" width="160" height="57" alt="partners-etsa"></a></div>
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partners-skilled.png" width="96" height="80" alt="partners-skilled"></a></div>
+                      <div><a class="partners__link" href="#"><img src="./img/partners/partners-accelerance.png" width="155" height="33" alt="partners-accelerance"></a></div>
+                      <div><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150" width="" height="" alt="future-partners"></a></div>
+                      <div><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150" width="" height="" alt="future-partners"></a></div>
+                      <div><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150" width="" height="" alt="future-partners"></a></div>
+                      <div><a class="partners__link" href="#"><img src="http://via.placeholder.com/350x150" width="" height="" alt="future-partners"></a></div>
+          </div>
         </div>
       </section>
       <article class="slogan">
         <div class="slogan-wrap">
-          <div class="content--underlined">
-            <h2 class="slogan__title txt--bold">We&nbsp;bring your ideas to&nbsp;life</h2>
+          <div class="slogan__content">
+            <h2 class="slogan__title">We&nbsp;bring your ideas to&nbsp;life</h2>
             <p class="slogan__txt">Our mission is&nbsp;to&nbsp;help our clients to&nbsp;achieve success. With team of&nbsp;experienced developers, analysts, managers, Quality Assurance engineers and consultants, we&nbsp;build optimal solutions to&nbsp;support client business.</p>
           </div>
           <h3 class="slogan__subtitle">Lets Get Started!</h3>
@@ -379,32 +366,36 @@
           <div class="contact__address address">
             <section class="address__item">
               <h3 class="address__title">Our address</h3>
-              <p class="txt-contact"><span class="d-b txt--bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">03150&nbsp;Kiev, Tvesrkaya str&nbsp;6</span></p>
-              <p class="txt-contact"><span class="d-b txt--bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">02000 Kiev, Bilomorska str 1</span></p>
+              <p class="txt-contact"><span class="d-b txt-bold">Office&nbsp;1</span><span class="d-b">Ukraine</span><span class="d-b">03150&nbsp;Kiev, Tvesrkaya str&nbsp;6</span></p>
+              <p class="txt-contact"><span class="d-b txt-bold">Office&nbsp;2</span><span class="d-b">Ukraine</span><span class="d-b">02000 Kiev, Bilomorska str 1</span></p>
             </section>
             <section class="address__item">
               <h3 class="address__title">Call us</h3>
-              <p class="txt-contact"><a class="d-b txt-contact address__tel" href="tel:+380953430467"><span class="txt--bold">UA:</span><span>&nbsp;+38 095 343 04 67</span></a><a class="d-b txt-contact address__tel" href="tel:+13233750718"><span class="txt--bold">USA:</span><span>&nbsp;+1 323 375 07 18</span></a></p>
+              <p class="txt-contact"><a class="d-b txt-contact address__tel" href="tel:+380953430467"><span class="txt-bold">UA:</span><span>&nbsp;+38 095 343 04 67</span></a><a class="d-b txt-contact address__tel" href="tel:+13233750718"><span class="txt-bold">USA:</span><span>&nbsp;+1 323 375 07 18</span></a></p>
             </section>
+            <div class="address__item"><span class="skype-button rectangle address__skype textonly" data-contact-id="slaventij_" data-text="Contact us"></span></div>
           </div>
           <div class="contact__form form-wrap">
+            <div class="form-success js-from-success">
+              <p class="form-success__text">Your message is sent to us!</p>
+            </div>
             <form class="form" id="contactform">
                             <label class="form__label"><span class="form__input-title">Name</span>
-                              <input class="form__input" type="text" name="name" autocomplete="off" required>
+                              <input class="form__input" type="text" name="name" autocomplete="off" id="contactname" required>
                             </label>
                             <label class="form__label"><span class="form__input-title">Email</span>
-                              <input class="form__input" type="email" name="email" autocomplete="off" required>
+                              <input class="form__input" type="email" name="email" autocomplete="off" id="contactmail" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" title="example@example.com" required>
                             </label>
                             <label class="form__label"><span class="form__input-title">Phone</span>
-                              <input class="form__input" type="tel" name="phone" autocomplete="off" required>
+                              <input class="form__input" type="tel" name="phone" autocomplete="off" pattern="^[0-9+-]+$" id="contacttel" title="only numbers" required>
                             </label>
                             <label class="form__label"><span class="form__input-title">Subject</span>
-                              <input class="form__input" type="text" name="subject" autocomplete="off" required>
+                              <input class="form__input" type="text" name="subject" autocomplete="off" id="contactssubject">
                             </label>
               <label class="form__label"><span class="form__input-title">Message</span>
-                <textarea class="form__message form__input" name="message" autocomplete="off" required></textarea>
+                <textarea class="form__message form__input" name="message" autocomplete="off" id="contactmessage"></textarea>
               </label>
-              <button class="form__btn">Send message</button>
+              <button class="form__btn" id="submitForm">Send message</button>
             </form>
           </div>
         </div>
@@ -413,13 +404,14 @@
     </main>
     <footer class="footer">
       <div class="footer-wrap">
-        <div class="footer__social social"><a class="social__item social__skype" href="skype:slaventij_" target="_blank"></a><a class="social__item social__fb" href="https://www.facebook.com/mpsdevelopment" target="_blank"></a><a class="social__item social__in" href="https://www.linkedin.com/company/mps-development" target="_blank"></a><a class="social__item social__tw" href="https://twitter.com/DevelopmentMps" target="_blank"></a><a class="social__item social__ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank"></a><a class="social__item social__yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank"></a>
+        <div class="footer__social social"><a class="social__item social__item--skype social__item--skype" href="skype:slaventij_" target="_self" rel="" aria-label="Skype"></a><a class="social__item social__item--fb social__item--fb" href="https://www.facebook.com/mpsdevelopment" target="_blank" rel="noopener" aria-label="Facebook"></a><a class="social__item social__item--in social__item--in" href="https://www.linkedin.com/company/mps-development" target="_blank" rel="noopener" aria-label="Linkedin"></a><a class="social__item social__item--tw social__item--tw" href="https://twitter.com/DevelopmentMps" target="_blank" rel="noopener" aria-label="Twitter"></a><a class="social__item social__item--ig social__item--ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank" rel="noopener" aria-label="instagram"></a><a class="social__item social__item--yt social__item--yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank" rel="noopener" aria-label="YouTube"></a>
         </div>
         <div class="footer__copy"><span class="js-get-current-year"></span>&nbsp;&copy;&nbsp;All rights reserved</div>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" defer></script>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

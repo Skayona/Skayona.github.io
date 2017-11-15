@@ -9,11 +9,12 @@
     <meta name="msapplication-navbutton-color" content="#4C8CF5">
     <meta name="apple-mobile-web-app-status-bar-style" content="#4C8CF5">
     <title>MPS Development | Blog | Meeting Clutch</title>
+    <link rel="manifest" href="assets/manifest.json">
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="is-blog">
+  <body class="is-blog" id="top">
     <header class="header js-menu">
       <div class="header__inner"><a class="header__logo-home header__logo logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="MPS logo" width="46" height="34">
           <div class="logo__text"><div>MPS</div>DEVELOPMENT</div></a>
@@ -26,35 +27,35 @@
               <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#team">Team</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
-              <li class="menu__item"><a class="menu__link menu__blog" href="blog.html">Blog</a></li>
-              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank">Software for aviation</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--blog" href="blog.html">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank" rel="noopener">Software for aviation</a></li>
             </ul>
           </div>
         </nav>
       </div>
-    </header>
+    </header><a class="scroll-top js-scroll-top" href=""><i class="scroll-top__arrow"></i></a>
     <main class="blog">
-      <div class="blog-wrap">
+      <div class="blog-wrap blog-single">
         <div class="blog-single__breadcrumps breadcrumps"><a class="breadcrumps__item" href="blog.html">Blog</a><span class="breadcrumps__item">Meeting clutch</span></div>
         <article class="blog-preview">
-          <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch"></div>
+          <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch" width="1170" height="400"></figure>
           <div class="blog-preview__content">
             <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Development</span></div>
             <h2 class="blog-preview__title">Meeting clutch</h2><span class="blog-preview__date">06.11.2017</span>
-            <div class="blog-single__pic-wrap blog-single__pic-wrap--right"><img class="blog-single__pic" src="img/blog/03.JPG" alt="pic"></div>
+            <figure class="blog-single__pic-wrap blog-single__pic-wrap--right"><img class="blog-single__pic" src="img/blog/03.JPG" alt="pic" width="300" height="300"></figure>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <div class="blog-single__pic-wrap blog-single__pic-wrap--left"><img class="blog-single__pic" src="img/blog/04.jpg" alt="pic"></div>
+            <figure class="blog-single__pic-wrap blog-single__pic-wrap--left"><img class="blog-single__pic" src="img/blog/04.jpg" alt="pic" width="300" height="300"></figure>
             <p class="blog-preview__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="blog-single__pic-wrap blog-single__pic-wrap--centered"><img class="blog-single__pic" src="img/blog/01.jpg" alt="pic"></div>
+            <figure class="blog-single__pic-wrap blog-single__pic-wrap--centered"><img class="blog-single__pic" src="img/blog/01.jpg" alt="pic" width="763" height="300"></figure>
             <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="blog-preview__extras extras"><a class="extras__item extras__comments extras__comments--single-block" href="#"><span class="extras__item--wrap"> 101 comments </span></a>
-              <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+            <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments extras__comments--single-block" href="#"><span class="extras__item-wrap"> 101 comments </span></a>
+              <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#"></a><a class="social-repost__item social-repost__item--tw" href="#"></a><a class="social-repost__item social-repost__item--in" href="#"></a></span></div>
             </div>
           </div>
         </article>
@@ -62,7 +63,7 @@
     </main>
     <footer class="footer">
       <div class="footer-wrap">
-        <div class="footer__social social"><a class="social__item social__skype" href="skype:slaventij_" target="_blank"></a><a class="social__item social__fb" href="https://www.facebook.com/mpsdevelopment" target="_blank"></a><a class="social__item social__in" href="https://www.linkedin.com/company/mps-development" target="_blank"></a><a class="social__item social__tw" href="https://twitter.com/DevelopmentMps" target="_blank"></a><a class="social__item social__ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank"></a><a class="social__item social__yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank"></a>
+        <div class="footer__social social"><a class="social__item social__item--skype social__item--skype" href="skype:slaventij_" target="_self" rel="" aria-label="Skype"></a><a class="social__item social__item--fb social__item--fb" href="https://www.facebook.com/mpsdevelopment" target="_blank" rel="noopener" aria-label="Facebook"></a><a class="social__item social__item--in social__item--in" href="https://www.linkedin.com/company/mps-development" target="_blank" rel="noopener" aria-label="Linkedin"></a><a class="social__item social__item--tw social__item--tw" href="https://twitter.com/DevelopmentMps" target="_blank" rel="noopener" aria-label="Twitter"></a><a class="social__item social__item--ig social__item--ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank" rel="noopener" aria-label="instagram"></a><a class="social__item social__item--yt social__item--yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank" rel="noopener" aria-label="YouTube"></a>
         </div>
         <div class="footer__copy"><span class="js-get-current-year"></span>&nbsp;&copy;&nbsp;All rights reserved</div>
       </div>

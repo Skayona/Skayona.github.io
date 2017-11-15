@@ -9,11 +9,12 @@
     <meta name="msapplication-navbutton-color" content="#4C8CF5">
     <meta name="apple-mobile-web-app-status-bar-style" content="#4C8CF5">
     <title>MPS Development | Blog</title>
+    <link rel="manifest" href="assets/manifest.json">
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSource+Sans+Pro:300,400,600,700" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="is-blog">
+  <body class="is-blog" id="top">
     <header class="header js-menu">
       <div class="header__inner"><a class="header__logo-home header__logo logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="MPS logo" width="46" height="34">
           <div class="logo__text"><div>MPS</div>DEVELOPMENT</div></a>
@@ -26,90 +27,87 @@
               <li class="menu__item"><a class="menu__link js-scrollto" href="#portfolio">Portfolio</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#team">Team</a></li>
               <li class="menu__item"><a class="menu__link js-scrollto" href="#contact">Contact</a></li>
-              <li class="menu__item"><a class="menu__link menu__blog" href="blog.html">Blog</a></li>
-              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank">Software for aviation</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--blog" href="blog.html">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="http://mpsdevelopment.com/" target="_blank" rel="noopener">Software for aviation</a></li>
             </ul>
           </div>
         </nav>
       </div>
-    </header>
+    </header><a class="scroll-top js-scroll-top" href=""><i class="scroll-top__arrow"></i></a>
     <main class="blog">
       <div class="blog-wrap">
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Development</span></div>
                     <h2 class="blog-preview__title">Meeting clutch</h2><span class="blog-preview__date">06.11.2017</span>
                     <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/03.JPG" alt="Aviation day"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/03.JPG" alt="Aviation day" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Business</span></div>
                     <h2 class="blog-preview__title">Aviation day</h2><span class="blog-preview__date">06.11.2017</span>
-                    <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/01.jpg" alt="Visiting Forum AirLife"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/01.jpg" alt="Visiting Forum AirLife" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Web</span></div>
                     <h2 class="blog-preview__title">Visiting Forum AirLife</h2><span class="blog-preview__date">06.11.2017</span>
                     <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/04.jpg" alt="Meeting clutch" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Development</span></div>
                     <h2 class="blog-preview__title">Meeting clutch</h2><span class="blog-preview__date">06.11.2017</span>
                     <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/03.JPG" alt="Aviation day"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/03.JPG" alt="Aviation day" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Business</span></div>
                     <h2 class="blog-preview__title">Aviation day</h2><span class="blog-preview__date">06.11.2017</span>
                     <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
                 <article class="blog-preview">
-                  <div class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/01.jpg" alt="Visiting Forum AirLife"></div>
-                  <div class="blog-preview__content">
+                  <figure class="blog-preview__img-wrap"><img class="blog-preview__img" src="img/blog/01.jpg" alt="Visiting Forum AirLife" width="569" height="400"></figure>
+                  <div class="blog-preview__content blog-preview__content--stretch">
                     <div class="blog-preview__tag-wrap"><span class="blog-preview__tag">Web</span></div>
                     <h2 class="blog-preview__title">Visiting Forum AirLife</h2><span class="blog-preview__date">06.11.2017</span>
                     <p class="blog-preview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="blog-preview__extras extras"><a class="extras__item extras__comments" href="#"><span class="extras__item--wrap"> 101 comments </span></a><a class="extras__item extras__more" href="single-blog.html"><span class="extras__item--wrap"> More </span></a>
-                      <div class="extras__item social-repost"><span class="extras__item--wrap"><a class="social-repost__item social-repost__fb" href="#"></a><a class="social-repost__item social-repost__tw" href="#"></a><a class="social-repost__item social-repost__in" href="#"></a></span></div>
+                    <div class="blog-preview__extras extras"><a class="extras__item extras__item--comments" href="#"><span class="extras__item-wrap"> 101 comments </span></a><a class="extras__item extras__item--more" href="single-blog.html"><span class="extras__item-wrap"> More </span></a>
+                      <div class="extras__item social-repost"><span class="extras__item-wrap"><a class="social-repost__item social-repost__item--fb" href="#fb" aria-label="Repost to facebook"></a><a class="social-repost__item social-repost__item--tw" href="#tw" aria-label="Repost to twitter"></a><a class="social-repost__item social-repost__item--in" href="#in" aria-label="Repost to linkedin"></a></span></div>
                     </div>
                   </div>
                 </article>
-        <div class="blog-nav">
-          <button class="blog-nav__btn blog-nav__left">Newer posts</button>
-          <button class="blog-nav__btn blog-nav__right">Older posts</button>
-        </div>
+        <div class="blog-nav"><a class="blog-nav__btn blog-nav__btn--left" href="#">Newer posts</a><a class="blog-nav__btn blog-nav__btn--right" href="#">Older posts</a></div>
       </div>
     </main>
     <footer class="footer">
       <div class="footer-wrap">
-        <div class="footer__social social"><a class="social__item social__skype" href="skype:slaventij_" target="_blank"></a><a class="social__item social__fb" href="https://www.facebook.com/mpsdevelopment" target="_blank"></a><a class="social__item social__in" href="https://www.linkedin.com/company/mps-development" target="_blank"></a><a class="social__item social__tw" href="https://twitter.com/DevelopmentMps" target="_blank"></a><a class="social__item social__ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank"></a><a class="social__item social__yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank"></a>
+        <div class="footer__social social"><a class="social__item social__item--skype social__item--skype" href="skype:slaventij_" target="_self" rel="" aria-label="Skype"></a><a class="social__item social__item--fb social__item--fb" href="https://www.facebook.com/mpsdevelopment" target="_blank" rel="noopener" aria-label="Facebook"></a><a class="social__item social__item--in social__item--in" href="https://www.linkedin.com/company/mps-development" target="_blank" rel="noopener" aria-label="Linkedin"></a><a class="social__item social__item--tw social__item--tw" href="https://twitter.com/DevelopmentMps" target="_blank" rel="noopener" aria-label="Twitter"></a><a class="social__item social__item--ig social__item--ig" href="https://www.instagram.com/mpsdevelopment/" target="_blank" rel="noopener" aria-label="instagram"></a><a class="social__item social__item--yt social__item--yt" href="https://www.youtube.com/channel/UCwcBPYqssdEONR3yK_75iVw" target="_blank" rel="noopener" aria-label="YouTube"></a>
         </div>
         <div class="footer__copy"><span class="js-get-current-year"></span>&nbsp;&copy;&nbsp;All rights reserved</div>
       </div>

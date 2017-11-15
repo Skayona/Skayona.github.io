@@ -1,0 +1,15 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "MPS Development",
+  "short_name": "MPS",
+  "start_url": "/index.html",
+  "icons": [{
+    "src": "img/splash-screen.png",
+    "sizes": "512x512"
+  }],
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "MPS Development is Ukrainian company that produces high quality professional software solutions in order to achieve clients satisfaction.",
+  "theme_color": "#4C8CF5"
+}

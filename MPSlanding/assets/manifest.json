@@ -3,7 +3,7 @@
   "dir": "ltr",
   "name": "MPS Development",
   "short_name": "MPS",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "icons": [{
     "src": "img/splash-screen.png",
     "sizes": "512x512"

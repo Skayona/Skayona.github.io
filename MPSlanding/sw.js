@@ -8,9 +8,9 @@ self.addEventListener('install', function(event) {
 				'/js/script.min.js',
 				'/css/style.min.css',
 				'/fonts/iconfont/iconfont.svg'
-			]);
+			])
 		})
-	);
+	)
 });
 
 self.addEventListener('fetch', function(event) {
@@ -18,8 +18,8 @@ self.addEventListener('fetch', function(event) {
 		caches.match(event.request).then(function(response) {
 			if (response) {
 				return response;
-			};
+			}
 			return fetch(event.request);
 		})
-	);
+	)
 });

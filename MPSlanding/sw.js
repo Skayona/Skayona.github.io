@@ -2,6 +2,7 @@ self.addEventListener('install', function(event) {
 
 	event.waitUntil(
 		caches.open('static').then(function(cache) {
+			//for local
 			// return cache.addAll([
 			// 	'/img/logo.svg',
 			// 	'/img/favicon.png',
@@ -9,6 +10,7 @@ self.addEventListener('install', function(event) {
 			// 	'/css/style.min.css',
 			// 	'/fonts/iconfont/iconfont.svg'
 			// ])
+			//for git
 			return cache.addAll([
 				'/MPSlanding/img/logo.svg',
 				'/MPSlanding/img/favicon.png',

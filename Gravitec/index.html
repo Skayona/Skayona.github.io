@@ -22,8 +22,8 @@
         <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" size="152x152">
         <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-180x180.png" size="180x180">
         <link rel="icon" href="img/favicons/favicon-32x32.png" size="32x32" type="image/png">
-        <link rel="icon" href="img/favicons/android-chrome-192x192.png&quot;" size="192x192" type="image/png">
-        <link rel="icon" href="img/favicons/favicon-192x192.png" size="192x192" type="image/png">
+        <link rel="icon" href="img/favicons/android-chrome-192x192.png" size="192x192" type="image/png">
+        <link rel="icon" href="img/favicons/favicon-96x96.png" size="96x96" type="image/png">
         <link rel="icon" href="img/favicons/favicon-16x16.png" size="16x16" type="image/png">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#2b5797">
@@ -36,7 +36,7 @@
     <link href="css/style.min.css" rel="stylesheet">
     <script src="https://cdn.gravitec.net/storage/7d3da50f80cb345f89bb1469d0cb7967/client.js" async></script>
   </head>
-  <body>
+  <body><a class="fb-messenger js-fb-messenger" href="https://m.me/gravitec.net/" target="_blank" rel="noopener" aria-label="FaceBook massanger link"></a>
     <header class="header js-header">
       <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.png" alt="Логотип компании - Gravitec" width="242" height="32"></a>
         <nav class="header__menu menu">
@@ -55,7 +55,8 @@
               </ul>
             </li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="#">Цены</a></li>
-            <li class="menu-primary__item"><a class="menu-primary__link menu-primary__link--arrow js-menu-primary__link" href="#">Блог</a>
+            <li class="menu-primary__item">
+              <button class="menu-primary__link menu-primary__link--arrow js-menu-primary__link">Гайды</button>
               <ul class="menu-secondary js-menu-secondary">
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Что такое push-уведомления</a></li>
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Как отключить push-уведомления</a></li>
@@ -81,24 +82,142 @@
     </header>
     <main>
       <div class="welcome js-welcome">
-        <section class="welcome-wrap wrapper">
+        <article class="welcome-wrap wrapper">
           <h1 class="welcome__title">Сервис маркетинговых рассылок sms и&nbsp;push&#8209;уведомлений Gravitec.net</h1>
-          <h2 class="welcome__subtitle title-h2">Уведомления для возвращения посетителей вашего сайта</h2>
+          <h2 class="welcome__subtitle title-h2">Push-уведомления для возвращения посетителей вашего сайта</h2>
           <div class="welcome__browsers-wrap">
             <figure class="welcome__browsers welcome__browsers--chrome"><img class="welcome__browsers-img" src="img/welcome/chrome.svg" alt="Logo of browser Chrome" width="50" height="50"></figure>
             <figure class="welcome__browsers welcome__browsers--safari"><img class="welcome__browsers-img" src="img/welcome/safari.svg" alt="Logo of browser Safari" width="50" height="50"></figure>
             <figure class="welcome__browsers welcome__browsers--firefox"><img class="welcome__browsers-img" src="img/welcome/firefox.svg" alt="Logo of browser Firefox" width="50" height="50"></figure>
             <figure class="welcome__browsers welcome__browsers--yandex"><img class="welcome__browsers-img" src="img/welcome/yandex.svg" alt="Logo of browser Yandex" width="50" height="50"></figure>
             <figure class="welcome__browsers welcome__browsers--opera"><img class="welcome__browsers-img" src="img/welcome/opera.svg" alt="Logo of browser Opera" width="50" height="50"></figure>
-          </div><a class="welcome__solution" href="https://gravitec.net/ru/blog/dedicated-solutions/" target="_blank">Gravitec.net: Dedicated Solutions</a>
+          </div>
+          <h3 class="welcome__subslogan">Другие маркетинговые каналы</h3>
           <div class="welcome__channels-wrap">
             <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/push.svg" alt="Push notification" width="25" height="25"></figure>
-            <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/mail.svg" alt="Email icon" width="25" height="25"></figure>
             <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/sms.svg" alt="Sms icon" width="25" height="25"></figure>
-            <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/viber.png" alt="Viber icon" width="25" height="25"></figure>
+            <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/viber.svg" alt="Viber icon" width="25" height="25"></figure>
             <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/telegram.svg" alt="Telegram icon" width="25" height="25"></figure>
+            <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/mail.svg" alt="Email icon" width="25" height="25"></figure>
           </div>
-        </section>
+        </article>
+      </div>
+      <div class="how section-gap">
+        <article class="how-wrap wrapper">
+          <h2 class="how__title title-h2">Как это работает</h2>
+          <div class="how__instruction instruction">
+                  <div class="instruction__item">
+                    <p class="instruction__title" &attr><span class="instruction__num">1</span>Просто вставьте наш скрипт в HTML-код страницы
+                    </p>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="https://1335865630.rsc.cdn77.org/images/push-paste-code.png" alt="" width="" height=""></figure>
+                  </div>
+                  <div class="instruction__item">
+                    <p class="instruction__title" &attr><span class="instruction__num">2</span>Соберите новых подписчиков (+35% к вашей базе!)
+                    </p>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/customer.jpg" alt="" width="" height=""></figure>
+                  </div>
+            <div class="instruction__item">
+              <p class="instruction__title" &attr><span class="instruction__num">3</span> Рассылайте уведомления на любые устройства</p>
+              <figure class="instruction__img-push"><img class="instruction__img instruction__img--push" src="img/how/laptop.png" alt="Рисунок ноутбука, на котором изображено push-сообщение" width="542" height="355">
+                <p>или</p><img class="instruction__img instruction__img--push" src="img/how/phone_img.png" alt="Рисунок телеона, на котором изображено push-сообщение" width="345" height="318">
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="call-to-action section-gap">
+        <article class="call-to-action-wrap wrapper">
+          <div class="call-to-action__content">
+            <h2 class="call-to-action__title title-h2">Попробуйте web push на своем сайте</h2>
+            <p class="call-to-action__text">Установка за 10 минут!</p>
+          </div><a class="call-to-action__btn btn" href="https://push.gravitec.net/register">Попробовать</a>
+        </article>
+      </div>
+      <div class="why-us section-gap">
+        <article class="why-us-wrap wrapper">
+          <h2 class="why-us__title title-h2">Почему мы?</h2>
+          <ul class="why-us__list">
+            <li class="why-us__item why-us__item--first">Опыт Gravitec в push - это 2+ года. Наибольший опыт среди украинских компаний!</li>
+            <li class="why-us__item why-us__item--team">Наши специалисты стояли у основ разработки инновационной технологии push-уведомлений.</li>
+            <li class="why-us__item why-us__item--star">Мы предлагаем уникальные условия для привлечения клиентов.</li>
+            <li class="why-us__item why-us__item--send">Push-уведомления – в основе любых каналов онлайн-связи с клиентом! Email, SMS, Viber теперь используют push.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="canal wrapper"><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--push">Push-уведомления</h3>
+                <p class="canal__text text-normal">Push уведомления для сайта - 3 вида уникального сегментирования. До 70% доставки.</p></a><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--sms">SMS рассылки</h3>
+                <p class="canal__text text-normal">Все сообщения - вовремя. Расскажите о ваших преимуществах. Напоминайте о важных событиях.</p></a><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--viber">Viber рассылки</h3>
+                <p class="canal__text text-normal">Выбирайте лучший способ взаимодействия. Viber рассылка электронных сообщений – для клиентов, которые предпочитают online. </p></a><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--telegram">Telegram рассылки</h3>
+                <p class="canal__text text-normal">Ваши клиенты оценили плюсы Telegram для легкого общения? Время быть в тренде!</p></a><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--android">Создание ботов</h3>
+                <p class="canal__text text-normal">От автоматических рассылок до многофункциональных консультантов.</p></a><a class="canal__item" href="#">
+                <h3 class="canal__title title-h3 canal__title--chain">Цепочки уведомлений</h3>
+                <p class="canal__text text-normal">Сервис триггерных рассылок. Используйте все возможности взаимодействия с клиентом одновременно.</p></a>
+      </div>
+      <div class="marketer section-gap">
+        <article class="marketer-wrap wrapper">
+          <h2 class="marketer__title title-h2">Функции для маркетологов</h2>
+          <p class="marketer__text text-large">Инструменты для повышения эффективности рассылок</p>
+          <div class="marketer__tools tools">
+                  <section class="tools__item tools__item--segmentation">
+                    <h3 class="tools__title title-h3">Сегментация подписчиков</h3>
+                    <p class="tools__text text-normal">Создание сегментов подписчиков по их интересам, поведению на сайте, произвольным пользовательским данным.</p>
+                  </section>
+                  <section class="tools__item tools__item--retargeting">
+                    <h3 class="tools__title title-h3">Ретаргетинг кампании</h3>
+                    <p class="tools__text text-normal">Создание автоматизированных кампаний для ретаргетинга посетителей сайта.</p>
+                  </section>
+                  <section class="tools__item tools__item--timetarget">
+                    <h3 class="tools__title title-h3">Таргетинг по времени</h3>
+                    <p class="tools__text text-normal">Для любой рассылки вы можете задавать время отложенной отправки, TTL, время отображения уведомлений.</p>
+                  </section>
+                  <section class="tools__item tools__item--notifications">
+                    <h3 class="tools__title title-h3">Транзакционные уведомления</h3>
+                    <p class="tools__text text-normal">Доставка автоматизированных уведомлений по псевдонимам или токенам подписчиков.</p>
+                  </section>
+                  <section class="tools__item tools__item--statistics">
+                    <h3 class="tools__title title-h3">Расширенная статистика</h3>
+                    <p class="tools__text text-normal">Точная статистика рассылок с фильтрами по времени, технологиям и сегментам.</p>
+                  </section>
+                  <section class="tools__item tools__item--api">
+                    <h3 class="tools__title title-h3"> API для создания рассылок</h3>
+                    <p class="tools__text text-normal">REST API для создания таргетированных массовых рассылок и отправки транзакционных уведомлений.</p>
+                  </section>
+          </div>
+        </article>
+      </div>
+      <div class="clients section-gap">
+        <article class="clients-wrap wrapper">
+          <h2 class="clients__title title-h2">Наши клиенты</h2>
+          <div class="clients__logos js-logo">
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_1.png" alt="&quot;Mob&quot; logo" width="156" height="63"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_2.png" alt="&quot;Busfor.ua&quot; logo" width="256" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_3.png" alt="&quot;Bagnet&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_4.png" alt="&quot;Citrus&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_5.png" alt="&quot;Comfy&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_6.png" alt="&quot;Debet-Credit portal&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_7.png" alt="&quot;FavBet&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_8.png" alt="&quot;Football.ua&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_9.png" alt="&quot;IceLotto&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_10.png" alt="&quot;InTime&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_11.png" alt="&quot;iPay.ua&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_12.png" alt="&quot;KLO&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_13.png" alt="&quot;MSL lotto&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_14.png" alt="&quot;POKUPON&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_15.png" alt="&quot;Price.ua&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_16.png" alt="&quot;STYLUS&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_17.png" alt="&quot;UBR&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_18.png" alt="&quot;Vesti&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_19.png" alt="&quot;Vlast online magazine&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_20.png" alt="&quot;WebMoney logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_21.png" alt="&quot;Xiaomi&quot; logo" width="" height=""></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_22.png" alt="&quot;Yakaboo&quot; logo" width="" height=""></figure>
+          </div>
+        </article>
       </div>
     </main>
     <footer class="footer">
@@ -112,6 +231,8 @@
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">SMS-рассылки</a></li>
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Viber рассылки</a></li>
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Telegram рассылки</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Создание ботов Telegram</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Цепочки уведомлений</a></li>
             </ul>
           </div>
           <div class="footer__col">
@@ -124,7 +245,7 @@
             </ul>
           </div>
           <div class="footer__col">
-            <h3 class="footer__menu-title">Полезное (гайды)</h3>
+            <h3 class="footer__menu-title">Гайды (coming soon)</h3>
             <ul class="footer__menu">
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Что такое push-уведомления</a></li>
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как отключить push-уведомления</a></li>
@@ -140,6 +261,7 @@
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">API</a></li>
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Chrome push api</a></li>
                   <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как создать Telegram бота</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">СМС рассылка php</a></li>
             </ul>
           </div>
         </nav>

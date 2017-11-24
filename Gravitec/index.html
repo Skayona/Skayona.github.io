@@ -312,17 +312,20 @@
                 </section>
         </div>
       </div>
-            <div class="modal" id="#contact-modal">
-              <div class="modal__overlay"></div>
+            <div class="modal js-footer-contact-modal">
+              <div class="modal__overlay js-modal-overlay"></div>
               <section class="modal__content">
                 <div class="modal__header modal-wrap">
-                  <button class="modal__cross"></button>
+                  <button class="modal__cross js-modal-cross"></button>
                   <h2 class="modal__title">Напишите нам</h2>
                 </div>
                 <div class="modal__main modal-wrap">
-                  <form class="contact-form" action="php/contact.php" method="post">
+                  <form class="contact-form" id="contact-form" action="php/contact.php" method="post">
                     <p class="contact-form__text">У вас есть вопросы о сервисе?</p>
                     <p class="contact-form__text">Отправьте нам сообщение!</p>
+                    <div class="js-contact-form-success contact-form-success">
+                      <p class="contact-form-success__text">Ваше сообщение отправлено!</p>
+                    </div>
                     <fieldset class="contact-form__group">
                       <input class="contact-form__input" id="contact-name" type="text" name="name" placeholder="Ваше имя*" autocomplete="off" required>
                     </fieldset>
@@ -333,10 +336,10 @@
                       <textarea class="contact-form__textarea" id="contact-message" name="message" rows="3" placeholder="Сообщение*" autocomplete="off" required></textarea>
                     </fieldset>
                     <fieldset class="contact-form__group">
-                      <input class="contact-form__input" id="contact-antispam" type="text" name="antispam" placeholder="Антиспам-вопрос: 7 + 5 = ?" autocomplete="off" required>
+                      <input class="contact-form__input" id="contact-antispam" type="text" name="antispam" placeholder="Антиспам-вопрос: 7 + 5 = ?" pattern="12" autocomplete="off" required>
                     </fieldset>
                     <fieldset class="contact-form__group">
-                      <button class="btn contact-form__btn" type="submit">Отправить</button>
+                      <button class="btn contact-form__btn" id="contact-submit" type="submit">Отправить</button>
                     </fieldset>
                   </form>
                 </div>
@@ -391,7 +394,7 @@
         <div class="footer__contacts">
           <div class="footer__connect-wrap"><a class="footer__connect footer__connect--fb" href="https://www.facebook.com/gravitec.net/" aria-label="Ссылка на страничку в Facebook" target="_blank" rel="noopener"></a><a class="footer__connect footer__connect--mail" href="mailto:support@gravitec.net" aria-label="Отправить e-mail на адрес support@gravitec.net" target="_blank" rel="noopener"></a><a class="footer__connect footer__connect--slideshare" href="http://www.slideshare.net/gravitecnetru" aria-label="Ссылка на страничку в slideshare.net" target="_blank" rel="noopener"></a></div>
           <div class="footer__email-wrap">E-mail:&nbsp;<a class="footer__email" href="mailto:support@gravitec.net">support@gravitec.net</a></div>
-          <button class="btn footer__btn">Контактная форма</button>
+          <button class="btn footer__btn" id="footer-contact-btn">Контактная форма</button>
         </div>
       </div>
       <div class="footer__copy">

@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#4C8CF5">
-    <meta name="msapplication-navbutton-color" content="#4C8CF5">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#4C8CF5">
+    <meta name="theme-color" content="#091d25">
+    <meta name="msapplication-navbutton-color" content="#091d25">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#091d25">
     <link rel="manifest" href="assets/manifest.json">
     <link rel="shortcut icon" href="img/favicon.png">
         <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-57x57.png" size="57x57">
@@ -40,7 +40,7 @@
     <header class="header js-header">
       <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.png" alt="Логотип компании - Gravitec" width="242" height="32"></a>
         <nav class="header__menu menu">
-          <button class="hamburger js-hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          <button class="hamburger js-hamburger" role="button" aria-label="Button that opens menu on mobile"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           <ul class="menu-primary js-menu-primary">
             <li class="menu-primary__item">
               <button class="menu-primary__link menu-primary__link--arrow js-menu-primary__link">Возможности</button>
@@ -55,8 +55,8 @@
               </ul>
             </li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="#">Цены</a></li>
-            <li class="menu-primary__item">
-              <button class="menu-primary__link menu-primary__link--arrow js-menu-primary__link">Гайды</button>
+            <li class="menu-primary__item"><a class="menu-primary__link" href="#">Блог</a></li>
+            <li class="menu-primary__item"><a class="menu-primary__link menu-primary__link--arrow js-menu-primary__link" href="#">Гайды</a>
               <ul class="menu-secondary js-menu-secondary">
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Что такое push-уведомления</a></li>
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Как отключить push-уведомления</a></li>
@@ -70,7 +70,7 @@
             <li class="menu-primary__item"><a class="menu-primary__link" href="https://push.gravitec.net/login" onclick="yaCounter42088094.reachGoal('signinclick'); ga('send', 'event', 'signin', 'signinclick', 'rulanding');">Вход</a></li>
             <li class="menu-primary__item menu-primary__item--reg"><a class="btn menu-primary__btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">Регистрация</a></li>
             <li class="menu-primary__item menu-primary__item--lang">
-              <button class="menu-primary__link menu-primary__link--lang menu-primary__link--arrow js-menu-primary__link">RU</button>
+              <button class="menu-primary__link menu-primary__link--arrow menu-primary__link--lang js-menu-primary__link">RU</button>
               <ul class="menu-secondary menu-secondary--lang js-menu-secondary">
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">EN</a></li>
                     <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">PL</a></li>
@@ -108,17 +108,22 @@
                   <div class="instruction__item instruction__item--first">
                     <p class="instruction__title"><span class="instruction__num">1</span>Просто вставьте наш скрипт в HTML-код страницы
                     </p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/script&amp;push.png" alt="" width="" height=""></figure>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/script&amp;push.png" alt="768" width="411">
+                      <figcaption class="instruction__caption--first"><span><b>copy + paste</b></span><span class="fa fa-check" aria-hidden="true"></span></figcaption>
+                    </figure>
                   </div>
                   <div class="instruction__item instruction__item--second">
                     <p class="instruction__title"><span class="instruction__num">2</span>Соберите новых подписчиков (+35% к вашей базе!)
                     </p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/subscribers.png" alt="" width="" height=""></figure>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/subscribers.png" alt="768" width="411">
+                      <figcaption class="instruction__caption instruction__caption--second">+35%</figcaption>
+                    </figure>
                   </div>
                   <div class="instruction__item instruction__item--last">
                     <p class="instruction__title"><span class="instruction__num">3</span>Рассылайте уведомления на любые устройства
                     </p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/mobile&amp;desktop&amp;planets.png" alt="" width="" height=""></figure>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/mobile&amp;desktop&amp;planets-1.png" alt="768" width="502">
+                    </figure>
                   </div>
           </div>
         </article>
@@ -133,6 +138,7 @@
       </div>
       <div class="why-us section-gap">
         <article class="why-us-wrap wrapper">
+          <h2 class="why-us__title title-h2">Почему мы?</h2>
           <ul class="why-us__list">
             <li class="why-us__item why-us__item--first">Опыт Gravitec в push - это 2+ года. Наибольший опыт среди украинских компаний!</li>
             <li class="why-us__item why-us__item--team">Наши специалисты стояли у основ разработки инновационной технологии push-уведомлений.</li>
@@ -145,17 +151,17 @@
         <article class="canal-wrap wrapper">
           <h2 class="canal__title title-h2">Наши услуги</h2>
           <div class="canal__item-wrap"><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--push">Push-уведомления</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--push">Push-уведомления</h3>
                     <p class="canal__text text-normal">Push уведомления для сайта - 3 вида уникального сегментирования. До 70% доставки.</p></a><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--sms">SMS рассылки</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--sms">SMS рассылки</h3>
                     <p class="canal__text text-normal">Все сообщения - вовремя. Расскажите о ваших преимуществах. Напоминайте о важных событиях.</p></a><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--viber">Viber рассылки</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--viber">Viber рассылки</h3>
                     <p class="canal__text text-normal">Выбирайте лучший способ взаимодействия. Viber рассылка электронных сообщений – для клиентов, которые предпочитают online. </p></a><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--telegram">Telegram рассылки</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--telegram">Telegram рассылки</h3>
                     <p class="canal__text text-normal">Ваши клиенты оценили плюсы Telegram для легкого общения? Время быть в тренде!</p></a><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--android">Создание ботов</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--android">Создание ботов</h3>
                     <p class="canal__text text-normal">От автоматических рассылок до многофункциональных консультантов.</p></a><a class="canal__item" href="#">
-                    <h3 class="canal__title title-h3 canal__title--chain">Цепочки уведомлений</h3>
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--chain">Цепочки уведомлений</h3>
                     <p class="canal__text text-normal">Сервис триггерных рассылок. Используйте все возможности взаимодействия с клиентом одновременно.</p></a>
           </div>
         </article>
@@ -196,28 +202,28 @@
         <article class="clients-wrap wrapper">
           <h2 class="clients__title title-h2">Наши клиенты</h2>
           <div class="clients__logos js-logo">
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_1.png" alt="&quot;Mob&quot; logo" width="156" height="63"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_2.png" alt="&quot;Busfor.ua&quot; logo" width="256" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_3.png" alt="&quot;Bagnet&quot; logo" width="201" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_4.png" alt="&quot;Citrus&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_5.png" alt="&quot;Comfy&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_6.png" alt="&quot;Debet-Credit portal&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_7.png" alt="&quot;FavBet&quot; logo" width="224" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_8.png" alt="&quot;Football.ua&quot; logo" width="192" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_9.png" alt="&quot;IceLotto&quot; logo" width="238" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_10.png" alt="&quot;InTime&quot; logo" width="235" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_11.png" alt="&quot;iPay.ua&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_12.png" alt="&quot;KLO&quot; logo" width="80" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_13.png" alt="&quot;MSL lotto&quot; logo" width="100" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_14.png" alt="&quot;POKUPON&quot; logo" width="222" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_15.png" alt="&quot;Price.ua&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_16.png" alt="&quot;STYLUS&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_17.png" alt="&quot;UBR&quot; logo" width="200" height="40"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_18.png" alt="&quot;Vesti&quot; logo" width="144" height="62"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_19.png" alt="&quot;Vlast online magazine&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_20.png" alt="&quot;WebMoney logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_21.png" alt="&quot;Xiaomi&quot; logo" width="100" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_22.png" alt="&quot;Yakaboo&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_1.png" src="img/clients/logo_1.png" alt="&quot;Mob&quot; logo" width="156" height="63"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_2.png" src="img/clients/logo_2.png" alt="&quot;Busfor.ua&quot; logo" width="256" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_3.png" src="img/clients/logo_3.png" alt="&quot;Bagnet&quot; logo" width="201" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_4.png" src="img/clients/logo_4.png" alt="&quot;Citrus&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_5.png" src="img/clients/logo_5.png" alt="&quot;Comfy&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_6.png" src="img/clients/logo_6.png" alt="&quot;Debet-Credit portal&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_7.png" src="img/clients/logo_7.png" alt="&quot;FavBet&quot; logo" width="224" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_8.png" src="img/clients/logo_8.png" alt="&quot;Football.ua&quot; logo" width="192" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_9.png" src="img/clients/logo_9.png" alt="&quot;IceLotto&quot; logo" width="238" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_10.png" src="img/clients/logo_10.png" alt="&quot;InTime&quot; logo" width="235" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_11.png" src="img/clients/logo_11.png" alt="&quot;iPay.ua&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_12.png" src="img/clients/logo_12.png" alt="&quot;KLO&quot; logo" width="80" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_13.png" src="img/clients/logo_13.png" alt="&quot;MSL lotto&quot; logo" width="100" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_14.png" src="img/clients/logo_14.png" alt="&quot;POKUPON&quot; logo" width="222" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_15.png" src="img/clients/logo_15.png" alt="&quot;Price.ua&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_16.png" src="img/clients/logo_16.png" alt="&quot;STYLUS&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_17.png" src="img/clients/logo_17.png" alt="&quot;UBR&quot; logo" width="200" height="40"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_18.png" src="img/clients/logo_18.png" alt="&quot;Vesti&quot; logo" width="144" height="62"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_19.png" src="img/clients/logo_19.png" alt="&quot;Vlast online magazine&quot; logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_20.png" src="img/clients/logo_20.png" alt="&quot;WebMoney logo" width="200" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_21.png" src="img/clients/logo_21.png" alt="&quot;Xiaomi&quot; logo" width="100" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_22.png" src="img/clients/logo_22.png" alt="&quot;Yakaboo&quot; logo" width="200" height="100"></figure>
           </div>
         </article>
       </div>
@@ -311,9 +317,8 @@
                 </section>
         </div>
       </div>
-            <div class="modal js-footer-contact-modal">
-              <div class="modal__overlay js-modal-overlay"></div>
-              <section class="modal__content">
+            <div class="modal js-modal js-footer-contact-modal">
+              <section class="modal__content js-modal-content">
                 <div class="modal__header modal-wrap">
                   <button class="modal__cross js-modal-cross"></button>
                   <h2 class="modal__title">Напишите нам</h2>

@@ -34,7 +34,7 @@
     </head>
   <body id="index"><a class="fb-messenger js-fb-messenger" href="https://m.me/gravitec.net/" onclick="yaCounter42088094.reachGoal('contactfbmessenger'); ga('send', 'event', 'contactus', 'contactfbmessenger', 'enlanding');" target="_blank" rel="noopener" aria-label="FaceBook massanger link"></a>
     <header class="header js-header">
-      <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.png" alt="Логотип компании - Gravitec" width="242" height="32"></a>
+      <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.svg" alt="Логотип компании - Gravitec" width="220" height="32"></a>
         <nav class="header__menu menu">
           <button class="hamburger js-hamburger" role="button" aria-label="Button that opens menu on mobile"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           <ul class="menu-primary js-menu-primary">
@@ -79,11 +79,11 @@
                 </div>
                 <h2 class="welcome__subtitle title-h2">Другие маркетинговые каналы</h2>
                 <div class="welcome__channels-wrap">
-                  <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/push.svg" alt="Push notification" width="25" height="25"></figure>
-                  <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/sms.svg" alt="Sms icon" width="25" height="25"></figure>
-                  <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/viber.svg" alt="Viber icon" width="25" height="25"></figure>
-                  <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/telegram.svg" alt="Telegram icon" width="25" height="25"></figure>
-                  <figure class="welcome__channels"><img class="welcome__channels-img" src="img/welcome/mail.svg" alt="Email icon" width="25" height="25"></figure>
+                  <div class="welcome__channels welcome__channels--email">email</div>
+                  <div class="welcome__channels welcome__channels--bots">bots</div>
+                  <div class="welcome__channels welcome__channels--viber">viber</div>
+                  <div class="welcome__channels welcome__channels--sms">sms</div>
+                  <div class="welcome__channels welcome__channels--telegram">telegram</div>
                 </div>
               </article>
             </div>
@@ -92,23 +92,20 @@
           <h2 class="how__title title-h2">Как это работает</h2>
           <div class="how__instruction instruction">
                   <div class="instruction__item instruction__item--first">
-                    <p class="instruction__title-wrap"><span class="instruction__num">1</span><span class="instruction__title">Просто вставьте наш скрипт в HTML-код страницы</span></p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/script&amp;push.png" alt="" width="768" height="411">
-                    </figure>
+                    <p class="instruction__title-wrap"><span class="instruction__num">1</span><span class="instruction__title">Интегриуйте сервис с вашим сайтом за 10 минут</span></p>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/step1.png" alt="Пример javascript кода, который необходимо скопировать и вставить на сайт. Рядом изображен пуш, который появляется в браузере благодаря этому" width="768" height="530"></figure>
                   </div>
                   <div class="instruction__item instruction__item--second">
-                    <p class="instruction__title-wrap"><span class="instruction__num">2</span><span class="instruction__title">Собирайте базу с невероятной скоростью</span></p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/base-2.png" alt="" width="768" height="411">
-                    </figure>
+                    <p class="instruction__title-wrap"><span class="instruction__num">2</span><span class="instruction__title">Увеличьте базу подписчиков на 100% за месяц</span></p>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/step2.png" alt="Над схематическим изображением новых подписчиков расположены картинки: произвольной сегментации, график увеличения числа посетителей до 15%, рука в виде курсора - подписка в 1 клик" width="768" height="450"></figure>
                   </div>
                   <div class="instruction__item instruction__item--last">
-                    <p class="instruction__title-wrap"><span class="instruction__num">3</span><span class="instruction__title">Рассылайте уведомления на любые устройства</span></p>
-                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/mobile&amp;desktop&amp;planets.png" alt="" width="768" height="502">
-                    </figure>
+                    <p class="instruction__title-wrap"><span class="instruction__num">3</span><span class="instruction__title">Контактируйте с вашей аудиторией максимально эффективно</span></p>
+                    <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/step3.png" alt="Изображены мобильное устройство и компьютер, как центр вселенной, вокруг которой полукругом разместились планеты рассылок: Gravitec, email, viber, sms, telegram" width="768" height="555"></figure>
                   </div>
           </div>
         </article>
-      </div><a class="call-to-action section-gap call-to-action--minutes" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
+      </div><a class="call-to-action call-to-action--minutes" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
                     <article class="call-to-action-wrap wrapper">
                       <div class="call-to-action__content">
                         <h2 class="call-to-action__title title-h2">Попробуйте web push на своем сайте</h2>
@@ -175,17 +172,15 @@
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_2.png" src="img/clients/logo_2.png" alt="&quot;Busfor.ua&quot; logo" width="256" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_3.png" src="img/clients/logo_3.png" alt="&quot;Bagnet&quot; logo" width="201" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_4.png" src="img/clients/logo_4.png" alt="&quot;Citrus&quot; logo" width="200" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_5.png" src="img/clients/logo_5.png" alt="&quot;Comfy&quot; logo" width="200" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_6.png" src="img/clients/logo_6.png" alt="&quot;Debet-Credit portal&quot; logo" width="200" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_7.png" src="img/clients/logo_7.png" alt="&quot;FavBet&quot; logo" width="224" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_8.png" src="img/clients/logo_8.png" alt="&quot;Football.ua&quot; logo" width="192" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_9.png" src="img/clients/logo_9.png" alt="&quot;IceLotto&quot; logo" width="238" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_10.png" src="img/clients/logo_10.png" alt="&quot;InTime&quot; logo" width="235" height="100"></figure>
+                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_10.png" src="img/clients/logo_10.png" alt="&quot;InTime&quot; logo" width="275" height="95"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_11.png" src="img/clients/logo_11.png" alt="&quot;iPay.ua&quot; logo" width="200" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_12.png" src="img/clients/logo_12.png" alt="&quot;KLO&quot; logo" width="80" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_13.png" src="img/clients/logo_13.png" alt="&quot;MSL lotto&quot; logo" width="100" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_14.png" src="img/clients/logo_14.png" alt="&quot;POKUPON&quot; logo" width="222" height="100"></figure>
-                  <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_15.png" src="img/clients/logo_15.png" alt="&quot;Price.ua&quot; logo" width="200" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_16.png" src="img/clients/logo_16.png" alt="&quot;STYLUS&quot; logo" width="200" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_17.png" src="img/clients/logo_17.png" alt="&quot;UBR&quot; logo" width="200" height="40"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_18.png" src="img/clients/logo_18.png" alt="&quot;Vesti&quot; logo" width="144" height="62"></figure>
@@ -385,7 +380,7 @@
         <div class="wrapper">&copy; <span class="js-year"></span> <a class="footer__copy-link" href="Gravitec.net">Gravitec.net</a>. All rights reserved.</div>
       </div>
     </footer>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto:100,300,400&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Varela+Round|Roboto:100,300,400&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="https://cdn.gravitec.net/storage/7d3da50f80cb345f89bb1469d0cb7967/client.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

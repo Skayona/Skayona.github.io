@@ -52,7 +52,7 @@
             </li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="#">Цены</a></li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="https://gravitec.net/blog/">Блог</a></li>
-            <li class="menu-primary__item"><a class="menu-primary__link" href="#">Поддержка</a></li>
+            <li class="menu-primary__item"><a class="menu-primary__link" href="mailto:support@gravitec.net">Поддержка</a></li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="https://push.gravitec.net/login" onclick="yaCounter42088094.reachGoal('signinclick'); ga('send', 'event', 'signin', 'signinclick', 'rulanding');">Вход</a></li>
             <li class="menu-primary__item menu-primary__item--reg"><a class="btn menu-primary__btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">Регистрация</a></li>
             <li class="menu-primary__item menu-primary__item--lang">
@@ -70,23 +70,73 @@
             <div class="welcome js-welcome welcome--push">
               <article class="welcome-wrap wrapper">
                 <h1 class="welcome__title">Push уведомления – сервис для эффективного маркетинга</h1>
-                <h2 class="welcome__subtitle title-h2">Chrome push notifications и другие виды push-рассылок:</h2>
-                <ul class="welcome__advantages">
-                  <li class="welcome__advantages-item">Быстрое увеличение базы подписчиков</li>
-                  <li class="welcome__advantages-item">Высокий процент конверсии (до +15% в месяц)</li>
-                  <li class="welcome__advantages-item">Экономия денег и усилий (дешевле SMS!)</li>
-                </ul>
+                <h2 class="welcome__subtitle title-h2">Chrome push notifications и другие web push</h2>
+                      <div class="welcome__browsers-wrap">
+                        <figure class="welcome__browsers welcome__browsers--chrome"><img class="welcome__browsers-img" src="img/welcome/chrome.svg" alt="Logo of browser Chrome" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--firefox"><img class="welcome__browsers-img" src="img/welcome/firefox.svg" alt="Logo of browser Firefox" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--safari"><img class="welcome__browsers-img" src="img/welcome/safari.svg" alt="Logo of browser Safari" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--yandex"><img class="welcome__browsers-img" src="img/welcome/yandex.svg" alt="Logo of browser Yandex" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--opera"><img class="welcome__browsers-img" src="img/welcome/opera.svg" alt="Logo of browser Opera" width="50" height="50"></figure>
+                      </div>
               </article>
             </div>
       <div class="push-photo section-gap">
         <article class="push-photo-wrap wrapper">
           <h2 class="push-photo__title title-h2">Что такое push уведомления?</h2>
           <figure class="push-photo__box">
-            <figcaption class="push-photo__description"><strong class="push-photo__dt">Web push уведомления</strong> - это короткие сообщения, которые ваши подписчики получают даже при закрытом браузере.</figcaption>
-            <div class="push-photo__img-wrap"><img class="push-photo__img" src="img/liga.jpg" alt="Example of push"></div>
+            <div class="push-photo__img-wrap"><img class="push-photo__img" src="img/anatomy/push-example.jpg" alt="Example of push"></div>
+            <div class="push-photo__description">
+                            <div class="push-example push-example--photo">
+                              <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-blue.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
+                              <section class="push-example__col push-example__col--right">
+                                <h3 class="push-example__title">Новое уведомление</h3>
+                                <p class="push-example__text"><strong>Web push уведомления</strong> - это короткие сообщения, которые ваши подписчики получают даже при закрытом браузере.</p><a class="push-example__link" href="gravitec.net">gravitec.net</a>
+                                <div class="push-example__cross"></div>
+                              </section>
+                            </div>
+            </div>
           </figure>
         </article>
       </div>
+      <div class="anatomy section-gap">
+        <article class="anatomy-wrap wrapper">
+          <h2 class="anatomy__title title-h2">Элементы push уведомления в браузере</h2>
+          <div class="anatomy__push-example">
+                        <div class="push-example push-example--layout">
+                          <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-blue.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
+                          <section class="push-example__col push-example__col--right">
+                            <h3 class="push-example__title">Новое уведомление</h3>
+                            <p class="push-example__text">Текст сообщения</p><a class="push-example__link" href="gravitec.net">gravitec.net</a>
+                            <div class="push-example__cross"></div>
+                          </section>
+                        </div><span class="anatomy__push-num anatomy__push-num--1">1</span><span class="anatomy__push-num anatomy__push-num--2">2</span><span class="anatomy__push-num anatomy__push-num--3">3</span><span class="anatomy__push-num anatomy__push-num--4">4</span>
+          </div>
+          <div class="anatomy__push-description">
+            <dl class="anatomy__push-item anatomy__push-item--1">
+              <dt class="anatomy__push-title">Изображение</dt>
+              <dd class="anatomy__push-text">Оригинальное изображение для каждого сообщения. Работает только для Chrome<span class="anatomy__push-notice">(рекомендованный размер 192х192px)</span></dd>
+            </dl>
+            <dl class="anatomy__push-item anatomy__push-item--2">
+              <dt class="anatomy__push-title">Заголовок</dt>
+              <dd class="anatomy__push-text">Тема вашего сообщения<span class="anatomy__push-notice">(максимум 65 символов)</span></dd>
+            </dl>
+            <dl class="anatomy__push-item anatomy__push-item--3">
+              <dt class="anatomy__push-title">Текст сообщения</dt>
+              <dd class="anatomy__push-text">Информация, которую вы хотите донести<span class="anatomy__push-notice">(максимум 240 символов)</span></dd>
+            </dl>
+            <dl class="anatomy__push-item anatomy__push-item--4">
+              <dt class="anatomy__push-title">Ссылка</dt>
+              <dd class="anatomy__push-text">Адрес страницы которая откроется при клике на сообщение<span class="anatomy__push-notice">(может быть уникальной для каждого пуша)</span></dd>
+            </dl>
+          </div>
+        </article>
+      </div><a class="call-to-action call-to-action--minutes" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
+                    <article class="call-to-action-wrap wrapper">
+                      <div class="call-to-action__content">
+                        <h2 class="call-to-action__title title-h2">Попробуйте web push на своем сайте</h2><p class="call-to-action__text">Установка за 10 минут!</p>
+                      </div>
+                      <div class="call-to-action__btn-wrap"><span class="call-to-action__btn btn">Бесплатно сейчас</span></div>
+                    </article></a>
       <div class="advantages section-gap">
         <article class="advantages-wrap wrapper">
           <h2 class="advantages__title title-h2">Push-уведомления – реклама, которая работает</h2>
@@ -123,50 +173,30 @@
           </div>
         </article>
       </div>
-      <div class="anatomy section-gap">
-        <article class="anatomy-wrap wrapper">
-          <h2 class="anatomy__title title-h2">Элементы push уведомления в браузере</h2>
-          <div class="anatomy__push-example">
-            <div class="push-example">
-              <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-blue.svg" alt="Logo of Gravitec" width="120" height="120p"></figure>
-              <section class="push-example__col push-example__col--right">
-                <h3 class="push-example__title">Новое уведомление</h3>
-                <p class="push-example__text">Текст сообщения</p><a class="push-example__link" href="gravitec.net">gravitec.net</a>
-                <div class="push-example__cross"></div>
-              </section>
-            </div><span class="anatomy__push-num anatomy__push-num--1">1</span><span class="anatomy__push-num anatomy__push-num--2">2</span><span class="anatomy__push-num anatomy__push-num--3">3</span><span class="anatomy__push-num anatomy__push-num--4">4</span>
-          </div>
-          <div class="anatomy__push-description">
-            <dl class="anatomy__push-item anatomy__push-item--1">
-              <dt class="anatomy__push-title">Изображение</dt>
-              <dd class="anatomy__push-text">Оригинальное изображение для каждого сообщения. Работает только для Chrome<span class="anatomy__push-notice">(рекомендованный размер 192х192px)</span></dd>
-            </dl>
-            <dl class="anatomy__push-item anatomy__push-item--2">
-              <dt class="anatomy__push-title">Заголовок</dt>
-              <dd class="anatomy__push-text">Тема вашего сообщения<span class="anatomy__push-notice">(максимум 65 символов)</span></dd>
-            </dl>
-            <dl class="anatomy__push-item anatomy__push-item--3">
-              <dt class="anatomy__push-title">Текст сообщения</dt>
-              <dd class="anatomy__push-text">Информация, которую вы хотите донести<span class="anatomy__push-notice">(максимум 240 символов)</span></dd>
-            </dl>
-            <dl class="anatomy__push-item anatomy__push-item--4">
-              <dt class="anatomy__push-title">Ссылка</dt>
-              <dd class="anatomy__push-text">Адрес страницы которая откроется при клике на сообщение<span class="anatomy__push-notice">(может быть уникальной для каждого пуша)</span></dd>
-            </dl>
-          </div>
+      <div class="how-it-push section-gap">
+        <article class="how-it-push-wrap wrapper">
+          <h2 class="how-it-push__title title-h2">Как это работает</h2>
+          <ul class="how-it-push__scheme push-scheme">
+                  <li class="push-scheme__step">
+                    <p class="push-scheme__text push-scheme__text--1">Ваши посетители будут автоматически получать  предложения о подписке — в один клик.</p>
+                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-2--.png" alt="Push in browser" width="439" height="223"></figure>
+                  </li>
+                  <li class="push-scheme__step">
+                    <p class="push-scheme__text push-scheme__text--2">Вы можете рассылать web push уведомления своим подписчикам в любое время.</p>
+                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-3.png" alt="Push on laptop" width="542" height="355"></figure>
+                  </li>
+          </ul>
         </article>
       </div><a class="call-to-action call-to-action--start" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
                     <article class="call-to-action-wrap wrapper">
                       <div class="call-to-action__content">
-                        <h2 class="call-to-action__title title-h2">Как установить push уведомления всего за несколько минут?</h2>
-                        <p class="call-to-action__text"><ol class="call-to-action__list"><li class="call-to-action__item">1. Зарегистрируйся</li><li class="call-to-action__item">2. Следуй простой инструкции в личном кабинете</li></ol></p>
+                        <h2 class="call-to-action__title title-h2">Как установить push уведомления всего за несколько минут?</h2><ol class="call-to-action__list"><li class="call-to-action__item">1. Зарегистрируйся</li><li class="call-to-action__item">2. Следуй простой инструкции в личном кабинете</li></ol>
                       </div>
                       <div class="call-to-action__btn-wrap"><span class="call-to-action__btn btn">Начать</span></div>
                     </article></a>
             <div class="tariffs section-gap tariffs--push">
               <article class="tariff-wrap wrapper">
-                <h2 class="tariffs__title title-h2">Установить push уведомления на сайт: стоимость</h2>
-                <p class="tariffs__text text-large text-large--width">Скидка 60% на все тарифные планы для пользователей из Украины и стран СНГ. Скидка действует при регистрации в течении акции.</p>
+                <h2 class="tariffs__title title-h2">Стоимость услуг</h2>
                 <div class="tariffs__card-wrap">
                         <section class="tariffs__card card card--blue">
                           <header class="card__header card__wrapper">
@@ -236,14 +266,7 @@
                         </section>
                 </div>
               </article>
-            </div><a class="call-to-action call-to-action--minutes" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
-                    <article class="call-to-action-wrap wrapper">
-                      <div class="call-to-action__content">
-                        <h2 class="call-to-action__title title-h2">Попробуйте web push на своем сайте</h2>
-                        <p class="call-to-action__text">Установка за 10 минут!</p>
-                      </div>
-                      <div class="call-to-action__btn-wrap"><span class="call-to-action__btn btn">Бесплатно сейчас</span></div>
-                    </article></a>
+            </div>
       <div class="why-us section-gap">
         <article class="why-us-wrap wrapper">
           <h2 class="why-us__title title-h2">Почему Gravitec.net</h2>

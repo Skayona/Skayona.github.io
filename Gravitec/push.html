@@ -30,9 +30,14 @@
       <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
       <link rel="alternate" href="https://gravitec.net/en/" hreflang="en">
       <link rel="alternate" href="https://pl.gravitec.net" hreflang="pl">
-      <link rel="alternate" href="https://gravitec.net/ru/" hreflang="ru"><style>body{overflow: hidden;}.preloader-wrap{position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:flex;background: #fff;}.preloader{margin:auto;width:120px;height:120px;}.preloader__img{width:100%;height:100%;}</style>
+      <link rel="alternate" href="https://gravitec.net/ru/" hreflang="ru">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i%7CVarela+Round%7CRoboto:100,300,400&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet"><style>body{overflow: hidden;}.preloader-wrap{position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:flex;background: #fff;}.preloader{margin:auto;width:120px;height:120px;}.preloader__img{width:100%;height:100%;}</style>
     </head>
-  <body id="push"><a class="fb-messenger js-fb-messenger" href="https://m.me/gravitec.net/" onclick="yaCounter42088094.reachGoal('contactfbmessenger'); ga('send', 'event', 'contactus', 'contactfbmessenger', 'enlanding');" target="_blank" rel="noopener" aria-label="FaceBook massanger link"></a>
+  <body id="push">
+    <div class="preloader-wrap js-preloader">
+      <figure class="preloader"><img class="preloader__img" src="img/preloader.gif" alt="Preloader" width="120" height="120"></figure>
+    </div><a class="fb-messenger js-fb-messenger" href="https://m.me/gravitec.net/" onclick="yaCounter42088094.reachGoal('contactfbmessenger'); ga('send', 'event', 'contactus', 'contactfbmessenger', 'enlanding');" target="_blank" rel="noopener" aria-label="FaceBook massanger link"></a>
     <header class="header js-header">
       <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.svg" alt="Логотип компании - Gravitec" width="220" height="32"></a>
         <nav class="header__menu menu">
@@ -78,22 +83,32 @@
                         <figure class="welcome__browsers welcome__browsers--yandex"><img class="welcome__browsers-img" src="img/welcome/yandex.svg" alt="Logo of browser Yandex" width="50" height="50"></figure>
                         <figure class="welcome__browsers welcome__browsers--opera"><img class="welcome__browsers-img" src="img/welcome/opera.svg" alt="Logo of browser Opera" width="50" height="50"></figure>
                       </div>
+                <ul class="welcome__advantages js-welcome-advantages">
+                  <li class="welcome__advantages-item js-advantages-item">Читаемость сообщений – 95%+</li>
+                  <li class="welcome__advantages-item js-advantages-item">Конверсия в подписку 15%+</li>
+                  <li class="welcome__advantages-item js-advantages-item">CTR – до 30%</li>
+                  <li class="welcome__advantages-item js-advantages-item">Рост дневного трафика 5-25%</li>
+                </ul>
               </article>
             </div>
       <div class="push-photo section-gap">
         <article class="push-photo-wrap wrapper">
           <h2 class="push-photo__title title-h2">Что такое push уведомления?</h2>
           <figure class="push-photo__box">
-            <div class="push-photo__img-wrap"><img class="push-photo__img" src="img/anatomy/push-example.jpg" alt="Example of push"></div>
+            <div class="push-photo__img-wrap"><img class="push-photo__img" src="img/anatomy/push-example-1.jpg" alt="Example of push"></div>
             <div class="push-photo__description">
                             <div class="push-example push-example--photo">
-                              <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-blue.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
+                              <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-white.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
                               <section class="push-example__col push-example__col--right">
                                 <h3 class="push-example__title">Новое уведомление</h3>
-                                <p class="push-example__text"><strong>Web push уведомления</strong> - это короткие сообщения, которые ваши подписчики получают даже при закрытом браузере.</p><a class="push-example__link" href="gravitec.net">gravitec.net</a>
+                                <p class="push-example__text"><strong>Web push уведомления</strong> - это короткие сообщения, которые ваши подписчики получают даже при закрытом браузере.</p><span class="push-example__link">www.website.com</span>
                                 <div class="push-example__cross"></div>
                               </section>
                             </div>
+            </div>
+            <div class="push-photo__btn-wrap">
+              <button class="btn push-photo__btn">Прислать тестовый push</button>
+              <p class="push-photo__device-support">Push уведомления поддерживаются твоим браузером</p>
             </div>
           </figure>
         </article>
@@ -103,10 +118,10 @@
           <h2 class="anatomy__title title-h2">Элементы push уведомления в браузере</h2>
           <div class="anatomy__push-example">
                         <div class="push-example push-example--layout">
-                          <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-blue.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
+                          <figure class="push-example__col push-example__col--left"><img class="push-example__img" src="img/logo-white.svg" alt="Logo of Gravitec" width="120" height="120"></figure>
                           <section class="push-example__col push-example__col--right">
                             <h3 class="push-example__title">Новое уведомление</h3>
-                            <p class="push-example__text">Текст сообщения</p><a class="push-example__link" href="gravitec.net">gravitec.net</a>
+                            <p class="push-example__text">Текст сообщения</p><span class="push-example__link">www.website.com</span>
                             <div class="push-example__cross"></div>
                           </section>
                         </div><span class="anatomy__push-num anatomy__push-num--1">1</span><span class="anatomy__push-num anatomy__push-num--2">2</span><span class="anatomy__push-num anatomy__push-num--3">3</span><span class="anatomy__push-num anatomy__push-num--4">4</span>
@@ -179,11 +194,11 @@
           <ul class="how-it-push__scheme push-scheme">
                   <li class="push-scheme__step">
                     <p class="push-scheme__text push-scheme__text--1">Ваши посетители будут автоматически получать  предложения о подписке — в один клик.</p>
-                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-2--.png" alt="Push in browser" width="439" height="223"></figure>
+                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-1.png" alt="Push in browser" width="439" height="223"></figure>
                   </li>
                   <li class="push-scheme__step">
                     <p class="push-scheme__text push-scheme__text--2">Вы можете рассылать web push уведомления своим подписчикам в любое время.</p>
-                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-3.png" alt="Push on laptop" width="542" height="355"></figure>
+                    <figure class="push-scheme__img-wrap"><img class="push-scheme__img" src="img/how/p-step-2.png" alt="Push on laptop" width="542" height="355"></figure>
                   </li>
           </ul>
         </article>
@@ -371,5 +386,3 @@
     <script src="js/script.min.js"></script>
   </body>
 </html>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i%7CVarela+Round%7CRoboto:100,300,400&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-<link href="css/style.min.css" rel="stylesheet">

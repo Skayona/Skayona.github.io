@@ -1,0 +1,266 @@
+:root {
+	--fieldWidth: 500px;
+	--fieldBorder: 30px;
+	--boxWidth: calc(var(--fieldWidth) + 2 * var(--fieldBorder));
+	--snakeWidth: 20px;
+}
+
+@keyframes tongueScaling {
+
+	0% {
+		transform: scaleX(1);
+	}
+
+	50% {
+		transform: scaleX(2);
+	}
+
+}
+
+@keyframes eyeScaling {
+
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+}
+
+
+
+@keyframes foodScaling {
+
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.15);
+	}
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.game-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+
+.snake-box {
+	margin: auto;
+	width: var(--boxWidth);
+}
+
+.snake-box__header {
+	width: 100%;
+	padding: 20px;
+	background: #4a752c;
+}
+
+.snake-box__title {
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.snake-box__author {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	color: #fff;
+}
+
+.snake-box__progress {
+	margin-top: 20px;
+}
+
+.progress {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.progress__item {
+	margin: 0;
+}
+
+.progress__img,
+.progress__level,
+.progress__score {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.progress__img {
+	width: 30px;
+	height: 30px;
+}
+
+.progress__level,
+.progress__score {
+	color: #fff;
+}
+
+.snake-box__field-wrap {
+	display: flex;
+	padding: var(--fieldBorder);
+	background: #578a34;
+}
+
+.snake-box__field {
+	position: relative;
+	margin: auto;
+	width: var(--fieldWidth);
+	height: var(--fieldWidth);
+	background-color: #83bd5b;
+	background-image: url('images/field.png');
+	background-position: top left;
+}
+
+.snake__part {
+	position: absolute;
+	display: inline-block;
+	width: var(--snakeWidth);
+	height: var(--snakeWidth);
+	font-size: 0;
+	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+.snake__part--tail {
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*2);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background: linear-gradient(to right, #17439f, #4371e6);
+}
+
+.snake__part--body {
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*3);
+	border-bottom-right-radius: 15px;
+	background-color: #4371e6;
+}
+
+.snake__part--head {
+	top: calc(var(--snakeWidth)*14);
+	left:  calc(var(--snakeWidth)*3);
+	transform: rotate(-90deg);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: linear-gradient(to right, #4371e6 1%, #4e7cf6 50%);
+}
+
+.snake__eye {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #4e7cf6;
+}
+
+.snake__eye::before,
+.snake__eye::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.snake__eye::before {
+	left: 0;
+	right: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+}
+
+.snake__eye::after  {
+	right: 3px;
+	width: 4px;
+	height: 4px;
+	background-color: #000;
+	transform-origin: right;
+	/*animation: eyeScaling 2s ease 2s infinite;*/
+}
+
+.snake__eye--left {
+	top: -4px;
+}
+
+.snake__eye--right {
+	bottom: -4px;
+}
+
+.snake__naris {
+	position: absolute;
+	right: 3px;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: #17439f;
+}
+
+.snake__naris--left {
+	top: 6px;
+}
+
+.snake__naris--right {
+	bottom: 6px;
+}
+
+.snake__tongue {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -4px;
+	margin: auto;
+	height: 2px;
+	width: 4px;
+	background-color: #d45656;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	transform-origin: left;
+	animation: tongueScaling 2s linear infinite;
+}
+
+.snake__food {
+	position: absolute;
+	width: var(--snakeWidth);
+	height: var(--snakeWidth);
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*14);
+	animation: foodScaling 1.5s linear infinite;
+}
+
+.snake__food-img {
+	position: absolute;
+	top: -8px;
+	left: -5px;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	font-size: 0;
+	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}

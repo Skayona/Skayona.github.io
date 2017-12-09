@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<title>The Snake || Metelova Kateryna</title>
+</head>
+<body>
+
+	<div class="game-wrapper">
+
+		<section class="snake-box">
+			<header class="snake-box__header">
+				<h1 class="snake-box__title">The snake</h1>
+				<address class="snake-box__author">by Kateryna Metelova</address>
+
+				<div class="snake-box__progress progress">
+					<figure class="progress__item">
+						<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
+						<figcaption id="currentScore" class="progress__score">0</figcaption>
+					</figure>
+
+					<span class="progress__item">
+						<span class="progress__level">Level</span>
+						<span id="level" class="progress__score">1</span>
+					</span>
+
+					<figure class="progress__item">
+						<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
+						<figcaption id="bestScore" class="progress__score">0</figcaption>
+					</figure>
+				</div>
+
+			</header>
+			<div class="snake-box__field-wrap">
+				<div class="snake-box__field snake">
+
+
+						<span class="snake__part snake__part--tail js-snake" id="snakeTail"></span>
+						<span class="snake__part snake__part--body js-snake"></span>
+						<span class="snake__part snake__part--head js-snake" id="snakeHead">
+
+							<span class="snake__eye snake__eye--left"></span>
+							<span class="snake__eye snake__eye--right"></span>
+							<span class="snake__naris snake__naris--left"></span>
+							<span class="snake__naris snake__naris--right"></span>
+							<span class="snake__tongue"></span>
+						</span>
+
+
+					<div class="snake__food" id="snakeFood">
+						<img class="snake__food-img"	src="images/apple.svg" alt="Apple" width="25" height="25" />
+					</div>
+
+				</div>
+			</div>
+
+
+		</section>
+
+	</div>
+
+
+<script src="script.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

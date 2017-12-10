@@ -35,7 +35,32 @@
 
 			</header>
 			<div class="snake-box__field-wrap">
-				<div class="snake-box__field snake">
+
+				<div class="snake-box__begin">
+
+				</div>
+
+				<div class="snake-box__end-wrap" id="snakeFinished">
+					<div class="snake-box__end">
+						<h2 class="snake-box__title-win" id="winTitle">You are win!</h2>
+
+						<div class="snake-box__results">
+							<figure class="progress__item">
+								<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
+								<figcaption id="currentScoreFinish" class="progress__score">0</figcaption>
+							</figure>
+
+							<figure class="progress__item">
+								<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
+								<figcaption id="bestScoreFinish" class="progress__score">0</figcaption>
+							</figure>
+						</div>
+
+						<button class="snake-box__restart btn" id="restartBtn">restart</button>
+					</div>
+				</div>
+
+				<div class="snake-box__field snake" id="snakeField">
 
 
 						<span class="snake__part snake__part--tail js-snake" id="snakeTail"></span>

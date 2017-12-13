@@ -142,6 +142,7 @@ body {
 
 .snake__part {
 	position: absolute;
+	z-index: 1;
 	display: inline-block;
 	width: var(--snakeWidth);
 	height: var(--snakeWidth);
@@ -153,21 +154,32 @@ body {
 	top: calc(var(--snakeWidth)*15);
 	left:  calc(var(--snakeWidth)*2);
 	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+	border-bottom-left-radius: 20px;;
 	background: linear-gradient(to right, #17439f, #4371e6);
 }
 
 .snake__part--body {
 	top: calc(var(--snakeWidth)*15);
 	left:  calc(var(--snakeWidth)*3);
-	border-bottom-right-radius: 15px;
+	/*border-bottom-right-radius: 15px;*/
 	background-color: #4371e6;
 }
-
+.snake__part--body-1 {
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*4);
+	/*border-bottom-right-radius: 15px;*/
+	background-color: #4371e6;
+}
+.snake__part--body-2 {
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*5);
+	/*border-bottom-right-radius: 15px;*/
+	background-color: #4371e6;
+}
 .snake__part--head {
-	top: calc(var(--snakeWidth)*14);
-	left:  calc(var(--snakeWidth)*3);
-	transform: rotate(-90deg);
+	top: calc(var(--snakeWidth)*15);
+	left:  calc(var(--snakeWidth)*6);
+	/*transform: rotate(-90deg);*/
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	background: linear-gradient(to right, #4371e6 1%, #4e7cf6 50%);
@@ -267,18 +279,23 @@ body {
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
 }
 
-.snake-box__end-wrap {
+.snake-box__end-wrap,
+.snake-box__begin-wrap {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 0;
-	display: none;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.snake-box__end {
+.snake-box__end-wrap {
+	display: none;
+}
+
+.snake-box__end,
+.snake-box__begin {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -289,7 +306,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	width: 50%;
-	height: 200px;
+
 	margin: auto;
 	padding: 20px;
 	border-radius: 4px;
@@ -297,10 +314,27 @@ body {
 	background: #4ac0fd;
 }
 
+.snake-box__begin{
+	height: 350px;
+}
+
+.snake-box__end {
+	height: 200px;
+}
 .snake-box__results {
 	display: flex;
 	align-self: stretch;
 	justify-content: space-around;
+}
+
+.snake-box__begin-img {
+	width: 160px;
+	height: auto;
+}
+
+.snake-box__text-begin {
+	font-size: 18px;
+	color: #fff;
 }
 
 .snake-box__title-win {

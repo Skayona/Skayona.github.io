@@ -34,10 +34,14 @@
 				</div>
 
 			</header>
+
 			<div class="snake-box__field-wrap">
-
-				<div class="snake-box__begin">
-
+				<div class="snake-box__begin-wrap" id="snakeStart">
+					<div class="snake-box__begin">
+						<img class="snake-box__begin-img" src="images/keys.svg" alt="keys" />
+						<p class="snake-box__text-begin">Press 'OK' to start</p>
+						<button class="snake-box__btn-begin btn" id="startBtn">OK</button>
+					</div>
 				</div>
 
 				<div class="snake-box__end-wrap" id="snakeFinished">
@@ -65,6 +69,8 @@
 
 						<span class="snake__part snake__part--tail js-snake" id="snakeTail"></span>
 						<span class="snake__part snake__part--body js-snake"></span>
+						<span class="snake__part snake__part--body-1 js-snake"></span>
+						<span class="snake__part snake__part--body-2 js-snake"></span>
 						<span class="snake__part snake__part--head js-snake" id="snakeHead">
 
 							<span class="snake__eye snake__eye--left"></span>

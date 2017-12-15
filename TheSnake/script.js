@@ -4,8 +4,41 @@ function getRandomInt(min, max) {
 
 let snake = {
 	head: document.getElementById('snakeHead'),
-	tail: document.getElementById('snakeTail'),
+	headX: function() {return +getComputedStyle(this.head).left.replace('px', '')},
+	headY: function() {return +getComputedStyle(this.head).top.replace('px', '')},
 	parts: document.getElementsByClassName('js-snake'),
+	newPart: function() {
+		let newPart = snake.parts[0].cloneNode(true),
+				newPartX = +getComputedStyle(snake.parts[0]).left.replace('px', ''),
+				newPartY = +getComputedStyle(snake.parts[0]).top.replace('px', '') ;
+
+		switch (snake.direction) {
+			case 0:
+				newPart.style.top = newPartY + snake.dMove() + 'px';
+				break;
+			case 1:
+				newPart.style.left = newPartX - snake.dMove() + 'px';
+				break;
+			case 2:
+				newPart.style.top = newPartY - snake.dMove() + 'px';
+				break;
+			case 3:
+				newPart.style.left = newPartX + snake.dMove() + 'px';
+				break;
+			default:
+				break;
+		}
+
+		return newPart;
+
+	},
+	rising: function() {
+		snake.parts[0].parentNode.insertBefore(snake.newPart(), snake.parts[0]);
+		snake.moveTop(snake.speed);
+		snake.moveRight(snake.speed);
+		snake.moveDown(snake.speed);
+		snake.moveLeft(snake.speed);
+	},
 	dMove: function() {return this.head.clientWidth},
 	top: false,
 	right: false,
@@ -18,13 +51,14 @@ let snake = {
 	movingLeft: [],
 	stopPoint: [],
 	direction: null,
+	clickCounter: -1,
 	addStep: function() {
 		snake.movingTop.push([]);
 		snake.movingRight.push([]);
 		snake.movingDown.push([]);
 		snake.movingLeft.push([]);
 	},
-	moveTop: function() {
+	moveTop: function(dT) {
 		if(this.top && this.moveCounter == 1) {
 			this.clickCounter++;
 			this.addStep();
@@ -34,6 +68,7 @@ let snake = {
 					flag = true;
 
 			this.stopPoint[n] = +getComputedStyle(snake.parts[l]).left.replace('px', '');
+			let top = +getComputedStyle(snake.parts[l]).top.replace('px', '');
 
 			while (this.stopPoint[n] % this.dMove() != 0) {
 				flag = false;
@@ -52,7 +87,7 @@ let snake = {
 			for (let i = l; i >= 0; i--) {
 
 				this.movingTop[n][i] = setInterval(function() {
-
+					food.eaten();
 					let curPoint;
 
 					if (i == l && flag) {
@@ -68,17 +103,22 @@ let snake = {
 						snake.parts[i].style.top = curY - 1 + 'px';
 						snake.parts[i].style.transform = 'rotate(-90deg)';
 					}
-				}, 10);
+
+					if (snake.headY() < 0) {
+						progress.finish();
+					}
+
+				}, dT);
 
 				if (i == 0) {
 					setTimeout(function() {
 						snake.left = snake.right = true;
-					}, 10*(l+1))
+					}, dT*(l+1))
 				}
 			}
 		}
 	},
-	moveRight: function() {
+	moveRight: function(dT) {
 		if (this.right && this.moveCounter == 0) {
 			this.clickCounter++;
 			this.addStep();
@@ -107,6 +147,7 @@ let snake = {
 			for (let i = l; i >= 0; i--) {
 
 				this.movingRight[n][i] = setInterval(function() {
+					food.eaten();
 					let curPoint;
 
 					if (i == l && flag) {
@@ -122,17 +163,22 @@ let snake = {
 						snake.parts[i].style.left = curX + 1 + 'px';
 						snake.parts[i].style.transform = 'rotate(0)';
 					}
-				}, 10)
+
+					if (snake.headX() > field.width() - snake.dMove()) {
+						progress.finish();
+					}
+
+				}, dT)
 
 				if (i == 0) {
 					setTimeout(function() {
 						snake.top = snake.down = true;
-					}, 10*(l+1))
+					}, dT*(l+1))
 				}
 			}
 		}
 	},
-	moveDown: function() {
+	moveDown: function(dT) {
 		if(this.down && this.moveCounter == 1) {
 			this.clickCounter++;
 			this.addStep();
@@ -158,8 +204,9 @@ let snake = {
 			}
 
 			for (let i = l; i >= 0; i--) {
-
 				this.movingDown[n][i] = setInterval(function() {
+
+					food.eaten();
 
 					let curPoint;
 
@@ -176,17 +223,22 @@ let snake = {
 						snake.parts[i].style.top = curY + 1 + 'px';
 						snake.parts[i].style.transform = 'rotate(90deg)';
 					}
-				}, 10)
+
+					if (snake.headY() > field.width() - snake.dMove()) {
+						progress.finish();
+					}
+
+				}, dT)
 
 				if (i == 0) {
 					setTimeout(function() {
 						snake.left = snake.right = true;
-					}, 10*(l+1))
+					}, dT*(l+1))
 				}
 			}
 		}
 	},
-	moveLeft: function() {
+	moveLeft: function(dT) {
 		if(this.left && this.moveCounter == 0) {
 			this.clickCounter++;
 			this.addStep();
@@ -214,7 +266,7 @@ let snake = {
 			for (let i = l; i >= 0; i--) {
 
 				this.movingLeft[n][i] = setInterval(function() {
-
+					food.eaten();
 					let curPoint;
 
 					if (i == l && flag) {
@@ -230,18 +282,23 @@ let snake = {
 						snake.parts[i].style.left = curX - 1 + 'px';
 						snake.parts[i].style.transform = 'rotate(180deg)';
 					}
-				}, 10)
+
+					if (snake.headX() < 0) {
+						progress.finish();
+					}
+				}, dT)
 
 				if (i == 0) {
 					setTimeout(function() {
 						snake.top = snake.down = true;
-					}, 10*(l+1))
+					}, dT*(l+1))
 				}
 			}
 		}
 	},
-	firstMove: function() {
+	firstMove: function(dT) {
 		if (this.right && this.moveCounter == 0) {
+
 			this.clickCounter++;
 			this.addStep();
 			this.top = this.down = this.left = false;
@@ -266,8 +323,8 @@ let snake = {
 			}
 
 			for (let i = l; i >= 0; i--) {
-
 				this.movingRight[n][i] = setInterval(function() {
+					food.eaten();
 					let curPoint;
 
 					if (i == l && flag) {
@@ -280,30 +337,48 @@ let snake = {
 						let curX = +getComputedStyle(snake.parts[i]).left.replace('px', '');
 						snake.parts[i].style.left = curX + 1 + 'px';
 					}
-				}, 10)
+
+					if (snake.headX() > field.width() - snake.dMove()) {
+						progress.finish();
+					}
+
+				}, dT)
 
 				if (i == 0) {
 					setTimeout(function() {
 						snake.top = snake.down = true;
-					}, 10*(l+1))
+					}, dT*(l+1))
 				}
 			}
 		}
 	},
-	clickCounter: -1,
+	stopMove: function () {
+		let n = this.clickCounter,
+				l = this.parts.length - 1;
+
+		for (let i = l; i >= 0; i--) {
+			for (let j = 0; j <=n; j++) {
+				clearInterval(snake.movingTop[j][i]);
+				clearInterval(snake.movingDown[j][i]);
+				clearInterval(snake.movingLeft[j][i]);
+				clearInterval(snake.movingRight[j][i]);
+			}
+		}
+	},
+	speed: 10,
 	move: document.onkeydown = function(e) {
 		switch (e.keyCode) {
 			case 38:
-				snake.moveTop();
+				snake.moveTop(snake.speed);
 				break;
 			case 39:
-				snake.moveRight();
+				snake.moveRight(snake.speed);
 				break;
 			case 40:
-				snake.moveDown();
+				snake.moveDown(snake.speed);
 				break;
 			case 37:
-				snake.moveLeft();
+				snake.moveLeft(snake.speed);
 				break;
 			default:
 				break;
@@ -324,11 +399,12 @@ let food = {
 	appleX: function() {return +getComputedStyle(this.apple).left.replace('px', '')},
 	appleY: function() {return +getComputedStyle(this.apple).top.replace('px', '')},
 	eaten: function() {
-		this.apple.onclick = function() {
+		if (snake.headX() == this.appleX() && snake.headY() == this.appleY()) {
 			food.moveX(food.position(food.appleX()));
 			food.moveY(food.position(food.appleY()));
 			progress.currentScoreIndex += 1;
 			progress.currentScore.textContent = progress.currentScoreIndex;
+			// snake.rising();
 
 			if (progress.currentScoreIndex > progress.bestScoreIndex) {
 				progress.bestScoreIndex = progress.currentScoreIndex;
@@ -349,12 +425,16 @@ let food = {
 				// 	progress.levelUp();
 				// 	break;
 				case 10:
+					progress.win = true;
 					progress.finish();
 					break;
 				default:
 					break;
 			}
+		} else {
+			snake.allowRise = false;
 		}
+
 	},
 	moveX: function(x) {this.apple.style.left = x + 'px'},
 	moveY: function(y) {this.apple.style.top = y + 'px'},
@@ -380,8 +460,16 @@ let progress = {
 	bestScoreIndex: +this.bestScore.textContent,
 	currentScoreFinish: document.getElementById('currentScoreFinish'),
 	bestScoreFinish: document.getElementById('bestScoreFinish'),
+	win: false,
+	finishTitle: document.getElementById('winTitle'),
 	finish:  function() {
+		snake.stopMove();
 		field.endGame.style.display = 'block';
+		if (progress.win) {
+			progress.finishTitle.innerHTML = 'You are win!';
+		} else {
+			progress.finishTitle.innerHTML = 'Do you wnat to try again?';
+		}
 		this.currentScoreFinish.textContent = this.currentScoreIndex;
 		this.bestScoreFinish.textContent = this.bestScoreIndex;
 		this.restart();
@@ -391,7 +479,7 @@ let progress = {
 		this.startBtn.onclick = function() {
 			field.beginGame.style.display = 'none';
 			snake.right = true;
-			snake.firstMove();
+			snake.firstMove(snake.speed);
 		}
 	},
 	restartBtn: document.getElementById('restartBtn'),
@@ -400,6 +488,28 @@ let progress = {
 			field.endGame.style.display = 'none';
 			progress.currentScore.textContent = progress.currentScoreIndex = 0;
 			progress.level.textContent = progress.levelIndex = 1;
+			progress.win = false;
+			snake.right = snake.top = snake.down = true;
+			snake.left = false;
+			food.moveX(snake.dMove()*14);
+			food.moveY(snake.dMove()*15);
+
+			let l = snake.parts.length - 1,
+					posX = snake.dMove()*4;
+
+			while (l > 2) {
+				snake.parts[0].remove();
+				l--;
+			}
+
+			for (let i = l; i >= 0; i--) {
+				snake.parts[i].style.top = (snake.dMove()*15) + 'px';
+				snake.parts[i].style.left = posX + 'px';
+				snake.parts[i].style.transform = 'rotate(0)';
+				posX -= snake.dMove();
+			}
+			snake.moveCounter = 0;
+			snake.firstMove(snake.speed);
 		}
 	}
 }

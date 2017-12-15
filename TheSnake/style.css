@@ -150,7 +150,7 @@ body {
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
 }
 
-.snake__part--tail {
+.snake__part--body:first-of-type {
 	top: calc(var(--snakeWidth)*15);
 	left:  calc(var(--snakeWidth)*2);
 	border-top-left-radius: 20px;
@@ -161,25 +161,12 @@ body {
 .snake__part--body {
 	top: calc(var(--snakeWidth)*15);
 	left:  calc(var(--snakeWidth)*3);
-	/*border-bottom-right-radius: 15px;*/
 	background-color: #4371e6;
 }
-.snake__part--body-1 {
+
+.snake__part--body:last-of-type {
 	top: calc(var(--snakeWidth)*15);
 	left:  calc(var(--snakeWidth)*4);
-	/*border-bottom-right-radius: 15px;*/
-	background-color: #4371e6;
-}
-.snake__part--body-2 {
-	top: calc(var(--snakeWidth)*15);
-	left:  calc(var(--snakeWidth)*5);
-	/*border-bottom-right-radius: 15px;*/
-	background-color: #4371e6;
-}
-.snake__part--head {
-	top: calc(var(--snakeWidth)*15);
-	left:  calc(var(--snakeWidth)*6);
-	/*transform: rotate(-90deg);*/
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	background: linear-gradient(to right, #4371e6 1%, #4e7cf6 50%);
@@ -341,6 +328,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 20px;
+	text-align: center;
 	color: #fff;
 }
 

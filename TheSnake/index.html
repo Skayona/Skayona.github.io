@@ -3,99 +3,67 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
 	<link rel="shortcut icon" href="images/favicon.png" />
 	<title>The Snake || Metelova Kateryna</title>
+	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<header>
+		<h1>The Snake</h1>
+		<div class="snake-box__progress progress">
+			<figure class="progress__item">
+				<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
+				<figcaption id="currentScore" class="progress__score">0</figcaption>
+			</figure>
 
-	<div class="game-wrapper">
+			<span class="progress__item">
+				<span class="progress__level">Level</span>
+				<span id="level" class="progress__score">1</span>
+			</span>
 
-		<section class="snake-box">
-			<header class="snake-box__header">
-				<h1 class="snake-box__title">The snake</h1>
-				<address class="snake-box__author">by Kateryna Metelova</address>
-
-				<div class="snake-box__progress progress">
-					<figure class="progress__item">
-						<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
-						<figcaption id="currentScore" class="progress__score">0</figcaption>
-					</figure>
-
-					<span class="progress__item">
-						<span class="progress__level">Level</span>
-						<span id="level" class="progress__score">1</span>
-					</span>
-
-					<figure class="progress__item">
-						<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
-						<figcaption id="bestScore" class="progress__score">0</figcaption>
-					</figure>
-				</div>
-
-			</header>
-
-			<div class="snake-box__field-wrap">
-				<div class="snake-box__begin-wrap" id="snakeStart">
-					<div class="snake-box__begin">
-						<img class="snake-box__begin-img" src="images/keys.svg" alt="keys" />
-						<p class="snake-box__text-begin">Press 'OK' to start</p>
-						<button class="snake-box__btn-begin btn" id="startBtn">OK</button>
-					</div>
-				</div>
-
-				<div class="snake-box__end-wrap" id="snakeFinished">
-					<div class="snake-box__end">
-						<h2 class="snake-box__title-win" id="winTitle">You are win!</h2>
-
-						<div class="snake-box__results">
-							<figure class="progress__item">
-								<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
-								<figcaption id="currentScoreFinish" class="progress__score">0</figcaption>
-							</figure>
-
-							<figure class="progress__item">
-								<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
-								<figcaption id="bestScoreFinish" class="progress__score">0</figcaption>
-							</figure>
-						</div>
-
-						<button class="snake-box__restart btn" id="restartBtn">restart</button>
-					</div>
-				</div>
-
-				<div class="snake-box__field snake" id="snakeField">
-
-
-						<span class="snake__part snake__part--tail js-snake" id="snakeTail"></span>
-						<span class="snake__part snake__part--body js-snake"></span>
-						<span class="snake__part snake__part--body-1 js-snake"></span>
-						<span class="snake__part snake__part--body-2 js-snake"></span>
-						<span class="snake__part snake__part--head js-snake" id="snakeHead">
-
-							<span class="snake__eye snake__eye--left"></span>
-							<span class="snake__eye snake__eye--right"></span>
-							<span class="snake__naris snake__naris--left"></span>
-							<span class="snake__naris snake__naris--right"></span>
-							<span class="snake__tongue"></span>
-						</span>
-
-
-					<div class="snake__food" id="snakeFood">
-						<img class="snake__food-img"	src="images/apple.svg" alt="Apple" width="25" height="25" />
-					</div>
-
+			<figure class="progress__item">
+				<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
+				<figcaption id="bestScore" class="progress__score">0</figcaption>
+			</figure>
+		</div>
+	</header>
+	<main>
+		<div id="snake-wrapper">
+			<div class="snake-box__begin-wrap" id="snakeStart">
+				<div class="snake-box__begin">
+					<img class="snake-box__begin-img" src="images/keys.svg" alt="keys" />
+					<p class="snake-box__text-begin">Press '<b>up</b>', '<b>down</b> or '<b>right</b>' to start</p>
+					<button class="snake-box__btn-begin btn" id="startBtn">OK</button>
 				</div>
 			</div>
 
+			<div class="snake-box__end-wrap" id="snakeFinished">
+				<div class="snake-box__end">
+					<h2 class="snake-box__title-win" id="winTitle"></h2>
 
-		</section>
+					<div class="snake-box__results">
+						<figure class="progress__item">
+							<img class="progress__img" src="images/apple.svg" alt="An image of apple - food for The Snake in the game" width="30" height="30" />
+							<figcaption id="currentScoreFinish" class="progress__score">0</figcaption>
+						</figure>
 
-	</div>
+						<figure class="progress__item">
+							<img class="progress__img" src="images/trophy.svg" alt="An image of trophy - the best score of the game" width="30" height="30" />
+							<figcaption id="bestScoreFinish" class="progress__score">0</figcaption>
+						</figure>
+					</div>
 
+					<button class="snake-box__restart btn" id="restartBtn">restart</button>
+				</div>
+			</div>
 
-<script src="script.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		</div>
+	</main>
+	<footer>
+		<p>by Kateryna Metelova</p>
+	</footer>
 
+	<script src="script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -1,70 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="keywords" content="">
-      <meta name="description" content="Gravitec - автоматические массовые push и sms рассылки, поддержка viber, whatsapp и telegram, создание ботов, услуги по внедрению. До 1000 подписчиков бесплатно!">
-      <title>Универсальный сервис рассылок - push, sms, viber, telegram - Gravitec</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="theme-color" content="#091d25">
-      <meta name="msapplication-navbutton-color" content="#091d25">
-      <meta name="apple-mobile-web-app-status-bar-style" content="#091d25">
-      <link rel="manifest" href="assets/manifest.json">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-57x57.png" size="57x57">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-60x60.png" size="60x60">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-72x72.png" size="72x72">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-76x76.png" size="76x76">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-114x114.png" size="114x114">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-120x120.png" size="120x120">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-144x144.png" size="144x144">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" size="152x152">
-          <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-180x180.png" size="180x180">
-          <link rel="icon" href="img/favicons/favicon-32x32.png" size="32x32" type="image/png">
-          <link rel="icon" href="img/favicons/android-chrome-192x192.png" size="192x192" type="image/png">
-          <link rel="icon" href="img/favicons/favicon-96x96.png" size="96x96" type="image/png">
-          <link rel="icon" href="img/favicons/favicon-16x16.png" size="16x16" type="image/png">
-          <link rel="shortcut icon" href="img/favicons/favicon.ico">
-      <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
-      <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-      <link rel="alternate" href="https://gravitec.net/en/" hreflang="en">
-      <link rel="alternate" href="https://pl.gravitec.net" hreflang="pl">
-      <link rel="alternate" href="https://gravitec.net/ru/" hreflang="ru">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i%7CVarela+Round%7CRoboto:100,300,400&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-      <link href="css/style.min.css" rel="stylesheet"><style>body{overflow: hidden;}.preloader-wrap{position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:flex;background: #fff;}.preloader{margin:auto;width:120px;height:120px;}.preloader__img{width:100%;height:100%;}</style>
-    </head>
-  <body class="index-page">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Gravitec - автоматические массовые push и sms рассылки, поддержка viber, whatsapp и telegram, создание ботов, услуги по внедрению. До 1000 подписчиков бесплатно!">
+        <title>Универсальный сервис рассылок - push, sms, viber, telegram - Gravitec</title>
+        <meta property="og:title" content="Универсальный сервис рассылок - push, sms, viber, telegram - Gravitec">
+        <meta property="og:site_name" content="www.gravitec.net">
+        <meta property="og:url" content="https://gravitec.net/">
+        <meta property="og:description" content="Gravitec - автоматические массовые push и sms рассылки, поддержка viber, whatsapp и telegram, создание ботов, услуги по внедрению. До 1000 подписчиков бесплатно!">
+        <meta property="og:image" content="https://gravitec.net/img/logo-gravitec-512.png">
+        <link rel="manifest" href="files/manifest.json">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="Gravitec">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#091d25">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#091d25">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Gravitec">
+        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+        <meta name="msapplication-navbutton-color" content="#091d25">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+        <meta name="msapplication-starturl" content="/index.html">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-57x57.png" size="57x57">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-60x60.png" size="60x60">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-72x72.png" size="72x72">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-76x76.png" size="76x76">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-114x114.png" size="114x114">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-120x120.png" size="120x120">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-144x144.png" size="144x144">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png" size="152x152">
+            <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-180x180.png" size="180x180">
+            <link rel="icon" href="img/favicons/favicon-32x32.png" size="32x32" type="image/png">
+            <link rel="icon" href="img/favicons/android-chrome-192x192.png" size="192x192" type="image/png">
+            <link rel="icon" href="img/favicons/favicon-96x96.png" size="96x96" type="image/png">
+            <link rel="icon" href="img/favicons/favicon-16x16.png" size="16x16" type="image/png">
+            <link rel="shortcut icon" href="img/favicons/favicon.ico">
+        <link rel="alternate" href="https://gravitec.net/en/" hreflang="en">
+        <link rel="alternate" href="https://pl.gravitec.net" hreflang="pl">
+        <link rel="alternate" href="https://gravitec.net/" hreflang="ru">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i%7CVarela+Round%7CRoboto:100,300,400%7CJura:400,700&amp;amp;subset=cyrillic,cyrillic-ext">
+        <link rel="stylesheet" href="css/style.min.css">
+        <script src="https://cdn.gravitec.net/storage/42d957222a32951ed272081dc1d9dc27/client.js" async></script><!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-90307609-1', 'auto');
+          ga('require', 'linkid');
+          ga('send', 'pageview');
+        </script><!-- End Google Analytics --><!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '135041377158813');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none;" src="https://www.facebook.com/tr?id=135041377158813&amp;ev=PageView&amp;noscript=1"></noscript><!-- End Facebook Pixel Code -->
+  </head>
+  <body class="index-page siteBody">
     <div class="preloader-wrap js-preloader">
-      <figure class="preloader"><img class="preloader__img" src="img/preloader.gif" alt="Preloader" width="120" height="120"></figure>
+      <div class="preloader"></div>
     </div><a class="fb-messenger js-fb-messenger" href="https://m.me/gravitec.net/" onclick="yaCounter42088094.reachGoal('contactfbmessenger'); ga('send', 'event', 'contactus', 'contactfbmessenger', 'enlanding');" target="_blank" rel="noopener" aria-label="FaceBook massanger link"></a>
     <header class="header js-header">
-      <div class="header-wrap wrapper"><a class="header__logo-wrap" href="index.html"><img class="header__logo" src="img/gravitec-white.svg" alt="Логотип компании - Gravitec" width="220" height="32"></a>
+      <div class="header-wrap wrapper"><a class="header__logo-wrap" href="/"><img class="header__logo" src="img/gravitec-white.svg" alt="Логотип компании - Gravitec" width="300" height="39"></a>
         <nav class="header__menu menu">
           <button class="hamburger js-hamburger" aria-label="Button that opens menu on mobile"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           <ul class="menu-primary js-menu-primary">
             <li class="menu-primary__item">
               <button class="menu-primary__link menu-primary__link--arrow js-menu-primary__link">Возможности</button>
               <ul class="menu-secondary js-menu-secondary">
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="push.html">Push-уведомления для сайта</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Email-рассылки</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">SMS-рассылки</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Viber рассылки</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Telegram рассылки</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Создание ботов Telegram</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">Цепочки уведомлений</a></li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="push" onclick="addtag_push(&quot;push-header&quot;);return false;" id="push-header">Push-уведомления для сайта</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_email" onclick="addtag_mail('e-mail');return false;" id="e-mail">Email-рассылки</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_sms" onclick="addtag_sms('sms');return false;" id="sms">SMS-рассылки</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_viber" onclick="addtag_viber('viber');return false;" id="viber">Viber рассылки</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_telegram" onclick="addtag_telegram('telegram');return false;" id="telegram">Telegram рассылки</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_bots" onclick="addtag_bot_tel('bot_tel');return false;" id="bot_tel">Создание ботов Telegram</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="soon?utm_source=main&amp;utm_campaign=header_chain">Цепочки уведомлений</a>
+                    </li>
               </ul>
             </li>
-            <li class="menu-primary__item"><a class="menu-primary__link" href="#">Цены</a></li>
-            <li class="menu-primary__item"><a class="menu-primary__link" href="https://gravitec.net/blog/">Блог</a></li>
-            <li class="menu-primary__item"><a class="menu-primary__link" href="mailto:support@gravitec.net">Поддержка</a></li>
+            <li class="menu-primary__item"><a class="menu-primary__link" id="tariff-header" href="tariffs" onclick="addtag_tariff('tariff-header');return false;">Тарифы</a></li>
+            <li class="menu-primary__item"><a class="menu-primary__link" href="blog/" target="_blank">Блог</a></li>
+            <li class="menu-primary__item">
+              <button class="menu-primary__link" id="js-support-btn">Поддержка</button>
+            </li>
             <li class="menu-primary__item"><a class="menu-primary__link" href="https://push.gravitec.net/login" onclick="yaCounter42088094.reachGoal('signinclick'); ga('send', 'event', 'signin', 'signinclick', 'rulanding');">Вход</a></li>
             <li class="menu-primary__item menu-primary__item--reg"><a class="btn menu-primary__btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">Регистрация</a></li>
             <li class="menu-primary__item menu-primary__item--lang">
               <button class="menu-primary__link menu-primary__link--arrow menu-primary__link--lang js-menu-primary__link">RU</button>
               <ul class="menu-secondary menu-secondary--lang js-menu-secondary">
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">EN</a></li>
-                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="#">PL</a></li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="https://gravitec.net/en/">EN</a>
+                    </li>
+                    <li class="menu-secondary__item"><a class="menu-secondary__link" href="https://pl.gravitec.net/">PL</a>
+                    </li>
               </ul>
             </li>
           </ul>
@@ -73,41 +116,42 @@
     </header>
     <main>
             <div class="welcome js-welcome welcome--index">
+              <div class="welcome__overlay"></div>
               <article class="welcome-wrap wrapper">
-                <h1 class="welcome__title">Push-уведомления для возвращения посетителей вашего сайта</h1>
-                      <div class="welcome__browsers-wrap">
-                        <figure class="welcome__browsers welcome__browsers--chrome"><img class="welcome__browsers-img" src="img/welcome/chrome.svg" alt="Logo of browser Chrome" width="50" height="50"></figure>
-                        <figure class="welcome__browsers welcome__browsers--firefox"><img class="welcome__browsers-img" src="img/welcome/firefox.svg" alt="Logo of browser Firefox" width="50" height="50"></figure>
-                        <figure class="welcome__browsers welcome__browsers--safari"><img class="welcome__browsers-img" src="img/welcome/safari.svg" alt="Logo of browser Safari" width="50" height="50"></figure>
-                        <figure class="welcome__browsers welcome__browsers--yandex"><img class="welcome__browsers-img" src="img/welcome/yandex.svg" alt="Logo of browser Yandex" width="50" height="50"></figure>
-                        <figure class="welcome__browsers welcome__browsers--opera"><img class="welcome__browsers-img" src="img/welcome/opera.svg" alt="Logo of browser Opera" width="50" height="50"></figure>
-                      </div>
+                <h1 class="welcome__title">Мультиканальный сервис эффективного маркетинга в интернете</h1>
                 <h2 class="welcome__subtitle title-h2">Другие маркетинговые каналы</h2>
+                      <div class="welcome__browsers-wrap">
+                        <figure class="welcome__browsers welcome__browsers--chrome js-chrome"><img class="welcome__browsers-img" src="img/welcome/chrome.svg" alt="Logo of browser Chrome" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--opera js-opera"><img class="welcome__browsers-img" src="img/welcome/opera.svg" alt="Logo of browser Opera" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--safari js-safari"><img class="welcome__browsers-img" src="img/welcome/safari.svg" alt="Logo of browser Safari" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--firefox js-firefox"><img class="welcome__browsers-img" src="img/welcome/firefox.svg" alt="Logo of browser Firefox" width="50" height="50"></figure>
+                        <figure class="welcome__browsers welcome__browsers--yandex js-yandex"><img class="welcome__browsers-img" src="img/welcome/yandex.svg" alt="Logo of browser Yandex" width="50" height="50"></figure>
+                      </div>
                 <div class="welcome__channels-wrap">
-                  <div class="welcome__channels welcome__channels--email">email</div>
-                  <div class="welcome__channels welcome__channels--bots">bots</div>
-                  <div class="welcome__channels welcome__channels--viber">viber</div>
-                  <div class="welcome__channels welcome__channels--sms">sms</div>
-                  <div class="welcome__channels welcome__channels--telegram">telegram</div>
+                  <div class="welcome__channels welcome__channels--email js-email">email</div>
+                  <div class="welcome__channels welcome__channels--bots js-bots">bots</div>
+                  <div class="welcome__channels welcome__channels--viber js-viber">viber</div>
+                  <div class="welcome__channels welcome__channels--sms js-sms">sms</div>
+                  <div class="welcome__channels welcome__channels--telegram js-telegram">telegram</div>
                 </div>
               </article>
             </div>
       <div class="canal section-gap">
         <article class="canal-wrap wrapper">
           <h2 class="canal__title title-h2">Наши услуги</h2>
-          <div class="canal__item-wrap"><a class="canal__item" href="push.html">
+          <div class="canal__item-wrap"><a class="canal__item" href="push" onclick="addtag_push('push-canals');return false;" id="push-canals">
                     <h3 class="canal__subtitle title-h3 canal__subtitle--push">Push-уведомления</h3>
-                    <p class="canal__text text-normal">Push уведомления для сайта - 3 вида уникального сегментирования. До 70% доставки.</p></a><a class="canal__item canal__item--coming-soon" href="">
-                    <h3 class="canal__subtitle title-h3 canal__subtitle--sms">SMS рассылки</h3>
-                    <p class="canal__text text-normal">Все сообщения - вовремя. Расскажите о ваших преимуществах. Напоминайте о важных событиях.</p></a><a class="canal__item canal__item--coming-soon" href="">
-                    <h3 class="canal__subtitle title-h3 canal__subtitle--viber">Viber рассылки</h3>
-                    <p class="canal__text text-normal">Выбирайте лучший способ взаимодействия. Viber рассылка электронных сообщений – для клиентов, которые предпочитают online. </p></a><a class="canal__item canal__item--coming-soon" href="">
-                    <h3 class="canal__subtitle title-h3 canal__subtitle--telegram">Telegram рассылки</h3>
-                    <p class="canal__text text-normal">Ваши клиенты оценили плюсы Telegram для легкого общения? Время быть в тренде!</p></a><a class="canal__item" href="#">
+                    <p class="canal__text text-normal">Коммуникация с клиентом в 1 клик. Подписчики получают ваши уведомления даже когда не находятся на вашем сайте.</p></a><a class="canal__item canal__item--coming-soon" href="soon?utm_source=main&amp;utm_campaign=services_bots" onclick="addtag_bot_tel('bot_tel1');return false;" id="bot_tel1">
                     <h3 class="canal__subtitle title-h3 canal__subtitle--android">Создание ботов</h3>
-                    <p class="canal__text text-normal">От автоматических рассылок до многофункциональных консультантов.</p></a><a class="canal__item canal__item--coming-soon" href="">
-                    <h3 class="canal__subtitle title-h3 canal__subtitle--chain">Цепочки уведомлений</h3>
-                    <p class="canal__text text-normal">Сервис триггерных рассылок. Используйте все возможности взаимодействия с клиентом одновременно.</p></a>
+                    <p class="canal__text text-normal">Сделайте общение с клиентом максимально комфортным и эффективным при помощи бота-консультанта.</p></a><a class="canal__item canal__item--coming-soon" href="soon?utm_source=main&amp;utm_campaign=services_viber" onclick="addtag_viber('viber1');return false;" id="viber1">
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--viber">Viber рассылки</h3>
+                    <p class="canal__text text-normal">Приложение Viber установлено на каждом третьем смартфоне. Рассылайте сообщения с привлекательными картинками, кнопками и ссылками на ваш сайт. Дешевле sms.</p></a><a class="canal__item canal__item--coming-soon" href="soon?utm_source=main&amp;utm_campaign=services_telegram" onclick="addtag_telegram('telegram1');return false;" id="telegram1">
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--telegram">Telegram рассылки</h3>
+                    <p class="canal__text text-normal">Уведомления в новом популярном мессенджере. Время быть в тренде!</p></a><a class="canal__item canal__item--coming-soon" href="soon?utm_source=main&amp;utm_campaign=services_sms" onclick="addtag_sms('sms1');return false;" id="sms1">
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--sms">SMS рассылки</h3>
+                    <p class="canal__text text-normal">Используйте sms, чтобы доставлять клиентам важнейшую информацию, которую они не должны пропустить. </p></a><a class="canal__item canal__item--coming-soon" href="soon?utm_source=main&amp;utm_campaign=services_email" onclick="addtag_mail('e-mail1');return false;" id="e-mail1">
+                    <h3 class="canal__subtitle title-h3 canal__subtitle--email">E-mail</h3>
+                    <p class="canal__text text-normal">Все виды рассылок сообщений на электронную почту.</p></a>
           </div>
         </article>
       </div>
@@ -120,7 +164,7 @@
                     <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/step1.png" alt="Пример javascript кода, который необходимо скопировать и вставить на сайт. Рядом изображен пуш, который появляется в браузере благодаря этому" width="500" height="325"></figure>
                   </div>
                   <div class="instruction__item">
-                    <p class="instruction__title-wrap"><span class="instruction__num instruction__num--second">2</span><span class="instruction__title">Увеличьте базу подписчиков на 100% за месяц</span></p>
+                    <p class="instruction__title-wrap"><span class="instruction__num instruction__num--second">2</span><span class="instruction__title">Собирайте базу лояльных подписчиков</span></p>
                     <figure class="instruction__img-wrap"><img class="instruction__img" src="img/how/step2.png" alt="Над схематическим изображением новых подписчиков расположены картинки: произвольной сегментации, график увеличения числа посетителей до 15%, рука в виде курсора - подписка в 1 клик" width="500" height="324"></figure>
                   </div>
                   <div class="instruction__item">
@@ -132,15 +176,15 @@
       </div><a class="call-to-action call-to-action--minutes" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rulanding');">
                     <article class="call-to-action-wrap wrapper">
                       <div class="call-to-action__content">
-                        <h2 class="call-to-action__title title-h2">Попробуйте web push на своем сайте</h2><p class="call-to-action__text">Установка за 10 минут!</p>
+                        <h2 class="call-to-action__title title-h2">Подключите web push на своем сайте</h2><p class="call-to-action__text">Установка за 10 минут!</p>
                       </div>
                       <div class="call-to-action__btn-wrap"><span class="call-to-action__btn btn">Бесплатно сейчас</span></div>
                     </article></a>
-      <div class="marketer section-gap">
-        <article class="marketer-wrap wrapper">
-          <h2 class="marketer__title title-h2">Функции для маркетологов</h2>
-          <p class="marketer__text text-large text-large--width">Инструменты для повышения эффективности рассылок</p>
-          <div class="marketer__tools tools">
+      <div class="index-marketer section-gap">
+        <article class="index-marketer-wrap wrapper">
+          <h2 class="index-marketer__title title-h2">Функции для маркетологов</h2>
+          <p class="index-marketer__text text-large text-large--width">Инструменты для повышения эффективности рассылок</p>
+          <div class="index-marketer__tools tools">
                   <section class="tools__item tools__item--segmentation">
                     <h3 class="tools__title title-h3">Сегментация подписчиков</h3>
                     <p class="tools__text text-normal">Создание сегментов подписчиков по их интересам, поведению на сайте, произвольным пользовательским данным.</p>
@@ -171,7 +215,7 @@
       <div class="clients section-gap">
         <article class="clients-wrap wrapper">
           <h2 class="clients__title title-h2">Наши клиенты</h2>
-          <div class="clients__logos js-logo">
+          <div class="clients__logos js-clients-logo">
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_1.png" src="img/clients/logo_1.png" alt="&quot;Mob&quot; logo" width="156" height="63"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_2.png" src="img/clients/logo_2.png" alt="&quot;Busfor.ua&quot; logo" width="256" height="100"></figure>
                   <figure class="clients__img-wrap"><img class="clients__img" data-lazy="img/clients/logo_3.png" src="img/clients/logo_3.png" alt="&quot;Bagnet&quot; logo" width="201" height="100"></figure>
@@ -196,94 +240,175 @@
         </article>
       </div>
             <div class="tariffs section-gap tariffs--index">
-              <article class="tariff-wrap wrapper">
-                <h2 class="tariffs__title title-h2">Стоимость услуг</h2>
-                <p class="tariffs__text text-large text-large--width">Скидка 60% на все тарифные планы для пользователей из Украины и стран СНГ. Скидка действует при регистрации в течении акции.</p>
+              <article class="tariffs-wrap wrapper">
                 <div class="tariffs__card-wrap">
-                  <div class="tariffs__card-list">
-                          <section class="tariffs__card card card--blue">
-                            <header class="card__header card__wrapper">
-                                    <h4 class="card__title">Free trial</h4>
-                                    <p class="card__price">Бесплатно</p>
-                                    <p class="card__note">Без ввода кредитной карты</p>
-                                    <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация</a></div>
-                            </header>
-                            <ul class="card__offer card__wrapper">
-                                    <li class="card__offer-item"><span class="card__offer-property">Лимит подписчиков:</span><span class="card__offer-included">до 1000</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Push-уведомлений:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Сайтов в аккаунте:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Уведомления в браузерах:</span><span class="card__offer-included">Chrome, Yandex, Firefox, Mac OS Safari</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Web push SDK</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Данные о подписчиках:</span><span class="card__offer-included">произвольные метки и псевдонимы подписчиков, ОС, гео-позиция</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Базовые сегменты подписчиков</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Произвольные сегменты подписчиков</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">REST API</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Поддержка по:</span><span class="card__offer-included">email</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Техническая поддержка, обучающие материалы</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Выделенная клентская поддержка:</span><span class="card__offer-included">-</span></li>
-                            </ul><a class="card__more" href="#">Подробнее</a>
-                          </section>
-                          <section class="tariffs__card card card--green">
-                            <header class="card__header card__wrapper">
-                                    <h4 class="card__title">SMB</h4>
-                                    <p class="card__price"><sup class="card__price-signs">$</sup>8 <span class="card__price-monthly">в месяц</span></p>
-                                    <p class="card__note">за каждую 1000 push-подписчиков</p>
-                                    <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация со&nbsp;скидкой&nbsp;60%</a></div>
-                            </header>
-                            <ul class="card__offer card__wrapper">
-                                    <li class="card__offer-item"><span class="card__offer-property">Лимит подписчиков:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Push-уведомлений:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Сайтов в аккаунте:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Уведомления в браузерах:</span><span class="card__offer-included">Chrome, Yandex, Firefox, Mac OS Safari</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Web push SDK</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Данные о подписчиках:</span><span class="card__offer-included">произвольные метки подписчиков, ОС, гео-позиция</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Базовые сегменты подписчиков</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">-</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">-</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Поддержка по:</span><span class="card__offer-included">email</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Техническая поддержка, обучающие материалы</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Выделенная клентская поддержка:</span><span class="card__offer-included">от $99 / месяц</span></li>
-                            </ul><a class="card__more" href="#">Подробнее</a>
-                          </section>
-                          <section class="tariffs__card card card--green">
-                            <header class="card__header card__wrapper">
-                                    <h4 class="card__title">ENTERPRISE</h4>
-                                    <p class="card__price"><sup class="card__price-signs">$</sup>10 <span class="card__price-monthly">в месяц</span></p>
-                                    <p class="card__note">за каждую 1000 push-подписчиков </p>
-                                    <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация со&nbsp;скидкой&nbsp;60%</a></div>
-                            </header>
-                            <ul class="card__offer card__wrapper">
-                                    <li class="card__offer-item"><span class="card__offer-property">Лимит подписчиков:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Push-уведомлений:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Сайтов в аккаунте:</span><span class="card__offer-included">не ограниченно</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Уведомления в браузерах:</span><span class="card__offer-included">Chrome, Yandex, Firefox, Mac OS Safari</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Web push SDK</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Данные о подписчиках:</span><span class="card__offer-included">произвольные метки и псевдонимы подписчиков, ОС, гео-позиция</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Базовые сегменты подписчиков</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Произвольные сегменты подписчиков</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">REST API</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Поддержка по:</span><span class="card__offer-included">email, онлайн чат</span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Техническая поддержка, обучающие материалы</span><span class="card__offer-included"></span></li>
-                                    <li class="card__offer-item"><span class="card__offer-property">Выделенная клентская поддержка:</span><span class="card__offer-included">от $99 / месяц</span></li>
-                            </ul><a class="card__more" href="#">Подробнее</a>
-                          </section>
+                  <h2 class="tariffs__title title-h2">Стоимость услуг</h2>
+                  <p class="tariffs__text text-large text-large--width">Скидка на все тарифные планы для пользователей из Украины и стран СНГ.</p>
+                  <div class="tariffs__card">
+                    <div class="card">
+                      <div class="card__thead card__row">
+                        <div class="card__col card__col--header">
+                          <figure class="card__logo-wrap"><img class="card__logo" src="img/logo-all.svg" alt="Gravitec"></figure>
+                        </div>
+                                      <div class="card__col card__col--header">
+                                        <div class="card__header">
+                                          <p class="card__title">Free trial</p>
+                                          <p class="card__old-price"></p>
+                                          <p class="card__new-price"><span class="card__price-free">Бесплатно</span></p>
+                                          <p class="card__note">Без ввода кредитной карты</p>
+                                          <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация</a></div>
+                                        </div>
+                                      </div>
+                                      <div class="card__col card__col--header card__col--sale"><img class="card__sale-img" src="img/tariffs/strip1.svg" alt="Скидка 60%" width="222" height="217">
+                                        <div class="card__header">
+                                          <p class="card__title">SMB</p>
+                                          <p class="card__old-price">8 <span class="card__price-monthly"><span class="card__price-currency">$</span>/мес</span></p>
+                                          <p class="card__new-price"><span class="card__new-price-num">3.2</span><span class="card__new-price-monthly"><span class="card__price-currency">$</span>/мес</span></p>
+                                          <p class="card__note">за каждую 1000 подписчиков</p>
+                                          <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация</a></div>
+                                        </div>
+                                      </div>
+                                      <div class="card__col card__col--header card__col--green card__col--sale"><img class="card__sale-img" src="img/tariffs/strip1.svg" alt="Скидка 60%" width="222" height="217">
+                                        <div class="card__header">
+                                          <p class="card__title">ENTERPRISE</p>
+                                          <p class="card__old-price">10 <span class="card__price-monthly"><span class="card__price-currency">$</span>/мес</span></p>
+                                          <p class="card__new-price"><span class="card__new-price-num">4</span><span class="card__new-price-monthly"><span class="card__price-currency">$</span>/мес</span></p>
+                                          <p class="card__note">за каждую 1000 подписчиков </p>
+                                          <div class="card__register-wrap"><a class="btn card__register-btn" href="https://push.gravitec.net/register" onclick="fbq('track', 'Lead'); yaCounter42088094.reachGoal('signupclick'); ga('send', 'event', 'register', 'signupclick', 'rupricing');">Регистрация</a></div>
+                                        </div>
+                                      </div>
+                      </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Лимит подписчиков</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data">1000</span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Push-уведомлений</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Сайтов в аккаунте</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--infinite"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Уведомления в браузерах (Mobile и Desktop)</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data"><span class="card__browsers icon-chrome"></span><span class="card__browsers icon-opera"></span><span class="card__browsers icon-firefox2"></span><span class="card__browsers icon-yandex2"></span></span></div>
+                                      <div class="card__data-wrap"><span class="card__data"><span class="card__browsers icon-chrome"></span><span class="card__browsers icon-opera"></span><span class="card__browsers icon-firefox2"></span><span class="card__browsers icon-safari"></span><span class="card__browsers icon-yandex2"></span></span></div>
+                                      <div class="card__data-wrap"><span class="card__data"><span class="card__browsers icon-chrome"></span><span class="card__browsers icon-opera"></span><span class="card__browsers icon-firefox2"></span><span class="card__browsers icon-safari"></span><span class="card__browsers icon-yandex2"></span></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Web push SDK</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Данные о подписчиках (произвольные метки и псевдонимы подписчиков, ОС, гео-позиция)</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Базовые сегменты подписчиков</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Произвольные сегменты подписчиков</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--not-included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">REST API</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--not-included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Поддержка по e-mail</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Поддержка в онлайн чате</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--not-included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--not-included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Техническая поддержка</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Обучающие материалы</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                                    <div class="card__row">
+                                      <div class="card__data-wrap">
+                                        <p class="card__service">Выделенная клентская поддержка (от $99 / месяц)</p>
+                                      </div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--not-included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                      <div class="card__data-wrap"><span class="card__data card__data--included"></span></div>
+                                    </div>
+                    </div>
                   </div>
+                  <div class="tariffs__more-wrap"><a class="btn tariffs__more" id="tariff" href="tariffs" onclick="addtag_tariff('tariff');return false;">Подробнее</a></div>
                 </div>
               </article>
             </div>
       <div class="mediablock">
         <div class="mediablock-wrap">
-                <section class="mediablock__item mediablock__item--instruction">
-                  <h3 class="mediablock__title title-h3">Гайды</h3>
-                  <p class="mediablock__text text-nornal">Задайте любой вопрос! Наш маркетинг-отдел знает все о пуш и рассылках.</p><a class="btn mediablock__btn mediablock__btn--instruction" href="#">Подробнее</a>
+                <section class="mediablock__item mediablock__item--news">
+                  <h3 class="mediablock__title title-h3">Новое о Push</h3>
+                  <p class="mediablock__text text-nornal">Вы еще не знаете, что push-уведомления – сервис, который покоряет мир маркетинга? Тогда вам сюда!</p><a class="btn mediablock__btn mediablock__btn--news" href="blog/category/novosti/">Подробнее</a>
                 </section>
                 <section class="mediablock__item mediablock__item--blog">
                   <h3 class="mediablock__title title-h3">Наш блог</h3>
-                  <p class="mediablock__text text-nornal">Самая честная и полная информация о том, как работает сервис массовых рассылок. Мелочей не бывает!</p><a class="btn mediablock__btn mediablock__btn--blog" href="#">Подробнее</a>
+                  <p class="mediablock__text text-nornal">Самая честная и полная информация о том, как работает сервис массовых рассылок. Мелочей не бывает!</p><a class="btn mediablock__btn mediablock__btn--blog" href="blog/">Подробнее</a>
                 </section>
-                <section class="mediablock__item mediablock__item--news">
-                  <h3 class="mediablock__title title-h3">Новое о Push</h3>
-                  <p class="mediablock__text text-nornal">Вы еще не знаете, что push уведомления – сервис, который покоряет  мир маркетинга? Тогда вам сюда!</p><a class="btn mediablock__btn mediablock__btn--news" href="#">Подробнее</a>
+                <section class="mediablock__item mediablock__item--instruction">
+                  <h3 class="mediablock__title title-h3 mediablock__item--soon">Гайды</h3>
+                  <p class="mediablock__text text-nornal">Задайте любой вопрос! Наш маркетинг-отдел знает все о пуш и рассылках.</p><a class="btn mediablock__btn mediablock__btn--instruction" href="soon?utm_source=main&amp;utm_campaign=guides">Подробнее</a>
                 </section>
         </div>
       </div>
@@ -291,7 +416,7 @@
         <article class="why-us-wrap wrapper">
           <h2 class="why-us__title title-h2">Почему Gravitec.net</h2>
           <ul class="why-us__list">
-            <li class="why-us__item why-us__item--first">Опыт Gravitec в push - это 2+ года. Наибольший опыт среди украинских компаний!</li>
+            <li class="why-us__item why-us__item--first">Опыт Gravitec.net в push - это 2+ года. Наибольший опыт среди украинских компаний.</li>
             <li class="why-us__item why-us__item--team">Наши специалисты стояли у основ разработки инновационной технологии push-уведомлений.</li>
             <li class="why-us__item why-us__item--star">Мы предлагаем уникальные условия для привлечения клиентов.</li>
             <li class="why-us__item why-us__item--send">Push-уведомления – основа мультиканального маркетинга! Email, SMS, Viber теперь используют технологию push.</li>
@@ -303,7 +428,7 @@
           <section class="modal__content js-modal-content">
             <div class="modal__header modal-wrap">
               <button class="modal__cross js-modal-cross"></button>
-              <h2 class="modal__title">Напишите нам</h2>
+              <h2 class="modal__title modal__title--form">Напишите нам</h2>
             </div>
             <div class="modal__main modal-wrap">
               <form class="contact-form" id="contact-form" action="php/contact.php" method="post">
@@ -325,9 +450,52 @@
                   <input class="contact-form__input" id="contact-antispam" type="text" name="antispam" placeholder="Антиспам-вопрос: 7 + 5 = ?" pattern="12" autocomplete="off" required>
                 </fieldset>
                 <fieldset class="contact-form__group">
-                  <button class="btn contact-form__btn" id="contact-submit" type="submit">Отправить</button>
+                  <button class="btn contact-form__btn" id="contact-submit" type="submit" onclick="set_alias_check();">Отправить</button>
                 </fieldset>
               </form>
+            </div>
+          </section>
+        </div>
+        <div class="modal js-modal js-cookies-modal">
+          <section class="modal__content js-modal-content">
+            <div class="modal__header modal-wrap">
+              <button class="modal__cross js-modal-cross"></button>
+              <h2 class="modal__title">Cookies policy</h2>
+            </div>
+            <div class="modal__main modal-wrap">
+              <p class="modal__text">We use "cookies" on this site. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. For instance, when we use a cookie to identify you, you would not have to log in a password more than once, thereby saving time while on our site. Cookies can also enable us to track and target the interests of our users to enhance the experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site.</p>
+              <div class="modal__cookies-btn-wrap">
+                <button class="btn modal__cookies-btn js-cookies-ok-btn">Ok</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal js-modal js-viber-modal">
+          <section class="modal__content js-modal-content">
+            <div class="modal__header modal-wrap">
+              <button class="modal__cross js-modal-cross"></button>
+              <h2 class="modal__title">Viber рассылка</h2>
+            </div>
+            <div class="modal__main modal-wrap">
+              <div class="viber-soon">
+                <figure class="viber-soon__img-wrap"><img class="viber-soon__img" src="img/viber/viber_logo.svg" alt="Viber logo" width="190" height="96"></figure>
+                <p class="viber-soon__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nam nemo alias temporibus, natus veniam labore necessitatibus. Consectetur, in illum culpa fugit magnam atque cupiditate quo reiciendis beatae, neque maxime.</p>
+                <form class="viber-soon__form" id="viber-soon-form" action="php/contact.php" method="post">
+                  <div class="js-viber-soon-form-success viber-soon__success">
+                    <p class="viber-soon__success-text">Вы подписаны на рассылку!</p>
+                  </div>
+                  <fieldset class="viber-soon__group">
+                    <input class="viber-soon__input" id="viber-soon-email" type="email" name="email" placeholder="Ваш email*" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" title="example@example.com" autocomplete="off" required>
+                  </fieldset>
+                  <fieldset class="viber-soon__group">
+                    <label class="js-viber-form-soon-checkbox viber-soon__checkbox-title viber-soon__checkbox-title--checked" for="viber-soon-push-subscribe"><span class="viber-soon__checkbox-text">Push</span></label>
+                    <input class="viber-soon__checkbox" type="checkbox" id="viber-soon-push-subscribe" checked>
+                  </fieldset>
+                  <fieldset class="viber-soon__group">
+                    <button class="btn viber-soon__btn" id="viber-soon-submit" type="submit" onclick="set_alias_check();">Отправить</button>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </section>
         </div>
@@ -337,42 +505,69 @@
           <div class="footer__col">
             <h3 class="footer__menu-title">Возможности</h3>
             <ul class="footer__menu">
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Push-уведомления для сайта</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Email-рассылки</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">SMS-рассылки</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Viber рассылки</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Telegram рассылки</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Создание ботов Telegram</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Цепочки уведомлений</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="push" onclick="addtag_push('push-footer');return false;" id="push-footer"><span class="footer__menu-now">Пуш уведомления для сайта</span></a>
+                  </li>
+              <li class="footer__menu-item footer__menu-item--soon">Сoming soon:</li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_email" onclick="addtag_mail('e-mail2');return false;" id="e-mail2">Email-рассылки</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_sms" onclick="addtag_sms('sms2');return false;" id="sms2">SMS-рассылки</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_viber" onclick="addtag_viber('viber2');return false;" id="viber2">Viber рассылки</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_telegram" onclick="addtag_telegram('telegram2');return false;" id="telegram2">Telegram рассылки</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_bots" onclick="addtag_bot_tel('bot_tel2');return false;" id="bot_tel2">Создание ботов Telegram</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_chain">Цепочки уведомлений</a>
+                  </li>
             </ul>
           </div>
           <div class="footer__col">
-            <h3 class="footer__menu-title"> Gravitec</h3>
+            <h3 class="footer__menu-title"> Gravitec.net</h3>
             <ul class="footer__menu">
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Terms of Use</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Партнерам</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Cookies</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="company">О компании</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="terms">Terms of Use</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="soon?utm_source=main&amp;utm_campaign=footer_partners">Партнерам</a>
+                  </li>
+              <li class="footer__menu-item">
+                <button class="footer__menu-link js-cookies-btn">Cookies</button>
+              </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="privacy-policy">Privacy Policy</a>
+                  </li>
             </ul>
           </div>
           <div class="footer__col">
-            <h3 class="footer__menu-title">Гайды (coming soon)</h3>
+            <h3 class="footer__menu-title">Гайды</h3>
             <ul class="footer__menu">
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Что такое push-уведомления</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как отключить push-уведомления</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как подключить push-уведомления к сайту</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Демонстрация push</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Программа рассылки Viber или сервис</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как сделать СМС рассылку</a></li>
+              <li class="footer__menu-item footer__menu-item--soon">Сoming soon:</li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Что такое push-уведомления</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Как отключить push-уведомления</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Как подключить push-уведомления к сайту</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Демонстрация push</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Программа рассылки Viber или сервис</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_guides">Как сделать СМС рассылку</a>
+                  </li>
             </ul>
           </div>
           <div class="footer__col">
             <h3 class="footer__menu-title"> Разработчикам</h3>
             <ul class="footer__menu">
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">API</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Chrome push api</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Как создать Telegram бота</a></li>
-                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">СМС рассылка php</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="https://docs.gravitec.net/hc/ru">API</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="https://docs.gravitec.net/hc/ru/sections/202088825-Server-API">Chrome push api</a>
+                  </li>
+              <li class="footer__menu-item footer__menu-item--soon">Сoming soon:</li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_createbot">Как создать Telegram бота</a>
+                  </li>
+                  <li class="footer__menu-item"><a class="footer__menu-link footer__menu-soon" href="soon?utm_source=main&amp;utm_campaign=footer_smsphp">СМС рассылка php</a>
+                  </li>
             </ul>
           </div>
         </nav>
@@ -383,11 +578,9 @@
         </div>
       </div>
       <div class="footer__copy">
-        <div class="wrapper">&copy; <span class="js-year"></span> <a class="footer__copy-link" href="Gravitec.net">Gravitec.net</a>. All rights reserved.</div>
+        <div class="wrapper">&copy; 2016-<span class="js-year"></span> <a class="footer__copy-link" href="https://gravitec.net/">Gravitec.net</a>. All rights reserved.</div>
       </div>
     </footer>
-    <script src="https://cdn.gravitec.net/storage/7d3da50f80cb345f89bb1469d0cb7967/client.js" async></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js" async></script>
   </body>
 </html>

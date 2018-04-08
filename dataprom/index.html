@@ -119,12 +119,14 @@
           </div>
         </div>
       </section>
-      <section class="benefits js-benefits bg-white-2 benefits--main">
+      <section class="benefits bg-white-2 benefits--main">
         <div class="container">
           <div class="row">
             <div class="benefits__content col-xs-6 col-sm-12 col-xl-4">
               <h2 class="h2 benefits__title">Benefits</h2>
-              <p>Use the unlimited potential of machines to achieve greatest goals. DataProm is a complex AI based innovative engine that allows to collect and analyze your customers data, interact to them and use received insights to move online retail to the next stage.</p>
+              <div class="benefits__text">
+                <p>Use the unlimited potential of machines to achieve greatest goals. DataProm is a complex AI based innovative engine that allows to collect and analyze your customers data, interact to them and use received insights to move online retail to the next stage.</p>
+              </div>
               <div class="benefits__slider-nav benefits__slider-nav--desktop">
                 <div class="btn-slider-wrap">
                   <button class="btn-slider btn-slider--prev" type="button" aria-label="Slider leaf left"></button>
@@ -245,11 +247,11 @@
           </div>
         </div>
       </section>
-      <div class="cases" id="cases"><a class="js-fashion cases__item" href="#fashion,fashion,fashion" style="background-image: url('img/bg/fashion.jpg')">
-          <h2 class="h2 cases__title">fashion</h2></a><a class="js-perfumery cases__item" href="#perfumery,perfumery,perfumery" style="background-image: url('img/bg/perfumery.jpg')">
-          <h2 class="h2 cases__title">perfumery</h2></a><a class="js-outdoor cases__item" href="#outdoor,outdoor,outdoor" style="background-image: url('img/bg/outdoor.jpg')">
-          <h2 class="h2 cases__title">outdoor</h2></a><a class="js-electronics cases__item" href="#electronics,electronics,electronics" style="background-image: url('img/bg/electronics.jpg')">
-          <h2 class="h2 cases__title">electronics</h2></a><a class="js-grocery cases__item" href="#grocery,grocery,grocery" style="background-image: url('img/bg/grocery.jpg')">
+      <div class="cases" id="cases"><a class="js-fashion cases__item" href="#fashion" style="background-image: url('img/bg/fashion.jpg')">
+          <h2 class="h2 cases__title">fashion</h2></a><a class="js-perfumery cases__item" href="#perfumery" style="background-image: url('img/bg/perfumery.jpg')">
+          <h2 class="h2 cases__title">perfumery</h2></a><a class="js-outdoor cases__item" href="#outdoor" style="background-image: url('img/bg/outdoor.jpg')">
+          <h2 class="h2 cases__title">outdoor</h2></a><a class="js-electronics cases__item" href="#electronics" style="background-image: url('img/bg/electronics.jpg')">
+          <h2 class="h2 cases__title">electronics</h2></a><a class="js-grocery cases__item" href="#grocery" style="background-image: url('img/bg/grocery.jpg')">
           <h2 class="h2 cases__title">grocery</h2></a>
       </div>
       <div class="about" id="about">
@@ -394,11 +396,15 @@
         <div class="video container">
           <div class="video-slider">
             <div class="video-item">
-              <div class="video-item__inner"><iframe id="general-video" src="https://www.youtube.com/embed/LP3xiE1qM-g?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+              <div class="video-item__inner">
+                <div id="general-video"></div>
+                <div class="video-item__bg" style="background-image: url('img/video/general-video.jpg')"></div>
               </div>
             </div>
             <div class="video-item">
-              <div class="video-item__inner"><iframe id="how-video" src="https://www.youtube.com/embed/ulYdQ0PTm64?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+              <div class="video-item__inner">
+                <div id="how-video"></div>
+                <div class="video-item__bg" style="background-image: url('img/video/how-video.jpg')"></div>
               </div>
             </div>
           </div>
@@ -600,12 +606,18 @@
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <div class="modal-cases__visual"><iframe id="fashion-video" src="https://www.youtube.com/embed/DGUgj9uOtNk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+                            <div class="modal-cases__visual">
+                              <div class="video-item">
+                                <div class="video-item__inner">
+                                  <div id="fashion-video"></div>
+                                  <div class="video-item__bg" style="background-image: url('img/video/fashion-video.jpg')"></div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
                             <h2 class="h2 modal-cases__title">fashion</h2>
-                            <p class="modal-cases__text">Glossy world of bright ideas and strict rules. Each collection created as a complete form of designer’s talent. Each item has its own mood and designer`s vision.  Nowadays it is a usual thing to come into concept store and ask professional stylist to create a Total Look for you personally. But what about online Luxury stores where customer decides what to buy just by a little photo of item, where you can't cover all requests by human resources, where you can`t  bring your care to the guest?  Just a blind choice? And as a result you have huge overstocks in case of selling items from complete collections by pieces, tons of returns and low conversion from visitor to buyer, low trust to your store.</p>
+                            <div class="modal-cases__text">Glossy world of bright ideas and strict rules. Each collection created as a complete form of designer’s talent. Each item has its own mood and designer`s vision.  Nowadays it is a usual thing to come into concept store and ask professional stylist to create a Total Look for you personally. But what about online Luxury stores where customer decides what to buy just by a little photo of item, where you can't cover all requests by human resources, where you can`t  bring your care to the guest?  Just a blind choice? And as a result you have huge overstocks in case of selling items from complete collections by pieces, tons of returns and low conversion from visitor to buyer, low trust to your store.</div>
                             <div class="modal-cases__btn"><a class="btn btn--shadow" href="fashion.html">Read more</a></div>
                           </div>
                         </div>
@@ -632,12 +644,12 @@
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <div class="modal-cases__visual"><img src="img/bg/perfumery.jpg" alt="alt text" />
+                            <div class="modal-cases__visual"><img src="img/bg/perfumery.jpg" alt="perfumery" />
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <h2 class="h2 modal-cases__title">fashion</h2>
-                            <p class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</p>
+                            <h2 class="h2 modal-cases__title">Perfumery</h2>
+                            <div class="modal-cases__text"><p>Creative names which say about nothing, spending time on reading descriptions, how to combine fragrances? Many questions and one answer. Or your customer spends a lot of time on browsing and studying materials, or goes to offline store to try and imagine what it is about. You can ask your customer to fill a form with personal preferences. But what if customer’s interests are changing?</p><p>Our specially designed for selling perfumery online personalization algorithm knows everything about your customer, detects interests changing in real time and matches fragrances just like a human expert.</p><p>And as result of complicated cooperation of our developers and great experienced human experts DATAPROM creates ideal personalized recommendations for esthetes.</p></div>
                             <div class="modal-cases__btn"><a class="btn btn--shadow" href="fashion.html">Read more</a></div>
                           </div>
                         </div>
@@ -660,16 +672,16 @@
                 <div class="row">
                   <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
                     <button class="modal-close icon-cross js-modal-close" type="button"></button>
-                    <div class="modal-perfumery">
+                    <div class="modal-outdoor">
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <div class="modal-cases__visual"><img src="img/bg/perfumery.jpg" alt="alt text" />
+                            <div class="modal-cases__visual"><img src="img/bg/outdoor.jpg" alt="outdoor" />
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <h2 class="h2 modal-cases__title">fashion</h2>
-                            <p class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</p>
+                            <h2 class="h2 modal-cases__title">outdoor</h2>
+                            <div class="modal-cases__text"><p>So many areas, so many specified preferences, so many items every fisherman, hunter, tourist or athlete needs in every trip or training.</p><p>Usual marketing tools see no difference between this close areas, every marketing company brings colossal costs to your store.</p><p>Thanks to DATAPROMS clients base clustering algorithms and specially designed recommendations engine every athlete receives promos he is interested in only. As a result you get higher conversion from your advertisements, higher conversion from visitor to buyer, marketing becomes less expensive.</p><p>Show your customers your care of their interests and grow your sales!</p></div>
                             <div class="modal-cases__btn"><a class="btn btn--shadow" href="fashion.html">Read more</a></div>
                           </div>
                         </div>
@@ -692,16 +704,16 @@
                 <div class="row">
                   <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
                     <button class="modal-close icon-cross js-modal-close" type="button"></button>
-                    <div class="modal-perfumery">
+                    <div class="modal-electronics">
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <div class="modal-cases__visual"><img src="img/bg/perfumery.jpg" alt="alt text" />
+                            <div class="modal-cases__visual"><img src="img/bg/electronics.jpg" alt="electronics" />
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <h2 class="h2 modal-cases__title">fashion</h2>
-                            <p class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</p>
+                            <h2 class="h2 modal-cases__title">electronics</h2>
+                            <div class="modal-cases__text"><p>Remember, when you have tried to buy smartphone online? Remember those disgusting emails? You thought: “Leave me please! I`ve already bought this phone! I don`t need the same one!”</p><p>DATAPROM matches every item in your stores catalogue due to compatibility to each other and to users history of enjoying your store. Our machine brings you an opportunity to build cross and up sales processes based on customers behaviors and experience.</p></div>
                             <div class="modal-cases__btn"><a class="btn btn--shadow" href="fashion.html">Read more</a></div>
                           </div>
                         </div>
@@ -724,16 +736,16 @@
                 <div class="row">
                   <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
                     <button class="modal-close icon-cross js-modal-close" type="button"></button>
-                    <div class="modal-perfumery">
+                    <div class="modal-grocery">
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <div class="modal-cases__visual"><img src="img/bg/perfumery.jpg" alt="alt text" />
+                            <div class="modal-cases__visual"><img src="img/bg/grocery.jpg" alt="grocery" />
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <h2 class="h2 modal-cases__title">fashion</h2>
-                            <p class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</p>
+                            <h2 class="h2 modal-cases__title">grocery</h2>
+                            <div class="modal-cases__text"><p>We are just bringing your customers your best offers to grocery and households they used to and could be interested in. But we know who is who and will deliver veggies recommendations to vegetarians or no sugar delights to diabetics.</p></div>
                             <div class="modal-cases__btn"><a class="btn btn--shadow" href="fashion.html">Read more</a></div>
                           </div>
                         </div>

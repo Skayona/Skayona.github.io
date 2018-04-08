@@ -108,12 +108,20 @@
           </div>
         </div>
       </section>
-      <section class="benefits js-benefits bg-white-2 benefits--fashion">
+      <section class="benefits bg-white-2 benefits--fashion">
         <div class="container">
           <div class="row">
             <div class="benefits__content col-xs-6 col-sm-12 col-xl-4">
               <h2 class="h2 benefits__title">Benefits</h2>
-              <p>With DataProm your customers satisfy their shopping goals. Our smart system analyzes your clients behavior, emotions, taste and suggests them the best match products and even more. We turn their shopping into a unique entertaining experience they will urge to share with their friends!</p>
+              <div class="benefits__text">
+                <p class="benefits__fashion">With DataProm your customers satisfy their shopping goals. Our smart system analyzes your clients behavior, emotions, taste and suggests them the best match products and even more. We turn their shopping into a unique entertaining experience they will urge to share with their friends!</p>
+                <div class="b-slider-text">
+                  <p>When your customer chooses one unique thing, our platform automatically, without attracting of human resources and in a real-time mode collects a "Total Look" - including footwear and accessories.</p>
+                  <p>The system displays goods in one color scheme, price and size allows to increase your conversion by 10%.</p>
+                  <p>Customers can create total looks and share them on social media!  We keep track of individual preference and create offers they can’t resist.</p>
+                  <p>Shares on social media bring more potential clients to your shop and increases their loyalty.</p>
+                </div>
+              </div>
               <div class="benefits__slider-nav benefits__slider-nav--desktop">
                 <div class="btn-slider-wrap">
                   <button class="btn-slider btn-slider--prev" type="button" aria-label="Slider leaf left"></button>
@@ -174,11 +182,11 @@
           </div>
         </div>
       </section>
-      <div class="cases" id="cases"><a class="js-client cases__item" href="#client-1,client 1,client" style="background-image: url('img/bg/client-1.jpg')">
-          <h2 class="h2 cases__title">client 1</h2></a><a class="js-client cases__item" href="#client-2,client 2,client" style="background-image: url('img/bg/client-2.jpg')">
-          <h2 class="h2 cases__title">client 2</h2></a><a class="js-client cases__item" href="#client-3,client 3,client" style="background-image: url('img/bg/client-3.jpg')">
-          <h2 class="h2 cases__title">client 3</h2></a><a class="js-client cases__item" href="#client-4,client 4,client" style="background-image: url('img/bg/client-4.jpg')">
-          <h2 class="h2 cases__title">client 4</h2></a><a class="js-client cases__item" href="#client-5,client 5,client" style="background-image: url('img/bg/client-5.jpg')">
+      <div class="cases" id="cases"><a class="js-client-1 cases__item" href="#client-1" style="background-image: url('img/bg/client-1.jpg')">
+          <h2 class="h2 cases__title">client 1</h2></a><a class="js-client-2 cases__item" href="#client-2" style="background-image: url('img/bg/client-2.jpg')">
+          <h2 class="h2 cases__title">client 2</h2></a><a class="js-client-3 cases__item" href="#client-3" style="background-image: url('img/bg/client-3.jpg')">
+          <h2 class="h2 cases__title">client 3</h2></a><a class="js-client-4 cases__item" href="#client-4" style="background-image: url('img/bg/client-4.jpg')">
+          <h2 class="h2 cases__title">client 4</h2></a><a class="js-client-5 cases__item" href="#client-5" style="background-image: url('img/bg/client-5.jpg')">
           <h2 class="h2 cases__title">client 5</h2></a>
       </div>
       <div class="about" id="about">
@@ -323,11 +331,15 @@
         <div class="video container">
           <div class="video-slider">
             <div class="video-item">
-              <div class="video-item__inner"><iframe id="general-video" src="https://www.youtube.com/embed/LP3xiE1qM-g?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
+              <div class="video-item__inner">
+                <div id="general-video"></div>
+                <div class="video-item__bg" style="background-image: url('img/video/general-video.jpg')"></div>
               </div>
             </div>
             <div class="video-item">
-              <div class="video-item__inner"><iframe id="how-video" src="https://www.youtube.com/embed/ulYdQ0PTm64?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+              <div class="video-item__inner">
+                <div id="how-video"></div>
+                <div class="video-item__bg" style="background-image: url('img/video/how-video.jpg')"></div>
               </div>
             </div>
           </div>
@@ -516,7 +528,7 @@
         </div>
       </div>
     </div>
-    <div class="modal-overlay js-modal modal-overlay--cases" id="client">
+    <div class="modal-overlay js-modal modal-overlay--cases" id="client-1">
       <div class="modal-inner">
         <div class="container">
           <div class="row">
@@ -525,7 +537,7 @@
                 <div class="row">
                   <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
                     <button class="modal-close icon-cross js-modal-close" type="button"></button>
-                    <div class="modal-client">
+                    <div class="modal-client-1">
                       <div class="modal-cases">
                         <div class="row">
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
@@ -533,9 +545,137 @@
                             </div>
                           </div>
                           <div class="col-xs-6 col-sm-12 col-xxl-6">
-                            <h2 class="h2 modal-cases__title">client</h2>
-                            <p class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</p>
-                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="client.html">Read more</a></div>
+                            <h2 class="h2 modal-cases__title">client-1</h2>
+                            <div class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</div>
+                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="img/bg/client-1.jpg">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay js-modal modal-overlay--cases" id="client-2">
+      <div class="modal-inner">
+        <div class="container">
+          <div class="row">
+            <div class="js-modal-window modal-window col-xs-6 col-sm-12">
+              <div class="modal-content js-modal-content">
+                <div class="row">
+                  <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
+                    <button class="modal-close icon-cross js-modal-close" type="button"></button>
+                    <div class="modal-client-2">
+                      <div class="modal-cases">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <div class="modal-cases__visual"><img src="img/bg/client-2.jpg" alt="alt text" />
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <h2 class="h2 modal-cases__title">client-2</h2>
+                            <div class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</div>
+                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="img/bg/client-2.jpg">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay js-modal modal-overlay--cases" id="client-3">
+      <div class="modal-inner">
+        <div class="container">
+          <div class="row">
+            <div class="js-modal-window modal-window col-xs-6 col-sm-12">
+              <div class="modal-content js-modal-content">
+                <div class="row">
+                  <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
+                    <button class="modal-close icon-cross js-modal-close" type="button"></button>
+                    <div class="modal-client-3">
+                      <div class="modal-cases">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <div class="modal-cases__visual"><img src="img/bg/client-3.jpg" alt="alt text" />
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <h2 class="h2 modal-cases__title">client-3</h2>
+                            <div class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</div>
+                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="img/bg/client-3.jpg">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay js-modal modal-overlay--cases" id="client-4">
+      <div class="modal-inner">
+        <div class="container">
+          <div class="row">
+            <div class="js-modal-window modal-window col-xs-6 col-sm-12">
+              <div class="modal-content js-modal-content">
+                <div class="row">
+                  <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
+                    <button class="modal-close icon-cross js-modal-close" type="button"></button>
+                    <div class="modal-client-4">
+                      <div class="modal-cases">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <div class="modal-cases__visual"><img src="img/bg/client-4.jpg" alt="alt text" />
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <h2 class="h2 modal-cases__title">client-4</h2>
+                            <div class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</div>
+                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="img/bg/client-4.jpg">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay js-modal modal-overlay--cases" id="client-5">
+      <div class="modal-inner">
+        <div class="container">
+          <div class="row">
+            <div class="js-modal-window modal-window col-xs-6 col-sm-12">
+              <div class="modal-content js-modal-content">
+                <div class="row">
+                  <div class="offset-md-1 col-xs-6 col-sm-12 col-md-10">
+                    <button class="modal-close icon-cross js-modal-close" type="button"></button>
+                    <div class="modal-client-5">
+                      <div class="modal-cases">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <div class="modal-cases__visual"><img src="img/bg/client-5.jpg" alt="alt text" />
+                            </div>
+                          </div>
+                          <div class="col-xs-6 col-sm-12 col-xxl-6">
+                            <h2 class="h2 modal-cases__title">client-5</h2>
+                            <div class="modal-cases__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam molestiae minima facilis quam culpa aliquam nisi distinctio maiores corrupti magnam autem exercitationem non maxime soluta consequatur ea rerum quidem ducimus inventore, nobis temporibus. Fuga nam, accusamus corporis dignissimos qui similique suscipit. Unde perferendis itaque vero quaerat accusantium? Doloribus nesciunt deleniti corporis numquam aspernatur molestiae autem dolorem explicabo suscipit animi nobis repellat necessitatibus vero expedita modi rem ab architecto, iure eius, nisi repellendus! Quidem dolorum facilis hic veritatis ratione asperiores iste nam nihil temporibus eos, non debitis consequatur accusamus voluptatem incidunt, soluta quae tempora consectetur rem! Modi voluptatum aspernatur assumenda maxime.</div>
+                            <div class="modal-cases__btn"><a class="btn btn--shadow" href="img/bg/client-1.jpg">Read more</a></div>
                           </div>
                         </div>
                       </div>

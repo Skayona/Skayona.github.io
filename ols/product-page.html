@@ -4,7 +4,78 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="description" content="Sell more with Big Data. DataProm fashion is a first team who created solution which allows to bring key selling techniques from offline concept stores to online. We sell apparel by Total Looks! Our solution brings each customer a personal recommendation based on major fashion principles of brand mixing, collections, style, silhouette and color matching and makes browsing and searching process fun and simple."/>
+    <meta name="description" content="Product Page"/>
+    <div class="product bg-white-3">
+      <div class="container">
+        <div class="row">
+          <h2 class="h2--underlined h2--centered col-12">Product page</h2>
+          <div class="col-12 col-md-6">
+            <div class="product-slider">product-slider</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="product-info">product-info</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact container" id="contact">
+      <div class="row">
+        <h2 class="h2 h2--underlined h2--centered col-12">Contact us</h2>
+        <div class="col-12 col-md-6">
+          <div class="managers">
+            <p class="managers__text">Hello, would you like to estimate an application?</p>
+            <p class="managers__text">Let me help you! Contact me on Skype or telergam!</p>
+            <div class="managers__contact">
+              <div class="manager-contacts">
+                <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/irina.jpg" alt="Avatar ofIrina"/></div>
+                <div class="manager-contacts__connect">
+                  <p><strong>Irina</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:irina_dl5" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/IrinaBelinskaya" target="_blank" rel="noopener">Chat</a>
+                </div>
+              </div>
+              <div class="manager-contacts">
+                <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/slava.jpg" alt="Avatar ofSlava"/></div>
+                <div class="manager-contacts__connect">
+                  <p><strong>Slava</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:slaventij_" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/slavachernysh" target="_blank" rel="noopener">Chat</a>
+                </div>
+              </div>
+            </div>
+            <div class="managers__zadarma">
+              <p class="managers__text">or</p>
+              <div id="zadarma"><a class="btn" href="http://www.adobe.com/go/getflashplayer">Call Us</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <form class="form row contact__form" action="php/send.php" id="contact-form" method="post" novalidate="novalidate">
+            <div class="form-group col-12">
+              <label class="visually-hidden" for="contact-name">Name</label>
+              <input class="form-input" type="text" placeholder="Name (required)" name="name" id="contact-name" autocomplete="name" required="required"/>
+            </div>
+            <div class="form-group col-12">
+              <label class="visually-hidden" for="contact-email">Email</label>
+              <input class="form-input" type="email" placeholder="Email (required)" name="email" id="contact-email" autocomplete="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" required="required"/>
+            </div>
+            <div class="form-group col-12">
+              <label class="visually-hidden" for="contact-tel">Phone</label>
+              <input class="form-input" type="tel" placeholder="Tel" name="tel" id="contact-tel" autocomplete="tel" pattern="^[0-9+-]+$" required="required"/>
+            </div>
+            <div class="form-group col-12">
+              <label class="visually-hidden" for="contact-subject">Subject</label>
+              <input class="form-input" type="text" placeholder="Subject" name="subject" id="contact-subject"/>
+            </div>
+            <div class="form-group col-12">
+              <label class="visually-hidden" for="contact-message">Message</label>
+              <textarea class="form-textarea" placeholder="Message" name="message" id="contact-message"></textarea>
+            </div>
+            <input id="check" name="check" type="hidden" value=""/>
+            <input type="hidden" name="form" value="Contact"/>
+            <div class="form-group form__btn col-12">
+              <button class="btn" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png"/>
@@ -31,7 +102,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
     <meta name="msapplication-starturl" content="/index.html"/>
-    <title>Dataprom | Fashion</title>
+    <title>Product Page</title>
     <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <link rel="preload" href="css/min-width-576px.min.css" media="screen and (min-width:576px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -53,8 +124,8 @@
     </script>
   </head>
   <body>
-    <header class="js-header header header--not-main">
-      <div class="header__container"><a class="js-menu-item header__logo-link" href="index.html">
+    <header class="js-header header header--undefined">
+      <div class="header__container"><a class="js-menu-item header__logo-link" href="#home">
           <div class="header__logo"><span>One</span><span>Logic</span><span>Soft</span></div></a>
         <button class="js-hamburger header__hamburger" type="button" aria-label="Show mobile menu"><span></span></button>
         <nav class="header__nav">
@@ -134,5 +205,6 @@
     </footer>
     <script src="js/lazysizes.min.js" async="async"></script>
     <script src="js/script.min.js" async="async"></script>
+    <script src="https://zadarma.com/swfobject.js" async="async"></script>
   </body>
 </html>

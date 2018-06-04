@@ -1,0 +1,1 @@
+.container,.header__container{max-width:1170px}.team,.works{max-width:1140px}@supports (display:grid){.works__gallery{grid-auto-rows:50px}}.reviews:before{background-image:url(../img/bg/reviews@1920.jpg)}

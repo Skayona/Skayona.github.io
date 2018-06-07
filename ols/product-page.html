@@ -5,77 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Product Page"/>
-    <div class="product bg-white-3">
-      <div class="container">
-        <div class="row">
-          <h2 class="h2--underlined h2--centered col-12">Product page</h2>
-          <div class="col-12 col-md-6">
-            <div class="product-slider">product-slider</div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="product-info">product-info</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="contact container" id="contact">
-      <div class="row">
-        <h2 class="h2 h2--underlined h2--centered col-12">Contact us</h2>
-        <div class="col-12 col-md-6">
-          <div class="managers">
-            <p class="managers__text">Hello, would you like to estimate an application?</p>
-            <p class="managers__text">Let me help you! Contact me on Skype or telergam!</p>
-            <div class="managers__contact">
-              <div class="manager-contacts">
-                <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/irina.jpg" alt="Avatar ofIrina"/></div>
-                <div class="manager-contacts__connect">
-                  <p><strong>Irina</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:irina_dl5" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/IrinaBelinskaya" target="_blank" rel="noopener">Chat</a>
-                </div>
-              </div>
-              <div class="manager-contacts">
-                <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/slava.jpg" alt="Avatar ofSlava"/></div>
-                <div class="manager-contacts__connect">
-                  <p><strong>Slava</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:slaventij_" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/slavachernysh" target="_blank" rel="noopener">Chat</a>
-                </div>
-              </div>
-            </div>
-            <div class="managers__zadarma">
-              <p class="managers__text">or</p>
-              <div id="zadarma"><a class="btn" href="http://www.adobe.com/go/getflashplayer">Call Us</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <form class="form row contact__form" action="php/send.php" id="contact-form" method="post" novalidate="novalidate">
-            <div class="form-group col-12">
-              <label class="visually-hidden" for="contact-name">Name</label>
-              <input class="form-input" type="text" placeholder="Name (required)" name="name" id="contact-name" autocomplete="name" required="required"/>
-            </div>
-            <div class="form-group col-12">
-              <label class="visually-hidden" for="contact-email">Email</label>
-              <input class="form-input" type="email" placeholder="Email (required)" name="email" id="contact-email" autocomplete="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" required="required"/>
-            </div>
-            <div class="form-group col-12">
-              <label class="visually-hidden" for="contact-tel">Phone</label>
-              <input class="form-input" type="tel" placeholder="Tel" name="tel" id="contact-tel" autocomplete="tel" pattern="^[0-9+-]+$" required="required"/>
-            </div>
-            <div class="form-group col-12">
-              <label class="visually-hidden" for="contact-subject">Subject</label>
-              <input class="form-input" type="text" placeholder="Subject" name="subject" id="contact-subject"/>
-            </div>
-            <div class="form-group col-12">
-              <label class="visually-hidden" for="contact-message">Message</label>
-              <textarea class="form-textarea" placeholder="Message" name="message" id="contact-message"></textarea>
-            </div>
-            <input id="check" name="check" type="hidden" value=""/>
-            <input type="hidden" name="form" value="Contact"/>
-            <div class="form-group form__btn col-12">
-              <button class="btn" type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png"/>
@@ -103,30 +32,11 @@
     <meta name="theme-color" content="#ffffff"/>
     <meta name="msapplication-starturl" content="/index.html"/>
     <title>Product Page</title>
-    <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <link rel="preload" href="css/min-width-576px.min.css" media="screen and (min-width:576px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <link rel="preload" href="css/min-width-768px.min.css" media="screen and (min-width:768px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <link rel="preload" href="css/min-width-992px.min.css" media="screen and (min-width:992px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <link rel="preload" href="css/min-width-1800px.min.css" media="screen and (min-width:1800px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <noscript>
-      <link rel="stylesheet" href="css/style.min.css" media="screen"/>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700"/>
-      <link rel="stylesheet" href="css/min-width-576px.min.css" media="screen and (min-width:576px)"/>
-      <link rel="stylesheet" href="css/min-width-768px.min.css" media="screen and (min-width:768px)"/>
-      <link rel="stylesheet" href="css/min-width-992px.min.css" media="screen and (min-width:992px)"/>
-      <link rel="stylesheet" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)"/>
-      <link rel="stylesheet" href="css/min-width-1800px.min.css" media="screen and (min-width:1800px)"/>
-    </noscript>
-    <script>
-      !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-      
-    </script>
   </head>
   <body>
     <header class="js-header header header--undefined">
       <div class="header__container"><a class="js-menu-item header__logo-link" href="#home">
-          <div class="header__logo"><span>One</span><span>Logic</span><span>Soft</span></div></a>
+          <div class="header__logo"><span>One</span><span>Logic</span><span class="header__logo--accent">Soft</span></div></a>
         <button class="js-hamburger header__hamburger" type="button" aria-label="Show mobile menu"><span></span></button>
         <nav class="header__nav">
           <ul class="header__menu">
@@ -148,6 +58,141 @@
       </div>
     </header>
     <main>
+      <div class="breadcrumps bg-white-3">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfolio - Product Page</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product bg-white-3">
+        <div class="container">
+          <div class="row">
+            <h2 class="h2--underlined h2--centered col-12">Product page</h2>
+          </div>
+          <div class="row product__info">
+            <div class="col-12 col-md-6">
+              <div class="product-slider">
+                <div class="product-slider__content js-product-for">
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/01.jpg" data-src="img/portfolio/project-page/01.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/02.jpg" data-src="img/portfolio/project-page/02.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/03.jpg" data-src="img/portfolio/project-page/03.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/04.jpg" data-src="img/portfolio/project-page/04.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/05.jpg" data-src="img/portfolio/project-page/05.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/06.jpg" data-src="img/portfolio/project-page/06.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/07.jpg" data-src="img/portfolio/project-page/07.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/08.jpg" data-src="img/portfolio/project-page/08.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--preview"><img class="lazyload" alt="img/portfolio/project-page/09.jpg" data-src="img/portfolio/project-page/09.jpg"/></div>
+                </div>
+                <div class="product-slider__nav js-product-nav">
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/01.jpg" data-src="img/portfolio/project-page/01.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/02.jpg" data-src="img/portfolio/project-page/02.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/03.jpg" data-src="img/portfolio/project-page/03.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/04.jpg" data-src="img/portfolio/project-page/04.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/05.jpg" data-src="img/portfolio/project-page/05.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/06.jpg" data-src="img/portfolio/project-page/06.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/07.jpg" data-src="img/portfolio/project-page/07.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/08.jpg" data-src="img/portfolio/project-page/08.jpg"/></div>
+                  <div class="product-slider__img product-slider__img--nav"><img class="lazyload" alt="img/portfolio/project-page/09.jpg" data-src="img/portfolio/project-page/09.jpg"/></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="product-info">
+                <p>This is a description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, officiis? Enim fuga repellat unde maxime corrupti delectus velit vero quaerat sequi, deleniti iste perspiciatis natus voluptatum consequuntur laborum placeat at?</p>
+                <article>
+                  <h3 class="h3 product-info__title">Features</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis inventore ut repellendus impedit nesciunt sequi tempora beatae ipsam reiciendis vel esse fugiat, praesentium id eveniet aliqua.</p>
+                  <ul class="product-info__list">
+                    <li>Bulleting boards</li>
+                    <li>Personal dashboard</li>
+                    <li>Private messaging</li>
+                    <li>Billing and different payment methods support</li>
+                    <li>Rating system</li>
+                    <li>Social connections</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3 class="h3 product-info__title">Skills & Expertise</h3>
+                  <p class="product-info__subtitle">Front-end:</p>
+                  <ul class="product-info__skills">
+                    <li>Angular</li>
+                    <li>Java</li>
+                    <li>Wicket</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                  <p class="product-info__subtitle">Backend:</p>
+                  <ul class="product-info__skills">
+                    <li>Angular</li>
+                    <li>Java</li>
+                    <li>Wicket</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact container" id="contact">
+        <div class="row">
+          <h2 class="h2 h2--underlined h2--centered col-12">Contact us</h2>
+          <div class="col-12 col-md-6">
+            <div class="managers">
+              <p class="managers__text">Hello, would you like to estimate an application?</p>
+              <p class="managers__text">Let me help you! Contact me on Skype or telergam!</p>
+              <div class="managers__contact">
+                <div class="manager-contacts">
+                  <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/irina.jpg" alt="Avatar ofIrina"/></div>
+                  <div class="manager-contacts__connect">
+                    <p><strong>Irina</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:irina_dl5" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/IrinaBelinskaya" target="_blank" rel="noopener">Chat</a>
+                  </div>
+                </div>
+                <div class="manager-contacts">
+                  <div class="manager-contacts__avatar"><img class="lazyload" data-src="img/avatar/slava.jpg" alt="Avatar ofSlava"/></div>
+                  <div class="manager-contacts__connect">
+                    <p><strong>Slava</strong><span> Client relationship manager</span></p><a class="manager-contacts__chat manager-contacts__chat--skype" href="skype:slaventij_" rel="noopener">Chat</a><a class="manager-contacts__chat manager-contacts__chat--telegram" href="https://t.me/slavachernysh" target="_blank" rel="noopener">Chat</a>
+                  </div>
+                </div>
+              </div>
+              <div class="managers__zadarma">
+                <p class="managers__text">or</p>
+                <div id="zadarma"><a class="btn" href="http://www.adobe.com/go/getflashplayer">Call Us</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <form class="form row contact__form" action="php/send.php" id="contact-form" method="post" novalidate="novalidate">
+              <div class="form-group col-12">
+                <label class="visually-hidden" for="contact-name">Name</label>
+                <input class="form-input" type="text" placeholder="Name (required)" name="name" id="contact-name" autocomplete="name" required="required"/>
+              </div>
+              <div class="form-group col-12">
+                <label class="visually-hidden" for="contact-email">Email</label>
+                <input class="form-input" type="email" placeholder="Email (required)" name="email" id="contact-email" autocomplete="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$" required="required"/>
+              </div>
+              <div class="form-group col-12">
+                <label class="visually-hidden" for="contact-tel">Phone</label>
+                <input class="form-input" type="tel" placeholder="Tel" name="tel" id="contact-tel" autocomplete="tel" pattern="^[0-9+-]+$" required="required"/>
+              </div>
+              <div class="form-group col-12">
+                <label class="visually-hidden" for="contact-subject">Subject</label>
+                <input class="form-input" type="text" placeholder="Subject" name="subject" id="contact-subject"/>
+              </div>
+              <div class="form-group col-12">
+                <label class="visually-hidden" for="contact-message">Message</label>
+                <textarea class="form-textarea" placeholder="Message" name="message" id="contact-message"></textarea>
+              </div>
+              <input id="check" name="check" type="hidden" value=""/>
+              <input type="hidden" name="form" value="Contact"/>
+              <div class="form-group form__btn col-12">
+                <button class="btn" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="bg-black-3">
@@ -203,6 +248,22 @@
         </div>
       </div>
     </footer>
+    <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" href="css/min-width-576px.min.css" media="screen and (min-width:576px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" href="css/min-width-768px.min.css" media="screen and (min-width:768px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" href="css/min-width-992px.min.css" media="screen and (min-width:992px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" href="css/min-width-1800px.min.css" media="screen and (min-width:1800px)" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript>
+      <link rel="stylesheet" href="css/style.min.css" media="screen"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen"/>
+      <link rel="stylesheet" href="css/min-width-576px.min.css" media="screen and (min-width:576px)"/>
+      <link rel="stylesheet" href="css/min-width-768px.min.css" media="screen and (min-width:768px)"/>
+      <link rel="stylesheet" href="css/min-width-992px.min.css" media="screen and (min-width:992px)"/>
+      <link rel="stylesheet" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)"/>
+      <link rel="stylesheet" href="css/min-width-1800px.min.css" media="screen and (min-width:1800px)"/>
+    </noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
     <script src="js/lazysizes.min.js" async="async"></script>
     <script src="js/script.min.js" async="async"></script>
     <script src="https://zadarma.com/swfobject.js" async="async"></script>

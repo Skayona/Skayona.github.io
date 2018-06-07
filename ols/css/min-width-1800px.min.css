@@ -1,1 +1,1 @@
-.container,.header__container{max-width:1620px}.team,.works{max-width:1590px}@supports (display:grid){.works__gallery{grid-auto-rows:60px}}
+.container,.header__container{max-width:1620px}.team,.works{max-width:1590px}@supports (display:grid){.works__gallery{grid-auto-rows:60px}}.product-slider__img--preview{height:500px;max-width:600px}.product-slider__nav{max-width:600px}

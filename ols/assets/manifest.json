@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "DataProm -  Sell more with big data",
-  "short_name": "DataProm",
+  "name": "One Logic Soft -  professional software solutions",
+  "short_name": "One Logic Soft",
   "scope": "/",
   "start_url": "/",
   "icons": [
@@ -79,6 +79,6 @@
   ],
   "display": "standalone",
   "background_color": "#ffffff",
-  "description": "DataProm: Big Data personalization for eCommerce",
+  "description": "One Logic Soft is a company that produces high quality professional software solutions in order to achieve clients' satisfaction.",
   "theme_color": "#ffffff"
 }

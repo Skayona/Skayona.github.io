@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+      *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,html{margin:0;padding:0;border:0}article,section{display:block}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.bg-white-1{background-color:#fff}.bg-white-2{background-color:#fafafa}.bg-white-3{background-color:#f6f6f7}.bg-white-4{background-color:#d9d9d9}.bg-black-1{background-color:#000}.bg-black-2{background-color:#313131}.bg-black-3{background-color:#3e3e3e}.bg-black-4{background-color:#656565}.bg-grey-1{background-color:#828282}.txt-white-1{color:#fff}.txt-black-1{color:#000}:root{font-family:'Source Sans Pro',sans-serif;font-weight:400;font-size:14px;line-height:23px;color:#3e3e3e}body{overflow-x:hidden}.h1,h1{font-family:'Source Sans Pro',sans-serif;font-weight:600;font-size:28px;line-height:33px;text-transform:capitalize;letter-spacing:normal}.h2,h2{font-family:'Source Sans Pro',sans-serif;font-weight:600;font-size:28px;line-height:33px;font-size:36px;line-height:1.1667;letter-spacing:normal;margin-bottom:3rem;text-transform:capitalize}.h3,h3{font-family:'Source Sans Pro',sans-serif;font-weight:600;margin-bottom:.75rem;font-size:1.4rem;line-height:1.4;letter-spacing:.7px;text-transform:capitalize}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:550px}.container{max-width:550px}}@media (min-width:768px){.container{max-width:744px}.container{max-width:744px}}@media (min-width:992px){.container{max-width:990px}:root{font-size:16px;line-height:1.75}.h1,h1{font-size:48px;line-height:1.1667}.h2,h2{font-size:36px}.container{max-width:990px}}@media (min-width:1200px){.container{max-width:1170px}.container{max-width:1170px}}
+    </style>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <link rel="preload" href="../sass/sg.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../sass/sg.css"></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <title>OLS | Styleguide</title>
+  </head>
+  <body class="sg container">
+    <h1 class="h1">Styleguide</h1>
+    <section>
+      <h2 class="h2">Colors and textures</h2>
+      <div class="sg-colors">
+        <article>
+          <h3 class="h3">White</h3>
+          <div class="bg-white-1 txt-black-1">#ffffff<br>.bg-white-1<br>.txt-white-1<br>$white-1</div>
+          <div class="bg-white-2 txt-black-1">#fafafa<br>.bg-white-2<br>.txt-white-2<br>$white-2</div>
+          <div class="bg-white-3 txt-black-1">#f6f6f7<br>.bg-white-3<br>.txt-white-3<br>$white-3</div>
+          <div class="bg-white-4 txt-black-1">#d9d9d9<br>.bg-white-4<br>.txt-white-4<br>$white-4</div>
+        </article>
+        <article>
+          <h3 class="h3">Black</h3>
+          <div class="bg-black-1 txt-white-1">#000000<br>.bg-black-1<br>.txt-black-1<br>$black-1</div>
+          <div class="bg-black-2 txt-white-1">#313131<br>.bg-black-2<br>.txt-black-2<br>$black-2</div>
+          <div class="bg-black-3 txt-white-1">#3e3e3e<br>.bg-black-3<br>.txt-black-3<br>$black-3</div>
+          <div class="bg-black-4 txt-white-1">#656565<br>.bg-black-4<br>.txt-black-4<br>$black-4</div>
+        </article>
+        <article>
+          <h3 class="h3">Grey</h3>
+          <div class="bg-grey-1 txt-white-1">#828282<br>.bg-grey-1<br>.txt-grey-1<br>$grey-1</div>
+          <div class="bg-grey-2 txt-white-1">#919191<br>.bg-grey-2<br>.txt-grey-2<br>$grey-2</div>
+          <div class="bg-grey-3 txt-white-1">#c4c4c4<br>.bg-grey-3<br>.txt-grey-3<br>$grey-3</div>
+          <div class="bg-grey-4 txt-white-1">#cccccc<br>.bg-grey-4<br>.txt-grey-4<br>$grey-4</div>
+        </article>
+        <article>
+          <h3 class="h3">green, error</h3>
+          <div class="bg-green-1 txt-white-1">#93c704<br>.bg-green-1<br>.txt-green-1<br>$green-1</div>
+          <div class="bg-green-2 txt-white-1">#aae14f<br>.bg-green-2<br>.txt-green-2<br>$green-2</div>
+          <div class="bg-error txt-white-1">#f09191<br>.bg-error<br>.txt-error<br>$error</div>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2 class="h2">Typography</h2>
+      <p class="txt-bold">Font used:</p>
+      <ul>
+        <li class="txt-regular">Source Sans Pro, 400 [.txt-regular, @include font-weight(400);]</li>
+        <li class="txt-semibold">Source Sans Pro Semibold, 600 [.txt-semibold, @include font-weight(600);]</li>
+        <li class="txt-bold">Source Sans Pro Bold, 700 [.txt-bold, @include font-weight(700);]</li>
+      </ul>
+      <h1 class="h1">H1 title <span style="text-transform: lowercase;">[h1, .h1]</span></h1>
+      <h2 class="h2">H2 title [h2, .h2]</h2>
+      <h2 class="h2 h2--underlined">h2 underlined [.h2--underlined]</h2>
+      <h2 class="h2 h2--underlined h2--centered">h2 underlined & centered [.h2--underlined, .h2--centered]</h2>
+      <h2 class="h2 h2--light bg-black-1">h2 light [.h2--light]</h2>
+      <h2 class="h2 h2--underlined h2--light bg-black-1">h2 underlined [.h2--underlined, .h2--light]</h2>
+      <h2 class="h2 h2--underlined h2--centered h2--light bg-black-1">h2 underlined & centered [.h2--underlined, .h2--centered, .h2--light]</h2>
+      <h3 class="h3">H3 title [h3, .h3]</h3>
+      <h3 class="h3 h3--light bg-black-1">H3 title [.h3--light]</h3>
+    </section>
+    <section>
+      <h2 class="h2">Buttons</h2>
+      <div class="btn-wrap"><a class="link" href="#">Link</a></div>
+      <div class="btn-wrap">
+        <button class="btn">.btn</button>
+        <button class="btn btn--shadow">.btn.btn--shadow</button>
+      </div>
+    </section>
+    <section class="sg-icons">
+      <h2 class="h2">Icons [font-family: 'ols']</h2><span class="icon-youtube"><small>[.icon-youtube, \e900]</small></span><span class="icon-instagram"><small>[.icon-instagram, \e901]</small></span><span class="icon-twitter"><small>[.icon-twitter, \e902]</small></span><span class="icon-linkedin"><small>[.icon-linkedin, \e903]</small></span><span class="icon-facebook"><small>[.icon-facebook, \e904]</small></span><span class="icon-angle-down"><small>[.icon-angle-down, \e905]</small></span><span class="icon-cogs"><small>[.icon-cogs, \e906]</small></span><span class="icon-lightbulb-o"><small>[.icon-lightbulb-o, \e907]</small></span><span class="icon-group"><small>[.icon-group, \e90e]</small></span><span class="icon-arrow-up"><small>[.icon-arrow-up, \e90a]</small></span><span class="icon-life-bouy"><small>[.icon-life-bouy, \e90d]</small></span><span class="icon-thumbs-up"><small>[.icon-thumbs-up, \e90b]</small></span><span class="icon-qrcode"><small>[.icon-qrcode, \e90c]</small></span><span class="icon-file-text-o"><small>[.icon-file-text-o, \e910]</small></span><span class="icon-mobile-devices"><small>[.icon-mobile-devices, \e90f]</small></span><span class="icon-object-group"><small>[.icon-object-group, \e912]</small></span><span class="icon-announcement"><small>[.icon-announcement, \e915]</small></span><span class="icon-image"><small>[.icon-image, \e911]</small></span><span class="icon-handshake-o"><small>[.icon-handshake, \e914]</small></span><span class="icon-edit"><small>[.icon-edit, \e909]</small></span><span class="icon-paint-brush"><small>[.icon-paint-brush, \e913]</small></span><span class="icon-laptop"><small>[.icon-laptop, \e908]</small></span><span class="icon-keyboard_arrow_right"><small>[.icon-keyboard_arrow_right, \e916]</small></span><span class="icon-keyboard_arrow_left"><small>[.icon-keyboard_arrow_left, \e917]</small></span><span class="icon-quote-right"><small>[.icon-quote-right, \e91b]</small></span><span class="icon-map-marker"><small>[.icon-map-marker, \e918]</small></span><span class="icon-envelope"><small>[.icon-envelope, \e919]</small></span><span class="icon-phone"><small>[.icon-phone, \e91a]</small></span><span class="icon-telegram"><small>[.icon-telegram, \e91d]</small></span><span class="icon-skype"><small>[.icon-skype, \e91c]</small></span><span class="icon-check"><small>[.icon-check, \e91e]</small></span>
+    </section>
+    <section>
+      <h2 class="h2">Forms</h2>
+      <form class="form">
+        <div class="form-group">
+          <input class="form-input" type="text" placeholder="Placeholder (required)" required="required">
+        </div>
+        <div class="form-group">
+          <input class="form-input error" type="text" placeholder="Placeholder (error) [.error]" required="required">
+        </div>
+        <div class="form-group">
+          <textarea class="form-textarea" placeholder="Your message"></textarea>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

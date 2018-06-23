@@ -35,18 +35,18 @@
   </head>
   <body>
     <header class="js-header header">
-      <div class="header__container"><a class="js-menu-item header__logo-link" href="#home">
+      <div class="header__container"><a class="js-menu-item header__logo-link" href="index.html">
           <div class="header__logo"><span>One</span><span>Logic</span><span class="header__logo--accent">Soft</span></div></a>
         <button class="js-hamburger header__hamburger" type="button" aria-label="Show mobile menu"><span></span></button>
         <nav class="header__nav">
           <ul class="header__menu">
-            <li class="header__menu-item"><a class="js-menu-item" href="#about">About</a>
+            <li class="header__menu-item"><a class="js-menu-item active" href="#index">Home</a>
             </li>
-            <li class="header__menu-item"><a class="js-menu-item" href="#services">Services</a>
+            <li class="header__menu-item"><a class="js-menu-item" href="/development.html">Development</a>
             </li>
-            <li class="header__menu-item"><a class="js-menu-item" href="#portfolio">Portfolio</a>
+            <li class="header__menu-item"><a class="js-menu-item" href="/support.html">Support</a>
             </li>
-            <li class="header__menu-item"><a class="js-menu-item" href="#team">Team</a>
+            <li class="header__menu-item"><a class="js-menu-item" href="/promotion.html">Promotion</a>
             </li>
             <li class="header__menu-item"><a class="js-menu-item" href="#contact">Contact</a></li>
             <li class="header__menu-item"><a href="http://blog.onelogicsoft.com/" target="_blank" rel="noopener">Blog</a></li>
@@ -65,20 +65,31 @@
       <section class="bg-white-3 welcome welcome--undefined" id="home">
         <div class="container">
           <div class="row welcome-inner">
-            <div class="col-12 col-md-4">
-              <div class="welcome__img"><img src="img/welcome/computer.svg" alt="One Logic Soft"></div>
+            <div class="col-12 col-md-5 col-lg-6">
+              <div class="welcome__img">
+                <picture>
+                  <source srcset="img/welcome/welcome@768.png 1x" media="(min-width: 0px)" type="img/webp">
+                  <source srcset="img/welcome/welcome@992.png 1x" media="(min-width: 768px)" type="img/webp">
+                  <source srcset="img/welcome/welcome@1200.png 1x" media="(min-width: 992px)" type="img/webp">
+                  <source srcset="img/welcome/welcome@1440.png 1x" media="(min-width: 1200px)" type="img/webp">
+                  <source srcset="img/welcome/welcome@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img src="img/welcome/welcome.png" srcset="img/welcome/welcome-hd.png 1x" alt="One Logic Soft">
+                </picture>
+              </div>
             </div>
-            <div class="offset-md-1 offset-lg-2 col-12 col-md-7 col-lg-6 align-self-center">
+            <div class="col-12 col-md-7 col-lg-6 align-self-center">
               <h1 class="h1 welcome__title txt-black-4">One&nbsp;Logic&nbsp;Soft</h1>
               <p class="welcome__subtitle txt-grey-2">Practical, elegant and easy to use applications for business</p>
-              <p class="welcome__text txt-grey-2">Web,cross-platform mobile development and assist in digital promotion</p>
-              <div class="welcome__buttons"><a class="btn" href="additional-page.html">Development</a><a class="btn" href="additional-page.html">Implementation</a><a class="btn" href="additional-page.html">Support</a></div>
+              <p class="welcome__text txt-grey-2">Custom web, cross-platform mobile development and assist in digital promotion</p>
+              <div class="welcome__buttons"><a class="btn" href="assets/CompanyPresentation.pdf" target="_blank" rel="noopener">Company presentation</a></div>
             </div>
           </div>
         </div>
       </section>
-      <div class="features" id="features">
+      <section class="features" id="features">
         <div class="container">
+          <div class="row justify-content-center">
+            <h2 class="h2 h2--underlined h2--centered features__title">We build software</h2>
+          </div>
           <div class="row">
             <div class="features__item col-12 col-sm-6 col-lg-3">
               <section class="feature-item feature-item--customizable">
@@ -100,13 +111,13 @@
             </div>
             <div class="features__item col-12 col-sm-6 col-lg-3">
               <section class="feature-item feature-item--design">
-                <h3 class="h3 feature-item__title">Responsive design</h3>
+                <h3 class="h3 feature-item__title">Responsive</h3>
                 <p class="txt-smaller feature-item__txt">Responsive Web Design makes your web app or page look good on all devices (desktops, tablets and phones).</p>
               </section>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="container" id="about">
         <section class="row focuse">
           <div class="col-12 col-md-6" data-aos="zoom-in-right">
@@ -125,7 +136,15 @@
             </article>
           </div>
           <div class="col-12 col-md-6" data-aos="zoom-in-left">
-            <div class="focuse__img"><img class="lazyload" data-src="https://picsum.photos/200/300/?gravity=east" alt="Our focus on features" width="200" height="300"></div>
+            <div class="focuse__img">
+              <picture>
+                <source data-srcset="img/focus/focus@768.png 1x" media="(min-width: 0px)" type="img/webp">
+                <source data-srcset="img/focus/focus@992.png 1x" media="(min-width: 768px)" type="img/webp">
+                <source data-srcset="img/focus/focus@1200.png 1x" media="(min-width: 992px)" type="img/webp">
+                <source data-srcset="img/focus/focus@1440.png 1x" media="(min-width: 1200px)" type="img/webp">
+                <source data-srcset="img/focus/focus@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img class="lazyload" src="img/focus/focus-s.png" data-src="img/focus/focus.png" data-srcset="img/focus/focus-hd.png 1x" alt="Our focus on features">
+              </picture>
+            </div>
           </div>
         </section>
       </div>
@@ -139,11 +158,11 @@
             <div class="col-12 col-md-6" data-aos="fade-right">
               <div class="simple-block__img align-self-center">
                 <picture>
-                  <source data-srcset="img/other/prototyping@768.png 1x" media="(min-width: 0px)" type="img/webp">
-                  <source data-srcset="img/other/prototyping@992.png 1x" media="(min-width: 768px)" type="img/webp">
-                  <source data-srcset="img/other/prototyping@1200.png 1x" media="(min-width: 992px)" type="img/webp">
-                  <source data-srcset="img/other/prototyping@1440.png 1x" media="(min-width: 1200px)" type="img/webp">
-                  <source data-srcset="img/other/prototyping@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img class="lazyload" data-src="img/other/prototyping.png" data-srcset="img/other/prototyping-hd.png 1x" alt="Rapid app prototyping">
+                  <source data-srcset="img/prototyping/prototyping@768.png 1x" media="(min-width: 0px)" type="img/webp">
+                  <source data-srcset="img/prototyping/prototyping@992.png 1x" media="(min-width: 768px)" type="img/webp">
+                  <source data-srcset="img/prototyping/prototyping@1200.png 1x" media="(min-width: 992px)" type="img/webp">
+                  <source data-srcset="img/prototyping/prototyping@1440.png 1x" media="(min-width: 1200px)" type="img/webp">
+                  <source data-srcset="img/prototyping/prototyping@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img class="lazyload" src="img/prototyping/prototyping-s.png" data-src="img/prototyping/prototyping.png" data-srcset="img/prototyping/prototyping-hd.png 1x" alt="Rapid app prototyping">
                 </picture>
               </div>
             </div>
@@ -163,7 +182,7 @@
                 <source data-srcset="img/other/digital@992.png 1x" media="(min-width: 768px)" type="img/webp">
                 <source data-srcset="img/other/digital@1200.png 1x" media="(min-width: 992px)" type="img/webp">
                 <source data-srcset="img/other/digital@1440.png 1x" media="(min-width: 1200px)" type="img/webp">
-                <source data-srcset="img/other/digital@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img class="lazyload" data-src="img/other/digital.png" data-srcset="img/other/digital-hd.png 1x" alt="Lorem ipsum dolor">
+                <source data-srcset="img/other/digital@1920.png 1x" media="(min-width: 1440px)" type="img/webp"><img class="lazyload" src="img/other/digital-s.png" data-src="img/other/digital.png" data-srcset="img/other/digital-hd.png 1x" alt="Lorem ipsum dolor">
               </picture>
             </div>
           </div>
@@ -289,18 +308,18 @@
           <h2 class="h2 h2--underlined h2--light h2--centered">What about client&rsquo;s say</h2>
           <div class="js-review-slider">
             <div class="review">
-              <blockquote class="review__blockquote">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Города вскоре продолжил рукопись над своих языкового на берегу однажды единственное, свой по всей взобравшись семантика там, имеет свою проектах рыбными своего.</blockquote>
-              <cite class="review__cite">Кудряшка Сью&nbsp;<span>Директор Мира</span>
+              <blockquote class="review__blockquote">The development team  is highly professional and proactive. They deliver on time, always in touch, always advice the best way and I’m happy with their work.</blockquote>
+              <cite class="review__cite">Pavel A.&nbsp;<span>CEO SO Group</span>
               </cite>
             </div>
             <div class="review">
-              <blockquote class="review__blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum cupiditate molestias iusto quidem, tempora inventore? Quidem delectus, sapiente, autem quae libero culpa ab laborum blanditiis sit labore fugiat consectetur!</blockquote>
-              <cite class="review__cite">John Doe
+              <blockquote class="review__blockquote">Extremely pleased with the whole process and the result. Technical personnel was able to solve any issue or request that was given to them. Project management team was patient and courteous with us throughout the development cycle. Will continue doing business, way to go Onelogicsoft! </blockquote>
+              <cite class="review__cite">Mike&nbsp;<span>President, Ivengo software, USA</span>
               </cite>
             </div>
             <div class="review">
-              <blockquote class="review__blockquote">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</blockquote>
-              <cite class="review__cite">Neo&nbsp;<span>CEO Matrix</span>
+              <blockquote class="review__blockquote">Team Onelogicsoft has been incredibly responsive and professional. Fantastic communication and very high level of technical skill. We were able to complete our project on time. The look and feel of the final version of the software was beyond our expectations. Great job!</blockquote>
+              <cite class="review__cite">Aleks&nbsp;<span>VP, Ivengo software, USA</span>
               </cite>
             </div>
           </div>
@@ -356,7 +375,7 @@
                 <label class="visually-hidden" for="contact-message">Message</label>
                 <textarea class="form-textarea" placeholder="Message" name="message" id="contact-message"></textarea>
               </div>
-              <p class="form-text col-12">By submitting this form, you agree that we may use the data you provide to contact you with information related to your request/submission and the relevant One Logic Soft products and services. To learn more, see our <a href="#" rel="noopener">Privacy&nbsp;Policy</a>.</p>
+              <p class="form-text col-12">By submitting this form, you agree that we may use the data you provide to contact you with information related to your request/submission and the relevant One Logic Soft products and services. To learn more, see our <a href="privacy-policy.html" rel="noopener">Privacy&nbsp;Policy</a>.</p>
               <input id="check" name="check" type="hidden" value="">
               <input type="hidden" name="form" value="Contact">
               <div class="form-group form__btn col-12">
@@ -406,6 +425,7 @@
                 <li class="social__item"><a class="icon-youtube" href="https://www.youtube.com/channel/onelogicsoft" target="_blank" rel="noopener" aria-label="youtube"></a></li>
                 <li class="social__item"><a class="icon-twitter" href="https://twitter.com/onelogicsoft" target="_blank" rel="noopener" aria-label="twitter"></a></li>
               </ul>
+              <div class="footer__privacy"><a href="privacy-policy.html">Privacy Policy</a></div>
             </section>
           </div>
         </div>
@@ -422,7 +442,7 @@
       </div>
     </footer>
     <style>
-      *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}html,img,li,ul{margin:0;padding:0;border:0}header,img,main,nav,section{display:block}a{color:inherit}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container,.header__container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-md-4{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}@font-face{font-family:ols;src:url(fonts/icomoon/ols.eot?emj0k5);src:url(fonts/icomoon/ols.eot?emj0k5#iefix) format("embedded-opentype"),url(fonts/icomoon/ols.ttf?emj0k5) format("truetype"),url(fonts/icomoon/ols.woff?emj0k5) format("woff"),url(fonts/icomoon/ols.svg?emj0k5#ols) format("svg");font-weight:400;font-style:normal}[class^=icon-]{font-family:ols!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-youtube:before{content:"\e900"}.icon-instagram:before{content:"\e901"}.icon-twitter:before{content:"\e902"}.icon-linkedin:before{content:"\e903"}.icon-facebook:before{content:"\e904"}.bg-white-3{background-color:#f6f6f7}:root{font-family:'Source Sans Pro',sans-serif;font-weight:400;font-size:14px;line-height:23px;color:#3e3e3e}body{overflow-x:hidden}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container,.header__container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-md-4{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.social{list-style-type:none;margin-top:auto;padding:0}.social__item{display:inline-block}.social__item a{position:relative;display:inline-block;padding:10px;font-size:14px;text-decoration:none}.header{position:fixed;top:0;left:0;right:0;z-index:99;padding:12px 0;background:#3e3e3e;color:#fafafa}.header__container{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header__logo{font-size:1.75rem;line-height:1;font-family:'Source Sans Pro',sans-serif;font-weight:600;white-space:nowrap}.header__logo>span{display:inline-block}.header__logo>span:not(:last-child){margin-right:4px}.header__logo--accent{background:#93c704;color:#fff;padding-left:6px;padding-right:6px}.header__logo-link{display:inline-block;text-decoration:none}.header__hamburger{display:-webkit-box;display:-ms-flexbox;display:flex;width:24px;height:24px;padding:0;background:0 0;border:0;outline:0}.header__hamburger span{position:relative;display:inline-block;margin:auto;width:100%;height:2px;background:#93c704}.header__hamburger span::after,.header__hamburger span::before{content:'';position:absolute;left:0;width:100%;height:2px;background:#93c704}.header__hamburger span::before{top:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.header__hamburger span::after{bottom:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.header__nav{-webkit-transform:scaleY(0);transform:scaleY(0);position:fixed;top:48px;bottom:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;padding-bottom:24px;border-top:1px solid rgba(255,255,255,.4);background:#3e3e3e;text-align:center;-webkit-transform-origin:top;transform-origin:top}.header__menu{list-style-type:none;padding:0}.header__menu-item a{position:relative;display:inline-block;width:100%;text-decoration:none;padding:20px 0;font-size:16px;line-height:19px;font-family:'Source Sans Pro',sans-serif;font-weight:600;border-bottom:1px solid rgba(255,255,255,.05)}.header__social .social__item{border-right:1px solid rgba(101,101,101,.1)}.header__social .social__item:first-child{border-left:1px solid rgba(101,101,101,.1)}.welcome{position:relative;padding-top:48px;padding-bottom:5rem}.welcome-inner{margin:auto;padding-top:3rem;padding-bottom:3rem;text-align:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.welcome__img{max-width:320px;margin-left:auto;margin-right:auto;overflow:hidden}.welcome__img img{width:100%;height:auto}@media (min-width:576px){.container,.header__container{max-width:550px}.container,.header__container{max-width:550px}.header__menu,.header__social{width:100%;max-width:540px;margin-left:auto;margin-right:auto}}@media (min-width:768px){.container,.header__container{max-width:744px}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%}.container,.header__container{max-width:744px}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%}.header{padding:16px 0}.header__hamburger{width:35px}.header__hamburger span::before{top:-8px}.header__hamburger span::after{bottom:-8px}.header__nav{top:56px}.header__menu,.header__social{max-width:714px}.welcome{padding-top:56px}.welcome-inner{-webkit-box-orient:initial;-webkit-box-direction:initial;-ms-flex-direction:initial;flex-direction:initial;text-align:left}.welcome__img{max-width:100%;overflow:hidden}}@media (min-width:992px){.container,.header__container{max-width:990px}:root{font-size:16px;line-height:1.75}.container,.header__container{max-width:990px}.social{margin-top:initial;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;width:auto;margin-left:0;margin-right:0}.social__item a{padding-left:9px;padding-right:9px}.header{padding:0;background:0 0;color:#656565;border-bottom:1px solid rgba(101,101,101,.2)}.header__logo>span{display:inline-block}.header__logo>span:not(:last-child){margin-right:3px}.header__hamburger{display:none}.header__nav{position:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:scaleY(1);transform:scaleY(1);padding:14px 0;background:0 0;border-top:none}.header__menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:auto}.header__menu-item a{padding:10px 20px;font-size:14px;line-height:16px;border-bottom:none}.header__social{margin-top:initial;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;width:auto;margin-left:0;margin-right:0}.header__menu,.header__social{max-width:initial;padding-left:20px}.welcome{padding-top:64px}}@media (min-width:1200px){.container,.header__container{max-width:1170px}.container,.header__container{max-width:1170px}}
+      *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,html,img,li,ul{margin:0;padding:0;border:0}header,img,main,nav,section{display:block}a{color:inherit}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container,.header__container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-lg-6,.col-md-5,.col-md-7{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.align-self-center{-ms-flex-item-align:center!important;align-self:center!important}@font-face{font-family:ols;src:url(fonts/icomoon/ols.eot?emj0k5);src:url(fonts/icomoon/ols.eot?emj0k5#iefix) format("embedded-opentype"),url(fonts/icomoon/ols.ttf?emj0k5) format("truetype"),url(fonts/icomoon/ols.woff?emj0k5) format("woff"),url(fonts/icomoon/ols.svg?emj0k5#ols) format("svg");font-weight:400;font-style:normal}[class^=icon-]{font-family:ols!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-youtube:before{content:"\e900"}.icon-instagram:before{content:"\e901"}.icon-twitter:before{content:"\e902"}.icon-linkedin:before{content:"\e903"}.icon-facebook:before{content:"\e904"}.bg-white-3{background-color:#f6f6f7}.txt-black-4{color:#656565}:root{font-family:'Source Sans Pro',sans-serif;font-weight:400;font-size:14px;line-height:23px;color:#3e3e3e}body{overflow-x:hidden}.h1,h1{font-family:'Source Sans Pro',sans-serif;font-weight:600;font-size:28px;line-height:33px;text-transform:capitalize;letter-spacing:normal}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container,.header__container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-12,.col-lg-6,.col-md-5,.col-md-7{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.align-self-center{-ms-flex-item-align:center!important;align-self:center!important}.social{list-style-type:none;margin-top:auto;padding:0}.social__item{display:inline-block}.social__item a{position:relative;display:inline-block;padding:10px;font-size:14px;text-decoration:none}.header{position:fixed;top:0;left:0;right:0;z-index:99;padding:12px 0;background:#3e3e3e;color:#fafafa}.header__container{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header__logo{font-size:1.75rem;line-height:1;font-family:'Source Sans Pro',sans-serif;font-weight:600;white-space:nowrap}.header__logo>span{display:inline-block}.header__logo>span:not(:last-child){margin-right:4px}.header__logo--accent{background:#93c704;color:#fff;padding-left:6px;padding-right:6px}.header__logo-link{display:inline-block;text-decoration:none}.header__hamburger{display:-webkit-box;display:-ms-flexbox;display:flex;width:24px;height:24px;padding:0;background:0 0;border:0;outline:0}.header__hamburger span{position:relative;display:inline-block;margin:auto;width:100%;height:2px;background:#93c704}.header__hamburger span::after,.header__hamburger span::before{content:'';position:absolute;left:0;width:100%;height:2px;background:#93c704}.header__hamburger span::before{top:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.header__hamburger span::after{bottom:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.header__nav{-webkit-transform:scaleY(0);transform:scaleY(0);position:fixed;top:48px;bottom:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;padding-bottom:24px;border-top:1px solid rgba(255,255,255,.4);background:#3e3e3e;text-align:center;-webkit-transform-origin:top;transform-origin:top}.header__menu{list-style-type:none;padding:0}.header__menu-item a{position:relative;display:inline-block;width:100%;text-decoration:none;padding:20px 0;font-size:16px;line-height:19px;font-family:'Source Sans Pro',sans-serif;font-weight:600;border-bottom:1px solid rgba(255,255,255,.05)}.header__menu-item a.active{outline:0;color:#93c704}.header__social .social__item{border-right:1px solid rgba(101,101,101,.1)}.header__social .social__item:first-child{border-left:1px solid rgba(101,101,101,.1)}.welcome{position:relative;padding-top:48px}.welcome-inner{margin:auto;padding-top:3rem;padding-bottom:3rem;text-align:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.welcome__img{max-width:320px;margin-left:auto;margin-right:auto;overflow:hidden}.welcome__img img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain;-o-object-position:center;object-position:center}.welcome__title{margin-bottom:1.5rem;text-align:center}@media (min-width:576px){.container,.header__container{max-width:550px}.container,.header__container{max-width:550px}.header__menu,.header__social{width:100%;max-width:540px;margin-left:auto;margin-right:auto}}@media (min-width:768px){.container,.header__container{max-width:744px}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 58.33333%;flex:0 0 58.33333%;max-width:58.33333%}.container,.header__container{max-width:744px}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 58.33333%;flex:0 0 58.33333%;max-width:58.33333%}.header{padding:16px 0}.header__hamburger{width:35px}.header__hamburger span::before{top:-8px}.header__hamburger span::after{bottom:-8px}.header__nav{top:56px}.header__menu,.header__social{max-width:714px}.welcome{padding-top:56px}.welcome-inner{-webkit-box-orient:initial;-webkit-box-direction:initial;-ms-flex-direction:initial;flex-direction:initial;text-align:left}.welcome__img{max-width:100%;height:100%;overflow:hidden}}@media (min-width:992px){.container,.header__container{max-width:990px}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}:root{font-size:16px;line-height:1.75}.h1,h1{font-size:48px;line-height:1.1667}.container,.header__container{max-width:990px}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.social{margin-top:initial;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;width:auto;margin-left:0;margin-right:0}.social__item a{padding-left:9px;padding-right:9px}.header{padding:0;background:0 0;color:#656565;border-bottom:1px solid rgba(101,101,101,.2)}.header__logo>span{display:inline-block}.header__logo>span:not(:last-child){margin-right:3px}.header__hamburger{display:none}.header__nav{position:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:scaleY(1);transform:scaleY(1);padding:14px 0;background:0 0;border-top:none}.header__menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:auto}.header__menu-item a{padding:10px 20px;font-size:14px;line-height:16px;border-bottom:none}.header__social{margin-top:initial;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;width:auto;margin-left:0;margin-right:0}.header__menu,.header__social{max-width:initial;padding-left:20px}.welcome{padding-top:64px;padding-bottom:32px}}@media (min-width:1200px){.container,.header__container{max-width:1170px}.container,.header__container{max-width:1170px}}
     </style>
     <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">

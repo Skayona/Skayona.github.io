@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "One Logic Soft -  professional software solutions",
-  "short_name": "OneLogicSoft",
+  "name": "Optimization",
+  "short_name": "Optimization",
   "scope": "/",
   "start_url": "/",
   "icons": [
@@ -79,6 +79,6 @@
   ],
   "display": "standalone",
   "background_color": "#ffffff",
-  "description": "One Logic Soft is a company that produces high quality professional software solutions in order to achieve clients' satisfaction.",
+  "description": "Optimization",
   "theme_color": "#ffffff"
 }

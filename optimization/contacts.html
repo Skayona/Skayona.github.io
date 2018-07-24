@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="application-name" content="Dataprom">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dataprom">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="msapplication-navbutton-color" content="#091d25">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-starturl" content="/index.html">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-container js-header">
+      <header class="header">
+        <div class="header__info"><a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Optimization" width="75" height="64"></a>
+          <div class="year-select">
+            <button class="year-select__current js-years" type="button">2018</button>
+            <ul class="year-select__prev">
+              <li>
+                <button class="js-srcoll-top-year year-select__nav year-select__nav--top not-active" type="button" aria-label="Year scroll top"></button>
+              </li>
+              <li>
+                <ul class="year-prev js-prev-years">
+                  <li><a href="https://2017.optimization.ru" target="_blank" rel="noopener">2017</a></li>
+                  <li><a href="http://2016.optimization.ru/" target="_blank" rel="noopener">2016</a></li>
+                  <li><a href="http://2015.optimization.ru/" target="_blank" rel="noopener">2015</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2014</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2013</a></li>
+                  <li><a href="http://optimization.ru/2012/program" target="_blank" rel="noopener">2012</a></li>
+                  <li><a href="http://optimization.ru/2011/program" target="_blank" rel="noopener">2011</a></li>
+                  <li><a href="http://optimization.ru/2010/program" target="_blank" rel="noopener">2010</a></li>
+                  <li><a href="http://optimization.ru/09/program.shtml" target="_blank" rel="noopener">2009</a></li>
+                  <li><a href="http://optimization.ru/08/program.shtml" target="_blank" rel="noopener">2008</a></li>
+                  <li><a href="http://optimization.ru/07/program.shtml" target="_blank" rel="noopener">2007</a></li>
+                  <li><a href="http://optimization.ru/06/program.shtml" target="_blank" rel="noopener">2006</a></li>
+                  <li><a href="http://optimization.ru/05/program.shtml" target="_blank" rel="noopener">2005</a></li>
+                  <li><a href="http://optimization.ru/04/program.shtml" target="_blank" rel="noopener">2004</a></li>
+                </ul>
+              </li>
+              <li>
+                <button class="js-srcoll-bottom-year year-select__nav year-select__nav--bottom" type="button" aria-label="Year scroll top"></button>
+              </li>
+            </ul>
+          </div>
+        </div><a class="header__user btn" href="#">Стать участником</a>
+        <button class="header__hamburger hamburger js-hamburger" type="button" aria-label="Show menu"><span></span></button>
+        <nav class="header__nav js-nav">
+          <ul class="nav">
+            <li class="nav__item"><a class="active" href="#">программа</a></li>
+            <li class="nav__item"><a href="#">спикеры</a></li>
+            <li class="nav__item"><a href="#">партнеры</a></li>
+            <li class="nav__item"><a href="#">новости</a></li>
+            <li class="nav__item"><a href="#">контакты</a></li>
+            <li class="nav__item nav__item--btn"><a href="#">Стать участником</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="welcome welcome--not-main welcome--contatcs">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="welcome__title welcome__title--not-main welcome__title--contatcs"><span>КОНТАКТЫ</span></h1><a class="welcome__user btn" href="#">Стать участником</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="map">
+        <div class="map__conf" data-coord-lat="55.740542" data-coord-lng="37.609599" id="conf-map"></div>
+        <div class="container">
+          <div class="row">
+            <article class="map__info">
+              <h3 class="h3 map__title">Место проведения конференции</h3>
+              <p class="map__subtitle">Digital October</p>
+              <p class="map__address">Москва,<br>Берсеневская набережная 6,<br>строение 3</p>
+              <p class="map__tel"><a class="tel" href="tel:+74952690630">+7 495 269-06-30</a></p>
+              <p class="map__email"><a class="email" href="mailto:reg@optimization.ru">reg@optimization.ru</a></p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <section class="how-to-find">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <h2 class="h2 how-to-find__title">Как найти DIGITAL OCTOBER?</h2><a class="link-print" href="#">Версия для печати</a>
+            </div>
+            <div class="col-12 col-md-7"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-info">
+                <div class="footer-info__logo"><img src="img/ashmanov-logo.png" alt="Ашманов и партнеры, логотип" width="128" height="64"></div>
+                <div class="footer-info__contacts">
+                  <article class="footer-contacts">
+                    <h4 class="footer-contacts__title"><span>Оплата и участие</span><span> в конференции</span>
+                    </h4>
+                    <p class="footer-contacts__name">Наталья Исайкина</p><a class="email footer-contacts__email" href="mailto:reg@optimization.ru">reg@optimization.ru</a>
+                  </article>
+                  <article class="footer-contacts">
+                    <h4 class="footer-contacts__title"><span>Программа и участие</span><span> с докладом</span>
+                    </h4>
+                    <p class="footer-contacts__name">Наталья Хомутова</p><a class="email footer-contacts__email" href="mailto:doklad@optimization.ru">doklad@optimization.ru</a>
+                  </article>
+                  <article class="footer-contacts">
+                    <h4 class="footer-contacts__title"><span>информационное партнерство</span><span>и аккредитация сми</span>
+                    </h4>
+                    <p class="footer-contacts__name">Антон Тришин</p><a class="email footer-contacts__email" href="mailto:partners@optimization.ru">partners@optimization.ru</a>
+                  </article>
+                </div>
+                <div class="footer-info__social">
+                  <ul class="social">
+                    <li class="social__item social__item--vk"><a href="https://vk.com/ashmanovandpartners" aria-label="Vkontakte link"></a></li>
+                    <li class="social__item social__item--telegram"><a href="#" aria-label="Telegram link"></a></li>
+                    <li class="social__item social__item--fb"><a href="https://www.facebook.com/ashmanovandpartners/" aria-label="Facebook link"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="footer__copy">&copy;&nbsp;2001—2018  «Ашманов&nbsp;и&nbsp;партнеры»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,html,img,li,p,ul{margin:0;padding:0;border:0}article,header,img,main,nav,section{display:block}a{color:inherit}@font-face{font-family:ProximaNovaRegular;src:url(fonts/ProximaNova/ProximaNovaRegular.otf)}@font-face{font-family:ProximaNovaBold;src:url(fonts/ProximaNova/ProximaNovaBold.otf)}@font-face{font-family:ProximaNovaExtrabold;src:url(fonts/ProximaNova/ProximaNovaExtrabold.otf)}@font-face{font-family:ProximaNovaBlack;src:url(fonts/ProximaNova/ProximaNovaBlack.otf)}@font-face{font-family:CirceRegular;src:url(fonts/Circe/Circe-Regular.ttf)}@font-face{font-family:CirceLight;src:url(fonts/Circe/Circe-Light.ttf)}@font-face{font-family:CirceBold;src:url(fonts/Circe/Circe-Bold.ttf)}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:0;margin-left:0}.col,.col-12,.col-md-5{position:relative;width:100%;min-height:1px;padding-right:0;padding-left:0}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.container{padding-right:15px;padding-left:15px}.col{padding-right:0;padding-left:0}@font-face{font-family:opt;src:url(fonts/icomoon/opt.eot?emj0k5);src:url(fonts/icomoon/opt.eot?emj0k5#iefix) format("embedded-opentype"),url(fonts/icomoon/opt.ttf?emj0k5) format("truetype"),url(fonts/icomoon/opt.woff?emj0k5) format("woff"),url(fonts/icomoon/opt.svg?emj0k5#opt) format("svg");font-weight:400;font-style:normal}html{font-family:ProximaNovaRegular,sans-serif}body{position:relative}.btn{display:inline-block;min-width:240px;font-size:12px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;padding-top:16px;padding-bottom:16px;padding-left:28px;padding-right:28px;line-height:1;border-radius:24px;text-decoration:none;text-align:center;background:0 0;border:2px solid #000;outline:0}.h2,h2{font-size:24px;text-transform:uppercase;font-family:ProximaNovaExtrabold,sans-serif;font-weight:500;letter-spacing:.8px}.h3,h3{font-family:ProximaNovaBold,sans-serif;font-size:20px;font-weight:500;line-height:1.17;text-align:left;color:#191919}.email{position:relative;font-family:CirceBold,sans-serif;font-size:16px;line-height:1;text-decoration:none}.email::after{content:'';position:absolute;left:0;right:0;bottom:2px;height:1px;background:rgba(25,25,25,.2)}.tel{font-family:CirceBold,sans-serif;font-size:16px;line-height:1;text-decoration:none}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}.header-container{position:fixed;z-index:100;top:0;left:0;right:0;padding-top:12px;padding-bottom:12px}.header ul{list-style-type:none}.header__nav{position:fixed;z-index:-1;left:0;top:88px;width:100%;background:#fff;-webkit-transform:scaleY(0);transform:scaleY(0);visibility:hidden;-webkit-transform-origin:top;transform-origin:top}.header__user{display:none}.logo{display:block;width:75px;height:64px;overflow:hidden;text-decoration:none}.logo__img{width:100%;height:auto}.year-select{display:none}.year-select__prev{display:none}.year-prev{-webkit-transform:translateY(0);transform:translateY(0)}.year-prev>li a{display:block;width:100%;padding-top:6px;padding-bottom:6px;font-family:inherit;font-size:inherit;text-decoration:none}.hamburger{display:-webkit-box;display:-ms-flexbox;display:flex;width:24px;height:24px;padding:0;background:0 0;border:0;outline:0}.hamburger span{position:relative;display:inline-block;margin:auto;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::after,.hamburger span::before{content:'';position:absolute;left:0;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::before{top:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.hamburger span::after{bottom:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.nav{padding:12px 15px;text-align:right;line-height:2.5}.nav__item a{position:relative;display:inline-block;font-size:12px;font-weight:700;line-height:20px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;text-decoration:none}.nav__item a::before{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:#000;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:right top;transform-origin:right top}.nav__item a.active::before{-webkit-transform:scaleX(1);transform:scaleX(1)}.welcome{padding-top:100px}.welcome--contatcs{padding-bottom:50px;background-image:url(img/background/008_background_contacts.png);background-repeat:no-repeat;background-position-x:30%;background-position-y:0}.welcome__title{font-family:ProximaNovaBlack,sans-serif;line-height:1;text-transform:uppercase}.welcome__title--not-main{font-size:28px;font-weight:900;color:#010100}.welcome__title--not-main>span{position:relative;display:inline-block}.welcome__title--not-main>span::after{position:absolute;display:inline-block;font-family:opt;font-weight:400;color:#010100}.welcome__title--contatcs{margin-bottom:24px;letter-spacing:.4px}.welcome__title--contatcs span::after{top:-20px;left:calc(100% + 8px);content:'\e915';font-size:26px}.welcome__user{display:inline-block;margin-bottom:20px}.map{position:relative;padding-top:32px;padding-bottom:40px}.map__conf{position:absolute;top:0;bottom:0;left:0;right:0}.map__info{position:relative;width:100%;max-width:320px;margin-left:auto;margin-right:auto;margin-top:200px;padding-left:48px;padding-right:48px;padding-top:48px;padding-bottom:40px;background:#fff}.map__title{margin-bottom:28px;font-family:ProximaNovaExtrabold,sans-serif;font-size:24px;font-weight:500;line-height:1.17;color:#191919}.map__subtitle{margin-bottom:8px;font-family:CirceBold,sans-serif;font-size:18px;line-height:24px;letter-spacing:-.1px;color:#191919}.map__address{margin-bottom:16px;font-family:CirceLight,sans-serif;font-size:16px;font-weight:300;line-height:1.25;color:#191919}.map__email,.map__tel{margin-bottom:8px}.how-to-find{padding-top:40px}.how-to-find__title{margin-bottom:24px;line-height:1.2;letter-spacing:.8px}@media (min-width:768px){.container{max-width:744px}.container{padding-right:0;padding-left:0}.h2,h2{font-size:28px}.header{max-width:744px;margin-left:auto;margin-right:auto;padding:0}.header__info{position:relative;min-width:192px;width:192px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__user{display:inline-block;min-width:initial;margin-left:auto;margin-right:25px;padding-left:39px;padding-right:41px}.year-select{position:absolute;right:0;top:19px;display:block;width:72px;margin-top:auto;margin-bottom:auto;font-family:CirceRegular,sans-serif;font-size:12px;line-height:13px;border:solid 2px #959595;color:#959595;border-radius:19px;overflow:hidden;text-align:center}.year-select__current{width:100%;padding-top:6px;padding-bottom:6px;font-family:inherit;font-size:inherit;background:0 0;border:none;color:inherit;outline:0}.year-select__current::after{content:'\e900';display:inline-block;margin-left:5px;font-family:opt;font-size:8px}.year-select__prev{position:relative;max-height:150px;overflow:hidden;padding-top:25px;padding-bottom:25px}.year-select__prev>li:first-child,.year-select__prev>li:last-child{position:absolute;z-index:1;left:0;right:0;background:#fff}.year-select__prev>li:first-child{top:0}.year-select__prev>li:last-child{bottom:0}.year-select__nav{width:100%;height:25px;padding:0;background:#fff;border:none;outline:0}.year-select__nav::before{content:'\e900';display:inline-block;font-family:opt;line-height:25px;text-align:center;color:#959595}.year-select__nav.not-active::before{color:rgba(149,149,149,.3)}.year-select__nav--top::before{-webkit-transform:rotate(180deg);transform:rotate(180deg);-webkit-transform-origin:center;transform-origin:center}.nav{max-width:744px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}.nav__item--btn{display:none}.nav__item--btn a{padding-top:17px;padding-bottom:16px;padding-left:39px;padding-right:41px;line-height:1;border-radius:24px;border:2px solid #000;text-decoration:none;outline:0}.nav__item--btn a::before{display:none}.welcome__title--not-main{font-size:34px}.welcome__user{display:none}.map__info{margin:initial}.how-to-find{padding-top:48px}}@media (min-width:992px){.container{max-width:960px}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%}.h2,h2{font-size:36px}.h3,h3{font-size:24px}.header{max-width:960px}.hamburger{width:35px}.hamburger span::before{top:-8px}.hamburger span::after{bottom:-8px}.nav{max-width:960px}.nav__item--btn{display:block;margin-top:-3px}.welcome__title--not-main{font-size:50px}.welcome__title--contatcs>span::after{top:-34px;font-size:38px}.how-to-find{padding-top:64px}.how-to-find .col-md-5{padding-right:48px}}@media (min-width:1200px){.container{max-width:1152px}.h2,h2{font-size:42px}.header{max-width:1152px}.header-container{padding-top:29px;padding-bottom:29px}.header__user{display:none}.header__nav{position:initial;z-index:1;-webkit-transform:scale(1);transform:scale(1);visibility:visible;background:0 0;display:block}.hamburger{display:none;opacity:0}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:740px;margin-right:0;padding-top:14px;padding-bottom:9px}.welcome--contatcs{padding-top:214px;padding-bottom:112px;background-position-x:49.5%;background-position-y:0}.welcome__title--not-main{font-size:72px}.welcome__title--contatcs span::after{top:-50px;left:calc(100% + 13px);font-size:59px}.map{padding-top:112px;padding-bottom:120px}.how-to-find{padding-top:88px}.how-to-find .col-md-5{padding-right:56px}}
+    </style>
+    <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-768px.min.css" media="screen and (min-width:768px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-992px.min.css" media="screen and (min-width:992px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/style.min.css" media="screen">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen">
+      <link rel="stylesheet" href="css/min-width-768px.min.css" media="screen and (min-width:768px)">
+      <link rel="stylesheet" href="css/min-width-992px.min.css" media="screen and (min-width:992px)">
+      <link rel="stylesheet" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)">
+    </noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.26&amp;key=AIzaSyDx4xb6X3JgGSvTirMN1IZnAzBtD42eIeI&amp;callback=initMap" defer="defer"></script>
+    <script src="js/lazysizes.min.js" async="async"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

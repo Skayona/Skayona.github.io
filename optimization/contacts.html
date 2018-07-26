@@ -137,7 +137,7 @@
       <section class="contacts-callback section-border">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 contacts-callback__captions">
               <h2 class="h2 contacts-callback__title">Обратная связь</h2>
               <div class="contacts-callback__box">
                 <article class="contact-box">
@@ -164,7 +164,7 @@
               </div>
             </div>
             <div class="col-12 col-md-7">
-              <form class="form" action="?">
+              <form class="form" action="?" id="cb-form">
                 <div class="form__group">
                   <label for="cb-name">Представтесь, пожалуйста *</label>
                   <input type="text" id="cb-name" name="cb-name" autocomplete="name" required="required">
@@ -199,22 +199,21 @@
                   <button type="button" data-toggle="modal" data-target="#privacy-modal">политикой конфиденциальности</button>
                 </p>
                 <div class="form__group">
-                  <button class="js-callback-btn btn" type="submit">отправить</button>
+                  <button class="btn" type="submit">отправить</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <div class="modal fade" id="privacy-modal" tabindex="-1" role="dialog" aria-labelledby="privacy-modalLabel" aria-hidden="true">
+      <div class="modal modal--privacy fade" id="privacy-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <button class="modal-close close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-scroll" id="privacy-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+          <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
             <div class="modal-content scrolled-to-bottom">
               <h5 class="h3 modal-title">Политика конфиденциальности</h5>
               <div class="modal-body">
-                <p>Нажимая «Отправить», я даю свое согласие на передачу в ООО «Ашманов и партнеры Санкт-Петербург», а также его партнерам (включая ООО «Ашманов и партнеры») анкеты, содержащей мои персональные данные, и согласен с тем, что они будут использованы для предоставления мне клиентской и технической поддержки при возникновении проблем и приглашения меня к участию в мероприятиях ООО «Ашманов и партнеры Санкт-Петербург», а также его партнеров, в соответствии с Федеральным законом «О персональных данных».</p>
-                <p>Нажимая «Отправить», я даю свое согласие на передачу в ООО «Ашманов и партнеры Санкт-Петербург», а также его партнерам (включая ООО «Ашманов и партнеры») анкеты, содержащей мои персональные данные, и согласен с тем, что они будут использованы для предоставления мне клиентской и технической поддержки при возникновении проблем и приглашения меня к участию в мероприятиях ООО «Ашманов и партнеры Санкт-Петербург», а также его партнеров, в соответствии с Федеральным законом «О персональных данных».</p>
+                <p>Нажимая &laquo;Отправить&raquo;, я&nbsp;даю свое согласие на&nbsp;передачу в&nbsp;ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнерам (включая ООО &laquo;Ашманов и&nbsp;партнеры&raquo;) анкеты, содержащей мои персональные данные, и&nbsp;согласен с&nbsp;тем, что они будут использованы для предоставления мне клиентской и&nbsp;технической поддержки при возникновении проблем и&nbsp;приглашения меня к&nbsp;участию в&nbsp;мероприятиях ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнеров, в&nbsp;соответствии с&nbsp;Федеральным законом &laquo;О&nbsp;персональных данных&raquo;.</p>
               </div>
             </div>
           </div>

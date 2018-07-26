@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="application-name" content="Dataprom">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dataprom">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="msapplication-navbutton-color" content="#091d25">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-starturl" content="/index.html">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-container js-header">
+      <header class="header">
+        <div class="header__info"><a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Optimization" width="75" height="64"></a>
+          <div class="year-select">
+            <button class="year-select__current js-years" type="button">2018</button>
+            <ul class="year-select__prev">
+              <li>
+                <button class="js-srcoll-top-year year-select__nav year-select__nav--top not-active" type="button" aria-label="Year scroll top"></button>
+              </li>
+              <li>
+                <ul class="year-prev js-prev-years">
+                  <li><a href="https://2017.optimization.ru" target="_blank" rel="noopener">2017</a></li>
+                  <li><a href="http://2016.optimization.ru/" target="_blank" rel="noopener">2016</a></li>
+                  <li><a href="http://2015.optimization.ru/" target="_blank" rel="noopener">2015</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2014</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2013</a></li>
+                  <li><a href="http://optimization.ru/2012/program" target="_blank" rel="noopener">2012</a></li>
+                  <li><a href="http://optimization.ru/2011/program" target="_blank" rel="noopener">2011</a></li>
+                  <li><a href="http://optimization.ru/2010/program" target="_blank" rel="noopener">2010</a></li>
+                  <li><a href="http://optimization.ru/09/program.shtml" target="_blank" rel="noopener">2009</a></li>
+                  <li><a href="http://optimization.ru/08/program.shtml" target="_blank" rel="noopener">2008</a></li>
+                  <li><a href="http://optimization.ru/07/program.shtml" target="_blank" rel="noopener">2007</a></li>
+                  <li><a href="http://optimization.ru/06/program.shtml" target="_blank" rel="noopener">2006</a></li>
+                  <li><a href="http://optimization.ru/05/program.shtml" target="_blank" rel="noopener">2005</a></li>
+                  <li><a href="http://optimization.ru/04/program.shtml" target="_blank" rel="noopener">2004</a></li>
+                </ul>
+              </li>
+              <li>
+                <button class="js-srcoll-bottom-year year-select__nav year-select__nav--bottom" type="button" aria-label="Year scroll top"></button>
+              </li>
+            </ul>
+          </div>
+        </div><a class="header__user btn" href="cabinet.html">Личный кабинет</a>
+        <button class="header__hamburger hamburger js-hamburger" type="button" aria-label="Show menu"><span></span></button>
+        <nav class="header__nav js-nav">
+          <ul class="h-nav">
+            <li class="h-nav__item"><a href="program.html">программа</a>
+            </li>
+            <li class="h-nav__item"><a href="speaker.html">спикеры</a>
+            </li>
+            <li class="h-nav__item"><a href="partners.html">партнеры</a>
+            </li>
+            <li class="h-nav__item"><a href="news.html">новости</a>
+            </li>
+            <li class="h-nav__item"><a href="contacts.html">контакты</a>
+            </li>
+            <li class="h-nav__item h-nav__item--btn"><a href="cabinet.html">Личный кабинет</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="welcome welcome--not-main welcome--cabinet">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="welcome__title welcome__title--not-main welcome__title--cabinet"><span>Личный кабинет <br>участника</span></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cabinet">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 cabinet__captions">
+              <button class="btn" type="button" data-toggle="modal" data-target="#member-modal">добавить участника</button>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="cabinet-member">
+                <div class="cabinet-member__info">
+                  <button class="cabinet-member__name" type="button" data-toggle="modal" data-target="#edit-modal"><span class="link link--dashed">Константин Константинов</span></button>
+                </div>
+                <p class="cabinet-member__company">ОАО «Прадигма», Исполнительный директор</p>
+                <p class="cabinet-member__contacts"><span>alex@paradigma.com</span><span>+7 906 566-67-45</span></p>
+                <div class="cabinet-member__extras cm-extras">
+                  <p class="cm-extras__caption">Участие  в конференции</p><span class="cm-extras__dots" aria-hidden="true" role="presentation"></span>
+                  <p class="cm-extras__sum"><span>25 000</span><span class="banknote"> ₽</span></p>
+                </div>
+                <div class="cabinet-member__extras cm-extras">
+                  <p class="cm-extras__caption">Промокод   /  Скидка -10%</p>
+                  <p class="cm-extras__promo form__group">
+                    <input type="text" value="OPTIMA2018">
+                  </p>
+                </div>
+              </div>
+              <div class="cabinet-member">
+                <div class="cabinet-member__info">
+                  <button class="cabinet-member__name" type="button" data-toggle="modal" data-target="#edit-modal"><span class="link link--dashed">Игорь Бережной</span></button>
+                  <button class="cabinet-member__delete" type="button"><span class="link link--dashed"> удалить участника</span></button>
+                </div>
+                <p class="cabinet-member__company">ОАО «Прадигма», Комерческий директор</p>
+                <p class="cabinet-member__contacts"><span>igor@paradigma.com </span><span>+7 906 566-67-45</span></p>
+                <div class="cabinet-member__extras cm-extras">
+                  <p class="cm-extras__caption">Участие  в конференции</p><span class="cm-extras__dots" aria-hidden="true" role="presentation"></span>
+                  <p class="cm-extras__sum"><span>25 000</span><span class="banknote"> ₽</span></p>
+                </div>
+                <div class="cabinet-member__extras cm-extras">
+                  <p class="cm-extras__caption">Промокод   /  Скидка -10%</p>
+                  <p class="cm-extras__promo"><span>OPTIMA2018</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cabinet-sum">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="cabinet-sum__caption">Итого к оплате:&nbsp;<span class="cabinet-sum__sum"><span class="sum">33 500</span><span class="banknote"> ₽</span></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cabinet-pay">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-4 col-12 col-md-8">
+              <p class="cabinet-pay__text">Нажимая на кнопку «Оплатить», я принимаю
+                <button type="button" data-toggle="modal" data-target="#offer-modal">условия публичной оферты</button> и соглашаюсь на фото- и видеосъемку.
+              </p>
+              <p class="cabinet-pay__btns">
+                <button class="btn" type="button" data-toggle="modal" data-target="#pay-modal">Оплата для юридических лиц</button>
+                <button class="btn" type="button">Оплата для физических лиц</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--offer fade" id="offer-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <button class="modal-close close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+            <div class="modal-content scrolled-to-bottom">
+              <h5 class="h3 modal-title">Условия публичной оферты</h5>
+              <div class="modal-body">
+                <p>Нажимая &laquo;Отправить&raquo;, я&nbsp;даю свое согласие на&nbsp;передачу в&nbsp;ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнерам (включая ООО &laquo;Ашманов и&nbsp;партнеры&raquo;) анкеты, содержащей мои персональные данные, и&nbsp;согласен с&nbsp;тем, что они будут использованы для предоставления мне клиентской и&nbsp;технической поддержки при возникновении проблем и&nbsp;приглашения меня к&nbsp;участию в&nbsp;мероприятиях ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнеров, в&nbsp;соответствии с&nbsp;Федеральным законом &laquo;О&nbsp;персональных данных&raquo;.</p>
+                <p>Нажимая &laquo;Отправить&raquo;, я&nbsp;даю свое согласие на&nbsp;передачу в&nbsp;ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнерам (включая ООО &laquo;Ашманов и&nbsp;партнеры&raquo;) анкеты, содержащей мои персональные данные, и&nbsp;согласен с&nbsp;тем, что они будут использованы для предоставления мне клиентской и&nbsp;технической поддержки при возникновении проблем и&nbsp;приглашения меня к&nbsp;участию в&nbsp;мероприятиях ООО &laquo;Ашманов и&nbsp;партнеры Санкт-Петербург&raquo;, а&nbsp;также его партнеров, в&nbsp;соответствии с&nbsp;Федеральным законом &laquo;О&nbsp;персональных данных&raquo;.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--edit modal--form fade" id="edit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <button class="modal-close close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+            <div class="modal-content scrolled-to-bottom">
+              <h5 class="h3 modal-title">Редактировать личные данные</h5>
+              <div class="modal-body">
+                <form class="form" action="?" id="edit-form">
+                  <div class="form__group">
+                    <label for="edit-name">Имя и фамилия&nbsp;*</label>
+                    <input type="text" id="edit-name" name="edit-name" autocomplete="name" required="required">
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="edit-org">Компания</label>
+                      <input type="text" id="edit-org" name="edit-org" autocomplete="organization">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="edit-post">Должность</label>
+                      <input type="text" id="edit-post" name="edit-post" autocomplete="organization-title">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="edit-email">Электронная почта&nbsp;*</label>
+                      <input type="email" id="edit-email" name="edit-email" autocomplete="email" required="required">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="edit-tel">Телефон для связи&nbsp;*</label>
+                      <input type="tel" id="edit-tel" name="edit-tel" autocomplete="tel" required="required">
+                    </div>
+                  </div>
+                  <div class="form__group form__group--btn">
+                    <button class="btn" type="submit">сохранить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--member modal--form fade" id="member-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <button class="modal-close close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+            <div class="modal-content scrolled-to-bottom">
+              <h5 class="h3 modal-title">Добавить нового участника</h5>
+              <div class="modal-body">
+                <form class="form" action="?" id="new-member-form">
+                  <div class="form__group">
+                    <label for="new-member-name">Имя и фамилия&nbsp;*</label>
+                    <input type="text" id="new-member-name" name="new-member-name" autocomplete="name" required="required">
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="new-member-org">Компания</label>
+                      <input type="text" id="new-member-org" name="new-member-org" autocomplete="organization">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="new-member-post">Должность</label>
+                      <input type="text" id="new-member-post" name="new-member-post" autocomplete="organization-title">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="new-member-email">Электронная почта&nbsp;*</label>
+                      <input type="email" id="new-member-email" name="new-member-email" autocomplete="email" required="required">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="new-member-tel">Телефон для связи&nbsp;*</label>
+                      <input type="tel" id="new-member-tel" name="new-member-tel" autocomplete="tel" required="required">
+                    </div>
+                  </div>
+                  <div class="form__group form__group--btn">
+                    <button class="btn" type="submit">Добавить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--pay modal--form fade" id="pay-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <button class="modal-close close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
+            <div class="modal-content scrolled-to-bottom">
+              <h5 class="h3 modal-title">Данные для выставления счета на&nbsp;оплату</h5>
+              <div class="modal-body">
+                <form class="form" action="?" id="pay-form">
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-org-name">Полное наименование организации&nbsp;*</label>
+                      <input type="text" id="pay-org-name" name="pay-org-name" autocomplete="organization" required="required">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-org-abbr">Сокращенное наименование&nbsp;*</label>
+                      <input type="text" id="pay-org-abbr" name="pay-org-abbr" required="required">
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <label for="pay-legal-addr">Юридический адрес организации&nbsp;*</label>
+                    <input type="text" id="pay-legal-addr" name="pay-legal-addr" required="required">
+                  </div>
+                  <div class="form__group">
+                    <label for="pay-fact-addr">Фактический адрес организации&nbsp;*</label>
+                    <input type="text" id="pay-fact-addr" name="pay-fact-addr" required="required">
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-director">Генеральный директор</label>
+                      <input type="text" id="pay-director" name="pay-director">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-tel">Телефон</label>
+                      <input type="text" id="pay-tel" name="pay-tel" autocomplete="tel">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-inn">ИНН</label>
+                      <input type="text" id="pay-inn" name="pay-inn">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-kpp">КПП</label>
+                      <input type="text" id="pay-kpp" name="pay-kpp">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-orgn">ОРГН</label>
+                      <input type="text" id="pay-orgn" name="pay-orgn">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-okpo">ОКПО</label>
+                      <input type="text" id="pay-okpo" name="pay-okpo">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-bill-company">№ Расчетного счета компании</label>
+                      <input type="text" id="pay-bill-company" name="pay-bill-company">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-corr-account">№ Корресподентского счета банка</label>
+                      <input type="text" id="pay-corr-account" name="pay-corr-account">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form__group form__group--left col-12 col-md-6">
+                      <label for="pay-banl-bik">БИК банка</label>
+                      <input type="text" id="pay-banl-bik" name="pay-banl-bik">
+                    </div>
+                    <div class="form__group form__group--right col-12 col-md-6">
+                      <label for="pay-bank-name">Наименование банка</label>
+                      <input type="text" id="pay-bank-name" name="pay-bank-name">
+                    </div>
+                  </div>
+                  <div class="form__group form__group--btn">
+                    <button class="btn" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-info">
+                <div class="footer-info__logo"><img src="img/ashmanov-logo.png" alt="Ашманов и партнеры, логотип" width="128" height="64"></div>
+                <div class="footer-info__contacts">
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>Оплата и участие</span><span> в конференции</span>
+                    </h4>
+                    <p class="contact-box__name">Наталья Исайкина</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:reg@optimization.ru">reg@optimization.ru</a></p>
+                  </article>
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>Программа и участие</span><span> с докладом</span>
+                    </h4>
+                    <p class="contact-box__name">Наталья Хомутова</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:doklad@optimization.ru">doklad@optimization.ru</a></p>
+                  </article>
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>информационное партнерство</span><span>и аккредитация сми</span>
+                    </h4>
+                    <p class="contact-box__name">Антон Тришин</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:partners@optimization.ru">partners@optimization.ru</a></p>
+                  </article>
+                </div>
+                <div class="footer-info__social">
+                  <ul class="social">
+                    <li class="social__item social__item--vk"><a href="https://vk.com/ashmanovandpartners" aria-label="Vkontakte link"></a></li>
+                    <li class="social__item social__item--telegram"><a href="#" aria-label="Telegram link"></a></li>
+                    <li class="social__item social__item--fb"><a href="https://www.facebook.com/ashmanovandpartners/" aria-label="Facebook link"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="footer__copy">&copy;&nbsp;2001—2018  «Ашманов&nbsp;и&nbsp;партнеры»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      @charset "UTF-8";*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,html,img,li,p,ul{margin:0;padding:0;border:0}header,img,main,nav,section{display:block}a{color:inherit}@font-face{font-family:ProximaNovaRegular;src:url(fonts/ProximaNova/ProximaNovaRegular.otf)}@font-face{font-family:ProximaNovaBold;src:url(fonts/ProximaNova/ProximaNovaBold.otf)}@font-face{font-family:ProximaNovaBlack;src:url(fonts/ProximaNova/ProximaNovaBlack.otf)}@font-face{font-family:CirceRegular;src:url(fonts/Circe/Circe-Regular.ttf)}@font-face{font-family:CirceLight;src:url(fonts/Circe/Circe-Light.ttf)}@font-face{font-family:CirceBold;src:url(fonts/Circe/Circe-Bold.ttf)}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:0;margin-left:0}.col,.col-12,.col-md-4,.col-md-8{position:relative;width:100%;min-height:1px;padding-right:0;padding-left:0}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.container{padding-right:15px;padding-left:15px}.col{padding-right:0;padding-left:0}@font-face{font-family:opt;src:url(fonts/icomoon/opt.eot?emj0k5);src:url(fonts/icomoon/opt.eot?emj0k5#iefix) format("embedded-opentype"),url(fonts/icomoon/opt.ttf?emj0k5) format("truetype"),url(fonts/icomoon/opt.woff?emj0k5) format("woff"),url(fonts/icomoon/opt.svg?emj0k5#opt) format("svg");font-weight:400;font-style:normal}html{font-family:ProximaNovaRegular,sans-serif}body{position:relative}*{outline-color:#ffe400}.btn{display:inline-block;min-width:240px;font-size:12px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;padding-top:16px;padding-bottom:16px;padding-left:28px;padding-right:28px;line-height:1;border-radius:24px;text-decoration:none;text-align:center;background:0 0;border:2px solid #000;outline:0}.link{display:inline;padding-left:0;padding-right:0;font-family:ProximaNovaBold,sans-serif;font-size:18px;font-weight:500;letter-spacing:.45px;text-decoration:none;background:0 0;border:none;color:#010100}.link--dashed{background:linear-gradient(to left,rgba(25,25,25,.3) 3px,rgba(255,255,255,0) 3px);background-repeat:repeat-x;background-size:6px 1px;background-position:-3px bottom}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}.header-container{position:fixed;z-index:100;top:0;left:0;right:0;padding-top:12px;padding-bottom:12px}.header ul{list-style-type:none}.header__nav{position:fixed;z-index:-1;left:0;top:88px;width:100%;background:#fff;border-bottom:1px solid #e5e5e5;-webkit-transform:scaleY(0);transform:scaleY(0);visibility:hidden;-webkit-transform-origin:top;transform-origin:top}.header__user{display:none}.logo{display:block;width:75px;height:64px;overflow:hidden;text-decoration:none}.logo__img{width:100%;height:auto}.year-select{display:none}.year-select__prev{display:none}.year-prev{position:relative;display:block;-webkit-transform:translateY(0);transform:translateY(0)}.year-prev>li{display:block;font-size:13px;line-height:25px;max-height:25px}.year-prev>li a{display:inline-block;width:100%;font-family:inherit;font-size:13px;line-height:25px;max-height:25px;text-decoration:none}.hamburger{display:-webkit-box;display:-ms-flexbox;display:flex;width:24px;height:24px;padding:0;background:0 0;border:0;outline:0}.hamburger span{position:relative;display:inline-block;margin:auto;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::after,.hamburger span::before{content:'';position:absolute;left:0;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::before{top:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.hamburger span::after{bottom:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.h-nav{padding:0 15px 12px;text-align:right;line-height:2.5}.h-nav__item a{position:relative;display:inline-block;font-size:12px;font-weight:700;line-height:20px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;text-decoration:none}.h-nav__item a::before{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:#000;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:right top;transform-origin:right top}.welcome{padding-top:100px}.welcome--cabinet{padding-top:128px;padding-bottom:20px;background-repeat:no-repeat;background-position-y:88px}.welcome--cabinet{background-image:url(img/background/013_background_pay.png);background-position-x:69%}.welcome__title{font-family:ProximaNovaBlack,sans-serif;line-height:1;text-transform:uppercase}.welcome__title--not-main{margin-bottom:24px;font-size:28px;font-weight:900;color:#010100}.welcome__title--not-main>span{position:relative;display:inline-block}.welcome__title--not-main>span::after{position:absolute;display:inline-block;font-family:opt;font-weight:400;color:#010100}.welcome__title--cabinet{line-height:1;letter-spacing:1.4px}.form__group{margin-bottom:16px}.form__group input{display:block;width:100%;padding:16px;background:#f1f1f1;border:none;outline:0;-webkit-box-shadow:inset 0 0 0 100px #f1f1f1;box-shadow:inset 0 0 0 100px #f1f1f1;border:2px solid #f1f1f1;font-family:CirceLight,sans-serif;font-size:16px;line-height:20px;color:#191919;-webkit-appearance:none;-moz-appearance:none}.form__group input::-ms-clear{display:none}.cabinet{padding-top:32px}.cabinet__captions{margin-bottom:24px;padding-top:10px}.cabinet-member{padding-bottom:47px}.cabinet-member:not(:last-child){margin-bottom:33px;border-bottom:1px solid #e8e8e8}.cabinet-member__info{margin-bottom:4px}.cabinet-member__name{background:0 0;border:none;padding:0;text-align:left;text-decoration:none}.cabinet-member__name .link{font-size:24px;line-height:1.42;letter-spacing:-.1px}.cabinet-member__name .link--dashed{background-position-y:26px}.cabinet-member__company{font-family:CirceLight,sans-serif;color:#959595;font-size:16px;font-weight:300;line-height:1.5;letter-spacing:-.1px}.cabinet-member__contacts{margin-bottom:28px;font-family:CirceBold,sans-serif;font-size:16px;color:#191919;letter-spacing:.3px;line-height:1.5}.cabinet-member__contacts>span{display:block}.cabinet-member__contacts>span:not(:last-child){margin-right:20px;letter-spacing:-.1px}.cabinet-member__extras:not(:last-child){margin-bottom:16px}.cm-extras__caption{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;font-family:CirceLight,sans-serif;font-size:16px;font-weight:300;line-height:1.5;letter-spacing:.2px;text-align:left;color:#191919}.cm-extras__dots{display:none}.cm-extras__sum{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;font-family:ProximaNovaBold,sans-serif;font-size:16px;font-weight:500;line-height:1.75;letter-spacing:.6px;color:#191919;text-align:right;white-space:nowrap}.cm-extras__sum .banknote{font-size:.95em;font-weight:700}.cm-extras__promo{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;width:100%;max-width:352px}.cm-extras__promo>input{padding:12px 20px;font-family:ProximaNovaBold,sans-serif;font-size:16px;font-weight:500;line-height:1.75;letter-spacing:.6px;color:#191919;text-align:right}@media (min-width:768px){.container{max-width:744px}.container{padding-right:0;padding-left:0}.header{max-width:744px;margin-left:auto;margin-right:auto;padding:0}.header__info{position:relative;min-width:192px;width:192px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__user{display:inline-block;min-width:initial;margin-left:auto;margin-right:25px;padding-left:39px;padding-right:41px}.year-select{position:absolute;right:0;top:19px;display:block;width:72px;margin-top:auto;margin-bottom:auto;font-family:CirceRegular,sans-serif;font-size:12px;line-height:13px;border:solid 2px #959595;color:#959595;border-radius:19px;overflow:hidden;text-align:center}.year-select__current{width:100%;padding-top:6px;padding-bottom:6px;font-family:inherit;font-size:inherit;background:0 0;border:none;color:inherit;outline:0}.year-select__current::after{content:'\e900';display:inline-block;margin-left:5px;font-family:opt;font-size:8px}.year-select__prev{position:relative;max-height:150px;overflow:hidden;border-radius:19px;padding-top:25px;padding-bottom:25px}.year-select__prev>li{display:block;line-height:0}.year-select__prev>li:first-child,.year-select__prev>li:last-child{position:absolute;z-index:1;left:0;right:0;background:#fff}.year-select__prev>li:first-child{top:0}.year-select__prev>li:last-child{bottom:0}.year-select__nav{width:100%;height:25px;padding:0;background:#fff;border:none;outline:0}.year-select__nav::before{content:'\e900';display:inline-block;font-family:opt;line-height:25px;text-align:center;color:#959595}.year-select__nav.not-active::before{color:rgba(149,149,149,.3)}.year-select__nav--top{border-top-left-radius:19px;border-top-right-radius:19px}.year-select__nav--top::before{-webkit-transform:rotate(180deg);transform:rotate(180deg);-webkit-transform-origin:center;transform-origin:center}.year-select__nav--bottom{border-bottom-left-radius:19px;border-bottom-right-radius:19px}.h-nav{padding-top:12px;max-width:744px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}.h-nav__item--btn{display:none}.h-nav__item--btn a{padding-top:17px;padding-bottom:16px;padding-left:39px;padding-right:41px;line-height:1;border-radius:24px;border:2px solid #000;text-decoration:none;outline:0}.h-nav__item--btn a::before{display:none}.welcome__title--not-main{font-size:34px}.cabinet{padding-top:48px}.cabinet-member__info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.cabinet-member__contacts>span{display:inline-block}.cabinet-member__contacts>span:not(:last-child)::after{content:'';display:inline-block;width:1px;height:16px;background:#e1e1e1;margin-left:16px;vertical-align:middle}.cm-extras{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.cm-extras__dots{display:block;height:1px;margin-right:19px;margin-left:19px;-webkit-box-flex:0;-ms-flex:0 1 100%;flex:0 1 100%;background:linear-gradient(to left,rgba(25,25,25,.3) 1px,rgba(255,255,255,0) 1px);background-repeat:repeat-x;background-size:6px 1px;background-position:0 bottom}}@media (min-width:992px){.container{max-width:960px}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.66667%;flex:0 0 66.66667%;max-width:66.66667%}.header{max-width:960px}.hamburger{width:35px}.hamburger span::before{top:-8px}.hamburger span::after{bottom:-8px}.h-nav{max-width:960px}.welcome__title--not-main{font-size:50px}.form__group{margin-bottom:20px}.cabinet{padding-top:64px}.cabinet__captions{margin-bottom:0}}@media (min-width:1200px){.container{max-width:1152px}.header{max-width:1152px}.header-container{padding-top:29px;padding-bottom:29px}.header__user{display:none}.header__nav{position:static;z-index:1;-webkit-transform:scale(1);transform:scale(1);visibility:visible;background:0 0;display:block;border-bottom:none}.hamburger{display:none;opacity:0}.h-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:740px;margin-right:0;padding-top:14px;padding-bottom:9px}.h-nav__item--btn{display:block;margin-top:-3px}.welcome--cabinet{padding-top:205px;background-position-x:50%;background-position-y:103px}.welcome--cabinet{padding-bottom:72px}.welcome__title--cabinet{font-size:72px}.cabinet{padding-top:96px}}
+    </style>
+    <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-768px.min.css" media="screen and (min-width:768px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-992px.min.css" media="screen and (min-width:992px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/style.min.css" media="screen">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen">
+      <link rel="stylesheet" href="css/min-width-768px.min.css" media="screen and (min-width:768px)">
+      <link rel="stylesheet" href="css/min-width-992px.min.css" media="screen and (min-width:992px)">
+      <link rel="stylesheet" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)">
+    </noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <script src="js/lazysizes.min.js" async="async"></script>
+    <script src="js/script.min.js" async="async"></script>
+  </body>
+</html>

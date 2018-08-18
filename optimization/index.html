@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="application-name" content="Dataprom">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Dataprom">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="msapplication-navbutton-color" content="#091d25">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-starturl" content="/index.html">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-container js-header">
+      <header class="header">
+        <div class="header__info"><a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Optimization" width="75" height="64"></a>
+          <div class="year-select">
+            <button class="year-select__current js-years" type="button">2018</button>
+            <ul class="year-select__prev">
+              <li>
+                <button class="js-srcoll-top-year year-select__nav year-select__nav--top not-active" type="button" aria-label="Year scroll top"></button>
+              </li>
+              <li>
+                <ul class="year-prev js-prev-years">
+                  <li><a href="https://2017.optimization.ru" target="_blank" rel="noopener">2017</a></li>
+                  <li><a href="http://2016.optimization.ru/" target="_blank" rel="noopener">2016</a></li>
+                  <li><a href="http://2015.optimization.ru/" target="_blank" rel="noopener">2015</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2014</a></li>
+                  <li><a href="http://2013.ibcrussia.com/" target="_blank" rel="noopener">2013</a></li>
+                  <li><a href="http://optimization.ru/2012/program" target="_blank" rel="noopener">2012</a></li>
+                  <li><a href="http://optimization.ru/2011/program" target="_blank" rel="noopener">2011</a></li>
+                  <li><a href="http://optimization.ru/2010/program" target="_blank" rel="noopener">2010</a></li>
+                  <li><a href="http://optimization.ru/09/program.shtml" target="_blank" rel="noopener">2009</a></li>
+                  <li><a href="http://optimization.ru/08/program.shtml" target="_blank" rel="noopener">2008</a></li>
+                  <li><a href="http://optimization.ru/07/program.shtml" target="_blank" rel="noopener">2007</a></li>
+                  <li><a href="http://optimization.ru/06/program.shtml" target="_blank" rel="noopener">2006</a></li>
+                  <li><a href="http://optimization.ru/05/program.shtml" target="_blank" rel="noopener">2005</a></li>
+                  <li><a href="http://optimization.ru/04/program.shtml" target="_blank" rel="noopener">2004</a></li>
+                </ul>
+              </li>
+              <li>
+                <button class="js-srcoll-bottom-year year-select__nav year-select__nav--bottom" type="button" aria-label="Year scroll top"></button>
+              </li>
+            </ul>
+          </div>
+        </div><a class="header__user btn" href="registration.html">Стать участником</a>
+        <button class="header__hamburger hamburger js-hamburger" type="button" aria-label="Show menu"><span></span></button>
+        <nav class="header__nav js-nav">
+          <ul class="h-nav">
+            <li class="h-nav__item"><a href="program.html">программа</a>
+            </li>
+            <li class="h-nav__item"><a href="speaker.html">спикеры</a>
+            </li>
+            <li class="h-nav__item"><a href="partners.html">партнеры</a>
+            </li>
+            <li class="h-nav__item"><a href="news.html">новости</a>
+            </li>
+            <li class="h-nav__item"><a href="contacts.html">контакты</a>
+            </li>
+            <li class="h-nav__item h-nav__item--btn"><a href="registration.html">Стать участником</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="welcome welcome--main">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="welcome__prepend"><span>30 НОЯБРЯ — 1 ДЕКАБРЯ</span><span>КОНГРЕСС-ЦЕНТР ТЕХНОПОЛИС «МОСКВА»</span></p>
+              <h1 class="welcome__title welcome__title--main">OPTIMIZATION 2О18</h1><a class="welcome__user btn" href="registration.html">Стать участником</a>
+              <p class="welcome__append"><span>ПОИСКОВЫЙ МАРКЕТИНГ</span><span>И ПРОДВИЖЕНИЕ БИЗНЕСА В ИНТЕРНЕТЕ</span></p>
+              <div class="welcome__social">
+                <ul class="social">
+                  <li class="social__item social__item--vk"><a href="https://vk.com/ashmanovandpartners" aria-label="Vkontakte link"></a></li>
+                  <li class="social__item social__item--telegram"><a href="#" aria-label="Telegram link"></a></li>
+                  <li class="social__item social__item--fb"><a href="https://www.facebook.com/ashmanovandpartners/" aria-label="Facebook link"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-conf">
+        <div class="container">
+          <div class="row">
+            <div class="col with-aside-title">
+              <h2 class="about-conf__title h2 h2--vertical h2--stairs"><span>О конференции</span></h2>
+              <div class="about-conf__content with-aside-title__content">
+                <p class="about-conf__resume text-resume">Конференция IBC «Интернет и Бизнес. Россия» объединила в 2013-м году многолетние успешные проекты «Сайт» и Optimization. В 2015 году организаторы мероприятия оценили потребности отрасли и решили больше сфокусироваться на основных каналах продвижения сайтов. Так IBC изменилась структурно и приобрела новое имя — «Поисковый маркетинг и продвижение бизнеса в Интернете».</p>
+                <div class="about-conf__details">
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Узкий фокус </span><span>и три потока</span>
+                    </h3>
+                    <p class="simple-block__text">Мы полностью сконцентрируемся на основных поставщиках целевого трафика — SEO, контекстная реклама и SMM. В первом потоке доклады по поисковой оптимизации для специалистов, во втором — по другим каналам и инструментам интернет-маркетинга для директоров и руководителей, в третьем будут проводиться практикумы: мастер-классы, аудиты, обзоры кейсов.</p>
+                  </article>
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Больше обсуждений </span><span>актуальных событий</span>
+                    </h3>
+                    <p class="simple-block__text">На сцене и в кулуарах. Спикеры расскажут, как адаптироваться к изменениям отрасли и покажут, что конкретно они делают сегодня для того, чтобы сохранить и повысить эффективность продвижения своих проектов. А представители Яндекс, Google и Mail Group поделятся практическими рекомендациями и обсудят последние события отрасли.</p><span class="simple-block__bg-img cross js-rellax" data-rellax-speed="-1" data-rellax-percentage="1" aria-hidden="true"></span>
+                  </article>
+                </div><a class="about-conf__file link-file link-file--dashed" href="#"><span class="link-file__name"><i>Презентация<span class="link-file__type">PDF 345 Kb</span></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-was section-border">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="how-it-was__title">как это было</h2>
+            </div>
+          </div>
+        </div>
+        <div class="how-it-was__slider hiw-slider">
+          <button class="hiw-slider__btn hiw-slider__btn--left js-hiw-left" type="button" aria-label="Slide left" data-scroll="toggle(.fromRightIn, .fromRightOut)"></button>
+          <button class="hiw-slider__btn hiw-slider__btn--right js-hiw-right" type="button" aria-label="Slide right" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"></button>
+          <div class="hiw-slider__gallery js-hiw-slider">
+            <div class="hiw-slider__item"><img src="img/how-it-was/01.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/02.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/03.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/01.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/02.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/03.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/01.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/02.jpg" alt="Img decription"></div>
+            <div class="hiw-slider__item"><img src="img/how-it-was/03.jpg" alt="Img decription"></div>
+          </div>
+        </div>
+      </section>
+      <section class="for-whom">
+        <div class="container">
+          <div class="row">
+            <div class="col with-aside-title">
+              <h2 class="for-whom__title h2 h2--vertical h2--circles"><span>для кого эта<br> конференция</span></h2>
+              <div class="with-aside-title__content">
+                <div class="for-whom__details">
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Для генеральных</span><span> директоров</span>
+                    </h3>
+                    <p class="simple-block__text">Поговорим о создании и внедрении digital-стратегии ведущих компаний и о методах повышения конверсии.</p>
+                  </article>
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Для директоров </span><span>по маркетингу</span>
+                    </h3>
+                    <p class="simple-block__text">Поделимся кейсами по привлечению трафика, управлению digital-проектами и сложной аналитике.</p>
+                  </article>
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Для маркетологов</span>
+                    </h3>
+                    <p class="simple-block__text">Уделим внимание синергии каналов интернет-маркетинга и выстраиванию эффективной digital-стратегии</p>
+                  </article>
+                  <article class="simple-block">
+                    <h3 class="h3 simple-block__title"><span>Для оптимизаторов</span>
+                    </h3>
+                    <p class="simple-block__text">Расскажем об особенностях новых поисковых алгоритмов и продвижении крупных проектов.</p><span class="simple-block__bg-img zigzag js-rellax" data-rellax-speed="-1" data-rellax-percentage="0.2" aria-hidden="true"></span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="numbers section-border">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="numbers-wrap">
+                <figure class="number" data-scroll="toggle(.fromTopIn, .fromTopOut)"><span class="number__value">17</span>
+                  <figcaption class="number__caption"><span>лет истории</span><span> конференции</span>
+                  </figcaption>
+                </figure>
+                <figure class="number" data-scroll="toggle(.fromBottomIn, .fromBottomOut)"><span class="number__value">48</span>
+                  <figcaption class="number__caption"><span>часов полезного</span><span> контента</span>
+                  </figcaption>
+                </figure>
+                <figure class="number" data-scroll="toggle(.fromTopIn, .fromTopOut)"><span class="number__value">50</span>
+                  <figcaption class="number__caption"><span>экспертов</span><span>  интернет-отрасли</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="speakers-main section-border">
+        <div class="container">
+          <div class="row">
+            <div class="col with-aside-title">
+              <h2 class="speakers-main__title h2 h2--horizontal h2--underlined"><a href="#">СПИКЕРЫ</a></h2>
+              <div class="with-aside-title__content">
+                <p class="speakers-main__resume text-resume">Представят результаты исследований и поделятся свежим опытом.</p>
+                <p class="speakers-main__resume text-resume">Раскроют секреты успешных компаний, объяснят, как избежать трудностей, с которыми пришлось столкнуться самим.</p><span class="js-rellax cross" data-rellax-speed="1" data-rellax-percentage="1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 speakers-main__member">
+              <div class="member" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                <div class="member__img"><img src="https://picsum.photos/458/354?image=980" alt="Member"></div>
+                <div class="member__info"><span class="member__name"><a class="link" href="#">Дмитрий Школьников</a></span>
+                  <p class="member__about">Менеджер, Avito</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cta-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="cta"><a class="cta__item link-file link-file--solid" href="#" data-scroll="toggle(.fromRightIn, .fromRightOut)"><span class="link-file__name"><i>Информация для докладчиков</i></span></a><a class="cta__item btn" href="#" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">хочу быть спикером</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="news-main">
+        <div class="container">
+          <div class="row">
+            <div class="col with-aside-title">
+              <h2 class="news-main__title h2 h2--horizontal h2--underlined"><a href="#">НОВОСТИ</a></h2>
+              <div class="with-aside-title__content news-main__content">
+                <section class="news-article"><a class="news-article__link" href="#">
+                    <h3 class="h3 news-article__title">Конференция Optimization 2017 состоялась</h3>
+                    <time class="news-article__date" datetime="2017-04-16">16 апреля 2017</time>
+                    <p class="news-article__text">Конференция eTarget 2018 официально завершена! За два дня конференции было проведено 12 секций, в которых приняли участие более 400 человек.</p></a></section>
+                <section class="news-article"><a class="news-article__link" href="#">
+                    <h3 class="h3 news-article__title">Конференция Optimization 2017 состоялась</h3>
+                    <time class="news-article__date" datetime="2017-04-16">16 апреля 2017</time>
+                    <p class="news-article__text">Конференция eTarget 2018 официально завершена! За два дня конференции было проведено 12 секций, в которых приняли участие более 400 человек.</p></a></section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-main section-border">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="h2 partners-main__title">Организаторы и ПАРТНЕРЫ</h2>
+              <div class="partners-main__logos">
+                <div class="row">
+                  <div class="col g-b-8"><a class="partner-logo-link" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                        <figcaption class="partner-logo__caption">Организатор </figcaption>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                        <figcaption class="partner-logo__caption">Стратегический <br>партнер</figcaption>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                        <figcaption class="partner-logo__caption">Генеральный <br>интернет-партнер</figcaption>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                        <figcaption class="partner-logo__caption">Генеральный <br>информационный партнер</figcaption>
+                      </figure></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners-main section-border">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="h2 partners-main__title">МЕДИАПАРТНЕРЫ</h2>
+              <div class="partners-main__logos">
+                <div class="row">
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/02.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/03.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/04.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                  <div class="col g-b-8"><a class="partner-logo-link no-caption" href="#" target="_blank" rel="noopener" aria-label="Partner Logo" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+                      <figure class="partner-logo">
+                        <p class="partner-logo__img"><img src="img/partners/01.png" alt="Partners logo"></p>
+                      </figure></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cta-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="cta"><a class="cta__item link-file link-file--solid" href="#" data-scroll="toggle(.fromRightIn, .fromRightOut)"><span class="link-file__name"><i>Информация для информационых парнеров и сми</i></span></a><a class="cta__item btn" href="#" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">получить аккредитацию</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="h2 faq__title">ВОПРОСЫ И ОТВЕТЫ</h2>
+              <div class="faq__accordion" id="faq__accordion">
+                <section class="accordion-card">
+                  <div class="accordion-card__header" id="heading1">
+                    <h3 class="accordion-card__title"><a class="h3 accordion-card__btn collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span>Я попал под «Баден-Баден». Что делать?</span></a></h3>
+                  </div>
+                  <div class="collapse" aria-labelledby="heading1" data-parent="#faq__accordion" id="collapse1">
+                    <div class="accordion-card__body">
+                      <p class="accordion-card__paragraph">Несколько программ-обработчиков, нацеленных на выявление совершенно разных проблем, анализируют то, что вы проверяете, и если им что-то не нравится, выставляют штрафные баллы. Потом мы их просто суммируем и получаем общую оценку. Чем она выше, тем (при прочих равных) выше риск «Баден-Бадена».</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="accordion-card">
+                  <div class="accordion-card__header" id="heading2">
+                    <h3 class="accordion-card__title"><a class="h3 accordion-card__btn collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span>Что это за баллы?</span></a></h3>
+                  </div>
+                  <div class="collapse" aria-labelledby="heading2" data-parent="#faq__accordion" id="collapse2">
+                    <div class="accordion-card__body">
+                      <p class="accordion-card__paragraph">Несколько программ-обработчиков, нацеленных на выявление совершенно разных проблем, анализируют то, что вы проверяете, и если им что-то не нравится, выставляют штрафные баллы. Потом мы их просто суммируем и получаем общую оценку. Чем она выше, тем (при прочих равных) выше риск «Баден-Бадена».</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="accordion-card">
+                  <div class="accordion-card__header" id="heading3">
+                    <h3 class="accordion-card__title"><a class="h3 accordion-card__btn collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span>У меня 13 баллов. Это смертельно?</span></a></h3>
+                  </div>
+                  <div class="collapse" aria-labelledby="heading3" data-parent="#faq__accordion" id="collapse3">
+                    <div class="accordion-card__body">
+                      <p class="accordion-card__paragraph">Несколько программ-обработчиков, нацеленных на выявление совершенно разных проблем, анализируют то, что вы проверяете, и если им что-то не нравится, выставляют штрафные баллы. Потом мы их просто суммируем и получаем общую оценку. Чем она выше, тем (при прочих равных) выше риск «Баден-Бадена».</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="accordion-card">
+                  <div class="accordion-card__header" id="heading4">
+                    <h3 class="accordion-card__title"><a class="h3 accordion-card__btn collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><span>Я выполнил ваши рекомендации, а позиции в Яндексе снизились...</span></a></h3>
+                  </div>
+                  <div class="collapse" aria-labelledby="heading4" data-parent="#faq__accordion" id="collapse4">
+                    <div class="accordion-card__body">
+                      <p class="accordion-card__paragraph">Несколько программ-обработчиков, нацеленных на выявление совершенно разных проблем, анализируют то, что вы проверяете, и если им что-то не нравится, выставляют штрафные баллы. Потом мы их просто суммируем и получаем общую оценку. Чем она выше, тем (при прочих равных) выше риск «Баден-Бадена».</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cta-wrap with-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="cta">
+                <div class="cta__item" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                  <p class="cta__caption">Вы не нашли ответ на свой вопрос?</p>
+                  <p class="cta__text">Напишите нам, и мы будем рады вам ответить!</p>
+                </div><a class="cta__item cta__btn cta__btn--question btn" href="#" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer-info">
+                <div class="footer-info__logo"><img src="img/ashmanov-logo.png" alt="Ашманов и партнеры, логотип" width="128" height="64"></div>
+                <div class="footer-info__contacts">
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>Оплата и участие</span><span> в конференции</span>
+                    </h4>
+                    <p class="contact-box__name">Наталья Исайкина</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:reg@optimization.ru">reg@optimization.ru</a></p>
+                  </article>
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>Программа и участие</span><span> с докладом</span>
+                    </h4>
+                    <p class="contact-box__name">Наталья Хомутова</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:doklad@optimization.ru">doklad@optimization.ru</a></p>
+                  </article>
+                  <article class="contact-box">
+                    <h4 class="contact-box__title"><span>информационное партнерство</span><span>и аккредитация сми</span>
+                    </h4>
+                    <p class="contact-box__name">Антон Тришин</p>
+                    <p class="contact-box__email"><a class="email" href="mailto:partners@optimization.ru">partners@optimization.ru</a></p>
+                  </article>
+                </div>
+                <div class="footer-info__social">
+                  <ul class="social">
+                    <li class="social__item social__item--vk"><a href="https://vk.com/ashmanovandpartners" aria-label="Vkontakte link"></a></li>
+                    <li class="social__item social__item--telegram"><a href="#" aria-label="Telegram link"></a></li>
+                    <li class="social__item social__item--fb"><a href="https://www.facebook.com/ashmanovandpartners/" aria-label="Facebook link"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="footer__copy">&copy;&nbsp;2001—2018  «Ашманов&nbsp;и&nbsp;партнеры»</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      @charset "UTF-8";*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background:#fff;margin:0 auto;min-width:320px}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,html,img,li,p,ul{margin:0;padding:0;border:0}header,img,main,nav,section{display:block}a{color:inherit}@font-face{font-family:ProximaNovaRegular;src:url(fonts/ProximaNova/ProximaNovaRegular.otf)}@font-face{font-family:ProximaNovaBold;src:url(fonts/ProximaNova/ProximaNovaBold.otf)}@font-face{font-family:ProximaNovaExtrabold;src:url(fonts/ProximaNova/ProximaNovaExtrabold.otf)}@font-face{font-family:ProximaNovaBlack;src:url(fonts/ProximaNova/ProximaNovaBlack.otf)}@font-face{font-family:CirceRegular;src:url(fonts/Circe/Circe-Regular.ttf)}@font-face{font-family:CirceLight;src:url(fonts/Circe/Circe-Light.ttf)}@-ms-viewport{width:device-width}html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:0;margin-left:0}.col{position:relative;width:100%;min-height:1px;padding-right:0;padding-left:0}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.container{padding-right:15px;padding-left:15px}.col{padding-right:0;padding-left:0}@font-face{font-family:opt;src:url(fonts/icomoon/opt.eot?emj0k5);src:url(fonts/icomoon/opt.eot?emj0k5#iefix) format("embedded-opentype"),url(fonts/icomoon/opt.ttf?emj0k5) format("truetype"),url(fonts/icomoon/opt.woff?emj0k5) format("woff"),url(fonts/icomoon/opt.svg?emj0k5#opt) format("svg");font-weight:400;font-style:normal}html{font-family:ProximaNovaRegular,sans-serif}body{position:relative}*{outline-color:#ffe400}.btn{display:inline-block;min-width:240px;font-size:12px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;padding-top:16px;padding-bottom:16px;padding-left:28px;padding-right:28px;line-height:1;border-radius:24px;text-decoration:none;text-align:center;background:0 0;border:2px solid #000;outline:0}.h2,h2{font-size:24px;text-transform:uppercase;font-family:ProximaNovaExtrabold,sans-serif;font-weight:500;letter-spacing:.8px}.h2--vertical{line-height:.7;text-align:left;color:#191919}.h2--vertical{min-width:50px;-webkit-transform:rotate(180deg);transform:rotate(180deg);-webkit-writing-mode:vertical-rl;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;text-align:right}.h2--vertical span{position:relative;z-index:-1;display:inline-block}.h2--vertical span::before{content:'';display:inline-block;position:absolute;z-index:-1;font-family:opt;font-weight:400;color:#ffe400;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.h2--stairs span::before{content:'\e90a';width:189px;font-size:189px;line-height:189px;top:0;left:-55px}.with-aside-title{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.with-aside-title__content{position:relative;-webkit-box-flex:1;-ms-flex:1 1;flex:1 1}.text-resume{font-family:CirceLight,sans-serif;color:#959595;font-size:16px;font-weight:300;line-height:1.5;letter-spacing:normal;text-align:left}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}.header-container{position:fixed;z-index:100;top:0;left:0;right:0;padding-top:12px;padding-bottom:12px}.header ul{list-style-type:none}.header__nav{position:fixed;z-index:-1;left:0;top:88px;width:100%;background:#fff;border-bottom:1px solid #e5e5e5;-webkit-transform:scaleY(0);transform:scaleY(0);visibility:hidden;-webkit-transform-origin:top;transform-origin:top}.header__user{display:none}.logo{display:block;width:75px;height:64px;overflow:hidden;text-decoration:none}.logo__img{width:100%;height:auto}.year-select{display:none}.year-select__prev{display:none}.year-prev{position:relative;display:block;-webkit-transform:translateY(0);transform:translateY(0)}.year-prev>li{display:block;font-size:13px;line-height:25px;max-height:25px}.year-prev>li a{display:inline-block;width:100%;font-family:inherit;font-size:13px;line-height:25px;max-height:25px;text-decoration:none}.hamburger{display:-webkit-box;display:-ms-flexbox;display:flex;width:24px;height:24px;padding:0;background:0 0;border:0;outline:0}.hamburger span{position:relative;display:inline-block;margin:auto;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::after,.hamburger span::before{content:'';position:absolute;left:0;width:100%;height:3px;background:#000;border-radius:1px}.hamburger span::before{top:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.hamburger span::after{bottom:-6px;-webkit-transform:rotate(0);transform:rotate(0)}.h-nav{padding:0 15px 12px;text-align:right;line-height:2.5}.h-nav__item a{position:relative;display:inline-block;font-size:12px;font-weight:700;line-height:20px;letter-spacing:.6px;font-family:ProximaNovaBold,sans-serif;font-weight:500;text-transform:uppercase;text-decoration:none}.h-nav__item a::before{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:#000;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:right top;transform-origin:right top}.welcome{padding-top:100px;background-repeat:no-repeat;background-position-y:0}.welcome--main{background-image:url(img/background/001_background_main.png);background-position-x:80%}.welcome__prepend{margin-bottom:20px;font-family:ProximaNovaExtrabold,sans-serif;font-size:12px;font-weight:500;font-stretch:normal;line-height:2;letter-spacing:.6px;color:#191919}.welcome__prepend span{display:block}.welcome__title{font-family:ProximaNovaBlack,sans-serif;line-height:1;text-transform:uppercase}.welcome__title--main{margin-bottom:20px;font-size:35px;font-weight:500;letter-spacing:2.5px;color:#191919}.welcome__append{margin-bottom:60px;font-family:ProximaNovaBold,sans-serif;font-size:12px;font-weight:500;line-height:1.5;letter-spacing:1.05px;color:#191919}.welcome__append span{display:block}.welcome__user{display:inline-block;margin-bottom:20px}.social{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;list-style-type:none;padding:0}.social__item{width:40px;height:40px;border-radius:50%;overflow:hidden}.social__item:not(:last-child){margin-right:24px}.social__item a{display:block;line-height:40px;text-align:center;text-decoration:none;background:#ffe400}.social__item a::after{display:inline-block;font-family:opt;color:#000}.social__item--vk a::after{content:'\e90c';font-size:22px}.social__item--telegram a::after{content:'\e90b';font-size:16px}.social__item--fb a::after{content:'\e918';font-size:22px}.about-conf{padding-top:46px;padding-bottom:40px}.about-conf__resume:last-of-type{margin-bottom:40px}@media (min-width:768px){.container{max-width:744px}.container{padding-right:0;padding-left:0}.h2,h2{font-size:28px}.h2--vertical{width:80px}.h2--vertical span{margin-right:12px}.header{max-width:744px;margin-left:auto;margin-right:auto;padding:0}.header__info{position:relative;min-width:192px;width:192px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__user{display:inline-block;min-width:initial;margin-left:auto;margin-right:25px;padding-left:39px;padding-right:41px}.year-select{position:absolute;right:0;top:19px;display:block;width:72px;margin-top:auto;margin-bottom:auto;font-family:CirceRegular,sans-serif;font-size:12px;line-height:13px;border:solid 2px #959595;color:#959595;border-radius:19px;overflow:hidden;text-align:center}.year-select__current{width:100%;padding-top:6px;padding-bottom:6px;font-family:inherit;font-size:inherit;background:0 0;border:none;color:inherit;outline:0}.year-select__current::after{content:'\e900';display:inline-block;margin-left:5px;font-family:opt;font-size:8px}.year-select__prev{position:relative;max-height:150px;overflow:hidden;border-radius:19px;padding-top:25px;padding-bottom:25px}.year-select__prev>li{display:block;line-height:0}.year-select__prev>li:first-child,.year-select__prev>li:last-child{position:absolute;z-index:1;left:0;right:0;background:#fff}.year-select__prev>li:first-child{top:0}.year-select__prev>li:last-child{bottom:0}.year-select__nav{width:100%;height:25px;padding:0;background:#fff;border:none;outline:0}.year-select__nav::before{content:'\e900';display:inline-block;font-family:opt;line-height:25px;text-align:center;color:#959595}.year-select__nav.not-active::before{color:rgba(149,149,149,.3)}.year-select__nav--top{border-top-left-radius:19px;border-top-right-radius:19px}.year-select__nav--top::before{-webkit-transform:rotate(180deg);transform:rotate(180deg);-webkit-transform-origin:center;transform-origin:center}.year-select__nav--bottom{border-bottom-left-radius:19px;border-bottom-right-radius:19px}.h-nav{padding-top:12px;max-width:744px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}.h-nav__item--btn{display:none}.h-nav__item--btn a{padding-top:17px;padding-bottom:16px;padding-left:39px;padding-right:41px;line-height:1;border-radius:24px;border:2px solid #000;text-decoration:none;outline:0}.h-nav__item--btn a::before{display:none}.welcome--main{background-position-x:20%}.welcome__prepend{margin-bottom:18px;font-size:16px}.welcome__title--main{font-size:50px;margin-bottom:30px}.welcome__user{display:none}.welcome__append{font-size:24px;margin-bottom:70px}.about-conf{padding-top:60px;padding-bottom:55px}}@media (min-width:992px){.container{max-width:960px}.h2,h2{font-size:36px}.h2--vertical{-webkit-transform:rotate(0);transform:rotate(0);-webkit-writing-mode:initial;-ms-writing-mode:initial;writing-mode:initial;text-align:left}.h2--vertical span{white-space:nowrap;padding-bottom:8px;-webkit-writing-mode:vertical-rl;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;line-height:.96;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.header{max-width:960px}.hamburger{width:35px}.hamburger span::before{top:-8px}.hamburger span::after{bottom:-8px}.h-nav{max-width:960px}.welcome__title--main{font-size:70px;margin-bottom:20px}.welcome__append{margin-bottom:90px}.about-conf{padding-top:72px;padding-bottom:68px}}@media (min-width:1200px){.container{max-width:1152px}.h2,h2{font-size:42px}.h2--vertical{width:287px}.h2--stairs span::before{top:63px;left:-57px}.text-resume{font-size:20px}.header{max-width:1152px}.header-container{padding-top:29px;padding-bottom:29px}.header__user{display:none}.header__nav{position:static;z-index:1;-webkit-transform:scale(1);transform:scale(1);visibility:visible;background:0 0;display:block;border-bottom:none}.hamburger{display:none;opacity:0}.h-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;max-width:740px;margin-right:0;padding-top:14px;padding-bottom:9px}.h-nav__item--btn{display:block;margin-top:-3px}.welcome--main{padding-top:220px;background-position:calc(50% + 3px) -8px}.welcome__title--main{font-size:100px}.welcome__append{margin-bottom:125px}.about-conf{padding-top:98px;padding-bottom:90px}.about-conf__resume:last-of-type{margin-bottom:47px}}
+    </style>
+    <link rel="preload" href="css/style.min.css" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-768px.min.css" media="screen and (min-width:768px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-992px.min.css" media="screen and (min-width:992px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/style.min.css" media="screen">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" media="screen">
+      <link rel="stylesheet" href="css/min-width-768px.min.css" media="screen and (min-width:768px)">
+      <link rel="stylesheet" href="css/min-width-992px.min.css" media="screen and (min-width:992px)">
+      <link rel="stylesheet" href="css/min-width-1200px.min.css" media="screen and (min-width:1200px)">
+    </noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <script src="js/script.min.js" async="async"></script>
+  </body>
+</html>

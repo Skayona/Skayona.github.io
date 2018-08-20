@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/style.min.css" media="screen"/>
   </head>
   <body>
+    <div class="menu-mobile-open-overlay"></div>
     <header class="b-header">
       <div class="b-header__wrapper">
         <div class="b-logo"><a href="https://www.ashmanov.com/"><img class="b-logo__img" src="https://www.ashmanov.com/static/img/logo.svg" alt="Логотип Ашманов и партнеры"/></a></div>
@@ -863,7 +864,7 @@
                       <label class="b-main-form__files" for="file-request">
                         <div class="jq-file inputfile" id="file-request-styler">
                           <div class="jq-file__name">Прикрепить файл</div>
-                          <div class="jq-file__browse">Обзор...</div>
+                          <button class="jq-file__remove" type="button" aria-label="Remove file">Удалить</button>
                           <input class="inputfile" id="file-request" name="" type="file"/>
                         </div>
                       </label>
@@ -890,50 +891,48 @@
             <path d="M0 74.581l74.581-74.581 949.419 949.419-74.581 74.581-949.419-949.419z"></path>
           </svg>
         </button>
-        <div class="modal-scroll" data-simplebar="data-simplebar" data-simplebar-auto-hide="false">
-          <div class="modal-content scrolled-to-bottom">
-            <h5 class="modal-title">Оставьте ваш номер<span>И мы перезвоним в удобное для вас время.</span></h5>
-            <div class="modal-body">
-              <div class="b-main-form b-form b-main-form--no-margin">
-                <div class="b-form__wrapper">
-                  <form class="b-columns" id="form-callback" action="?">
-                    <div class="b-main-form__column b-form__column">
-                      <div class="b-main-form__field b-field">
-                        <label class="b-main-form__label b-field__label" for="fio-callback">Представьтесь, пожалуйста<span class="b-form__required-star">*</span></label>
-                        <input class="b-field__input inputtext b-field__input--fio" id="fio-callback" required="" type="text" name="" value="" aria-required="true"/>
-                      </div>
-                      <div class="b-main-form__field b-field">
-                        <label class="b-main-form__label b-field__label" for="phone-callback">Номер телефона<span class="b-form__required-star">*</span></label>
-                        <input class="b-field__input inputtext b-field__input--phone" id="phone-callback" type="tel" name="" value="" aria-required="true"/>
-                      </div>
-                      <div class="b-main-form__field b-field">
-                        <label class="b-main-form__label b-field__label" for="time-start-styler">Время<span class="b-form__required-star">*</span></label>
-                        <div class="b-field__select-wrap">
-                          <select class="b-field__select" id="time-start-styler">
-                            <option selected="" value="09">09:00</option>
-                            <option value="10">10:00</option>
-                            <option value="11">11:00</option>
-                            <option value="12">12:00</option>
-                            <option value="14">13:00</option>
-                          </select><span>&ndash;</span>
-                          <select class="b-field__select" id="time-end-styler">
-                            <option selected="" value="10">10:00</option>
-                            <option value="11">11:00</option>
-                            <option value="12">12:00</option>
-                            <option value="13">13:00</option>
-                            <option value="15">14:00</option>
-                          </select>
-                        </div>
-                      </div>
-                      <p class="agreement-label">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&nbsp;<span class="agreement" data-toggle="modal" data-target="#agreement-modal">политикой конфиденциальности</span></p>
-                      <div class="b-main-form__submit b-button b-button--red">
-                        <div class="b-button__wrapper">
-                          <button class="b-button__link" type="submit" name="" value="Отправить"><span class="b-button__text">Перезвоните мне</span></button>
-                        </div>
+        <div class="modal-content scrolled-to-bottom">
+          <h5 class="modal-title">Оставьте ваш номер<span>И мы перезвоним в удобное для вас время.</span></h5>
+          <div class="modal-body">
+            <div class="b-main-form b-form b-main-form--no-margin">
+              <div class="b-form__wrapper">
+                <form class="b-columns" id="form-callback" action="?">
+                  <div class="b-main-form__column b-form__column">
+                    <div class="b-main-form__field b-field">
+                      <label class="b-main-form__label b-field__label" for="fio-callback">Представьтесь, пожалуйста<span class="b-form__required-star">*</span></label>
+                      <input class="b-field__input inputtext b-field__input--fio" id="fio-callback" required="" type="text" name="" value="" aria-required="true"/>
+                    </div>
+                    <div class="b-main-form__field b-field">
+                      <label class="b-main-form__label b-field__label" for="phone-callback">Номер телефона<span class="b-form__required-star">*</span></label>
+                      <input class="b-field__input inputtext b-field__input--phone" id="phone-callback" type="tel" name="" value="" aria-required="true"/>
+                    </div>
+                    <div class="b-main-form__field b-field">
+                      <label class="b-main-form__label b-field__label" for="time-start-styler">Время<span class="b-form__required-star">*</span></label>
+                      <div class="b-field__select-wrap">
+                        <select class="b-field__select" id="time-start-styler">
+                          <option selected="" value="09">09:00</option>
+                          <option value="10">10:00</option>
+                          <option value="11">11:00</option>
+                          <option value="12">12:00</option>
+                          <option value="14">13:00</option>
+                        </select><span>&ndash;</span>
+                        <select class="b-field__select" id="time-end-styler">
+                          <option selected="" value="10">10:00</option>
+                          <option value="11">11:00</option>
+                          <option value="12">12:00</option>
+                          <option value="13">13:00</option>
+                          <option value="15">14:00</option>
+                        </select>
                       </div>
                     </div>
-                  </form>
-                </div>
+                    <p class="agreement-label">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c&nbsp;<span class="agreement" data-toggle="modal" data-target="#agreement-modal">политикой конфиденциальности</span></p>
+                    <div class="b-main-form__submit b-button b-button--red">
+                      <div class="b-button__wrapper">
+                        <button class="b-button__link" type="submit" name="" value="Отправить"><span class="b-button__text">Перезвоните мне</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

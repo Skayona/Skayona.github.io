@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/header-footer-1534790179730.min.css" media="screen"/>
     <link rel="stylesheet" href="css/modals-1534790179730.min.css" media="screen"/>
     <!-- ADD THIS STYLES ON SITE START-->
-    <link rel="stylesheet" href="css/ratings.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/rates.min.css" media="screen"/>
     <!-- ADD THIS STYLES ON SITE END-->
   </head>
   <body>
@@ -369,164 +369,244 @@
       </div>
     </header>
     <main>
-      <div class="b-head-image b-head-image--ratings" style="background-image: url(https://ashmanov.dev5.ashmanov.com/upload/iblock/ab2/ab28a73df1c5d71737512bdb3d25b528.jpg); ">
+      <div class="b-head-image b-head-image--rates" style="background-image: url(https://ashmanov.dev5.ashmanov.com/upload/iblock/ab2/ab28a73df1c5d71737512bdb3d25b528.jpg); ">
         <div class="b-head-image__wrapper b-block__wrapper">
-          <div class="b-head-image__title b-title b-title--white b-title--uppercase">
-            <h1>РЕЙТИНГИ</h1>
+          <div class="b-head-image__time">
+            <time datetime="2018-09-22">22 сентября 2018</time>
           </div>
-          <div class="b-head-image__subtitle tk-circe">Рейтинги «Ашманов и партнеры» — это комплексное исследование российского рынка поискового маркетинга, которое включает два направления: тематические рейтинги видимости сайтов и анализ SEO-отрасли.</div>
+          <div class="b-head-image__title b-title b-title--white b-title--uppercase">
+            <h1>отраслевой Рейтинг:<br/>Недвижимость</h1>
+          </div>
+          <div class="b-head-image__tags">
+            <div class="n-tags">
+              <button class="n-tags__nav n-tags__nav--back js-tags-prev" type="button" aria-label="Назад">
+                <svg viewBox="0 0 32 32">
+                  <path d="M 19.03125 4.28125 L 8.03125 15.28125 L 7.34375 16 L 8.03125 16.71875 L 19.03125 27.71875 L 20.46875 26.28125 L 10.1875 16 L 20.46875 5.71875 L 19.03125 4.28125 z"></path>
+                </svg>
+              </button>
+              <div class="n-tags__list js-slider-tags"><span class="n-tags__item n-tags__item--active"><a href="#">общий</a></span><span class="n-tags__item"><a href="#">Квартиры</a></span><span class="n-tags__item"><a href="#">Торговые площади</a></span><span class="n-tags__item"><a href="#">Аренда квартир</a></span><span class="n-tags__item"><a href="#">Новостройки</a></span><span class="n-tags__item"><a href="#">Паркинги</a></span><span class="n-tags__item"><a href="#">Земельные участки</a></span><span class="n-tags__item"><a href="#">Коттеджи</a></span><span class="n-tags__item"><a href="#">Таунхаусы</a></span><span class="n-tags__item"><a href="#">One more</a></span><span class="n-tags__item"><a href="#">And another one</a></span></div>
+              <button class="n-tags__nav n-tags__nav--forward js-tags-next" type="button" aria-label="Вперед">
+                <svg viewBox="0 0 32 32">
+                  <path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 L 12.96875 4.28125 z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="n-ratings">
         <div class="container">
+          <div class="n-chart">
+            <div class="n-chart__header">
+              <div class="n-chart__select">
+                <label for="serch-engine">Выберите поисковик</label>
+                <select class="n-chart_serch-engine" id="serch-engine">
+                  <option selected="" value="0">Все поисковики</option>
+                  <option value="1">Yandex</option>
+                  <option value="2">Google</option>
+                  <option value="3">Mail</option>
+                  <option value="4">Rambler</option>
+                </select>
+              </div>
+              <div class="n-chart__switcher"><a href="#">Сайты</a><a class="active" href="#">Запросы</a>
+              </div>
+            </div>
+            <div class="n-chart__diagram">
+              <!-- just an example, replace with real chart--><img src="img/example.png" alt="" title="just an example, replace with real chart"/>
+            </div>
+          </div>
+          <div class="n-rate-wrapper">
+            <div class="n-rate-header n-rate-row n-rate-row--queries">
+              <div class="n-rate-header__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+              <div class="n-rate-header__num n-rate-col n-rate-col--num">№</div>
+              <div class="n-rate-header__title n-rate-col n-rate-col--title">запрос</div>
+              <div class="n-rate-header__statistics n-rate-col n-rate-col--statistics">запросов в месяц</div>
+              <div class="n-rate-header__percentage n-rate-col n-rate-col--percentage">% в группе</div>
+            </div>
+            <ol class="n-rate-list">
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">агентства недвижимости в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">315 883</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">75,55</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">агентство недвижимости москва</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">134 941</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">32,28</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">аренда квартир в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">133 154</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">31,85</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">аренда квартиры в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">116 213</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">27,80</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">аренда коттеджа в подмосковье</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">86 221</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">20,68</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">аренда офиса в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">86 221</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">20,62</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">вторичное жилье в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">58 183</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">18,98</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">вторичный рынок жилья</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">57 273</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">17,94</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">застройщики москвы</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">47 195</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,92</div>
+              </li>
+              <li class="n-rate-item n-rate-item--active n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартира в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">42 837</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,70</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартира в москве купить</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">315 883</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">75,55</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартира на сутки в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">134 941</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">32,28</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в зеленограде</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">133 154</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">31,85</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в красногорске</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">116 213</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">27,80</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в люберцах</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">86 221</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">20,68</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">86 221</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">20,62</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в москве купить</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">58 183</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">18,98</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в мытищах</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">57 273</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">17,94</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в некрасовке</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">47 195</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,92</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в новой москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">42 837</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,70</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в одинцово</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">86 221</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">20,62</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в подмосковье</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">58 183</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">18,98</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">квартиры в химках</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">57 273</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">17,94</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">коммерческая недвижимость в москве</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">47 195</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,92</div>
+              </li>
+              <li class="n-rate-item n-rate-row">
+                <div class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox empty"></div>
+                <div class="n-rate-item__num n-rate-col n-rate-col--num"></div>
+                <div class="n-rate-item__title n-rate-col n-rate-col--title">купить дом в подмосковье</div>
+                <div class="n-rate-item__statistics n-rate-col n-rate-col--statistics">42 837</div>
+                <div class="n-rate-item__percentage n-rate-col n-rate-col--percentage">13,70</div>
+              </li>
+            </ol>
+            <button class="n-rate-btn" type="button">Показать весь список запросов</button>
+          </div>
           <section class="n-ratings-section">
-            <h2 class="n-ratings-section__title"><span>Тематические рейтинги видимости сайтов</span></h2>
+            <h2 class="n-ratings-section__title"><span>Другие отраслевые рейтенги</span></h2>
             <div class="n-ratings-section__wrap">
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Недвижимость</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="100">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="20">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="45">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Авто</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="90">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="40">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="65">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Медицина</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="87">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="41">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="10">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Банковские услуги</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="100">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="20">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="45">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Страховые услуги</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="90">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="40">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="65">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
               <article class="n-ratings-item">
                 <h3 class="n-ratings-item__title">E-commerce</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="87">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="41">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="10">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-            </div>
-          </section>
-          <section class="n-ratings-section">
-            <h2 class="n-ratings-section__title"><span>Рейтенги по упоминаниям SEO-отраслей</span></h2>
-            <div class="n-ratings-section__wrap">
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Видимость SEO&#8209;агенств</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">
@@ -549,7 +629,7 @@
                   </svg><span>Подробнее</span></a>
               </article>
               <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Упоминание SEO&#8209;агенств</h3>
+                <h3 class="n-ratings-item__title">Недвижимость</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">
@@ -572,7 +652,7 @@
                   </svg><span>Подробнее</span></a>
               </article>
               <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Упоминание SEO&#8209;персон</h3>
+                <h3 class="n-ratings-item__title">Авто</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">
@@ -923,7 +1003,7 @@
 <script type="text/javascript " src="https://www.ashmanov.com/local/templates/ashmanov/components/bitrix/search.title/top-search/script.js?153200604514599 "></script>
 <script type="text/javascript " src="https://www.ashmanov.com/local/components/ashmanov/menu/templates/mobile/script.js?15320060452662 "></script>
 <script type="text/javascript " src="https://www.ashmanov.com/static/js/plugins/jquery.formstyler.min.js?153200604818798 "></script>
-    <!-- ADD THIS SCRIPTS ON SITE START-->
+    <!-- ADD THIS SCRIPTS ON SITE START--><script type="text/javascript" src="https://www.ashmanov.com/static/js/plugins/slick.min.js?152935831941953"></script>
     <script src="js/ratings.min.js"></script>
     <!-- ADD THIS SCRIPTS ON SITE END-->
     <script src="js/header-footer-1534790179730.min.js"></script>

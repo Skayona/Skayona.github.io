@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/header-footer-1534790179730.min.css" media="screen"/>
     <link rel="stylesheet" href="css/modals-1534790179730.min.css" media="screen"/>
     <!-- ADD THIS STYLES ON SITE START-->
-    <link rel="stylesheet" href="css/ratings.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/rates.min.css" media="screen"/>
     <!-- ADD THIS STYLES ON SITE END-->
   </head>
   <body>
@@ -369,164 +369,315 @@
       </div>
     </header>
     <main>
-      <div class="b-head-image b-head-image--ratings" style="background-image: url(https://ashmanov.dev5.ashmanov.com/upload/iblock/ab2/ab28a73df1c5d71737512bdb3d25b528.jpg); ">
+      <div class="b-head-image b-head-image--rates" style="background-image: url(https://ashmanov.dev5.ashmanov.com/upload/iblock/ab2/ab28a73df1c5d71737512bdb3d25b528.jpg); ">
         <div class="b-head-image__wrapper b-block__wrapper">
-          <div class="b-head-image__title b-title b-title--white b-title--uppercase">
-            <h1>РЕЙТИНГИ</h1>
+          <div class="b-head-image__time">
+            <time datetime="2018-09-22">22 сентября 2018</time>
           </div>
-          <div class="b-head-image__subtitle tk-circe">Рейтинги «Ашманов и партнеры» — это комплексное исследование российского рынка поискового маркетинга, которое включает два направления: тематические рейтинги видимости сайтов и анализ SEO-отрасли.</div>
+          <div class="b-head-image__title b-title b-title--white b-title--uppercase">
+            <h1>Рейтинг упоминаемости<br/>seo-персоны</h1>
+          </div>
         </div>
       </div>
       <div class="n-ratings">
         <div class="container">
+          <div class="n-chart">
+            <div class="n-chart__diagram">
+              <!-- just an example, replace with real chart--><img src="img/example.png" alt="" title="just an example, replace with real chart"/>
+            </div>
+          </div>
+          <div class="n-rate-wrapper">
+            <div class="n-rate-header n-rate-row n-rate-row--persons">
+              <div class="n-rate-header__checkbox n-rate-col n-rate-col--checkbox"></div>
+              <div class="n-rate-header__num n-rate-col n-rate-col--num">№</div>
+              <div class="n-rate-header__title n-rate-col n-rate-col--title">персона</div>
+              <div class="n-rate-header__statistics n-rate-col n-rate-col--statistics">место работы / Должность</div>
+              <div class="n-rate-header__percentage n-rate-col n-rate-col--percentage">RANK</div>
+            </div>
+            <ol class="n-rate-list">
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-1"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-1" aria-label="Выбрать Шахов Дмитрий"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-1"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-1">Шахов Дмитрий</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-1">Madcats</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-1">75,55</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-2"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-2" aria-label="Выбрать Кокшаров Сергей"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-2"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-2">Кокшаров Сергей</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-2">Независимый аналитик в области поисковой оптимизации, Devaka Talk</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-2">32,28</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-3"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-3" aria-label="Выбрать Иващенко Владислав"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-3"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-3">Иващенко Владислав</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-3">Иващенко и Низамов</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-3">31,85</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-4"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-4" aria-label="Выбрать Шакин Михаил"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-4"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-4">Шакин Михаил</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-4">автор Shakin.ru и канал о западном SEO http://t.me/burzhunet</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-4">27,80</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-5"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-5" aria-label="Выбрать Бакалов Игорь"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-5"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-5">Бакалов Игорь</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-5">SEO специалист в Ашманов и Партнеры</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-5">20,68</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-6"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-6" aria-label="Выбрать Алексей Чекушин"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-6"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-6">Алексей Чекушин</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-6">специалист</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-6">20,62</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-7"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-7" aria-label="Выбрать Михаил Сливинский"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-7"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-7">Михаил Сливинский</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-7">Яндекс</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-7">18,98</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-8"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-8" aria-label="Выбрать Русаков Илья"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-8"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-8">Русаков Илья</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-8">Руководитель в impulse.guru</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-8">17,94</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-9"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-9" aria-label="Выбрать Севальнев Дмитрий"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-9"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-9">Севальнев Дмитрий</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-9">Руководитель департамента SEO и рекламы в Пиксель Плюс</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-9">13,92</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-10"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-10" aria-label="Выбрать Аралов Евгений"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-10"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-10">Аралов Евгений</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-10">SEO Team Leader в Siteclinic.ru и канал https://t.me/seoaralov</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-10">13,70</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-11"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-11" aria-label="Выбрать Никита Тарасов"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-11"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-11">Никита Тарасов</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-11">Руководитель группы в Ашманов и партнеры</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-11">75,55</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-12"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-12" aria-label="Выбрать Игорь Ашманов "><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-12"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-12">Игорь Ашманов </label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-12">Ашманов и партнеры</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-12">32,28</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-13"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-13" aria-label="Выбрать Шестаков Олег"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-13"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-13">Шестаков Олег</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-13">Rush Analytics</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-13">31,85</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-14"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-14" aria-label="Выбрать Виктор Карпенко"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-14"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-14">Виктор Карпенко</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-14">SEO Profy</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-14">27,80</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-15"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-15" aria-label="Выбрать Олег Саламаха"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-15"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-15">Олег Саламаха</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-15">Serpstat</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-15">20,68</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-16"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-16" aria-label="Выбрать Тимофей Квачев"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-16"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-16">Тимофей Квачев</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-16">Тринет</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-16">20,62</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-17"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-17" aria-label="Выбрать Николай Коноплянников"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-17"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-17">Николай Коноплянников</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-17">SEOPult.tv</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-17">18,98</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-18"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-18" aria-label="Выбрать Стас Поломарь"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-18"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-18">Стас Поломарь</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-18">Cпециалист</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-18">17,94</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-19"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-19" aria-label="Выбрать Сергей Людкевич"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-19"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-19">Сергей Людкевич</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-19">—</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-19">13,92</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-20"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-20" aria-label="Выбрать Алексей Трудов"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-20"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-20">Алексей Трудов</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-20">—</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-20">13,70</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-21"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-21" aria-label="Выбрать Дмитрий Иванов "><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-21"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-21">Дмитрий Иванов </label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-21">ИвановСЕО, много про прогнозную аналитику говорит</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-21">20,62</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-22"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-22" aria-label="Выбрать Александр Ожгибесов"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-22"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-22">Александр Ожгибесов</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-22">—</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-22">18,98</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-23"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-23" aria-label="Выбрать Александр Алаев"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-23"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-23">Александр Алаев</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-23">—</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-23">17,94</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-24"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-24" aria-label="Выбрать Артур Латыпов"><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-24"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-24">Артур Латыпов</label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-24">—</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-24">13,92</label>
+              </li>
+              <li class="n-rate-item n-rate-row n-rate-row--persons">
+                <input class="n-rate-item__input" type="checkbox" id="site-ratings-25"/>
+                <label class="n-rate-item__checkbox n-rate-col n-rate-col--checkbox" for="site-ratings-25" aria-label="Выбрать Елена Першина "><span>
+                    <svg viewBox="0 0 13.6 10">
+                      <path d="M5.1,6.3L2.6,3.5C2.1,2.9,1.1,2.9,0.5,3.4s-0.7,1.5-0.1,2.1l3.5,4C4.2,9.8,4.5,10,4.9,10H5c0.4,0,0.8-0.1,1.1-0.4l7.1-7c0.6-0.6,0.5-1.6-0.1-2.1c-0.6-0.5-1.5-0.5-2,0L5.1,6.3z"></path>
+                    </svg></span></label>
+                <label class="n-rate-item__num n-rate-col n-rate-col--num" for="site-ratings-25"></label>
+                <label class="n-rate-item__title n-rate-col n-rate-col--title" for="site-ratings-25">Елена Першина </label>
+                <label class="n-rate-item__statistics n-rate-col n-rate-col--statistics" for="site-ratings-25">Яндекс</label>
+                <label class="n-rate-item__percentage n-rate-col n-rate-col--percentage" for="site-ratings-25">13,70</label>
+              </li>
+            </ol>
+            <button class="n-rate-btn" type="button">Показать весь список запросов</button>
+          </div>
           <section class="n-ratings-section">
-            <h2 class="n-ratings-section__title"><span>Тематические рейтинги видимости сайтов</span></h2>
+            <h2 class="n-ratings-section__title"><span>Другие отраслевые рейтенги</span></h2>
             <div class="n-ratings-section__wrap">
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Недвижимость</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="100">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="20">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="45">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Авто</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="90">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="40">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="65">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Медицина</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="87">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="41">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="10">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Банковские услуги</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="100">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="20">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="45">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Страховые услуги</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="90">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="40">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="65">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
               <article class="n-ratings-item">
                 <h3 class="n-ratings-item__title">E-commerce</h3>
-                <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
-                <ol class="n-ratings-item__list">
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ashmanov.com</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="87">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">ozon.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="41">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                  <li class="n-ratings-item__list-item js-rating-item">
-                    <div class="n-ratings-item__site">rambler.ru</div>
-                    <div class="n-ratings-item__bar js-ratings" aria-label="Рейтинги"><span class="percents"><span class="js-rating-percent" data-percents="10">item.percent</span><span>%</span></span><span class="bar"><span class="bar__main js-rating-bar"></span><span class="bar__bg"></span></span></div>
-                  </li>
-                </ol><a class="n-ratings-item__link" href="#">
-                  <svg viewBox="0 0 24 24">
-                    <polygon class="cls-1" points="12.73 17.71 11.32 16.29 15.61 12 11.32 7.71 12.73 6.29 18.44 12 12.73 17.71"></polygon>
-                    <path class="cls-1" d="M12.17,24.13a12,12,0,1,1,12-12A12,12,0,0,1,12.17,24.13Zm0-22a10,10,0,1,0,10,10A10,10,0,0,0,12.17,2.13Z" transform="translate(-0.17 -0.13)"></path>
-                    <rect class="cls-1" x="6.03" y="11" width="11" height="2"></rect>
-                  </svg><span>Подробнее</span></a>
-              </article>
-            </div>
-          </section>
-          <section class="n-ratings-section">
-            <h2 class="n-ratings-section__title"><span>Рейтенги по упоминаниям SEO-отраслей</span></h2>
-            <div class="n-ratings-section__wrap">
-              <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Видимость SEO&#8209;агенств</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">
@@ -549,7 +700,7 @@
                   </svg><span>Подробнее</span></a>
               </article>
               <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Упоминание SEO&#8209;агенств</h3>
+                <h3 class="n-ratings-item__title">Недвижимость</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">
@@ -572,7 +723,7 @@
                   </svg><span>Подробнее</span></a>
               </article>
               <article class="n-ratings-item">
-                <h3 class="n-ratings-item__title">Упоминание SEO&#8209;персон</h3>
+                <h3 class="n-ratings-item__title">Авто</h3>
                 <time class="n-ratings-item__time" datetime="2018-09-22">22 сентября 2018</time>
                 <ol class="n-ratings-item__list">
                   <li class="n-ratings-item__list-item js-rating-item">

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Start:/static/libraries/jquery.formstyler/jquery.formstyler.css?15335642722175*/
+/* Start:../static/libraries/jquery.formstyler/jquery.formstyler.css?15335642722175*/
 
 .jq-checkbox,
 .jq-radio {
@@ -564,59 +564,59 @@
 @font-face {
   font-family: 'AlethiaPro';
   font-weight: 400;
-  src: url(/static/fonts/AlethiaProRegular.otf) format("opentype");
+  src: url(../static/fonts/AlethiaProRegular.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'AlethiaPro';
   font-weight: 700;
-  src: url(/static/fonts/AlethiaProBold.otf) format("opentype");
+  src: url(../static/fonts/AlethiaProBold.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url(/static/fonts/Circe-ExtraLight.eot);
-  src: url(/static/fonts/Circe-ExtraLight.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-ExtraLight.woff) format("woff"), url(/static/fonts/Circe-ExtraLight.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-ExtraLight.eot);
+  src: url(../static/fonts/Circe-ExtraLight.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-ExtraLight.woff) format("woff"), url(../static/fonts/Circe-ExtraLight.svg#custom_font) format("svg");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url(/static/fonts/Circe-Light.eot);
-  src: url(/static/fonts/Circe-Light.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-Light.woff) format("woff"), url(/static/fonts/Circe-Light.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-Light.eot);
+  src: url(../static/fonts/Circe-Light.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-Light.woff) format("woff"), url(../static/fonts/Circe-Light.svg#custom_font) format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url(/static/fonts/Circe-Regular.eot);
-  src: url(/static/fonts/Circe-Regular.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-Regular.woff) format("woff"), url(/static/fonts/Circe-Regular.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-Regular.eot);
+  src: url(../static/fonts/Circe-Regular.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-Regular.woff) format("woff"), url(../static/fonts/Circe-Regular.svg#custom_font) format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url(/static/fonts/Circe-Bold.eot);
-  src: url(/static/fonts/Circe-Bold.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-Bold.woff) format("woff"), url(/static/fonts/Circe-Bold.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-Bold.eot);
+  src: url(../static/fonts/Circe-Bold.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-Bold.woff) format("woff"), url(../static/fonts/Circe-Bold.svg#custom_font) format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe-Bold';
-  src: url(/static/fonts/Circe-Bold.eot);
-  src: url(/static/fonts/Circe-Bold.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-Bold.woff) format("woff"), url(/static/fonts/Circe-Bold.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-Bold.eot);
+  src: url(../static/fonts/Circe-Bold.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-Bold.woff) format("woff"), url(../static/fonts/Circe-Bold.svg#custom_font) format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe';
-  src: url(/static/fonts/Circe-ExtraBold.eot);
-  src: url(/static/fonts/Circe-ExtraBold.eot?#iefix) format("embedded-opentype"), url(/static/fonts/Circe-ExtraBold.woff) format("woff"), url(/static/fonts/Circe-ExtraBold.svg#custom_font) format("svg");
+  src: url(../static/fonts/Circe-ExtraBold.eot);
+  src: url(../static/fonts/Circe-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../static/fonts/Circe-ExtraBold.woff) format("woff"), url(../static/fonts/Circe-ExtraBold.svg#custom_font) format("svg");
   font-weight: 800;
   font-style: normal;
 }
@@ -1110,7 +1110,7 @@ h3 {
   width: 6px;
   height: 12px;
   margin-top: -6px;
-  background-image: url(/static/img/minified-svg/icon-list-arrow.svg);
+  background-image: url(../static/img/minified-svg/icon-list-arrow.svg);
 }
 
 .b-list__badge {
@@ -1242,7 +1242,7 @@ h3 {
   left: 50%;
   margin-top: -5px;
   margin-left: -5px;
-  background-image: url(/static/img/minified-svg/icon-arrow-short-right.svg);
+  background-image: url(../static/img/minified-svg/icon-arrow-short-right.svg);
 }
 
 .b-slider .owl-prev:before {
@@ -1312,7 +1312,7 @@ h3 {
   right: 0;
   border: 0;
   background-color: transparent;
-  background-image: url(/static/img/minified-svg/icon-arrow-right.svg);
+  background-image: url(../static/img/minified-svg/icon-arrow-right.svg);
   opacity: .3;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
@@ -1357,7 +1357,7 @@ h3 {
   position: absolute;
   top: calc(50% - 3.5px);
   left: calc(50% - 4.75px);
-  background-image: url(/static/img/general/checked.jpg);
+  background-image: url(../static/img/general/checked.jpg);
   background-size: cover;
   content: ' ';
 }
@@ -1405,13 +1405,13 @@ h3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url(/static/img//minified-svg/unchosen.svg);
+  background-image: url(../static/img//minified-svg/unchosen.svg);
   background-size: cover;
   outline: 0;
 }
 
 .b-radio__input:checked {
-  background-image: url(/static/img//minified-svg/chosen.svg);
+  background-image: url(../static/img//minified-svg/chosen.svg);
 }
 
 .b-radio__images {
@@ -1558,7 +1558,7 @@ h3 {
   position: absolute;
   top: calc(50% - 3px);
   right: 0;
-  background-image: url(/static/img/minified-svg/icon-select.svg);
+  background-image: url(../static/img/minified-svg/icon-select.svg);
   background-repeat: no-repeat;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
@@ -1933,7 +1933,7 @@ h3 {
   right: 20px;
   top: 50%;
   margin-top: -6px;
-  background-image: url(/static/img/minified-svg/icon-list-arrow.svg);
+  background-image: url(../static/img/minified-svg/icon-list-arrow.svg);
   content: ' ';
 }
 
@@ -2737,7 +2737,7 @@ h3 {
   position: absolute;
   top: 50%;
   right: 6px;
-  background-image: url(/static/img/minified-svg/icon-list-arrow.svg);
+  background-image: url(../static/img/minified-svg/icon-list-arrow.svg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   -webkit-transition: -webkit-transform .5s ease;
@@ -3776,7 +3776,7 @@ h3 {
 
 /* End */
 
-/* /static/libraries/jquery.formstyler/jquery.formstyler.css?15335642722175 */
+/* ../static/libraries/jquery.formstyler/jquery.formstyler.css?15335642722175 */
 
 /* /local/templates/excellance/components/bitrix/menu/top/style.css?15335642731818 */
 
@@ -4097,7 +4097,7 @@ h3 {
     position: absolute;
     top: 50%;
     right: 6px;
-    background-image: url(/static/img/minified-svg/icon-list-arrow.svg);
+    background-image: url(../static/img/minified-svg/icon-list-arrow.svg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     -webkit-transition: -webkit-transform .5s ease;
@@ -6383,7 +6383,7 @@ h3 {
   }
 
   .b-main-block--two .b-main-block__wrapper {
-    background-image: url(/static/img/content/main2_2.png) !important;
+    background-image: url(../static/img/content/main2_2.png) !important;
     background-position: center right;
   }
 

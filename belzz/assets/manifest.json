@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "Quolott",
-  "short_name": "Quolott",
+  "name": "Belzz - доставка воды",
+  "short_name": "Belzz",
   "scope": "/",
   "start_url": "/",
   "icons": [
@@ -78,7 +78,7 @@
     }
   ],
   "display": "standalone",
-  "background_color": "#ffffff",
-  "description": "Optimization",
-  "theme_color": "#ffffff"
+  "background_color": "#37ddd0",
+  "description": "Belzz",
+  "theme_color": "#37ddd0"
 }

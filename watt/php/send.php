@@ -1,8 +1,9 @@
 <?php
 if ($_POST) {
    // Enter the email where you want to receive the message
-	$emailTo1 = 'skaya.online@gmail.com'; //test
-	// $emailTo2 = 'catmallua@gmail.com'; //test
+	$emailTo1 = 'info@wattdev.ru';
+  // $emailTo2 = '';
+
 	$name = addslashes(trim($_POST['callback-name']));
   $tel = addslashes(trim($_POST['callback-tel']));
   $comment = addslashes(trim($_POST['callback-comment']));

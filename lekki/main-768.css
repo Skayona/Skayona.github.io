@@ -662,6 +662,6 @@
       line-height: 18px;
       color: #969696;
       margin-top: 4px;
-      word-break: break-word; }
+      word-break: break-all; }
     .lector-table td.td-personal {
       max-width: 200px; } }

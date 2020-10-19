@@ -44,11 +44,11 @@
   .header .header-nav {
     margin-right: 20px; }
   .header .not-auth .nav-general li.help,
-  .header .auth.farmacy .nav-general li.help {
+  .header .auth.pharmacist .nav-general li.help {
     max-width: 1200px; }
   .header .auth .nav-general li.help {
     position: fixed;
-    z-index: 100;
+    z-index: 110;
     left: 0;
     right: 0;
     bottom: 30px;
@@ -109,7 +109,7 @@
     margin-left: 20px; }
   .header .auth .settings {
     display: none; }
-  .header .auth.farmacy .nav-auth-wrap {
+  .header .auth.pharmacist .nav-auth-wrap {
     flex-direction: row; } }
 
 
@@ -339,3 +339,133 @@
     .lector-table tbody tr td.td-actions {
       text-align: right;
       padding-left: 0; } }
+
+
+@media (min-width: 1366px) {
+  .add-pharmacist__form {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .add-pharmacist__form button[type="submit"] {
+    margin-top: 50px; } }
+
+
+@media (min-width: 1366px) {
+  .lecture-editing__form {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .lecture-editing__form button[type="submit"] {
+    margin-top: 50px; }
+  .lecture-editing__form-group-wrapped,
+  .lecture-editing__rewards {
+    grid-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px; }
+  .lecture-file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    min-height: 280px;
+    border: 2px dashed #B4ADA2;
+    border-radius: 22px;
+    transition: border-color 0.15s linear, background-color 0.15s linear; }
+    .lecture-file-upload.highlight {
+      border-color: rgba(133, 96, 168, 0.8);
+      border-color: rgba(var(--accent-1), 0.8);
+      background-color: rgba(180, 173, 162, 0.1); }
+  .lecture-file-upload__desktop {
+    display: block;
+    width: 446px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: rgba(0, 0, 0, 1);
+    color: rgba(var(--black), 1); }
+    .lecture-file-upload__desktop label {
+      cursor: pointer;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(to left, #000, #000);
+      background-size: 100% 2px; }
+  .lecture-file-upload__descr {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .lecture-file-upload__label {
+    display: none; } }
+
+
+@media (min-width: 1366px) {
+  .webinar-activity {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 720px minmax(0, 1fr);
+    grid-template-columns: 720px minmax(0, 1fr);
+    grid-column-gap: 44px;
+    -moz-column-gap: 44px;
+    column-gap: 44px;
+    max-width: 1200px;
+    padding: 70px 42px 105px 55px; }
+  .webinar-activity__heading,
+  .webinar-activity__materials {
+    grid-column: -1/1; }
+  .webinar-activity__heading {
+    padding: 0 0 40px 0; }
+  .webinar-activity__media {
+    padding: 0; }
+    .webinar-activity__media .slider-nav-btn {
+      display: flex; }
+  .webinar-activity__media .front-video {
+    right: 5px; }
+  .webinar-activity__chat {
+    padding: 0; }
+    .webinar-activity__chat .chat-message-input {
+      max-height: 48px; }
+  .webinar-activity__materials {
+    padding: 30px 0 0 0; }
+    .webinar-activity__materials::before {
+      display: none; }
+  .webinar-actions .webinar-actions-wrap {
+    max-width: 1200px;
+    padding: 16px 0;
+    justify-content: center; }
+  .webinar-actions .webinar-start-btn {
+    position: static;
+    margin-left: 22px;
+    transform: translateX(0); }
+  .webinar-actions .webinar-btn {
+    display: block;
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    color: rgba(var(--white), 1);
+    cursor: pointer;
+    transition: opacity 0.15 linear; }
+    .webinar-actions .webinar-btn span {
+      display: block;
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+      font-size: 13px;
+      line-height: 15px; }
+    .webinar-actions .webinar-btn:hover, .webinar-actions .webinar-btn:focus {
+      opacity: 0.7; }
+    .webinar-actions .webinar-btn.inactive .icon::after {
+      background-color: rgba(255, 94, 83, 1);
+      background-color: rgba(var(--accent-2), 1); }
+  .webinar-actions .webinar-start-btn + .webinar-btn {
+    margin-left: 0; }
+  .webinar-actions .webinar-btn + .webinar-btn {
+    margin-left: 22px; }
+  .webinar-actions .webinar-screen-btn {
+    order: -1;
+    margin-left: 0; } }

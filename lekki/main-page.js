@@ -8568,20 +8568,22 @@ __webpack_require__.r(__webpack_exports__);
     nextButton: '.js-partners-slider-next',
     prevButton: '.js-partners-slider-prev',
     mouseDrag: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     autoplayButtonOutput: false,
     speed: 300,
     nav: false,
-    items: 4,
     lazyload: true,
+    fixedWidth: 50,
     gutter: 40,
     responsive: {
       768: {
-        items: 5,
+        fixedWidth: 76,
         gutter: 64
       },
       1366: {
         items: 6,
+        fixedWidth: false,
         gutter: 102
       }
     }
@@ -8595,7 +8597,8 @@ __webpack_require__.r(__webpack_exports__);
     nextButton: '.js-clients-slider-next',
     prevButton: '.js-clients-slider-prev',
     mouseDrag: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     autoplayButtonOutput: false,
     speed: 300,
     nav: false,
@@ -12269,7 +12272,8 @@ __webpack_require__.r(__webpack_exports__);
     nextButton: '.js-intro-slider-next',
     prevButton: '.js-intro-slider-prev',
     mouseDrag: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     autoplayButtonOutput: false,
     speed: 300,
     items: 1,

@@ -5777,8 +5777,9 @@ function handleFormSubmit(_ref) {
       constraints = _ref.constraints,
       successCallback = _ref.successCallback;
   var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(form, constraints);
-  errorHandler(form, errors || {});
   form.classList.add('was-submitted');
+  errorHandler(form, errors || {});
+  focusOnErrorField(form);
 
   if (!errors) {
     successCallback && successCallback();
@@ -5812,6 +5813,17 @@ function errorHandler(form, errors) {
       errorBlock.innerText = errorText || '';
     }
   });
+}
+
+function focusOnErrorField(form) {
+  var firstInvalidField = _toConsumableArray(form.querySelectorAll('input[name], select[name], textarea[name]')).find(function (input) {
+    var formControl = input.closest('.form-control');
+    return formControl === null || formControl === void 0 ? void 0 : formControl.classList.contains('invalid');
+  });
+
+  firstInvalidField === null || firstInvalidField === void 0 ? void 0 : firstInvalidField.focus();
+  var parentEl = firstInvalidField === null || firstInvalidField === void 0 ? void 0 : firstInvalidField.closest('.form-control');
+  parentEl === null || parentEl === void 0 ? void 0 : parentEl.scrollIntoViewIfNeeded();
 }
 
 /***/ }),

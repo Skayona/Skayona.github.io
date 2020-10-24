@@ -3773,7 +3773,8 @@ __webpack_require__.r(__webpack_exports__);
       prevButton: '.js-web-video-slider-prev',
       mouseDrag: true,
       autoplay: false,
-      rewind: true,
+      loop: false,
+      // rewind: true,
       speed: 300,
       items: 1,
       mode: 'gallery'

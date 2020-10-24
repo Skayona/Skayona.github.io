@@ -5773,10 +5773,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 function handleFormSubmit(_ref) {
-  var form = _ref.form,
+  var _ref$formData = _ref.formData,
+      formData = _ref$formData === void 0 ? null : _ref$formData,
+      form = _ref.form,
       constraints = _ref.constraints,
       successCallback = _ref.successCallback;
-  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(form, constraints);
+  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(formData || form, constraints);
   form.classList.add('was-submitted');
   errorHandler(form, errors || {});
   focusOnErrorField(form);
@@ -5786,10 +5788,12 @@ function handleFormSubmit(_ref) {
   }
 }
 function handleFormChange(_ref2) {
-  var form = _ref2.form,
+  var _ref2$formData = _ref2.formData,
+      formData = _ref2$formData === void 0 ? null : _ref2$formData,
+      form = _ref2.form,
       constraints = _ref2.constraints;
   if (!form.classList.contains('was-submitted')) return;
-  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(form, constraints);
+  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(formData || form, constraints);
   errorHandler(form, errors || {});
 }
 function handleFormResset(_ref3) {
@@ -11932,8 +11936,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vanilla_js_accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(58);
 /* harmony import */ var vanilla_js_accordion__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vanilla_js_accordion__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _utils_form_validation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+/* harmony import */ var validate_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(13);
+/* harmony import */ var validate_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(validate_js__WEBPACK_IMPORTED_MODULE_5__);
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -11945,6 +11949,9 @@ function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.it
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -12085,105 +12092,48 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     noResultsText: 'Нет совпадений',
     onSelectCallback: onSelectCallback
   });
-} // file upload handlers, // drug and drop
-
-{
-  var selectedFilesHandler = function selectedFilesHandler(files, fileWrap) {
-    var nodeEl = fileWrap.querySelector('.js-selected-file-list');
-    var inputEl = fileWrap.querySelector('input[type="file"]');
-    var isMultiple = inputEl === null || inputEl === void 0 ? void 0 : inputEl.multiple;
-    var acceptFileFormats = inputEl === null || inputEl === void 0 ? void 0 : inputEl.accept.split(', ');
-
-    var selectedFiles = _toConsumableArray(files).filter(function (file) {
-      return acceptFileFormats.includes(file.type);
-    });
-
-    if (!isMultiple && selectedFiles.length) {
-      selectedFiles = [selectedFiles[0]];
-    }
-
-    if (selectedFiles.length) {
-      nodeEl.innerText = "\u0412\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u0444\u0430\u0439\u043B\u044B: ".concat(selectedFiles.map(function (_ref) {
-        var name = _ref.name;
-        return name;
-      }).join(', '));
-    }
-  };
-
-  var fileUploadHandler = function fileUploadHandler(uploadHandler) {
-    uploadHandler && uploadHandler.addEventListener('change', function (_ref2) {
-      var target = _ref2.target;
-      selectedFilesHandler(target.files, target.parentElement);
-    });
-  };
-
-  var dropAreaHandler = function dropAreaHandler(dropArea, callback) {
-    var highlight = function highlight() {
-      dropArea.classList.add('highlight');
-    };
-
-    var unhighlight = function unhighlight() {
-      dropArea.classList.remove('highlight');
-    };
-
-    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(function (eventName) {
-      dropArea.addEventListener(eventName, function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-      }, false);
-    });
-    ['dragenter', 'dragover'].forEach(function (eventName) {
-      dropArea.addEventListener(eventName, highlight, false);
-    });
-    ['dragleave', 'drop'].forEach(function (eventName) {
-      dropArea.addEventListener(eventName, unhighlight, false);
-    });
-    dropArea.addEventListener('drop', function (e) {
-      var dt = e.dataTransfer;
-      var files = dt.files;
-      callback(files, dropArea);
-    }, false);
-  };
-
-  var selectedBrochures = document.querySelector('#lecture-brochures');
-  var selectedPresentation = document.querySelector('#lecture-presentation');
-  fileUploadHandler(selectedBrochures);
-  fileUploadHandler(selectedPresentation);
-  var dropAreaList = document.querySelectorAll('.js-drop-area');
-  dropAreaList.forEach(function (dropArea) {
-    return dropAreaHandler(dropArea, selectedFilesHandler);
-  });
 } // lectures form submiting
 
 {
   var form = document.querySelector('.js-lecture-editing');
 
   if (form) {
-    var _constraints;
+    var _formData, _constraints;
 
-    // form.addEventListener('change', ({ target }) => {
-    //   const { name, value } = target;
-    //   console.log({ [name]: value });
-    // })
+    var formData = (_formData = {}, _defineProperty(_formData, 'lecture-brochures', []), _defineProperty(_formData, 'lecture-presentation', ''), _formData);
+
+    validate_js__WEBPACK_IMPORTED_MODULE_5___default.a.validators.filesSize = function (value, options) {
+      var totalSize = value.reduce(function (res, val) {
+        return val.size + res;
+      }, 0) / 1000000;
+      console.log('totalSize', totalSize);
+      return totalSize > options.maxSize ? options.message : null;
+    };
+
     var constraints = (_constraints = {}, _defineProperty(_constraints, 'lecture-name', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
     }), _defineProperty(_constraints, 'lecture-description', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
     }), _defineProperty(_constraints, 'lecture-date', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
     }), _defineProperty(_constraints, 'lecture-start-time', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
     }), _defineProperty(_constraints, 'lecture-duration', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
     }), _defineProperty(_constraints, 'lecture-listeners', {
       presence: {
@@ -12192,37 +12142,244 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       }
     }), _defineProperty(_constraints, 'lecture-rewards', {
       presence: {
-        message: "^Обязательное поле"
+        message: "^Обязательное поле",
+        allowEmpty: false
       }
-    }), _constraints);
+    }), _defineProperty(_constraints, 'lecture-presentation', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _defineProperty(_constraints, 'lecture-brochures', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      },
+      filesSize: {
+        maxSize: 10,
+        message: '^Общий размер файлов не должен превышать 10мб'
+      }
+    }), _defineProperty(_constraints, 'lecture-q1', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _defineProperty(_constraints, 'lecture-q1-a1', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _defineProperty(_constraints, 'lecture-q1-a2', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _defineProperty(_constraints, 'lecture-q1-a3', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _defineProperty(_constraints, 'lecture-q1-a4', {
+      presence: {
+        message: "^Обязательное поле",
+        allowEmpty: false
+      }
+    }), _constraints); // file upload handlers, // drug and drop
 
-    var successCallback = function successCallback() {
-      var submitBtn = form.querySelector('[type="submit"]');
-      var url = 'url';
-      var data = {};
+    {
+      var selectedFilesHandler = function selectedFilesHandler(files, fileWrap) {
+        var nodeEl = fileWrap.querySelector('.js-selected-file-list');
+        var inputEl = fileWrap.querySelector('input[type="file"]');
+        var isMultiple = inputEl === null || inputEl === void 0 ? void 0 : inputEl.multiple;
+        var acceptFileFormats = inputEl === null || inputEl === void 0 ? void 0 : inputEl.accept.split(', ');
+
+        var inputFiles = _toConsumableArray(files).filter(function (file) {
+          return acceptFileFormats.includes(file.type);
+        });
+
+        var selectedFiles;
+
+        if (!isMultiple && inputFiles.length) {
+          selectedFiles = [inputFiles[0]];
+        }
+
+        if (isMultiple) {
+          selectedFiles = [].concat(_toConsumableArray(formData[inputEl.name]), _toConsumableArray(inputFiles));
+        }
+
+        var renderSelectedItems = function renderSelectedItems() {
+          var _selectedFiles;
+
+          if ((_selectedFiles = selectedFiles) === null || _selectedFiles === void 0 ? void 0 : _selectedFiles.length) {
+            nodeEl.innerText = 'Выбранные файлы:';
+            selectedFiles.forEach(function (_ref, i) {
+              var name = _ref.name,
+                  size = _ref.size;
+              var fileInfo = document.createElement('div');
+              fileInfo.innerText = "- ".concat(name, " (").concat(Math.round(size / 10000) / 100, "\u041C\u0431)");
+              var removeButton = document.createElement('button');
+              removeButton.type = 'button';
+              removeButton.className = 'icon icon-cross';
+              removeButton.setAttribute('aria-label', 'Удалить выбранный файл');
+              removeButton.addEventListener('click', function () {
+                selectedFiles.splice(i, 1);
+                formData[inputEl.name] = isMultiple ? selectedFiles : selectedFiles && selectedFiles[0] || '';
+                renderSelectedItems();
+                renderFormData();
+                Object(_utils_form_validation__WEBPACK_IMPORTED_MODULE_4__["handleFormChange"])({
+                  formData: formData,
+                  form: form,
+                  constraints: constraints
+                });
+              });
+              fileInfo.appendChild(removeButton);
+              nodeEl.appendChild(fileInfo);
+            });
+          } else {
+            nodeEl.innerText = '';
+          }
+        };
+
+        renderSelectedItems();
+        formData[inputEl.name] = isMultiple ? selectedFiles : selectedFiles && selectedFiles[0] || '';
+        renderFormData();
+        Object(_utils_form_validation__WEBPACK_IMPORTED_MODULE_4__["handleFormChange"])({
+          formData: formData,
+          form: form,
+          constraints: constraints
+        });
+      };
+
+      var fileUploadHandler = function fileUploadHandler(uploadHandler) {
+        uploadHandler && uploadHandler.addEventListener('change', function (_ref2) {
+          var target = _ref2.target;
+          selectedFilesHandler(target.files, target.parentElement);
+        });
+      };
+
+      var dropAreaHandler = function dropAreaHandler(dropArea, callback) {
+        var highlight = function highlight() {
+          dropArea.classList.add('highlight');
+        };
+
+        var unhighlight = function unhighlight() {
+          dropArea.classList.remove('highlight');
+        };
+
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(function (eventName) {
+          dropArea.addEventListener(eventName, function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }, false);
+        });
+        ['dragenter', 'dragover'].forEach(function (eventName) {
+          dropArea.addEventListener(eventName, highlight, false);
+        });
+        ['dragleave', 'drop'].forEach(function (eventName) {
+          dropArea.addEventListener(eventName, unhighlight, false);
+        });
+        dropArea.addEventListener('drop', function (e) {
+          var dt = e.dataTransfer;
+          var files = dt.files;
+          callback(files, dropArea);
+        }, false);
+      };
+
+      var selectedBrochures = document.querySelector('#lecture-brochures');
+      var selectedPresentation = document.querySelector('#lecture-presentation');
+      fileUploadHandler(selectedBrochures);
+      fileUploadHandler(selectedPresentation);
+      var dropAreaList = document.querySelectorAll('.js-drop-area');
+      dropAreaList.forEach(function (dropArea) {
+        return dropAreaHandler(dropArea, selectedFilesHandler);
+      });
+    } // add question handler
+
+    {
+      var questionNumber = 2;
+      var questionHandler = document.querySelector('.js-add-question-handler');
+
+      var createNewQuestion = function createNewQuestion() {
+        var questionsList = document.querySelector('.js-lecture-question-block');
+        var questionBlock = document.createElement('div');
+        questionBlock.className = 'lecture-test__question bounce-new-question';
+
+        for (var i = 0; i < 5; i++) {
+          var questionId = i === 0 ? "lecture-q".concat(questionNumber) : "lecture-q".concat(questionNumber, "-a").concat(i);
+          var placehoolderText = i === 0 ? "\u0412\u043E\u043F\u0440\u043E\u0441 ".concat(questionNumber) : i === 1 ? 'Правильный ответ ' : 'Вариант ответа';
+          var questionGroup = document.createElement('div');
+          questionGroup.className = 'lecture-test__question-group';
+          var questionControl = document.createElement('div');
+          questionControl.className = 'form-control-textarea form-control form-control-bordered';
+          var questionLabelWrapper = document.createElement('label');
+          questionLabelWrapper.id = questionId;
+          var questionField = document.createElement('textarea');
+          questionField.id = questionId;
+          questionField.name = questionId;
+          questionField.placeholder = placehoolderText;
+          questionField.required = true;
+          var questionLabel = document.createElement('span');
+          questionLabel.className = 'label';
+          questionLabel.innerText = placehoolderText;
+
+          if (i === 1) {
+            var questionAnswerCorrect = document.createElement('i');
+            questionAnswerCorrect.className = 'icon icon-check';
+            questionAnswerCorrect.setAttribute('aria-hidden', true);
+            questionLabel.appendChild(questionAnswerCorrect);
+          }
+
+          var errorField = document.createElement('p');
+          errorField.className = 'form-error';
+          questionLabelWrapper.appendChild(questionField);
+          questionLabelWrapper.appendChild(questionLabel);
+          questionControl.appendChild(questionLabelWrapper);
+          questionControl.appendChild(errorField);
+          questionGroup.appendChild(questionControl);
+          questionBlock.appendChild(questionGroup);
+          constraints[questionId] = {
+            presence: {
+              message: "^Обязательное поле"
+            }
+          };
+        }
+
+        questionsList.appendChild(questionBlock);
+        questionNumber++;
+      };
+
+      questionHandler === null || questionHandler === void 0 ? void 0 : questionHandler.addEventListener('click', createNewQuestion);
+    }
+
+    var renderFormData = function renderFormData() {
       new FormData(form).forEach(function (val, key) {
         if (key === 'lecture-listeners') {
           var selectedListeners = _toConsumableArray(document.querySelector('#lecture-listeners').selectedOptions);
 
-          data[key] = selectedListeners.map(function (_ref3) {
+          formData[key] = selectedListeners.map(function (_ref3) {
             var value = _ref3.value;
             return value;
           });
           return;
         }
 
-        if (key === 'lecture-brochures') {
-          data[key] = _toConsumableArray(document.querySelector('#lecture-brochures').files);
+        if (key === 'lecture-brochures' || key === 'lecture-presentation') {
           return;
         }
 
-        data[key] = val;
+        formData[key] = val;
       });
+    };
+
+    var successCallback = function successCallback() {
+      var submitBtn = form.querySelector('[type="submit"]');
+      var url = 'url';
+      renderFormData();
       submitBtn.disabled = true;
-      console.log(data);
+      console.log(formData);
       fetch(url, {
         method: 'POST',
-        body: JSON.stringify(data)
+        body: JSON.stringify(formData)
       }).then(function (response) {
         submitBtn.disabled = false;
         return response.json();
@@ -12234,14 +12391,18 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     };
 
     form.addEventListener('change', function () {
+      renderFormData();
       Object(_utils_form_validation__WEBPACK_IMPORTED_MODULE_4__["handleFormChange"])({
+        formData: formData,
         form: form,
         constraints: constraints
       });
     });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      renderFormData();
       Object(_utils_form_validation__WEBPACK_IMPORTED_MODULE_4__["handleFormSubmit"])({
+        formData: formData,
         form: form,
         constraints: constraints,
         successCallback: successCallback

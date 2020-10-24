@@ -5773,10 +5773,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 function handleFormSubmit(_ref) {
-  var form = _ref.form,
+  var _ref$formData = _ref.formData,
+      formData = _ref$formData === void 0 ? null : _ref$formData,
+      form = _ref.form,
       constraints = _ref.constraints,
       successCallback = _ref.successCallback;
-  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(form, constraints);
+  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(formData || form, constraints);
   form.classList.add('was-submitted');
   errorHandler(form, errors || {});
   focusOnErrorField(form);
@@ -5786,10 +5788,12 @@ function handleFormSubmit(_ref) {
   }
 }
 function handleFormChange(_ref2) {
-  var form = _ref2.form,
+  var _ref2$formData = _ref2.formData,
+      formData = _ref2$formData === void 0 ? null : _ref2$formData,
+      form = _ref2.form,
       constraints = _ref2.constraints;
   if (!form.classList.contains('was-submitted')) return;
-  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(form, constraints);
+  var errors = validate_js__WEBPACK_IMPORTED_MODULE_0___default()(formData || form, constraints);
   errorHandler(form, errors || {});
 }
 function handleFormResset(_ref3) {

@@ -347,16 +347,18 @@ modals.init();
       controls: false,
       lazyload: true,
       items: 1,
-      fixedWidth: 294,
+      fixedWidth: false,
       gutter: 0,
       navPosition: 'bottom',
       responsive: {
         768: {
-          fixedWidth: 304,
+          items: 2
         },
         1366: {
-          fixedWidth: false,
           items: 3
+        },
+        1920: {
+          items: 4
         }
       }
     }
@@ -508,4 +510,72 @@ modals.init();
     }, 350);
     openModalList.forEach((btn) => btn.classList.remove('is-active'));
   });
+}
+{
+  window.onload = function() {
+    const grid = document.querySelector('.js-portfolio');
+    if (grid) {
+      const changeWorksHandlers = [...document.querySelectorAll('.js-works-toggle')];
+      const addWorksHandler = document.querySelector('.js-portfolio-add');
+
+      let masonryGrid = new Masonry(grid, {
+        itemSelector: '.portfolio__works-item',
+      });
+
+      //change tab handler
+      changeWorksHandlers.forEach((handler) => {
+        handler.addEventListener('click', () => {
+          const activeHandler = changeWorksHandlers.find((el) => el.classList.contains('is-active'));
+          activeHandler.classList.remove('is-active');
+          handler.classList.add('is-active');
+
+          const elements = masonryGrid.getItemElements();
+          masonryGrid.remove(elements);
+
+          const newElements = [];
+          const fragment = document.createDocumentFragment();
+
+          // JUST EXAMPLE. REMOVE THIS CODE start
+          for (let index = 0; index < 4; index++) {
+            const work = document.createElement('div');
+            work.className = 'portfolio__works-item';
+            work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
+            fragment.appendChild(work);
+            newElements.push(work);
+          }
+          // JUST EXAMPLE. REMOVE THIS CODE end
+
+          grid.appendChild(fragment);
+          masonryGrid.appended(newElements);
+          masonryGrid.layout();
+        });
+      });
+
+      // add new elements
+      addWorksHandler.addEventListener('click', () => {
+        const newElements = [];
+        const fragment = document.createDocumentFragment();
+
+        // JUST EXAMPLE. REMOVE THIS CODE start
+        for (let index = 0; index < 4; index++) {
+          const work = document.createElement('div');
+          work.className = 'portfolio__works-item';
+          work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
+          fragment.appendChild(work);
+          newElements.push(work);
+        }
+        // JUST EXAMPLE. REMOVE THIS CODE end
+
+        grid.appendChild(fragment);
+        masonryGrid.appended(newElements);
+      });
+    }
+  }
+}
+{
+  const goBackLink = document.querySelector('.js-privacy-back');
+  const referrer = document.referrer;
+  if (goBackLink && referrer) {
+    goBackLink.href = referrer;
+  }
 }

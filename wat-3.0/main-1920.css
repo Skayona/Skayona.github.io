@@ -9,6 +9,12 @@
 
 
 @media (min-width: 1920px) {
+  .shaped-card {
+    max-width: 480px;
+    margin-left: 120px; } }
+
+
+@media (min-width: 1920px) {
   .contacts {
     grid-column-gap: 64px;
     -moz-column-gap: 64px;
@@ -70,3 +76,34 @@
     grid-column-gap: 120px;
     -moz-column-gap: 120px;
     column-gap: 120px; } }
+
+
+@media (min-width: 1920px) {
+  .technology__content {
+    width: 50%; }
+  .technology__media {
+    width: 58%; }
+  .technology--left .technology__media {
+    right: -8%; }
+  .technology--right .technology__media {
+    left: -8%; } }
+
+
+@media (min-width: 1920px) {
+  .project-slider-btn {
+    width: 128px; } }
+
+
+@media (min-width: 1920px) {
+  .value-item {
+    grid-column-gap: 48px;
+    -moz-column-gap: 48px;
+    column-gap: 48px; }
+  .value-item__title {
+    font-size: 58px;
+    line-height: 66px; }
+    .value-item__title::after {
+      width: 60px;
+      height: 7px; }
+  .value-item__descr {
+    line-height: 2.5; } }

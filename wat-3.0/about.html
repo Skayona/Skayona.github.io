@@ -18,9 +18,9 @@
             <ul class="header__nav-list">
               <li><a class="header__nav-link" href="services">Услуги</a>
               </li>
-              <li><span class="header__nav-link is-active">Портфолио</span>
+              <li><a class="header__nav-link" href="works">Портфолио</a>
               </li>
-              <li><a class="header__nav-link" href="about">О Компании</a>
+              <li><span class="header__nav-link is-active">О Компании</span>
               </li>
               <li>
                 <button class="header__nav-link" type="button" data-modal-for="modal-contacts">Контакты </button>
@@ -41,101 +41,85 @@
     </header>
     <!-- HEADER end-->
     <main>
-      <!--WORKS INTRO start-->
-      <article class="base-intro-wrap intro-works-wrap bg-gray-primary">
-        <div class="container base-intro intro-works">
-          <div class="base-pretitle">Наши работы</div>
-          <h1 class="h1 intro-works__title">Мы гордимся своими работами</h1>
-          <p class="base-subtitle intro-works__descr">Мы одинаково качественно и в срок разработаем для вас как продающий лендинг или сайт-визитку, так и корпоративный портал или интернет-магазин.</p>
+      <!--ABOUT INTRO start-->
+      <article class="base-intro-wrap intro-about-wrap bg-gray-primary">
+        <div class="container base-intro intro-about">
+          <h1 class="h1 intro-about__title">Студия дизайна и разработки цифровых продуктов</h1>
+          <p class="base-subtitle intro-about__descr">Мы команда творческих людей из разных областей IT индустрии: UI/UX дизайн, веб-разработка, системы искусственного интеллекта и управление проектами</p>
         </div>
       </article>
-      <!--WORKS INTRO end-->
-      <!-- PORTFOLIO start-->
-      <div class="portfolio">
-        <div class="portfolio__tabs">
-          <div class="tabs-container">
-            <button class="js-works-toggle tab is-active" type="button">Все</button>
-            <button class="js-works-toggle tab" type="button"><span>Создание</span> <span>сайтов</span></button>
-            <button class="js-works-toggle tab" type="button"><span>Разработка</span> <span>приложений</span></button>
-            <button class="js-works-toggle tab" type="button"><span>Поддержка</span> <span>сайтов</span></button>
-            <button class="js-works-toggle tab" type="button"><span>Продвижение</span> <span>в сети</span></button>
-          </div>
-        </div>
+      <!--ABOUT INTRO end-->
+      <!-- TEAM start-->
+      <div class="team-wrap">
         <div class="container">
-          <div class="js-portfolio portfolio__works">
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Контекст</h6>
-                      <div class="portfolio-item__descr">Сайт электронных словарей Контекст</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="informatik.png" alt="Информатик" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Информатик</h6>
-                      <div class="portfolio-item__descr">Лендинг компании Лендинг компанииЛендинг компании Лендинг компании Лендинг компании Лендинг компании wejfheiugeibnv hfuergh</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="rgd.png" alt="РЖД" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">РЖД</h6>
-                      <div class="portfolio-item__descr">Модуль классификации обращений в систему заявок в компании РЖД</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="rgru.png" alt="Российская газета" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Российская газета</h6>
-                      <div class="portfolio-item__descr">Модуль классификации текстов статей для Российской газеты</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="orfo-large.png" alt="ОРФО" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">ОРФО</h6>
-                      <div class="portfolio-item__descr">Сервис по проверке орфографии</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Контекст</h6>
-                      <div class="portfolio-item__descr">Сайт электронных словарей Контекст</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="informatik.png" alt="Информатик" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Информатик</h6>
-                      <div class="portfolio-item__descr">Лендинг компании</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="rgd.png" alt="РЖД" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">РЖД</h6>
-                      <div class="portfolio-item__descr">Модуль классификации обращений в систему заявок в компании РЖД</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="rgru.png" alt="Российская газета" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Российская газета</h6>
-                      <div class="portfolio-item__descr">Модуль классификации текстов статей для Российской газеты</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="orfo-large.png" alt="ОРФО" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">ОРФО</h6>
-                      <div class="portfolio-item__descr">Сервис по проверке орфографии</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Контекст</h6>
-                      <div class="portfolio-item__descr">Сайт электронных словарей Контекст</div></a>
-            </div>
-            <div class="portfolio__works-item"><a class="portfolio-item" href="project">
-                      <div class="portfolio-item__img"><img src="informatik.png" alt="Информатик" width="130"/></div>
-                      <h6 class="h6 portfolio-item__title">Информатик</h6>
-                      <div class="portfolio-item__descr">Лендинг компании</div></a>
+          <div class="team">
+            <div class="team__about">
+              <section class="team__shaped-card shaped-card">
+                <h3 class="h3 shaped-card__title">Команда</h3>
+                <div class="shaped-card__content">
+                  <ul class="shaped-card__list">
+                    <li>Менеджер проекта, архитектор</li>
+                    <li>Стратег, аналитик</li>
+                    <li>Арт-директор, проектировщик</li>
+                    <li>Дизайнер</li>
+                    <li>Front-end разработчик</li>
+                    <li>Back-end разработчик</li>
+                    <li>Тестировщик</li>
+                  </ul>
+                </div>
+              </section>
+              <div class="team__descr">
+                <p>Проектная команда формируется индивидуально под каждого клиента и может оперативно изменяться по мере необходимости.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="portfolio__actions">
-          <div class="portfolio__more">
-            <button class="js-portfolio-add btn btn-yellow-watt btn-thin" type="button"><span>Загрузить больше работ</span> <i class="icon icon-arrow-down" aria-hidden="true"></i>
-            </button>
+        <div class="team__media" aria-label="Проектная команда"></div>
+      </div>
+      <!-- TEAM end-->
+      <div class="values">
+        <div class="container">
+          <div class="values-slider">
+            <div class="values-slider__heading">
+              <div class="title">Наши ценности</div>
+              <div class="numeration"><span class="js-values-curr-slide">1</span><i>&nbsp;&nbsp;/&nbsp;&nbsp;</i><span class="js-values-total-slides">1</span></div>
+              <div class="navigation">
+                <button class="js-values-slider-prev values-slider-btn prev" type="button" aria-label="Предыдущий слайд"><i class="icon icon-long-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button class="js-values-slider-next values-slider-btn next" type="button" aria-label="Следующий слайд"><i class="icon icon-long-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="js-values-slider values-slider__content">
+              <div class="values-slider__item">
+                      <div class="value-item">
+                        <h2 class="value-item__title"><span>Эмпатия</span></h2>
+                        <p class="value-item__descr">Мы слушаем и стараемся понять реальные проблемы и трудности наших клиентов, обращающихся к нам за помощью и поддержкой. Это означает, что мы должны ежедневно ставить себя на место клиента. Наша задача — понять, что именно в этот момент нужно этому человеку.</p>
+                      </div>
+              </div>
+              <div class="values-slider__item">
+                      <div class="value-item">
+                        <h2 class="value-item__title"><span>Качество</span></h2>
+                        <p class="value-item__descr">Делать свою работу на совесть — наш основной принцип в работе. Нам не безразлично, что думают о нас наши клиенты. В ситуации выбора между деньгами и авторитетом мы без колебаний выбираем последнее.</p>
+                      </div>
+              </div>
+              <div class="values-slider__item">
+                      <div class="value-item">
+                        <h2 class="value-item__title"><span>Ответственность</span></h2>
+                        <p class="value-item__descr">Мы в ответе за своих клиентов. Любой проект рано или поздно имеет свойство заканчиваться, но не заканчивается наша забота о своих клиентах. Напротив, мы всегда готовы оказать поддержку и приступить к дальнейшему развитию проекта.</p>
+                      </div>
+              </div>
+            </div>
           </div>
-          <div class="portfolio__presentation-wrap">
-            <div class="portfolio__presentation"><a class="btn btn-gray-primary" href="https://wattdev.ru/storage/settings/February2020/Jm1ESMb1ieTuGuMiw79K.pdf"><i class="icon icon-download" aria-hidden="true"></i> <span>Скачать презентацию PDF</span></a></div>
+        </div>
+        <div class="values-credo-wrap">
+          <div class="container">
+            <div class="values-credo">
+              <p>Качество - главный наш приоритет. Нас отличает желание сделать нашу работу наилучшим из возможных способов.</p><a class="btn btn-gray-primary values-credo__presentation" href="https://wattdev.ru/storage/settings/February2020/Jm1ESMb1ieTuGuMiw79K.pdf"><i class="icon icon-download" aria-hidden="true"></i> <span>Скачать презентацию PDF</span></a>
+            </div>
           </div>
         </div>
       </div>
-      <!--PORTFOLIO end-->
     </main>
     <!-- FOOTER start-->
     <footer class="bg-gray-primary">

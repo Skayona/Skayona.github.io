@@ -579,3 +579,87 @@ modals.init();
     goBackLink.href = referrer;
   }
 }
+{
+  const container = document.querySelector('.js-project-slider');
+  if (container) {
+    tns({
+      container,
+      nextButton: '.js-project-slider-next',
+      prevButton: '.js-project-slider-prev',
+      mouseDrag: true,
+      loop: false,
+      autoplay: false,
+      autoplayButtonOutput: false,
+      speed: 300,
+      nav: false,
+      lazyload: true,
+      items: 1,
+      gutter: 10,
+      fixedWidth: 300,
+      navPosition: 'bottom',
+      responsive: {
+        768: {
+          fixedWidth: false,
+          items: 2,
+          gutter: 40,
+        },
+        1366: {
+          fixedWidth: false,
+          items: 4,
+          nav: true,
+        },
+        1920: {
+          items: 5,
+          gutter: 60
+        }
+      }
+    });
+  }
+}
+{
+  const container = document.querySelector('.js-values-slider');
+
+  if (container) {
+    const currSlideNode = document.querySelector('.js-values-curr-slide');
+    const totalSlidesNode = document.querySelector('.js-values-total-slides');
+
+    const slider = tns({
+      container,
+      nextButton: '.js-values-slider-next',
+      prevButton: '.js-values-slider-prev',
+      mode: 'gallery',
+      mouseDrag: true,
+      loop: true,
+      autoplay: true,
+      autoHeight: false,
+      autoplayButtonOutput: false,
+      speed: 300,
+      nav: false,
+      lazyload: true,
+      items: 1,
+      gutter: 0,
+      navPosition: 'bottom',
+      // onInit: () => setSlideSize()
+    });
+
+    const setSlideSize = () => {
+      const sliderInfo = slider?.getInfo();
+      const maxHeight = Math.max(...[...sliderInfo?.slideItems].map((e) => e.offsetHeight));
+      container.style.height = `${maxHeight }px`;
+    }
+
+    slider.events.on('indexChanged', ({ displayIndex }) => {
+      currSlideNode.innerText = displayIndex;
+    });
+
+    window.onload = function() {
+      totalSlidesNode.innerText = slider.getInfo()?.slideCount;
+      setSlideSize();
+    }
+
+    window.addEventListener('resize', () => {
+      setSlideSize();
+    });
+  }
+}
+

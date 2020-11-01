@@ -211,13 +211,13 @@
     .dev-create__work.work-2 {
       background-color: rgba(51, 51, 51, 0.9);
       background-color: rgba(var(--gray-secondary), 0.9); }
-      .dev-create__work.work-2:hover, .dev-create__work.work-2:focus {
+      .dev-create__work.work-2:hover {
         background-color: rgba(51, 51, 51, 0.7);
         background-color: rgba(var(--gray-secondary), 0.7); }
     .dev-create__work.work-3 {
       background-color: rgba(51, 51, 51, 0.8);
       background-color: rgba(var(--gray-secondary), 0.8); }
-      .dev-create__work.work-3:hover, .dev-create__work.work-3:focus {
+      .dev-create__work.work-3:hover {
         background-color: rgba(51, 51, 51, 0.7);
         background-color: rgba(var(--gray-secondary), 0.7); }
   .dev-create .development-note p {

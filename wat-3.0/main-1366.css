@@ -1040,6 +1040,10 @@
     align-items: flex-start;
     padding-top: 24px;
     padding-right: 104px; }
+    .stages-scrum__slider-item.interlocking {
+      align-items: center; }
+      .stages-scrum__slider-item.interlocking .scrum-item__title {
+        margin-top: -24px; }
   .stages-scrum__slider {
     min-height: 472px;
     padding-top: 48px;

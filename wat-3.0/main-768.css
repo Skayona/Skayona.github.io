@@ -684,7 +684,7 @@
     left: -10%;
     bottom: 70px; }
     .scrum-slider__wheel .icon {
-      transform: rotate(9deg); }
+      transform: rotate(8deg); }
       .scrum-slider__wheel .icon [data-pos-arrow="1"] .icon {
         transform: rotate(0deg); }
   .stages-scrum__slider-item {
@@ -715,12 +715,6 @@
   .scrum-item__list,
   .scrum-item__text {
     padding-left: 24px; }
-  .stages-scrum__slider-loading {
-    top: 50%;
-    transform: translateY(-50%); }
-    .stages-scrum__slider-loading .scrum-item__title {
-      max-width: 70%;
-      margin-left: auto; }
   .stages-scrum__slider {
     padding-top: 32px;
     padding-bottom: 32px; }
@@ -730,7 +724,10 @@
       top: 0;
       bottom: 0;
       margin-top: auto;
-      margin-bottom: auto; } }
+      margin-bottom: auto; }
+  .loading .tns-nav,
+  .loading .stages-scrum__slider-btn {
+    pointer-events: none; } }
 
 
 @media (min-width: 768px) {

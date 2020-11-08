@@ -882,25 +882,35 @@ function initSrumSlider() {
   const container = document.querySelector('.js-scrum-slider');
   if (!container) return;
 
-  function changeWheelPos({ displayIndex, indexCached }) {
+  function changeWheelPos(sldr, { displayIndex, indexCached }) {
     const scrumWheel = document.querySelector('.js-scrum-wheel');
     const arrows = [...scrumWheel.querySelectorAll('.arrow-group')];
     const currArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == displayIndex);
     const prevArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == indexCached);
-    const slideDelta = indexCached - displayIndex;
-    const slidingDest =  slideDelta > 5 ? -2 : slideDelta < -5 ? 2: slideDelta;
+    const slideDelta = displayIndex - indexCached;
+    const slidingDest =  slideDelta > 6 ? -1 : slideDelta < -6 ? 1 : slideDelta;
     const deg = 45;
     const prevDeg = /rotate\((.+)deg\)/.exec(scrumWheel.getAttribute('style'))?.[1];
     const rotateDeg = (slidingDest * deg) + +prevDeg;
     const sliderContainer = document.querySelector('.js-scrum-slider-outer');
-    const containerStyle = slidingDest > 0 ? 'back' : 'forward';
-    sliderContainer.classList.add('loading', containerStyle);
+    if  (slidingDest > 0) {
+      sliderContainer.classList.add('back');
+      sliderContainer.classList.remove('forward');
+    } else {
+      sliderContainer.classList.add('forward');
+      sliderContainer.classList.remove('back');
+    }
     currArrow.classList.add('is-active');
     prevArrow.classList.remove('is-active');
     scrumWheel.style = `transform: translate(-51%, 65%) rotate(${ rotateDeg }deg)`;
-    setTimeout(() => {
-      sliderContainer.classList.remove('loading', containerStyle);
-    }, 1000);
+    console.log(displayIndex);
+    if (displayIndex === 8) {
+      sliderContainer.classList.add('loading');
+      setTimeout(() => {
+        sliderContainer.classList.remove('loading');
+        sldr.goTo(slidingDest > 0 ? 'next' : 'prev');
+      }, 1500);
+    }
   }
 
   function initWheelPosition() {
@@ -946,7 +956,7 @@ function initSrumSlider() {
   });
 
   initWheelPosition();
-  slider.events.on('transitionStart', changeWheelPos);
+  slider.events.on('transitionStart', (e) => changeWheelPos(slider, e));
   return slider;
 }
 {

@@ -79,6 +79,11 @@
 
 
 @media (min-width: 1920px) {
+  .intro-works__more-container {
+    max-width: 1760px; } }
+
+
+@media (min-width: 1920px) {
   .technology__content {
     width: 50%; }
   .technology__media {
@@ -107,3 +112,91 @@
       height: 7px; }
   .value-item__descr {
     line-height: 2.5; } }
+
+
+@media (min-width: 1920px) {
+  .intro-services-wrap {
+    padding-top: 48px;
+    padding-bottom: 48px; }
+  .intro-services__tabs {
+    max-width: 1760px; } }
+
+
+@media (min-width: 1920px) {
+  .service-accordion .target {
+    padding: 46px 36px; } }
+
+
+@media (min-width: 1920px) {
+  .create-technology__decor {
+    width: 720px;
+    height: 720px; } }
+
+
+@media (min-width: 1920px) {
+  .stages__tabs-wrap {
+    width: 1784px; }
+  .stages__content-descr {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-size: 28px;
+    line-height: 36px; }
+  .stages__content-descr > .container {
+    max-width: 1664px; }
+  .stages__subtitle {
+    font-size: 28px;
+    line-height: 32px; } }
+
+
+@media (min-width: 1920px) {
+  .stages-scrum__slider-actions {
+    max-width: 1664px; }
+  .scrum-slider__wheel {
+    width: 1120px;
+    height: 1120px;
+    left: -6%;
+    bottom: 96px; }
+  .stages-scrum__slider {
+    min-height: 502px; } }
+
+
+@media (min-width: 1920px) {
+  .stage-waterfall-wrap {
+    --cell-height: 72px;
+    max-width: 1664px; }
+  .stage-waterfall-line-bg {
+    top: -60px;
+    bottom: 60px; }
+  .stage-waterfall {
+    height: 342px;
+    grid-column-gap: 70px;
+    -moz-column-gap: 70px;
+    column-gap: 70px; }
+  .waterfall-step__content {
+    width: 400px; }
+    .waterfall-step__content .shape-1::after,
+    .waterfall-step__content .shape-1::before {
+      border-right-width: 62px; }
+  .stage-waterfall__item:nth-child(even) .waterfall-step[data-status="expanded"] .waterfall-step__content {
+    padding-top: 20px; }
+  .stage-waterfall__item:nth-child(odd) .waterfall-step[data-status="expanded"] .waterfall-step__content {
+    padding-bottom: 20px; }
+  .stage-waterfall__item:nth-child(even) .waterfall-step[data-status="expanded"] .waterfall-step__content .shape-1::before,
+  .stage-waterfall__item:nth-child(odd) .waterfall-step[data-status="expanded"] .waterfall-step__content .shape-1::before {
+    border-right-width: 62px; }
+  .stage-waterfall__item:last-child .waterfall-step__content::before, .stage-waterfall__item:last-child .waterfall-step__content::after {
+    border-left-width: 62px; }
+  .stage-waterfall__item:last-child .waterfall-step[data-status="expanded"] .waterfall-step__content .shape-1::after, .stage-waterfall__item:last-child .waterfall-step[data-status="expanded"] .waterfall-step__content .shape-1::before {
+    border-right-width: 56px; } }
+
+
+@media (min-width: 1920px) {
+  .support-steps-container {
+    max-width: 1760px; }
+  .support-steps {
+    max-width: 1664px; } }
+
+
+@media (min-width: 1920px) {
+  .support-cms {
+    max-width: 1664px; } }

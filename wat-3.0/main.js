@@ -242,7 +242,7 @@ modals.init();
       container,
       mouseDrag: true,
       loop: true,
-      autoplay: true,
+      autoplay: false,
       autoplayButtonOutput: false,
       speed: 300,
       controls: false,
@@ -456,8 +456,8 @@ modals.init();
         nextButton: '.js-insta-feed-next',
         prevButton: '.js-insta-feed-prev',
         mouseDrag: true,
-        loop: false,
-        autoplay: false,
+        loop: true,
+        autoplay: true,
         autoplayButtonOutput: false,
         speed: 300,
         nav: false,
@@ -511,66 +511,63 @@ modals.init();
     openModalList.forEach((btn) => btn.classList.remove('is-active'));
   });
 }
-{
-  window.onload = function() {
-    const grid = document.querySelector('.js-portfolio');
-    if (grid) {
-      const changeWorksHandlers = [...document.querySelectorAll('.js-works-toggle')];
-      const addWorksHandler = document.querySelector('.js-portfolio-add');
+function initMasonryGridLayout() {
+  const grid = document.querySelector('.js-portfolio');
+  if (!grid) return
+  const changeWorksHandlers = [...document.querySelectorAll('.js-works-toggle')];
+  const addWorksHandler = document.querySelector('.js-portfolio-add');
 
-      let masonryGrid = new Masonry(grid, {
-        itemSelector: '.portfolio__works-item',
-      });
+  let masonryGrid = new Masonry(grid, {
+    itemSelector: '.portfolio__works-item',
+  });
 
-      //change tab handler
-      changeWorksHandlers.forEach((handler) => {
-        handler.addEventListener('click', () => {
-          const activeHandler = changeWorksHandlers.find((el) => el.classList.contains('is-active'));
-          activeHandler.classList.remove('is-active');
-          handler.classList.add('is-active');
+  //change tab handler
+  changeWorksHandlers.forEach((handler) => {
+    handler.addEventListener('click', () => {
+      const activeHandler = changeWorksHandlers.find((el) => el.classList.contains('is-active'));
+      activeHandler.classList.remove('is-active');
+      handler.classList.add('is-active');
 
-          const elements = masonryGrid.getItemElements();
-          masonryGrid.remove(elements);
+      const elements = masonryGrid.getItemElements();
+      masonryGrid.remove(elements);
 
-          const newElements = [];
-          const fragment = document.createDocumentFragment();
+      const newElements = [];
+      const fragment = document.createDocumentFragment();
 
-          // JUST EXAMPLE. REMOVE THIS CODE start
-          for (let index = 0; index < 4; index++) {
-            const work = document.createElement('div');
-            work.className = 'portfolio__works-item';
-            work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
-            fragment.appendChild(work);
-            newElements.push(work);
-          }
-          // JUST EXAMPLE. REMOVE THIS CODE end
+      // JUST EXAMPLE. REMOVE THIS CODE start
+      for (let index = 0; index < 4; index++) {
+        const work = document.createElement('div');
+        work.className = 'portfolio__works-item';
+        work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
+        fragment.appendChild(work);
+        newElements.push(work);
+      }
+      // JUST EXAMPLE. REMOVE THIS CODE end
 
-          grid.appendChild(fragment);
-          masonryGrid.appended(newElements);
-          masonryGrid.layout();
-        });
-      });
+      grid.appendChild(fragment);
+      masonryGrid.appended(newElements);
+      masonryGrid.layout();
+    });
+  });
 
-      // add new elements
-      addWorksHandler.addEventListener('click', () => {
-        const newElements = [];
-        const fragment = document.createDocumentFragment();
+  // add new elements
+  addWorksHandler.addEventListener('click', () => {
+    const newElements = [];
+    const fragment = document.createDocumentFragment();
 
-        // JUST EXAMPLE. REMOVE THIS CODE start
-        for (let index = 0; index < 4; index++) {
-          const work = document.createElement('div');
-          work.className = 'portfolio__works-item';
-          work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
-          fragment.appendChild(work);
-          newElements.push(work);
-        }
-        // JUST EXAMPLE. REMOVE THIS CODE end
-
-        grid.appendChild(fragment);
-        masonryGrid.appended(newElements);
-      });
+    // JUST EXAMPLE. REMOVE THIS CODE start
+    for (let index = 0; index < 4; index++) {
+      const work = document.createElement('div');
+      work.className = 'portfolio__works-item';
+      work.innerHTML = '<a class="portfolio-item" href="project"><div class="portfolio-item__img"><img src="context.png" alt="Контекст" width="130"></div><h6 class="h6 portfolio-item__title">Контекст</h6><div class="portfolio-item__descr">NEEEm lrb lr bltgtr</div></a>';
+      fragment.appendChild(work);
+      newElements.push(work);
     }
-  }
+    // JUST EXAMPLE. REMOVE THIS CODE end
+
+    grid.appendChild(fragment);
+    masonryGrid.appended(newElements);
+  });
 }
 {
   const goBackLink = document.querySelector('.js-privacy-back');
@@ -587,8 +584,8 @@ modals.init();
       nextButton: '.js-project-slider-next',
       prevButton: '.js-project-slider-prev',
       mouseDrag: true,
-      loop: false,
-      autoplay: false,
+      loop: true,
+      autoplay: true,
       autoplayButtonOutput: false,
       speed: 300,
       nav: false,
@@ -606,7 +603,7 @@ modals.init();
         1366: {
           fixedWidth: false,
           items: 4,
-          nav: true,
+          // nav: true,
         },
         1920: {
           items: 5,
@@ -616,50 +613,442 @@ modals.init();
     });
   }
 }
-{
+function initValuesSlider() {
   const container = document.querySelector('.js-values-slider');
 
-  if (container) {
-    const currSlideNode = document.querySelector('.js-values-curr-slide');
-    const totalSlidesNode = document.querySelector('.js-values-total-slides');
+  if (!container) return;
 
-    const slider = tns({
-      container,
-      nextButton: '.js-values-slider-next',
-      prevButton: '.js-values-slider-prev',
-      mode: 'gallery',
-      mouseDrag: true,
-      loop: true,
-      autoplay: true,
-      autoHeight: false,
-      autoplayButtonOutput: false,
-      speed: 300,
-      nav: false,
-      lazyload: true,
-      items: 1,
-      gutter: 0,
-      navPosition: 'bottom',
-      // onInit: () => setSlideSize()
-    });
+  const currSlideNode = document.querySelector('.js-values-curr-slide');
+  const totalSlidesNode = document.querySelector('.js-values-total-slides');
 
-    const setSlideSize = () => {
-      const sliderInfo = slider?.getInfo();
-      const maxHeight = Math.max(...[...sliderInfo?.slideItems].map((e) => e.offsetHeight));
-      container.style.height = `${maxHeight }px`;
+  const slider = tns({
+    container,
+    nextButton: '.js-values-slider-next',
+    prevButton: '.js-values-slider-prev',
+    mode: 'gallery',
+    mouseDrag: true,
+    loop: true,
+    autoplay: true,
+    autoHeight: false,
+    autoplayButtonOutput: false,
+    speed: 300,
+    nav: false,
+    lazyload: true,
+    items: 1,
+    gutter: 0,
+    navPosition: 'bottom',
+  });
+
+  const setSlideSize = () => {
+    const sliderInfo = slider?.getInfo();
+    const maxHeight = Math.max(...[...sliderInfo?.slideItems].map((e) => e.offsetHeight));
+    container.style.height = `${maxHeight }px`;
+  }
+
+  slider.events.on('indexChanged', ({ displayIndex }) => {
+    currSlideNode.innerText = displayIndex;
+  });
+
+  totalSlidesNode.innerText = slider.getInfo()?.slideCount;
+  setSlideSize();
+
+  window.addEventListener('resize', () => {
+    setSlideSize();
+  });
+}
+
+
+function initServiceAccordion() {
+  //Accordion init
+  const accordionContainer = document.querySelector('.js-service-accordion');
+  const options = {
+    item: '.item',
+    target: '.target',
+    control: '.target',
+    panel: '.panel',
+    allowMultiple: false,
+    attribute: 'data-status',
+    expanded: 'expanded',
+    contracted: 'contracted',
+    prefix: 'service-accordion-',
+    transition: 'height .3s',
+    setFocus: 'control',
+    hashEnabled: false,
+  };
+
+  function HorizontalAccordion(accordion) {
+    const items = [...accordion.querySelectorAll('.item')];
+
+    const getPanelWidth = () => {
+      const accordionPaddingLeft = window.getComputedStyle(accordion).paddingLeft.replace('px', '');
+      const accordionPaddingRight = window.getComputedStyle(accordion).paddingRight.replace('px', '');
+      const innerWidth = accordion.clientWidth - +accordionPaddingLeft - +accordionPaddingRight;
+      const controlWidth = items.reduce((res, el) => (res + el.querySelector('.control').clientWidth), 0);
+      return innerWidth - controlWidth;
     }
 
-    slider.events.on('indexChanged', ({ displayIndex }) => {
-      currSlideNode.innerText = displayIndex;
-    });
-
-    window.onload = function() {
-      totalSlidesNode.innerText = slider.getInfo()?.slideCount;
-      setSlideSize();
+    const setPanelHeight = ({ propertyName }) => {
+      if (propertyName === 'width') {
+        const outerContainer = accordion.parentElement;
+        outerContainer.style = '';
+        const outerContainerPaddingTop = window.getComputedStyle(outerContainer).paddingTop.replace('px', '');
+        const outerContainerPaddingBottom = window.getComputedStyle(outerContainer).paddingBottom.replace('px', '');
+        const accordionHeight = accordion.scrollHeight;
+        const totalHeight =  +outerContainerPaddingTop + +outerContainerPaddingBottom + accordionHeight;
+        outerContainer.style = `height: ${ totalHeight }px`;
+      }
     }
 
+    const expandAction = (e) => {
+      e.preventDefault();
+      if (!this.enabled) return;
+      const item = e.target.closest('.item');
+      const panel = item.querySelector('.panel');
+      const expandedTab = items.find((el) => el.getAttribute('data-status') === 'expanded');
+      const expandedPanel = expandedTab.querySelector('.panel');
+      const panelWidth = getPanelWidth();
+      expandedTab.setAttribute('data-status', 'contracted');
+      item.setAttribute('data-status', 'expanded');
+      panel.style = `width: ${ panelWidth }px`;
+      expandedPanel.style = '';
+    }
+
+    const setPanelWidth = () => {
+      const expandedTab = items.find((el) => el.getAttribute('data-status') === 'expanded');
+      const expandedPanel = expandedTab.querySelector('.panel');
+      const panelWidth = getPanelWidth();
+      expandedPanel.style = `width: ${ panelWidth }px`;
+    }
+
+    this.enabled = false;
+
+    this.enable = () => {
+      this.enabled = true;
+      setPanelWidth();
+      items.forEach((item) => {
+        const target = item.querySelector('.target');
+        target.addEventListener('click', expandAction);
+      });
+      window.addEventListener('resize', setPanelWidth);
+      window.addEventListener('transitionend', setPanelHeight);
+    }
+
+    this.destroy = () => {
+      this.enabled = false;
+      const expandedTab = items.find((el) => el.getAttribute('data-status') === 'expanded');
+      const expandedPanel = expandedTab.querySelector('.panel');
+      expandedPanel.style = '';
+      const outerContainer = accordion.parentElement;
+      outerContainer.style = '';
+      items.forEach((item) => {
+        const target = item.querySelector('.target');
+        target.removeEventListener('click', expandAction);
+      });
+      window.removeEventListener('resize', setPanelWidth);
+      window.removeEventListener('transitionend', setPanelHeight);
+    }
+
+    this.enable();
+  }
+
+  let mobAccordion;
+  const mobAccordionHandler = () => {
+    if (window.matchMedia('(min-width: 1366px)').matches) {
+      mobAccordion && mobAccordion._enabled && mobAccordion.destroy();
+      return;
+    }
+    if (!mobAccordion) {
+      mobAccordion = new Accordion(accordionContainer, options)
+      return;
+    }
+    if (!mobAccordion._enabled) {
+      mobAccordion.enable();
+      mobAccordion.items.forEach((item) => {
+        const isExpanded = item.el.getAttribute('data-status') === 'expanded';
+        item.isExpanded = isExpanded;
+      })
+    }
+  }
+
+  let desktopAccordion;
+  const desktopAccordionHandler = () => {
+    if (!window.matchMedia('(min-width: 1366px)').matches) {
+      desktopAccordion && desktopAccordion.enabled && desktopAccordion.destroy();
+      return;
+    }
+    if (!desktopAccordion) {
+      desktopAccordion = new HorizontalAccordion(accordionContainer);
+      return;
+    }
+    if (!desktopAccordion.enabled) {
+      desktopAccordion.enable();
+    }
+  }
+
+  if (accordionContainer) {
+    mobAccordionHandler();
+    desktopAccordionHandler();
     window.addEventListener('resize', () => {
-      setSlideSize();
+      mobAccordionHandler();
+      desktopAccordionHandler();
     });
   }
 }
+{
+  //Accordion init
+  const accordionContainer = document.querySelector('.js-create-technology-accordion');
+  if (accordionContainer) {
+    const options = {
+      item: '.item',
+      target: '.target',
+      control: '.target',
+      panel: '.panel',
+      allowMultiple: false,
+      attribute: 'data-status',
+      expanded: 'expanded',
+      contracted: 'contracted',
+      prefix: 'create-tech-accordion-',
+      transition: 'height .3s',
+      setFocus: 'none',
+      hashEnabled: false
+    };
+    new Accordion(accordionContainer, options);
+  }
+}
+{
+  //Accordion init
+  const accordionContainer = document.querySelector('.js-support-steps-accordion');
+  if (accordionContainer) {
+    const options = {
+      item: '.item',
+      target: '.target',
+      control: '.target',
+      panel: '.panel',
+      allowMultiple: false,
+      attribute: 'data-status',
+      expanded: 'expanded',
+      contracted: 'contracted',
+      prefix: 'support-steps-accordion-',
+      transition: 'height .3s',
+      setFocus: 'none',
+      hashEnabled: false
+    };
+    new Accordion(accordionContainer, options);
+  }
+}
 
+{
+  const scene = document.querySelector('#tags-desktop');
+  if (scene) {
+    const parallaxEl =  new Parallax(scene);
+
+    function disablingParallax(parallax) {
+      if (window.matchMedia('(min-width: 1366px)').matches) {
+        parallax.enable();
+        return;
+      }
+      parallax.disable();
+    }
+
+    disablingParallax(parallaxEl);
+
+    window.addEventListener('resize', () => {
+      disablingParallax(parallaxEl);
+    });
+  }
+}
+{
+  const container = document.querySelector('[data-tabs]');
+  if (container) {
+    let scrumSlider = null;
+    new Tabby('[data-tabs]', {
+      default: '[data-tabby-default]'
+    });
+
+    document.addEventListener('tabby', ({ detail }) => {
+      if (detail.tab.id === 'tabby-toggle_scrum' && !scrumSlider) {
+        scrumSlider = initSrumSlider();
+        return;
+      }
+
+      if (detail.tab.id === 'tabby-toggle_scrum' && scrumSlider) {
+        scrumSlider.refresh();
+        return;
+      }
+    }, false);
+  }
+}
+function initSrumSlider() {
+  const container = document.querySelector('.js-scrum-slider');
+  if (!container) return;
+
+  function changeWheelPos({ displayIndex, indexCached }) {
+    const scrumWheel = document.querySelector('.js-scrum-wheel');
+    const arrows = [...scrumWheel.querySelectorAll('.arrow-group')];
+    const currArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == displayIndex);
+    const prevArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == indexCached);
+    const slideDelta = indexCached - displayIndex;
+    const slidingDest =  slideDelta > 5 ? -2 : slideDelta < -5 ? 2: slideDelta;
+    const deg = 45;
+    const prevDeg = /rotate\((.+)deg\)/.exec(scrumWheel.getAttribute('style'))?.[1];
+    const rotateDeg = (slidingDest * deg) + +prevDeg;
+    const sliderContainer = document.querySelector('.js-scrum-slider-outer');
+    const containerStyle = slidingDest > 0 ? 'back' : 'forward';
+    sliderContainer.classList.add('loading', containerStyle);
+    currArrow.classList.add('is-active');
+    prevArrow.classList.remove('is-active');
+    scrumWheel.style = `transform: translate(-51%, 65%) rotate(${ rotateDeg }deg)`;
+    setTimeout(() => {
+      sliderContainer.classList.remove('loading', containerStyle);
+    }, 1000);
+  }
+
+  function initWheelPosition() {
+    let desktopPosIsActive = window.matchMedia('(min-width: 768px)').matches;
+    const scrumWheel = document.querySelector('.js-scrum-wheel');
+    const mobPos = 'transform: translate(-51%, 65%) rotate(-55deg)';
+    const desktopPos = 'transform: translate(-51%, 65%) rotate(-9deg)';
+    scrumWheel.style = window.matchMedia('(min-width: 768px)').matches ? desktopPos : mobPos;
+
+    const changeOnResize = () => {
+      const currentDeg = /rotate\((.+)deg\)/.exec(scrumWheel.getAttribute('style'))?.[1];
+      const resizeDeg = window.matchMedia('(min-width: 768px)').matches ? +currentDeg + 46 : +currentDeg - 46;
+      scrumWheel.style = `transform: translate(-51%, 65%) rotate(${ resizeDeg }deg)`;
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.matchMedia('(min-width: 768px)').matches && !desktopPosIsActive) {
+        changeOnResize();
+        desktopPosIsActive = true;
+      }
+
+      if (!window.matchMedia('(min-width: 768px)').matches && desktopPosIsActive) {
+        changeOnResize();
+        desktopPosIsActive = false;
+      }
+    })
+  }
+
+
+  const slider = tns({
+    container,
+    nextButton: '.js-scrum-slider-next',
+    prevButton: '.js-scrum-slider-prev',
+    axis: 'vertical',
+    mouseDrag: false,
+    touch: false,
+    loop: true,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    speed: 300,
+    nav: true,
+    lazyload: true,
+  });
+
+  initWheelPosition();
+  slider.events.on('transitionStart', changeWheelPos);
+  return slider;
+}
+{
+  //Accordion init
+  const accordionContainer = document.querySelector('.js-waterfall-accordion');
+  const options = {
+    item: '.item',
+    target: '.target',
+    control: '.target',
+    panel: '.panel',
+    allowMultiple: false,
+    attribute: 'data-status',
+    expanded: 'expanded',
+    contracted: 'contracted',
+    prefix: 'waterfall-accordion-',
+    transition: 'height .3s',
+    setFocus: 'none',
+    hashEnabled: false
+  };
+
+  function DesktopCellAccordion(accordion) {
+    const items = [...accordion.querySelectorAll('.item')];
+    
+    const expandAction = (e) => {
+      e.preventDefault();
+      if (!this.enabled) return;
+      const item = e.target.closest('.item');
+      const expandedTab = items.find((el) => el.getAttribute('data-status') === 'expanded');
+      expandedTab.setAttribute('data-status', 'contracted');
+      item.setAttribute('data-status', 'expanded');
+    }
+
+    this.enabled = false;
+
+    this.enable = () => {
+      this.enabled = true;
+      items.forEach((item) => {
+        const target = item.querySelector('.target');
+        target.addEventListener('click', expandAction);
+      });
+    }
+
+    this.destroy = () => {
+      this.enabled = false;
+      items.forEach((item) => {
+        const target = item.querySelector('.target');
+        target.removeEventListener('click', expandAction);
+      });
+    }
+
+    this.enable();
+  }
+
+  let mobAccordion;
+  const mobAccordionHandler = () => {
+    if (window.matchMedia('(min-width: 1366px)').matches) {
+      mobAccordion && mobAccordion._enabled && mobAccordion.destroy();
+      return;
+    }
+
+    if (!mobAccordion) {
+      mobAccordion = new Accordion(accordionContainer, options)
+      return;
+    }
+
+    if (!mobAccordion._enabled) {
+      mobAccordion.enable();
+      mobAccordion.items.forEach((item) => {
+        const isExpanded = item.el.getAttribute('data-status') === 'expanded';
+        item.isExpanded = isExpanded;
+      })
+    }
+  }
+
+  let desktopAccordion;
+  const desktopAccordionHandler = () => {
+    if (!window.matchMedia('(min-width: 1366px)').matches) {
+      desktopAccordion && desktopAccordion.enabled && desktopAccordion.destroy();
+      return;
+    }
+    if (!desktopAccordion) {
+      desktopAccordion = new DesktopCellAccordion(accordionContainer);
+      return;
+    }
+    if (!desktopAccordion.enabled) {
+      desktopAccordion.enable();
+    }
+  }
+
+  if (accordionContainer) {
+    mobAccordionHandler();
+    desktopAccordionHandler();
+    window.addEventListener('resize', () => {
+      mobAccordionHandler();
+      desktopAccordionHandler();
+    });
+  }
+}
+window.onload = function () {
+  initValuesSlider();
+  setTimeout(() => {
+    initMasonryGridLayout();
+    initServiceAccordion();
+  }, 500);
+}

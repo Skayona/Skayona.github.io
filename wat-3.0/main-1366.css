@@ -1347,8 +1347,8 @@
   .service-support__opts-wrap + .service-support__opts-wrap {
     margin-top: auto; }
   .service-support__opts-wrap .icon {
-    top: -6px;
-    left: -48px; }
+    left: -48px;
+    font-size: 35px; }
   .service-support__opts-list {
     font-size: 22px;
     line-height: 26px; }

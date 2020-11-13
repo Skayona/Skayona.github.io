@@ -695,9 +695,7 @@
     margin-left: auto; }
   .stages-scrum__slider-btn {
     z-index: 2;
-    width: auto;
-    left: auto;
-    right: 10px; }
+    width: auto; }
     .stages-scrum__slider-btn.prev, .stages-scrum__slider-btn.next {
       padding-top: 0;
       padding-bottom: 0;
@@ -725,6 +723,8 @@
       bottom: 0;
       margin-top: auto;
       margin-bottom: auto; }
+    .stages-scrum__slider::before {
+      display: none; }
   .loading .tns-nav,
   .loading .stages-scrum__slider-btn {
     pointer-events: none; } }
@@ -744,7 +744,9 @@
   .service-support__opts-wrap {
     padding-left: 0; }
   .service-support__opts-wrap .icon {
-    left: -64px; }
+    top: -6px;
+    left: -34px;
+    font-size: 28px; }
   .service-support__media {
     display: block;
     margin-left: auto;

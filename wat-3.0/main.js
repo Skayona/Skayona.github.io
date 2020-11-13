@@ -887,13 +887,13 @@ function initSrumSlider() {
     const arrows = [...scrumWheel.querySelectorAll('.arrow-group')];
     const currArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == displayIndex);
     const prevArrow = arrows.find((el) => el.getAttribute('data-pos-arrow') == indexCached);
-    const slideDelta = displayIndex - indexCached;
+    const slideDelta = indexCached - displayIndex;
     const slidingDest =  slideDelta > 6 ? -1 : slideDelta < -6 ? 1 : slideDelta;
     const deg = 45;
     const prevDeg = /rotate\((.+)deg\)/.exec(scrumWheel.getAttribute('style'))?.[1];
     const rotateDeg = (slidingDest * deg) + +prevDeg;
     const sliderContainer = document.querySelector('.js-scrum-slider-outer');
-    if  (slidingDest > 0) {
+    if  (slidingDest < 0) {
       sliderContainer.classList.add('back');
       sliderContainer.classList.remove('forward');
     } else {
@@ -903,12 +903,11 @@ function initSrumSlider() {
     currArrow.classList.add('is-active');
     prevArrow.classList.remove('is-active');
     scrumWheel.style = `transform: translate(-51%, 65%) rotate(${ rotateDeg }deg)`;
-    console.log(displayIndex);
     if (displayIndex === 8) {
       sliderContainer.classList.add('loading');
       setTimeout(() => {
         sliderContainer.classList.remove('loading');
-        sldr.goTo(slidingDest > 0 ? 'next' : 'prev');
+        sldr.goTo(slidingDest < 0 ? 'next' : 'prev');
       }, 1500);
     }
   }

@@ -672,9 +672,26 @@ function initServiceAccordion() {
     contracted: 'contracted',
     prefix: 'service-accordion-',
     transition: 'height .3s',
-    setFocus: 'control',
+    setFocus: '.target',
     hashEnabled: false,
   };
+
+  const scrollTabIntoView = (accordion) => {
+    const targets = accordion.items;
+    const scrollHandler = (e) => {
+      setTimeout(() => {
+        const control = e.target;
+        const scrollTop = control.offsetTop;
+        const headerHeight = window.matchMedia('(min-width: 768px)').matches ? document.querySelector('header')?.offsetHeight : 0;
+        if (!window.matchMedia('(min-width: 1366px)').matches) {
+          window.scrollTo(0, scrollTop + headerHeight);
+        }
+      }, 300);
+    };
+    targets.forEach(({ control }) => {
+      control.addEventListener('click', scrollHandler);
+    });
+  }
 
   function HorizontalAccordion(accordion) {
     const items = [...accordion.querySelectorAll('.item')];
@@ -758,7 +775,8 @@ function initServiceAccordion() {
       return;
     }
     if (!mobAccordion) {
-      mobAccordion = new Accordion(accordionContainer, options)
+      mobAccordion = new Accordion(accordionContainer, options);
+      scrollTabIntoView(mobAccordion);
       return;
     }
     if (!mobAccordion._enabled) {
@@ -766,7 +784,7 @@ function initServiceAccordion() {
       mobAccordion.items.forEach((item) => {
         const isExpanded = item.el.getAttribute('data-status') === 'expanded';
         item.isExpanded = isExpanded;
-      })
+      });
     }
   }
 
@@ -1060,4 +1078,18 @@ window.onload = function () {
     initMasonryGridLayout();
     initServiceAccordion();
   }, 500);
+}
+
+{
+  const seeMoreContent = document.querySelector('.js-see-more-content');
+  if (seeMoreContent) {
+    const contentId = seeMoreContent.getAttribute('href');
+    const contentContainer = document.querySelector(contentId);
+    const scrollTop = contentContainer.offsetTop;
+
+    window.addEventListener('scroll', (e) => {
+      const scrolledFromTop = window.scrollY;
+      scrolledFromTop >= scrollTop ? seeMoreContent.classList.add('is-hidden') : seeMoreContent.classList.remove('is-hidden');
+    });
+  }
 }

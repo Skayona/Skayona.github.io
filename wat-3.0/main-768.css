@@ -802,5 +802,30 @@
     margin-right: auto; }
   .support-cms__tags.mob {
     display: none; }
+    .support-cms__tags.mob .support-cms__prlx svg {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused; }
   .support-cms__tags.desktop {
-    display: block; } }
+    display: block;
+    padding-bottom: 28.679%; }
+    .support-cms__tags.desktop .support-cms__prlx.watt svg {
+      z-index: -2;
+      -webkit-animation-name: watt-scaling;
+      animation-name: watt-scaling; }
+    .support-cms__tags.desktop .support-cms__prlx.bold-tags svg {
+      -webkit-animation-name: infinite-wave;
+      animation-name: infinite-wave;
+      -webkit-animation-duration: 15s;
+      animation-duration: 15s; }
+    .support-cms__tags.desktop .support-cms__prlx.black-tags svg {
+      -webkit-animation-name: transform-left;
+      animation-name: transform-left; }
+    .support-cms__tags.desktop .support-cms__prlx.black-icons svg {
+      -webkit-animation-name: transform-right;
+      animation-name: transform-right; }
+    .support-cms__tags.desktop .support-cms__prlx.gray-icons svg {
+      -webkit-animation-name: blinking;
+      animation-name: blinking;
+      will-change: opacity;
+      -webkit-animation-duration: 8s;
+      animation-duration: 8s; } }

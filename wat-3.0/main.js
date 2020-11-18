@@ -855,25 +855,12 @@ function initServiceAccordion() {
   }
 }
 
-{
-  const scene = document.querySelector('#tags-desktop');
-  if (scene) {
-    const parallaxEl =  new Parallax(scene);
-
-    function disablingParallax(parallax) {
-      if (window.matchMedia('(min-width: 1366px)').matches) {
-        parallax.enable();
-        return;
-      }
-      parallax.disable();
-    }
-
-    disablingParallax(parallaxEl);
-
-    window.addEventListener('resize', () => {
-      disablingParallax(parallaxEl);
-    });
-  }
+function initCmsPrlx() {
+  if (!document.querySelector('.js-prlx')) return;
+  new Rellax('.js-prlx', {
+    center: true,
+    round: true,
+  });
 }
 {
   const container = document.querySelector('[data-tabs]');
@@ -1074,6 +1061,7 @@ function initSrumSlider() {
 }
 window.onload = function () {
   initValuesSlider();
+  initCmsPrlx();
   setTimeout(() => {
     initMasonryGridLayout();
     initServiceAccordion();

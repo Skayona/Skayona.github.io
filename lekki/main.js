@@ -267,12 +267,24 @@ function linkSelect({ className, selectList, onSelectCallback }) {
   const dropdownMenuTablet = document.querySelector('.js-dropdown-menu-tablet');
   const dropdownMenuTabletVisible = 'nav-tablet-visible';
 
+  const dropdownMenuDesktop = document.querySelector('.js-dropdown-menu-desktop');
+  const dropdownMenuDesktopVisible = 'nav-desktop-visible';
+
+  const closeMenuOnOutsideClick = (dropdown, visibleClass) => {
+    dropdown && dropdown.addEventListener('click', (event) => {
+      event.stopPropagation();
+    })
+
+    dropdown && document.addEventListener('click', () => {
+      if(dropdown.classList.contains(visibleClass)) {
+        dropdown.classList.remove(visibleClass);
+      }
+    })
+  }
+
   dropdownMenuOpenHandler && dropdownMenuOpenHandler.addEventListener('click', (event) => {
     event.stopPropagation();
-
-    if (window.matchMedia('(max-width: 1365px)').matches) {
-      event.preventDefault();
-    }
+    event.preventDefault();
 
     if (window.matchMedia('(max-width: 767px)').matches) {
       dropdownMenuMob.classList.toggle(dropdownMenuMobVisible);
@@ -281,6 +293,10 @@ function linkSelect({ className, selectList, onSelectCallback }) {
 
     if (window.matchMedia('(min-width: 768px) and (max-width: 1365px)').matches) {
       dropdownMenuTablet && dropdownMenuTablet.classList.toggle(dropdownMenuTabletVisible);
+    }
+
+    if (window.matchMedia('(min-width: 1366px)').matches) {
+      dropdownMenuDesktop && dropdownMenuDesktop.classList.toggle(dropdownMenuDesktopVisible);
     }
   })
 
@@ -300,21 +316,25 @@ function linkSelect({ className, selectList, onSelectCallback }) {
       hideMobMenu();
     }
 
-    if (window.matchMedia('(min-width: 1366px)').matches && dropdownMenuTablet && dropdownMenuTablet.classList.contains(dropdownMenuTabletVisible)) {
+    if (
+        (window.matchMedia('(min-width: 1366px)').matches || window.matchMedia('(max-width: 767px)').matches) &&
+        dropdownMenuTablet &&
+        dropdownMenuTablet.classList.contains(dropdownMenuTabletVisible)
+      ) {
       dropdownMenuTablet.classList.remove(dropdownMenuTabletVisible);
+    }
+
+    if (
+      window.matchMedia('(max-width: 1365px)').matches &&
+      dropdownMenuDesktop &&
+      dropdownMenuDesktop.classList.contains(dropdownMenuDesktopVisible)
+    ) {
+      dropdownMenuDesktop.classList.remove(dropdownMenuDesktopVisible);
     }
   });
 
-  dropdownMenuTablet && dropdownMenuTablet.addEventListener('click', (event) => {
-    event.stopPropagation();
-  })
-
-  dropdownMenuTablet && document.addEventListener('click', () => {
-    if(dropdownMenuTablet.classList.contains(dropdownMenuTabletVisible)) {
-      dropdownMenuTablet.classList.remove(dropdownMenuTabletVisible);
-    }
-  })
-
+  closeMenuOnOutsideClick(dropdownMenuTablet, dropdownMenuTabletVisible);
+  closeMenuOnOutsideClick(dropdownMenuDesktop, dropdownMenuDesktopVisible);
 }
 {
   const createIframe = (id) => {

@@ -57,22 +57,85 @@
   }
 }
 {
-  const contextMenuBtnList = document.querySelectorAll('.js-context-menu-handler');
+  const contextItems = [{
+    icon: 'edit',
+    label: 'Редактировать',
+    action: (event) => {
+      console.log(event, 'Редактировать');
+    }
+  }, {
+    icon: 'copy',
+    label: 'Копировать',
+    action: (event) => {
+      console.log(event, 'Копировать');
+    }
+  }, {
+    icon: 'trash',
+    label: 'Удалить',
+    action: (event) => {
+      console.log(event, 'Удалить');
+    }
+  }, {
+    icon: null,
+    label: 'Без иконки',
+    action: (event) => {
+      console.log(event, 'Без иконки');
+      hideContextMenu();
+    }
+  }];
 
-  function showContextMenu(e) {
-    const items = [
-      { title: 'Edit', icon: 'icon icon-download', fn: () => console.log('Edit') },
-      { title: 'Cut', fn: () => console.log('Cut') },
-      { title: 'Copy', fn: () => console.log('Copy') },
-      { title: 'Paste', fn: () => console.log('Paste'), disabled: true },
-      { title: 'Delete', fn: () => console.log('Delete'), visible: false },
-      { },
-      { title: 'Quit', fn: () => console.log('eQuitdit') }
-    ]
-    basicContext.show(items, e);
+  const contextMenuBtnList = [...document.querySelectorAll('.js-context-menu-handler')];
+
+  function hideContextMenu(menuHandler = false) {
+    const contextMenu = menuHandler && menuHandler.parentNode.querySelector('.context-menu') || document.querySelector('.context-menu');
+    const wasOpen = Boolean(menuHandler && menuHandler.parentNode.querySelector('.context-menu'));
+    if (contextMenu) {
+      contextMenu.parentNode.removeChild(contextMenu);
+      return wasOpen;
+    }
+    return false;
   }
 
-  [...contextMenuBtnList].forEach((btn) => {
-    btn.addEventListener('click', showContextMenu);
+  function showContextMenu(e, btn, menuList = []) {
+    e.stopPropagation();
+    const menuWasHidden = hideContextMenu(btn);
+    if (menuWasHidden) return;
+    const contextWrap = btn.parentNode;
+    const contextMenu = document.createElement('div');
+    contextMenu.className = 'context-menu';
+    const contextList = document.createElement('ul');
+    contextList.className = 'context-menu__list';
+
+    menuList.forEach((menu) => {
+      const contextItem = document.createElement('li');
+      const contextBtn = document.createElement('button');
+      contextBtn.className = 'context-menu__btn';
+      if (menu.icon) {
+        const contextIcon = document.createElement('i');
+        contextIcon.className = `icon icon-${ menu.icon }`;
+        contextIcon.setAttribute('aria-hidden', true);
+        contextBtn.appendChild(contextIcon);
+      }
+      const contextLabel = document.createElement('span');
+      contextLabel.innerText = menu.label;
+      contextBtn.appendChild(contextLabel);
+      contextItem.appendChild(contextBtn);
+      contextList.appendChild(contextItem);
+
+      contextBtn.addEventListener('click', menu.action);
+    });
+    contextMenu.appendChild(contextList);
+    contextWrap.appendChild(contextMenu);
+    contextMenu.classList.add('visible');
+
+    contextMenu.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+  }
+
+  contextMenuBtnList.forEach((btn) => {
+    btn.addEventListener('click', (e) => showContextMenu(e, btn, contextItems));
   });
+
+  document.addEventListener('click', () => hideContextMenu());
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Webinar details page title</title>
-    <meta name="description" content="Webinar details page description"/>
+    <title>Для производителей page title</title>
+    <meta name="description" content="Для производителей description"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="ru"/>
     <meta property="og:site_name" content="Lekki"/>
@@ -15,10 +15,10 @@
     <meta property="og:image:height" content="418"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image" content="/og-image.jpg"/>
-    <meta property="og:title" content="Webinar details page og title"/>
+    <meta property="og:title" content="Для производителей og title"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content="Webinar details page og description"/>
-    <meta property="og:image:alt" content="Webinar details page og description"/>
+    <meta property="og:description" content="Для производителей og description"/>
+    <meta property="og:image:alt" content="Для производителей og description"/>
         <link rel="apple-touch-icon" href="apple-icon-57x57.png" sizes="57x57"/>
         <link rel="apple-touch-icon" href="apple-icon-60x60.png" sizes="60x60"/>
         <link rel="apple-touch-icon" href="apple-icon-72x72.png" sizes="72x72"/>
@@ -49,7 +49,7 @@
     <meta name="msapplication-starturl" content="/index.html"/>
     <link rel="alternate" href="/" hreflang="ru"/>
     <link rel="stylesheet" href="main.css"/>
-    <link rel="stylesheet" href="webinar-details-page.css"/>
+    <link rel="stylesheet" href="for-manufacturer.css"/>
   </head>
   <body>
     <header>
@@ -57,69 +57,52 @@
         <div class="header">
           <div class="header__left"><a class="header-logo" href="/"><img src="logo.svg" alt="Логотип Lekki" width="98" loading="lazy"/></a>
           </div>
-          <div class="header__right auth pharmacist">
-            <div class="js-dropdown-menu-mob header-nav">
+          <div class="header__right not-auth">
+            <nav class="js-dropdown-menu-mob header-nav">
               <button class="js-dropdown-menu-close header-nav__close" type="button" aria-label="Закрыть меню"><i class="icon icon-cross" aria-hidden="true"></i>
               </button>
-              <div class="nav-auth-wrap">
-                <ul class="nav-general">
-                  <li><a class="nav-link" href="#for-pharmacy">Аптекам</a></li>
-                  <li><a class="nav-link" href="#for-manufacturer">Производителям</a></li>
-                  <li class="help">
-                    <button class="header-help" type="button">Поддержка</button>
-                  </li>
-                </ul>
-                <nav class="js-dropdown-menu-tablet nav-auth">
-                  <ul class="nav-extra">
-                    <li><a class="nav-link" href="#my-lectures">Мои лекции</a></li>
-                    <li><a class="nav-link" href="#billing">Мой счет и выплаты</a></li>
-                    <li class="settings"><a class="nav-link" href="#settings">Настройки</a></li>
-                  </ul>
-                </nav>
-                <nav class="js-dropdown-menu-desktop nav-settings">
-                  <ul>
-                    <li>
-                      <button class="nav-settings-link" type="button">Редактировать профиль</button>
-                    </li>
-                    <li>
-                      <button class="nav-settings-link" type="button">Выйти</button>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div><a class="js-dropdown-menu-open btn btn-secondary header-menu-btn" href="#settings"><span>Татьяна pharmacist</span><i class="icon icon-settings" aria-hidden="true"></i></a>
+              <ul class="nav-general">
+                <li><a class="nav-link" href="for-pharmacy">Аптекам</a></li>
+                <li><a class="nav-link active" href="for-manufacturer">Производителям</a></li>
+                <li class="help">
+                  <button class="header-help" type="button">Поддержка</button>
+                </li>
+              </ul>
+            </nav>
+            <button class="js-dropdown-menu-open btn btn-secondary header-menu-btn only-mob mob-menu" type="button"><span>Меню</span></button>
+            <button class="btn btn-secondary header-menu-btn" data-modal-for="login-modal" type="button">Личный кабинет</button>
           </div>
         </div>
       </div>
     </header>
     <main>
       <div class="container">
-        <article class="webinar-full">
-          <div class="webinar-full__logo"><img src="partner-logo-1.png" alt="Фармакоэкономический анализ профилактики и лечения гриппа противовирусными лекарственными препаратами" width="78"/></div>
-          <div class="webinar-full__content">
-            <p class="webinar-full__status"><span>Вебинар</span><span>Запланирован</span></p>
-            <h3 class="webinar-full__title">Фармакоэкономический анализ профилактики и лечения гриппа противовирусными лекарственными препаратами</h3>
-            <p class="webinar-full__lector">Лектор: Александра Филипова</p>
-            <div class="webinar-full__details">
-              <div class="detail"><span class="detail-caption">Осталось</span><span class="detail-info">14 : 22</span></div>
-              <div class="detail"><span class="detail-caption">Лекция</span><span class="detail-info">30 мин</span></div>
-              <div class="detail clr-accent-2"><span class="detail-caption">Бонус</span><span class="detail-info">1500 ₽</span></div>
+        <div class="intro-secondary manufacturer">
+          <h1 class="intro-seconary__title">Проводите образовательные курсы и лекции с помощью онлайн платформы Lekki.ru</h1>
+        </div>
+        <div class="why-manufacturer-wrap">
+          <article class="why-manufacturer">
+            <h2 class="h2 why-manufacturer__title">Lekki.ru — обучение и продвижение на всю страну!</h2>
+            <ul class="why-manufacturer__advantages">
+              <li class="why-manufacturer__advantage"><i class="icon icon-cursor-dot" aria-hidden="true"></i>
+                <p>Удобство использования сервиса для онлайн трансляций</p>
+              </li>
+              <li class="why-manufacturer__advantage"><i class="icon icon-chats" aria-hidden="true"></i>
+                <p>Доступ к целевой аудитории с обратной связью</p>
+              </li>
+              <li class="why-manufacturer__advantage"><i class="icon icon-sheet" aria-hidden="true"></i>
+                <p>Формирование отчетов и аналитика по каждому курсу</p>
+              </li>
+              <li class="why-manufacturer__advantage"><i class="icon icon-desktop" aria-hidden="true"></i>
+                <p>Эффективный digital-канал для продвижения новинок</p>
+              </li>
+            </ul>
+            <div class="why-manufacturer__actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal-for="register-modal">Зарегистрироваться</button>
+              <button class="btn btn-primary btn-bordered btn-sm" type="button" data-modal-for="login-modal">Войти</button>
             </div>
-            <div class="webinar-full__video">
-              <div class="js-youtube-video youtube-video" data-youtubeId="TxbE79-1OSI"><a class="js-youtube-video-link youtube-video-link" href="https://youtu.be/TxbE79-1OSI" target="_blank" rel="noopener noreferrer"><img class="js-youtube-preview youtube-video-media" alt="Дистанционные коммуникации в новой реальности" src="https://i.ytimg.com/vi/TxbE79-1OSI/maxresdefault.jpg" loading="lazy"/></a>
-                <button class="js-yotube-play-btn youtube-play-btn" type="button" aria-label="Запустить видео">
-                  <svg version="1.1" viewBox="0 0 68 48" width="68">
-                    <path class="youtube-play-icon" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#000"></path>
-                    <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="webinar-full__about">
-              <p>Важность проблемы определяется тем, что желудок является начальным звеном пищеварительного конвейера, и нарушение его функции незамедлительно сказывается на состоянии других органов пищеварения, вызывая сбой в работе тонкой и толстой кишки, поджелудочной железы, печени и приводя к увеличению содержания патогенных бактерий в кишечнике. Хронический атрофический гастрит относят к предраковым состояниям желудка, на фоне данного заболевания часто развиваются такие предраковые изменения, как кишечная метаплазия и дисплазия эпителия слизистой желудка, а также гиперпролиферация эпителия слизистой желудка, способствующая развитию опухолей.</p>
-            </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </main>
     <footer class="bg-secondary footer">
@@ -218,6 +201,79 @@
       </div>
     </footer>
     <div class="modal-overlay hidden" data-modal-overlay="data-modal-overlay">
+      <div class="modal hidden" data-modal="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal">
+        <button class="modal-close" data-close-modal="login-modal" type="button" aria-label="Закрыть"><i class="icon icon-cross" aria-hidden="true"></i>
+        </button>
+        <div class="modal-container">
+          <article class="modal-content">
+            <h3 class="h3 modal-content__title" id="login-modal">Вход</h3>
+            <div class="auth auth--login">
+              <div class="auth__subtitle">Если у вас нет аккаунта оставьте заявку и мы свяжемся с вами</div>
+              <button class="auth__link-btn" type="button" data-modal-for="register-modal">Оставить заявку</button>
+              <form class="js-login-form auth__form" novalidate="novalidate">
+                <div class="auth__form-group">
+                  <div class="form-control-text form-control">
+                    <label for="login-email">
+                      <input type="text" id="login-email" name="login-email" placeholder="Введите e-mail" autocomplete="email" required="required"/><span class="label">E-mail</span>
+                    </label>
+                    <p class="form-error"></p>
+                  </div>
+                </div>
+                <div class="auth__form-group">
+                  <div class="form-control-text form-control">
+                    <label for="login-pass">
+                      <input type="password" id="login-pass" name="login-pass" placeholder="Введите пароль" autocomplete="current-password" required="required"/><span class="label">Пароль</span>
+                    </label>
+                    <p class="form-error"></p>
+                  </div>
+                </div>
+                <div class="auth__form-group">
+                  <button class="auth__form-submit btn btn-primary" type="submit">Войти</button>
+                </div>
+              </form>
+              <p class="auth__note">Нажимая кнопку, вы соглашаетесь с правилами работы сайта</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="modal hidden" data-modal="register-modal" tabindex="-1" role="dialog" aria-labelledby="register-modal">
+        <button class="modal-close" data-close-modal="register-modal" type="button" aria-label="Закрыть"><i class="icon icon-cross" aria-hidden="true"></i>
+        </button>
+        <div class="modal-container">
+          <article class="modal-content">
+            <h3 class="h3 modal-content__title" id="register-modal">Оставить заявку</h3>
+            <div class="auth auth--register">
+              <div class="auth__subtitle">В данный момент у нас закрытая регистрация. Оставьте свои контакты и мы с Вами свяжемся</div>
+              <form class="js-register-form auth__form" novalidate="novalidate">
+                <div class="js-form-success auth__success">
+                  <p>Заявка отправлена.</p>
+                  <p>Мы с свяжемся Вами в ближайшее время.</p>
+                </div>
+                <div class="auth__form-group">
+                  <div class="form-control-text form-control">
+                    <label for="register-email">
+                      <input type="text" id="register-email" name="register-email" placeholder="Введите e-mail" autocomplete="email" required="required"/><span class="label">E-mail</span>
+                    </label>
+                    <p class="form-error"></p>
+                  </div>
+                </div>
+                <div class="auth__form-group">
+                  <div class="form-control">
+                    <select class="js-register-position" id="register-position" name="register-position" required="required">
+                      <option value="">Ваша должность</option>
+                    </select>
+                    <p class="form-error"></p>
+                  </div>
+                </div>
+                <div class="auth__form-group">
+                  <button class="auth__form-submit btn btn-primary" type="submit">Оставить заявку</button>
+                </div>
+              </form>
+              <button class="auth__link-btn" type="button" data-modal-for="login-modal">Войти</button>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
     <script src="libs.js"></script>
     <script src="main.js"></script>

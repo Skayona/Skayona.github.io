@@ -37,6 +37,7 @@
 }
 {
   const container = document.querySelector('.js-reviews-slider');
+  console.log(document.querySelector('.js-reviews-slider'));
   if (container)
     tns({
       container,

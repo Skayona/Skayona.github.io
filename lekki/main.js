@@ -397,19 +397,87 @@ document.addEventListener('click', () => hideContextMenu());
       return iframe;
   }
 
-  const setupVideo = (video) => {
+  const setupVideoInModal = (id, iframe) => {
+    const body = document.querySelector('body');
+    const modalSelector = `[data-ytmodalid="${id}"]`;
+    const isVideoUploaded = Boolean(document.querySelector(modalSelector));
+    const ytModal = document.querySelector(modalSelector) || (() => {
+      const modal = document.createElement('div');
+      modal.className = 'yt-modal';
+      modal.setAttribute('data-ytmodalid', id);
+      const videoWrap = document.createElement('div');
+      videoWrap.className = 'yt-modal-video';
+      videoWrap.appendChild(iframe);
+      modal.appendChild(videoWrap);
+      return modal;
+    })();
+    const curIframe = ytModal.querySelector('iframe');
+    const ytModalOverlay = document.querySelector('.yt-modal-overlay') || (() => {
+      const overlay = document.createElement('div');
+      overlay.className = 'yt-modal-overlay hidden';
+      body.appendChild(overlay);
+      return overlay;
+    })();
+
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'yt-modal-close';
+    closeBtn.setAttribute('type', 'button');
+    closeBtn.setAttribute('aria-label', 'Закрыть');
+    closeBtn.addEventListener('click', () => {
+      ytModalOverlay.classList.add('hidden', 'is-hiding');
+      ytModal.classList.add('hidden', 'is-hiding');
+      const scaleEffectsTimeout = setTimeout(() => {
+        ytModalOverlay.classList.remove('is-hiding');
+        ytModal.classList.remove('is-hiding');
+        clearTimeout(scaleEffectsTimeout);
+      }, 300);
+      body.classList.remove('yt-modal-open');
+      curIframe.contentWindow.postMessage(JSON.stringify({
+        'event': 'command',
+        'func': 'pauseVideo',
+      }), '*');
+      closeBtn.remove();
+    });
+    const icon = document.createElement('span');
+    icon.className = 'icon icon-cross';
+    icon.setAttribute('aria-hidden', 'true');
+    closeBtn.appendChild(icon);
+    ytModalOverlay.appendChild(closeBtn);
+
+    !isVideoUploaded && ytModalOverlay.appendChild(ytModal);
+    isVideoUploaded && setTimeout(() => {
+      curIframe.contentWindow.postMessage(JSON.stringify({
+        'event': 'command',
+        'func': 'playVideo',
+      }), '*');
+    }, 1000);
+
+    const overlayTimeout = setTimeout(() => {
+      ytModalOverlay.classList.remove('hidden');
+      clearTimeout(overlayTimeout);
+    });
+    ytModal.classList.remove('hidden');
+    body.classList.add('yt-modal-open');
+  }
+
+  const setupVideoInBlock = (video, iframe) => {
     const link = video.querySelector('.js-youtube-video-link');
     const button = video.querySelector('.js-yotube-play-btn');
-    const id = video.dataset.youtubeid;
-    video.addEventListener('click', () => {
-        const iframe = createIframe(id);
-        link.remove();
-        button.remove();
-        video.appendChild(iframe);
-    });
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  }
 
+  const setupVideo = (video) => {
+    const id = video.dataset.youtubeid;
+    const link = video.querySelector('.js-youtube-video-link');
     link.removeAttribute('href');
     video.classList.add('enabled');
+    video.addEventListener('click', () => {
+      const iframe = createIframe(id);
+      const playInDialog = !!video.dataset.playindialog;
+      playInDialog ? setupVideoInModal(id, iframe) : setupVideoInBlock(video, iframe);
+    });
   }
 
   const findVideos = () => {

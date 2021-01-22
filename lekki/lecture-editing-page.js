@@ -259,12 +259,16 @@
           }
         }
         renderSelectedItems();
+        var fileReader = new FileReader( );
+        fileReader.onload = function ( evt ) { console.log( evt.target.result ) };
+        fileReader.readAsText( selectedFiles[0] );
         formData[inputEl.name] = isMultiple ? selectedFiles : (selectedFiles && selectedFiles[0] || '');
         udateFormData();
         handleFormChange({ formData, form, constraints });
       }
 
       const fileUploadHandler = (uploadHandler) => {
+        uploadHandler.addEventListener('change', console.log);
         uploadHandler && uploadHandler.addEventListener('change', ({ target }) => {
           selectedFilesHandler(target.files, target.parentElement);
         })
@@ -410,13 +414,22 @@
 
       udateFormData();
 
-      submitBtn.disabled = true;
+      const data = new FormData();
 
-      console.log(formData);
+      for (const key in formData) {
+        if (formData.hasOwnProperty(key)) {
+          data.append(key, formData[key]);
+        }
+      }
+
+      submitBtn.disabled = true;
 
       fetch((url), {
         method: 'POST',
-        body: JSON.stringify(formData),
+        body: data,
+        headers: {
+          'Accept': "application/json",
+        },
       })
       .then((response) => {
         submitBtn.disabled = false;
